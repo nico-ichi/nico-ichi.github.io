@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nico様 Special Gift</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #fdfaf6;
+            margin: 0;
+            padding: 20px;
+            color: #4a4a4a;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        .header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #FF7F50, #FFD700);
+            border-radius: 16px;
+            color: white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .header h1 {
+            font-size: 2.5em;
+            font-weight: 900;
+            margin: 0;
+        }
+        .header p {
+            font-size: 1.1em;
+            margin-top: 10px;
+            opacity: 0.9;
+        }
+        .tokuten-grid {
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+        .tokuten-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+        .tokuten-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+        }
+        .tokuten-card .content {
+            padding: 30px;
+        }
+        .tokuten-card h2 {
+            font-size: 1.6em;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #FF7F50;
+        }
+        .tokuten-card p {
+            font-size: 1em;
+            line-height: 1.7;
+            flex-grow: 1;
+        }
+        .tokuten-card a {
+            display: block;
+            background: #FF7F50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            text-decoration: none;
+            font-weight: 700;
+            margin-top: 20px;
+            border-radius: 0 0 16px 16px;
+            transition: background-color 0.3s;
+        }
+        .tokuten-card a:hover {
+            background-color: #ff6347;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Special Gift</h1>
+            <p>アンケートにご協力いただき、誠にありがとうございました。<br>感謝の気持ちを込めて、以下の特典をプレゼントいたします。</p>
+        </div>
+
+        <div class="tokuten-grid">
+            <!-- 特典1: 大人の学習戦略 -->
+            <div class="tokuten-card">
+                <div class="content">
+                    <h2>【年齢の壁打破】40代・50代からでも結果を出す「大人の学習戦略」完全ガイド</h2>
+                    <p>年齢を言い訳にしない、科学的根拠に基づいた大人のための韓国語学習法。あなたの経験を最強の武器に変えるための完全設計図です。</p>
+                </div>
+                <a href="strategy.html">ガイドを読む →</a>
+            </div>
+
+            <!-- 特典2: 自己学習診断 -->
+            <div class="tokuten-card">
+                <div class="content">
+                    <h2>【自己学習診断】あなたの韓国語が伸び悩む本当の原因がわかる！「学習タイプ別 弱点克服診断シート」</h2>
+                    <p>簡単な質問に答えるだけで、あなたの学習のクセを科学的に分析。4つのタイプ別に、あなただけの最適な学習戦略（処方箋）をご提案します。</p>
+                </div>
+                <a href="diagnosis.html">診断を始める →</a>
+            </div>
+
+            <!-- 特典3: 習慣化テンプレート -->
+            <div class="tokuten-card">
+                <div class="content">
+                    <h2>挫折率ゼロへ！あなたの1週間が変わる「韓国語学習 習慣化実践テンプレート」</h2>
+                    <p>「意志力」ではなく「仕組み」で学習を自動化するための実践ワークシート。このテンプレートを埋めるだけで、あなたの1週間が劇的に変わります。</p>
+                </div>
+                <a href="template.html">テンプレートを開く →</a>
+            </div>
+            
+            <!-- 特典4: 推し活韓国語フレーズBOOK -->
+            <div class="tokuten-card">
+                <div class="content">
+                    <h2>推し活韓国語フレーズBOOK</h2>
+                    <p>SNS、ライブ、ファンミーティングで使える！あなたの「好き」を伝えるための実践的なフレーズを集めた、推し活がもっと楽しくなる特別な一冊です。</p>
+                </div>
+                <a href="phrasebook.html">フレーズBOOKを開く →</a>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
