@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【自己学習診断】あなたの韓国語が伸び悩む本当の原因がわかる！「学習タイプ別 弱点克服診断シート」</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
+        
+        :root {
+            --primary-color: #6a11cb;
+            --secondary-color: #2575fc;
+            --text-color: #333;
+            --light-gray: #f4f7f9;
+            --type-a-color: #2980b9;
+            --type-b-color: #27ae60;
+            --type-c-color: #e67e22;
+            --type-d-color: #8e44ad;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            line-height: 1.8;
+            color: var(--text-color);
+            background-color: var(--light-gray);
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 50px 40px;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 2.1em;
+            font-weight: 900;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+        
+        .hero p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 50px;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 40px;
+        }
+        .section:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .section-title {
+            font-size: 1.8em;
+            font-weight: 700;
+            color: var(--text-color);
+            margin-bottom: 25px;
+            padding-left: 15px;
+            border-left: 5px solid var(--secondary-color);
+        }
+
+        .info-box {
+            background-color: rgba(37, 117, 252, 0.05);
+            border-left: 4px solid var(--secondary-color);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        
+        .question-card {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .question-number {
+            font-size: 1.5em;
+            font-weight: 900;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        .question-text {
+            font-size: 1.2em;
+            font-weight: 500;
+            margin-bottom: 25px;
+        }
+
+        .options-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+
+        .option-label {
+            display: block;
+            background: var(--light-gray);
+            padding: 15px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border: 2px solid transparent;
+        }
+
+        .option-label:hover {
+            background: #e9eff3;
+        }
+
+        .option-radio {
+            display: none;
+        }
+
+        .option-radio:checked + .option-label {
+            background: rgba(37, 117, 252, 0.1);
+            border-color: var(--secondary-color);
+            font-weight: 700;
+            color: var(--secondary-color);
+        }
+        
+        .option-prefix {
+            font-weight: 700;
+            margin-right: 10px;
+            color: var(--primary-color);
+        }
+        
+        .result-button-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .result-button {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            font-size: 1.2em;
+            font-weight: 700;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 5px 20px rgba(37, 117, 252, 0.3);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .result-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(37, 117, 252, 0.4);
+        }
+
+        .result-card {
+            border-radius: 15px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            overflow: hidden;
+            border: 1px solid #e0e0e0;
+        }
+
+        .result-header {
+            color: white;
+            padding: 20px 30px;
+        }
+        .result-header h2 { font-size: 1.8em; font-weight: 900; }
+        .result-header h3 { font-size: 1.1em; opacity: 0.9; }
+
+        .result-body {
+            padding: 30px;
+        }
+
+        .result-body h4 {
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .prescription-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .prescription-list li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 15px;
+        }
+        .prescription-list li::before {
+            content: '✔';
+            position: absolute;
+            left: 0;
+            font-weight: 700;
+            font-size: 1.2em;
+        }
+        
+        .first-step-box {
+            background: var(--light-gray);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 25px;
+        }
+        .first-step-box strong {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        /* Type Colors */
+        .type-a .result-header { background: linear-gradient(135deg, #3498db, #2980b9); }
+        .type-a h4, .type-a .prescription-list li::before, .type-a .first-step-box strong { color: var(--type-a-color); }
+
+        .type-b .result-header { background: linear-gradient(135deg, #2ecc71, #27ae60); }
+        .type-b h4, .type-b .prescription-list li::before, .type-b .first-step-box strong { color: var(--type-b-color); }
+
+        .type-c .result-header { background: linear-gradient(135deg, #f39c12, #e67e22); }
+        .type-c h4, .type-c .prescription-list li::before, .type-c .first-step-box strong { color: var(--type-c-color); }
+
+        .type-d .result-header { background: linear-gradient(135deg, #9b59b6, #8e44ad); }
+        .type-d h4, .type-d .prescription-list li::before, .type-d .first-step-box strong { color: var(--type-d-color); }
+
+        .final-summary {
+            text-align: center;
+        }
+        .final-summary h3 {
+            font-size: 1.4em;
+            margin-bottom: 15px;
+        }
+        .final-summary ul {
+            list-style: none;
+            padding: 0;
+            display: inline-block;
+            text-align: left;
+            margin: 20px 0;
+        }
+        .final-summary ul li { margin-bottom: 10px; }
+
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            opacity: 0.8;
+        }
+
+        #resultsSection { display: none; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="hero">
+            <h1>【自己学習診断】</h1>
+            <p>あなたの韓国語が伸び悩む本当の原因がわかる！<br>「学習タイプ別 弱点克服診断シート」</p>
+        </div>
+        
+        <div class="content">
+            <div class="section">
+                <h2 class="section-title">はじめに：あなたの「伸び悩み」の正体を突き止めましょう</h2>
+                <p>「毎日頑張って勉強しているのに、なぜか話せるようにならない…」</p>
+                <p>もしあなたが、このような壁を感じているのなら、それは<strong>努力が足りないからではありません。</strong> あなたの学習方法に、ほんの少しだけ<strong>「クセ」</strong>や<strong>「ズレ」</strong>が生じているのかもしれません。</p>
+                <div class="info-box">
+                    <strong>この診断でわかること：</strong><br>
+                    あなたの現在の学習スタイルを客観的に分析し、成長を妨げている「本当の原因」を突き止めます。自分のタイプを知ることで、闇雲な努力から解放され、あなたに本当に必要な「次の一歩」が明確になります。
+                    <br><br>
+                    <strong>※注意：</strong> この診断は、あなたの能力を断定するものではありません。あくまで学習のクセや傾向を知り、自己分析を助けるための<strong>「ヒント」</strong>としてご活用ください。
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">【重要】診断を受ける上での心構え</h2>
+                <p>質問を読んでいく中で、「どの選択肢もしっくりこない…」と感じることがあるかもしれません。それはごく自然なことです。</p>
+                <ul style="margin-top: 15px; padding-left: 20px;">
+                    <li><strong>「完璧」ではなく「最も近いもの」を直感で選ぶ：</strong><br>あなたの「無意識の傾向」を見るため、100%一致しなくても「強いて言えばこれかな」というものを選んでください。</li>
+                    <li><strong>「理想」ではなく「現実の行動」を選ぶ：</strong><br>「こうあるべき」ではなく、「実際にはこうしてしまっている」という現実の行動に基づいて選ぶことが、正確な自己分析への近道です。</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">【診断スタート】あなたの学習スタイルをチェック！</h2>
+                <form id="diagnosisForm">
+                    
+                    <!-- Questions 1-10 -->
+                    <div class="question-card">
+                        <div class="question-number">Question 1/10</div>
+                        <p class="question-text">新しい韓国語の単語を覚えるとき、あなたの主な方法は？</p>
+                        <div class="options-grid">
+                            <input type="radio" id="q1a" name="q1" value="A" class="option-radio"><label for="q1a" class="option-label"><span class="option-prefix">A.</span>単語帳やアプリを使い、日本語訳とセットで暗記する。まずは数をこなすことが大事だと思う。</label>
+                            <input type="radio" id="q1b" name="q1" value="B" class="option-radio"><label for="q1b" class="option-label"><span class="option-prefix">B.</span>K-POPの歌詞やドラマのセリフなど、好きなコンテンツの中で自然に耳にする機会を増やす。</label>
+                            <input type="radio" id="q1c" name="q1" value="C" class="option-radio"><label for="q1c" class="option-label"><span class="option-prefix">C.</span>辞書で意味や使い方を完璧に調べてからでないと、覚えた気にならない。</label>
+                            <input type="radio" id="q1d" name="q1" value="D" class="option-radio"><label for="q1d" class="option-label"><span class="option-prefix">D.</span>話題の単語アプリを試したり、単語カードを作ってみたり、色々な方法を試すが、なかなか定着しない。</label>
+                        </div>
+                    </div>
+                    <div class="question-card">
+                        <div class="question-number">Question 2/10</div>
+                        <p class="question-text">文法学習について、あなたはどのように感じていますか？</p>
+                        <div class="options-grid">
+                            <input type="radio" id="q2a" name="q2" value="A" class="option-radio"><label for="q2a" class="option-label"><span class="option-prefix">A.</span>参考書を読んでルールを理解し、練習問題を解くのが基本。体系的に学ぶのが好きだ。</label>
+                            <input type="radio" id="q2b" name="q2" value="B" class="option-radio"><label for="q2b" class="option-label"><span class="option-prefix">B.</span>正直、あまり好きではない。会話はフィーリングや勢いが大事だと思うので、後回しにしがち。</label>
+                            <input type="radio" id="q2c" name="q2" value="C" class="option-radio"><label for="q2c" class="option-label"><span class="option-prefix">C.</span>細かい例外やニュアンスの違いが気になり、一つの文法項目で立ち止まってしまうことが多い。</label>
+                            <input type="radio" id="q2d" name="q2" value="D" class="option-radio"><label for="q2d" class="option-label"><span class="option-prefix">D.</span>色々な文法書に手を出してみるが、一冊を最後までやり遂げたことがない。</label>
+                        </div>
+                    </div>
+                    <div class="question-card">
+                        <div class="question-number">Question 3/10</div>
+                        <p class="question-text">韓国語を「話す」練習について、最も近い考えは？</p>
+                        <div class="options-grid">
+                            <input type="radio" id="q3a" name="q3" value="A" class="option-radio"><label for="q3a" class="option-label"><span class="option-prefix">A.</span>知識は十分あるはずなのに、いざ話そうとすると単語や文法がうまく組み立てられない。</label>
+                            <input type="radio" id="q3b" name="q3" value="B" class="option-radio"><label for="q3b" class="option-label"><span class="option-prefix">B.</span>聞き取りはある程度できる気がするが、自分から何かを言うのは全く別の話だと感じる。</label>
+                            <input type="radio" id="q3c" name="q3" value="C" class="option-radio"><label for="q3c" class="option-label"><span class="option-prefix">C.</span>発音や文法の間違いを指摘されるのが怖くて、なかなか自分から話し始められない。</label>
+                            <input type="radio" id="q3d" name="q3" value="D" class="option-radio"><label for="q3d" class="option-label"><span class="option-prefix">D.</span>何から話す練習をすればいいのか分からず、結局インプット学習ばかりしてしまう。</label>
+                        </div>
+                    </div>
+                    <div class="question-card">
+                        <div class="question-number">Question 4/10</div>
+                        <p class="question-text">韓国ドラマを字幕なしで見るチャレンジをしたとき、どうなりますか？</p>
+                        <div class="options-grid">
+                            <input type="radio" id="q4a" name="q4" value="A" class="option-radio"><label for="q4a" class="option-label"><span class="option-prefix">A.</span>知っている単語を一つ一つ拾おうと必死になり、ストーリーが頭に入ってこない。</label>
+                            <input type="radio" id="q4b" name="q4" value="B" class="option-radio"><label for="q4b" class="option-label"><span class="option-prefix">B.</span>全体的な雰囲気はわかるが、具体的な内容はほとんど理解できていない。でも、聞き続けることが大事だと思っている。</label>
+                            <input type="radio" id="q4c" name="q4" value="C" class="option-radio"><label for="q4c" class="option-label"><span class="option-prefix">C.</span>一つでも聞き取れないセリフがあると、そこで集中が途切れてしまい、もどかしく感じる。</label>
+                            <input type="radio" id="q4d" name="q4" value="D" class="option-radio"><label for="q4d" class="option-label"><span class="option-prefix">D.</span>最初はやる気があるが、すぐに「もっと効率的なリスニング方法があるはずだ」とネットで検索を始めてしまう。</label>
+                        </div>
+                    </div>
+                    <div class="question-card">
+                        <div class="question-number">Question 5/10</div>
+                        <p class="question-text">あなたの学習モチベーションが最も高まる瞬間は？</p>
+                        <div class="options-grid">
+                            <input type="radio" id="q5a" name="q5" value="A" class="option-radio"><label for="q5a" class="option-label"><span class="option-prefix">A.</span>問題集の1章を終えたり、単語テストで高得点を取ったりと、目に見える成果が出たとき。</label>
+                            <input type="radio" id="q5b" name="q5" value="B" class="option-radio"><label for="q5b" class="option-label"><span class="option-prefix">B.</span>好きなアイドルの言葉が、ふと一言聞き取れたとき。</label>
+                            <input type="radio" id="q5c" name="q5" value="C" class="option-radio"><label for="q5c" class="option-label"><span class="option-prefix">C.</span>自分の発音が、ネイティブのお手本とそっくりに言えたと感じたとき。</label>
+                            <input type="radio" id="q5d" name="q5" value="D" class="option-radio"><label for="q5d" class="option-label"><span class="option-prefix">D.</span>SNSやYouTubeで、自分に合いそうな新しい学習法や教材を見つけたとき。</label>
+                        </div>
+                    </div>
+                    <div class="question-card">
+                        <div class="question-number">Question 6/10</div>
+                        <p class="question-text">学習中に間違いに気づいたとき、あなたはどうしますか？</p>
+                        <div class="options-grid">
+                            <input type="radio" id="q6a" name="q6" value="A" class="option-radio"><label for="q6a" class="option-label"><span class="option-prefix">A.</span>なぜ間違えたのかを参考書で確認し、理屈で納得する。</label>
+                            <input type="radio" id="q6b" name="q6" value="B" class="option-radio"><label for="q6b" class="option-label"><span class="option-prefix">B.</span>あまり気にしない。たくさん聞いていれば、そのうち自然に直ると思っている。</label>
+                            <input type="radio" id="q6c" name="q6" value="C" class="option-radio"><label for="q6c" class="option-label"><span class="option-prefix">C.</span>「また間違えてしまった…」と落ち込んでしまい、やる気が少し削がれてしまう。</label>
+                            <input type="radio" id="q6d" name="q6" value="D" class="option-radio"><label for="q6d" class="option-label"><span class="option-prefix">D.</span>「この教材が合わないのかも」と考え、別の教材を探し始めるきっかけになることがある。</label>
+                        </div>
+                    </div>
+                    <div class="question-card">
+                        <div class="question-number">Question 7/10</div>
+                        <p class="question-text">あなたの学習机の上や、スマホの学習フォルダはどんな状態ですか？</p>
+                        <div class="options-grid">
+                            <input type="radio" id="q7a" name="q7" value="A" class="option-radio"><label for="q7a" class="option-label"><span class="option-prefix">A.</span>きれいにまとめられたノートや、分野別に整理された単語リストがある。</label>
+                            <input type="radio" id="q7b" name="q7" value="B" class="option-radio"><label for="q7b" class="option-label"><span class="option-prefix">B.</span>学習教材よりも、K-POPのプレイリストやドラマのストリーミングアプリが中心。</label>
+                            <input type="radio" id="q7c" name="q7" value="C" class="option-radio"><label for="q7c" class="option-label"><span class="option-prefix">C.</span>完璧さを求めるあまり、詳細なメモでびっしりだが、あまり見返してはいない。</label>
+                            <input type="radio" id="q7d" name="q7" value="D" class="option-radio"><label for="q7d" class="option-label"><span class="option-prefix">D.</span>未使用の教材や、ダウンロードしただけの学習アプリがたくさんある。</label>
+                        </div>
+                    </div>
+                    <div class="question-card">
+                        <div class="question-number">Question 8/10</div>
+                        <p class="question-text">学習が「停滞している」と感じたとき、最初にとる行動は？</p>
+                        <div class="options-grid">
+                            <input type="radio" id="q8a" name="q8" value="A" class="option-radio"><label for="q8a" class="option-label"><span class="option-prefix">A.</span>基本に立ち返り、もう一度最初の章から参考書を読み直してみる。</label>
+                            <input type="radio" id="q8b" name="q8" value="B" class="option-radio"><label for="q8b" class="option-label"><span class="option-prefix">B.</span>気分転換に、好きな韓国のバラエティ番組や音楽をひたすら浴びるように見聞きする。</label>
+                            <input type="radio" id="q8c" name="q8" value="C" class="option-radio"><label for="q8c" class="option-label"><span class="option-prefix">C.</span>自分の能力不足を感じ、一時的に学習から離れてしまうことがある。</label>
+                            <input type="radio" id="q8d" name="q8" value="D" class="option-radio"><label for="q8d" class="option-label"><span class="option-prefix">D.</span>ネットで「韓国語 伸び悩み」「効果的な勉強法」などと検索し、新しい情報を探す。</label>
+                        </div>
+                    </div>
+                    <div class="question-card">
+                        <div class="question-number">Question 9/10</div>
+                        <p class="question-text">あなたが韓国語を学ぶ上での「理想の姿」に最も近いのは？</p>
+                        <div class="options-grid">
+                            <input type="radio" id="q9a" name="q9" value="A" class="option-radio"><label for="q9a" class="option-label"><span class="option-prefix">A.</span>韓国語能力試験（TOPIK）で高得点を取得し、自分の知識を証明したい。</label>
+                            <input type="radio" id="q9b" name="q9" value="B" class="option-radio"><label for="q9b" class="option-label"><span class="option-prefix">B.</span>字幕なしでドラマや映画を楽しみ、推しの言葉をダイレクトに理解したい。</label>
+                            <input type="radio" id="q9c" name="q9" value="C" class="option-radio"><label for="q9c" class="option-label"><span class="option-prefix">C.</span>ネイティブと間違われるくらい、完璧で自然な韓国語を話せるようになりたい。</label>
+                            <input type="radio" id="q9d" name="q9" value="D" class="option-radio"><label for="q9d" class="option-label"><span class="option-prefix">D.</span>自分にとっての「究極の学習法」を見つけ出し、効率的にマスターしたい。</label>
+                        </div>
+                    </div>
+                    <div class="question-card">
+                        <div class="question-number">Question 10/10</div>
+                        <p class="question-text">韓国語学習における「成功」とは、あなたにとって何ですか？</p>
+                        <div class="options-grid">
+                            <input type="radio" id="q10a" name="q10" value="A" class="option-radio"><label for="q10a" class="option-label"><span class="option-prefix">A.</span>難しい文法や単語を使いこなし、知的な会話ができること。</label>
+                            <input type="radio" id="q10b" name="q10" value="B" class="option-radio"><label for="q10b" class="option-label"><span class="option-prefix">B.</span>韓国語の音やリズムに囲まれ、韓国文化に深く浸ること。</label>
+                            <input type="radio" id="q10c" name="q10" value="C" class="option-radio"><label for="q10c" class="option-label"><span class="option-prefix">C.</span>どんな場面でも、一切の間違いなく堂々と話せること。</label>
+                            <input type="radio" id="q10d" name="q10" value="D" class="option-radio"><label for="q10d" class="option-label"><span class="option-prefix">D.</span>試行錯誤の末、自分にピッタリの学習ルーティンを確立すること。</label>
+                        </div>
+                    </div>
+                    
+                    <div class="result-button-container">
+                        <button type="button" class="result-button" onclick="showResult()">診断結果を見る</button>
+                    </div>
+                </form>
+            </div>
+
+            <div id="resultsSection" class="section">
+                <h2 class="section-title">診断結果：あなたのタイプと弱点克服の処方箋</h2>
+                
+                <div id="hybridMessage" class="info-box" style="display: none; margin-bottom: 30px;"></div>
+
+                <!-- Type A Result -->
+                <div id="resultA" class="result-card type-a" style="display: none;">
+                    <div class="result-header">
+                        <h2>知識コレクタータイプ</h2>
+                        <h3>真面目な努力家</h3>
+                    </div>
+                    <div class="result-body">
+                        <h4>タイプの解説</h4>
+                        <p>あなたは非常に真面目で、コツコツと知識を積み上げることが得意な努力家です。その探究心と継続力は、あなたの<strong>最大の武器</strong>です。しかし、豊富な知識が、実際の会話でスムーズに「スキル」として発揮できていないジレンマを抱えていませんか？伸び悩みの原因は、<strong>「知識を使う（アウトプットする）練習」の不足</strong>にあります。</p>
+                        <h4 style="margin-top: 25px;">弱点克服のための処方箋</h4>
+                        <ul class="prescription-list">
+                            <li><strong>「使う単語」だけに絞り込む：</strong>学習の目的を「試験満点」から「日常で使えること」へシフトし、あなたが実際に話したいことに必要な表現に集中しましょう。</li>
+                            <li><strong>すべての知識を「自分の物語」にする：</strong>単語を覚える際は、必ず「私は〜」のように自分についての文章で覚えるクセをつけましょう。</li>
+                            <li><strong>1日5分の「つぶやきタイム」を設ける：</strong>「あー、疲れた」「お腹すいた」など、今感じていることを知っている単語でつぶやくだけで、立派なアウトプット練習になります。</li>
+                        </ul>
+                        <div class="first-step-box">
+                            <strong>【今すぐできる最初の一歩】</strong>
+                            <p>昨日覚えた単語を一つ選び、「저는 [単語]が好きです/嫌いです」という文章を作って、声に出して言ってみましょう。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Type B Result -->
+                <div id="resultB" class="result-card type-b" style="display: none;">
+                    <div class="result-header">
+                        <h2>聞き流し依存タイプ</h2>
+                        <h3>楽しむ才能の持ち主</h3>
+                    </div>
+                    <div class="result-body">
+                        <h4>タイプの解説</h4>
+                        <p>あなたは学習を「楽しむ」才能に溢れています。韓国語の音やリズムに対する抵抗感が少ないのは、あなたの<strong>素晴らしい強み</strong>です。しかし、「たくさん聞いているのに、リスニング力が上がらない」と感じていませんか？伸び悩みの原因は、<strong>「意味を理解しようとするインプット」の不足</strong>です。脳が音をBGMとして処理してしまっています。</p>
+                        <h4 style="margin-top: 25px;">弱点克服のための処方箋</h4>
+                        <ul class="prescription-list">
+                            <li><strong>「ながら聞き」を「集中聞き」に変える：</strong>1時間の「ながら聞き」より、歌詞や字幕を見ながらの10分間のほうが学習効果は圧倒的に高いです。</li>
+                            <li><strong>「音の正体」を突き止める：</strong>リスニング中に気になった単語は、すぐに巻き戻して字幕で文字を確認しましょう。「文字と音の一致」がリスニング力を飛躍させます。</li>
+                            <li><strong>感情が動いたセリフを「お持ち帰り」する：</strong>感動したフレーズをスマホにメモし、意味を調べて何度も口ずさみましょう。それがあなたの最初の「持ちネタ」になります。</li>
+                        </ul>
+                        <div class="first-step-box">
+                            <strong>【今すぐできる最初の一歩】</strong>
+                            <p>あなたの好きなK-POPの曲のサビの部分だけ、歌詞を検索して意味を確認してみてください。そして、その意味を意識しながらもう一度聴いてみましょう。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Type C Result -->
+                <div id="resultC" class="result-card type-c" style="display: none;">
+                    <div class="result-header">
+                        <h2>完璧主義シンドロームタイプ</h2>
+                        <h3>高い向上心の持ち主</h3>
+                    </div>
+                    <div class="result-body">
+                        <h4>タイプの解説</h4>
+                        <p>あなたは非常に高い理想を持つ、意識の高い学習者です。その向上心こそが、あなたの<strong>最大のポテンシャル</strong>です。しかし、その「完璧でありたい」という強い想いが、かえって「話す」ことへの大きな壁になっていませんか？伸び悩みの原因は、<strong>間違いを恐れるあまりに生じる「高い心理的ブロック」</strong>です。</p>
+                        <h4 style="margin-top: 25px;">弱点克服のための処方箋</h4>
+                        <ul class="prescription-list">
+                            <li><strong>ゴールを「100点」から「70点のコミュニケーション」に変える：</strong>あなたの目標は「完璧な学者」ではなく、「楽しく会話できる実践者」です。「伝わった！」という成功体験を積み重ねましょう。</li>
+                            <li><strong>絶対に間違えてもいい「安全地帯」を作る：</strong>独り言やAIチャットアプリなど、誰にも評価されない環境で、たくさん間違える練習をしましょう。</li>
+                            <li><strong>「できたこと日記」をつける：</strong>寝る前に「昨日より言えるようになったこと」を一つだけ書き出す習慣をつけましょう。小さな成長の可視化が、自信を育てます。</li>
+                        </ul>
+                        <div class="first-step-box">
+                            <strong>【今すぐできる最初の一歩】</strong>
+                            <p>鏡の前に立ち、自分に向かって「안녕하세요. 저는 〇〇입니다.」と、少し大げさなくらい笑顔で言ってみてください。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Type D Result -->
+                <div id="resultD" class="result-card type-d" style="display: none;">
+                    <div class="result-header">
+                        <h2>学習法ジプシータイプ</h2>
+                        <h3>好奇心旺盛な冒険家</h3>
+                    </div>
+                    <div class="result-body">
+                        <h4>タイプの解説</h4>
+                        <p>あなたは学習意欲が非常に高く、常に「もっと良い方法はないか」と模索する情報収集の達人です。その好奇心は、あなたの<strong>素晴らしい才能</strong>です。しかし、色々なものに手を出すうちに、結局どれも中途半端になっていませんか？伸び悩みの原因は、<strong>学習の「幹」が定まっていないことによる知識の断片化</strong>です。</p>
+                        <h4 style="margin-top: 25px;">弱点克服のための処方箋</h4>
+                        <ul class="prescription-list">
+                            <li><strong>「情報断食」をしてみる：</strong>手元の教材から「これだけは信じる」というものを一つだけ選び、最低1ヶ月間は、新しい情報をネットで探すのをやめてみましょう。</li>
+                            <li><strong>自分だけの「小さなゴール」を紙に書き出す：</strong>「3ヶ月後、自己紹介ができるようになる」など具体的な目標を書き、達成のための「今週やること」を3つだけ書き出してみてください。</li>
+                            <li><strong>学習の成果を「記録」する：</strong>「一つのことを続けると、これだけ成長できる」という目に見える実感を得ることが、ジプシー状態から抜け出す特効薬になります。</li>
+                        </ul>
+                        <div class="first-step-box">
+                            <strong>【今すぐできる最初の一歩】</strong>
+                            <p>今持っている教材の中から「メイン教材」を一つだけ選び、付箋に「30日間、よろしく！」と書いて貼ってみましょう。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="summarySection" class="section" style="display:none;">
+                <h2 class="section-title">診断を終えたあなたへ：今日から始める、新しい学習戦略</h2>
+                <div class="final-summary">
+                    <h3>これは「診断」であり、「断定」ではありません</h3>
+                    <p>この診断結果は、あなたに「〇〇タイプだ」というレッテルを貼るためのものではありません。あくまで、現時点でのあなたの学習における<strong>「傾向」や「クセ」を客観的に見るためのヒント</strong>です。</p>
+                    <ul style="margin-top: 20px; padding-left: 0;">
+                        <li>✔️ どのタイプが優れている、劣っているということは一切ありません。</li>
+                        <li>✔️ あなたのタイプは、成長と共に変化します。</li>
+                    </ul>
+                    <div class="info-box" style="margin-top: 20px;">
+                        <strong>すべてのタイプに共通する、たった一つの真実<br>それは、「小さく始めて、小さく成功し、小さく続けること」です。</strong>
+                    </div>
+                    <h3 style="margin-top: 30px;">「知る」から「行う」へ</h3>
+                    <p>この診断シートで最も価値があるのは、診断結果のページではありません。あなたがそれぞれの処方箋の最後に見た、<strong>【今すぐできる最初の一歩】</strong>です。</p>
+                    <p>この記事を読み終えたら、たった1分でいいので、そこに書かれていたアクションを実行してみてください。その小さな行動が、あなたの「伸び悩みのサイクル」を断ち切り、「成長のサイクル」へとシフトさせる、パワフルなスイッチとなります。</p>
+                    <p style="margin-top:20px; font-weight: 700; font-size: 1.2em; color: var(--primary-color);">あなたの挑戦を、心から応援しています！</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <p>Copyright © 2025 Nico. All Rights Reserved.</p>
+    </div>
+
+    <script>
+        function showResult() {
+            const form = document.getElementById('diagnosisForm');
+            const answers = { A: 0, B: 0, C: 0, D: 0 };
+            let answeredCount = 0;
+
+            for (let i = 1; i <= 10; i++) {
+                const radios = form.elements['q' + i];
+                let answered = false;
+                for (const radio of radios) {
+                    if (radio.checked) {
+                        answers[radio.value]++;
+                        answered = true;
+                        break;
+                    }
+                }
+                if (answered) {
+                    answeredCount++;
+                }
+            }
+
+            if (answeredCount < 10) {
+                alert('すべての質問に回答してください。');
+                return;
+            }
+
+            // --- Reset previous results ---
+            const results = ['A', 'B', 'C', 'D'];
+            results.forEach(type => {
+                document.getElementById('result' + type).style.display = 'none';
+            });
+            const hybridMessageBox = document.getElementById('hybridMessage');
+            hybridMessageBox.style.display = 'none';
+            hybridMessageBox.innerHTML = '';
+
+            // --- Calculate result ---
+            let maxScore = 0;
+            for (const type in answers) {
+                if (answers[type] > maxScore) {
+                    maxScore = answers[type];
+                }
+            }
+            
+            const ties = Object.keys(answers).filter(key => answers[key] === maxScore && maxScore > 0);
+
+            // --- Display result ---
+            document.getElementById('resultsSection').style.display = 'block';
+            document.getElementById('summarySection').style.display = 'block';
+
+            if (ties.length > 1) {
+                // It's a hybrid type
+                const typeNames = {
+                    A: '知識コレクタータイプ',
+                    B: '聞き流し依存タイプ',
+                    C: '完璧主義シンドロームタイプ',
+                    D: '学習法ジプシータイプ'
+                };
+                let typeNameString = ties.map(type => `<strong>【${typeNames[type]}】</strong>`).join('と');
+                
+                hybridMessageBox.innerHTML = `
+                    <h3>あなたは複数の強みを持つ「ハイブリッドタイプ」です！</h3>
+                    <p>診断の結果、あなたは${typeNameString}の特性を強く持っているようです。</p>
+                    <p>これは、あなたが持つ素晴らしい才能が多岐にわたっている証拠です。以下の診断結果を読み、ご自身に当てはまる部分を組み合わせることで、あなただけの「最強の学習戦略」が見えてきます。</p>
+                `;
+                hybridMessageBox.style.display = 'block';
+
+                ties.forEach(type => {
+                    document.getElementById('result' + type).style.display = 'block';
+                });
+
+            } else if (ties.length === 1) {
+                // Single type
+                document.getElementById('result' + ties[0]).style.display = 'block';
+            }
+
+            // Scroll to the results
+            document.getElementById('resultsSection').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>
