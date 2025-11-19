@@ -1,0 +1,3492 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+
+    <title>韓国からのお客様対応 - おもてなし韓国語</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Yu Mincho', 'YuMincho', 'Hiragino Mincho ProN', 'Hiragino Mincho Pro', 'HG明朝E', 'MS P明朝', 'MS 明朝', serif;
+            line-height: 1.9;
+            color: #4e342e; /* 文字色を濃いブラウンに変更 */
+            background: linear-gradient(135deg, #fff8f5 0%, #fff3e0 100%); /* 背景を薄いピンク〜オレンジ系に */
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+            border-radius: 2px;
+        }
+
+        /* 表紙のデザイン修正 */
+        .cover {
+            background: linear-gradient(135deg, #d86558 0%, #f48fb1 100%); /* 落ち着いたコーラル〜ピンク */
+            color: white;
+            padding: 80px 50px;
+            text-align: center;
+            border-bottom: 4px solid #ffb74d;
+        }
+
+        .cover h1 {
+            font-size: 2.2em;
+            margin-bottom: 20px;
+            font-weight: normal;
+            letter-spacing: 3px;
+            line-height: 1.5;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .cover .subtitle {
+            font-size: 1.1em;
+            opacity: 0.95;
+            margin-top: 20px;
+            font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif;
+            text-align: center; 
+        }
+
+        .content {
+            padding: 50px;
+        }
+
+        /* 目次のデザイン修正 */
+        .toc {
+            background: #fff3e0; /* 薄いオレンジ */
+            padding: 40px;
+            margin: 40px 0;
+            border-left: 4px solid #d86558; /* コーラル */
+        }
+
+        .toc h2 {
+            font-size: 1.5em;
+            margin-bottom: 25px;
+            color: #bf360c; /* 濃いテラコッタ */
+        }
+
+        .toc ul {
+            list-style: none;
+        }
+
+        .toc li {
+            padding: 12px 0;
+            border-bottom: 1px solid #ffccbc;
+            font-family: 'Hiragino Sans', sans-serif;
+        }
+
+        .toc li:last-child {
+            border-bottom: none;
+        }
+
+        .toc a {
+            color: #5d4037;
+            text-decoration: none;
+            transition: color 0.3s;
+            display: block;
+        }
+
+        .toc a:hover {
+            color: #d86558;
+            padding-left: 10px;
+        }
+
+        .chapter {
+            margin: 60px 0;
+            page-break-before: always;
+        }
+
+        /* 見出しのデザイン修正 */
+        .chapter-title {
+            font-size: 2em;
+            color: #bf360c; /* 濃いテラコッタ */
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #ffb74d;
+        }
+
+        .section {
+            margin: 40px 0;
+        }
+
+        .section-title {
+            font-size: 1.4em;
+            color: #d86558; /* コーラル */
+            margin: 30px 0 20px 0;
+            padding-left: 15px;
+            border-left: 4px solid #ffb74d;
+        }
+
+        .subsection-title {
+            font-size: 1.2em;
+            color: #5d4037;
+            margin: 25px 0 15px 0;
+            font-weight: bold;
+        }
+
+        p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+
+        /* フレーズカードのデザイン修正 */
+        .phrase-card {
+            background: #fffbfb; /* ほんのりピンクがかった白 */
+            border-left: 4px solid #e57373; /* ソフトな赤 */
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 4px 4px 0;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .phrase-card:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        .korean {
+            font-size: 1.4em;
+            color: #c62828; /* 落ち着いた赤 */
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-family: 'Malgun Gothic', 'Noto Sans KR', sans-serif;
+        }
+
+        .japanese {
+            font-size: 1em;
+            color: #555;
+            margin-top: 5px;
+        }
+
+        .note {
+            font-size: 0.95em;
+            color: #8d6e63;
+            font-style: italic;
+            margin-top: 8px;
+            padding-left: 10px;
+            border-left: 2px solid #ffccbc;
+        }
+
+        /* コラムのデザイン修正 */
+        .column {
+            background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+            padding: 30px;
+            margin: 30px 0;
+            border-radius: 4px;
+            border: 2px solid #ffccbc;
+        }
+
+        .column-title {
+            font-size: 1.2em;
+            color: #e65100;
+            margin-bottom: 15px;
+            font-weight: bold;
+            font-family: 'Hiragino Sans', sans-serif;
+        }
+
+        .column-title::before {
+            content: "💡 ";
+        }
+
+        /* 例示ボックスのデザイン修正 */
+        .example {
+            background: #fbe9e7; /* 薄いコーラルピンク */
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+            border-left: 4px solid #ff8a65;
+        }
+
+        .example-title {
+            font-weight: bold;
+            color: #d84315;
+            margin-bottom: 10px;
+            font-family: 'Hiragino Sans', sans-serif;
+        }
+
+        .dialogue {
+            margin: 10px 0;
+            padding-left: 15px;
+        }
+
+        .dialogue-line {
+            margin: 8px 0;
+        }
+
+        .speaker {
+            font-weight: bold;
+            color: #d84315;
+        }
+
+        ul, ol {
+            margin: 15px 0 15px 30px;
+        }
+
+        li {
+            margin: 8px 0;
+        }
+
+        /* TIPSボックスのデザイン修正 */
+        .tips-box {
+            background: #fff8e1; /* 薄い黄色 */
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+            border-left: 4px solid #ffa726;
+        }
+
+        .tips-title {
+            font-weight: bold;
+            color: #f57c00;
+            margin-bottom: 10px;
+        }
+
+        /* テーブルのデザイン修正 */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+        }
+
+        th {
+            background: #d86558; /* コーラル */
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-family: 'Hiragino Sans', sans-serif;
+        }
+
+        td {
+            padding: 15px;
+            border-bottom: 1px solid #ffe0b2;
+        }
+
+        tr:hover {
+            background: #fff3e0;
+        }
+
+        .intro-text {
+            font-size: 1.05em;
+            line-height: 2;
+            margin: 25px 0;
+            text-align: justify;
+        }
+
+        .emphasis {
+            color: #d84315;
+            font-weight: bold;
+        }
+
+        .scenario-box {
+            background: #fce4ec; /* 薄いピンク */
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+            border-left: 4px solid #f06292;
+        }
+
+        .scenario-title {
+            font-weight: bold;
+            color: #c2185b;
+            margin-bottom: 10px;
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+            .container {
+                box-shadow: none;
+            }
+            .chapter {
+                page-break-before: always;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .content, .cover {
+                padding: 30px 20px;
+            }
+            .cover h1 {
+                font-size: 1.6em;
+            }
+            .chapter-title {
+                font-size: 1.6em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 表紙 -->
+        <div class="cover">
+            <h1>韓国からのお客様対応<br>おもてなし韓国語</h1>
+            <p class="subtitle">初級レベルで心が伝わる接客を実現</p>
+            <p class="subtitle">接客業種別フレーズ集付き</p>
+        </div>
+
+        <!-- 目次 -->
+        <div class="content">
+            <div class="toc">
+                <h2>目次</h2>
+                <ul>
+                    <li><a href="#intro">序章:この教材の使い方</a></li>
+                    <li><a href="#chapter1">第1章:基本の接客フレーズ - すべての業種共通</a></li>
+                    <li><a href="#chapter2">第2章:飲食店での接客韓国語</a></li>
+                    <li><a href="#chapter3">第3章:小売店・ショップでの接客韓国語</a></li>
+                    <li><a href="#chapter4">第4章:ホテル・宿泊施設での接客韓国語</a></li>
+                    <li><a href="#chapter5">第5章:観光案内・交通機関での韓国語</a></li>
+                    <li><a href="#chapter6">第6章:美容・コスメ業界の接客韓国語</a></li>
+                    <li><a href="#chapter7">第7章:食品・物販での商品説明韓国語</a></li>
+                    <li><a href="#chapter8">第8章:トラブル・クレーム対応</a></li>
+                    <li><a href="#chapter9">第9章:SNS時代の顧客対応</a></li>
+                    <li><a href="#appendix">付録</a></li>
+                </ul>
+            </div>
+
+            <!-- 序章 -->
+            <div class="chapter" id="intro">
+                <h2 class="chapter-title">序章:この教材の使い方</h2>
+                
+                <p class="intro-text">この教材は、韓国人のお客様に接する機会がある接客業の方が、初級レベルの韓国語で温かいおもてなしを提供できるようになることを目指して作られました。</p>
+
+                <div class="section">
+                    <h3 class="section-title">おもてなしにおける韓国語の効果</h3>
+                    <p>完璧な韓国語を話せなくても、<span class="emphasis">お客様の母国語で挨拶したり、簡単な会話をしたりするだけで、大きな喜びと満足感を与えることができます</span>。</p>
+                    
+                    <ul>
+                        <li><strong>歓迎の気持ちが伝わる</strong>:韓国語で話しかけることで「あなたを大切にしています」というメッセージになります</li>
+                        <li><strong>安心感を与える</strong>:母国語が通じることで、お客様の不安が軽減されます</li>
+                        <li><strong>満足度が向上する</strong>:言葉の壁が低くなることで、サービス全体の評価が上がります</li>
+                        <li><strong>リピーターにつながる</strong>:良い体験は口コミやSNSで拡散され、新たな顧客を呼び込みます</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">完璧でなくても喜ばれる理由</h3>
+                    
+                    <div class="tips-box">
+                        <div class="tips-title">大切なのは「気持ち」</div>
+                        <p>韓国人のお客様は、日本で完璧な韓国語が話されることを期待していません。むしろ、<strong>一生懸命に韓国語で話そうとする姿勢そのものが、おもてなしの心として受け取られます</strong>。</p>
+                        <p>発音が多少違っていても、文法が完璧でなくても、笑顔と誠意があれば十分に伝わります。</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">表情・ジェスチャーとの組み合わせ方</h3>
+                    <p>韓国語と同じくらい重要なのが、非言語コミュニケーションです。</p>
+                    
+                    <ul>
+                        <li><strong>笑顔</strong>:最も効果的なコミュニケーションツールです</li>
+                        <li><strong>アイコンタクト</strong>:相手の目を見て話すことで誠意が伝わります</li>
+                        <li><strong>ジェスチャー</strong>:方向を示す、数を示すなど、視覚的に伝えます</li>
+                        <li><strong>実物を見せる</strong>:メニュー、商品、写真などを活用します</li>
+                    </ul>
+
+                    <div class="column">
+                        <div class="column-title">組み合わせの例</div>
+                        <p>韓国語で「이쪽으로 오세요(こちらへどうぞ)」と言いながら、手で方向を示す。</p>
+                        <p>「잠시만 기다려 주세요(少々お待ちください)」と言いながら、「少し」のジェスチャーをする。</p>
+                        <p>メニューを指さしながら「추천합니다(おすすめです)」と言う。</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">韓国の接客文化の基礎知識</h3>
+
+                    <div class="column">
+                        <div class="column-title">日韓の接客文化の違い</div>
+                        <p><strong>親しみやすさ重視</strong><br>
+                        韓国では形式的な丁寧さよりも、フレンドリーで温かい対応が好まれる傾向があります。適度な距離感で親しく接することが良いサービスとされます。</p>
+                        
+                        <p><strong>スピード感</strong><br>
+                        日本よりもテキパキとした対応が好まれます。待たせない工夫が重要です。</p>
+                        
+                        <p><strong>サービスの考え方</strong><br>
+                        韓国では「お客様は王様」という考えが強く、積極的なサービスが期待されることがあります。ただし、過度なへりくだりは必要ありません。</p>
+                        
+                        <p><strong>コミュニケーション</strong><br>
+                        日本の「察する文化」と異なり、より直接的にコミュニケーションを取ります。質問されたら明確に答えることが大切です。</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">効果的な学習方法</h3>
+                    <ol>
+                        <li><strong>自分の仕事で最も使う場面から</strong>:全部を覚えようとせず、頻繁に使う表現を優先的に</li>
+                        <li><strong>毎日1フレーズ</strong>:少しずつでも毎日使うことで自然に身につきます</li>
+                        <li><strong>実際に使ってみる</strong>:完璧を目指さず、まずは使ってみることが上達の鍵です</li>
+                        <li><strong>お客様の反応を観察</strong>:喜んでもらえた表現は積極的に使い続けましょう</li>
+                        <li><strong>同僚と練習</strong>:ロールプレイで練習すると実践で緊張しません</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- 第1章 -->
+            <div class="chapter" id="chapter1">
+                <h2 class="chapter-title">第1章:基本の接客フレーズ - すべての業種共通</h2>
+                
+                <p class="intro-text">どの業種でも使える基本的な接客フレーズを学びます。これらをマスターするだけで、韓国人のお客様への対応が格段に向上します。</p>
+
+                <div class="section">
+                    <h3 class="section-title">1-1. 入店・来店時</h3>
+
+                    <h4 class="subsection-title">基本の挨拶</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">어서 오세요!</div>
+                        <div class="japanese">いらっしゃいませ!</div>
+                        <div class="note">最も基本的な歓迎の言葉。明るく元気に言いましょう</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">환영합니다!</div>
+                        <div class="japanese">ようこそ!</div>
+                        <div class="note">特別感を出したい時に使います</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">안녕하세요!</div>
+                        <div class="japanese">こんにちは!</div>
+                        <div class="note">時間帯を問わず使える挨拶</div>
+                    </div>
+
+                    <h4 class="subsection-title">人数確認</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">몇 분이세요?</div>
+                        <div class="japanese">何名様ですか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">두 분이세요?</div>
+                        <div class="japanese">2名様ですか。</div>
+                    </div>
+
+                    <h4 class="subsection-title">予約確認</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">예약하셨나요?</div>
+                        <div class="japanese">ご予約されていますか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">성함이 어떻게 되세요?</div>
+                        <div class="japanese">お名前は何とおっしゃいますか。</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">1-2. 案内・説明</h3>
+
+                    <h4 class="subsection-title">案内の基本</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">이쪽으로 오세요.</div>
+                        <div class="japanese">こちらへどうぞ。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">앉으세요.</div>
+                        <div class="japanese">お座りください。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">여기예요.</div>
+                        <div class="japanese">こちらです。</div>
+                    </div>
+
+                    <h4 class="subsection-title">待っていただく</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">잠시만 기다려 주세요.</div>
+                        <div class="japanese">少々お待ちください。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">곧 준비하겠습니다.</div>
+                        <div class="japanese">すぐにご用意いたします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">5분 정도 걸립니다.</div>
+                        <div class="japanese">5分ほどかかります。</div>
+                    </div>
+
+                    <h4 class="subsection-title">説明する前置き</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">설명해 드리겠습니다.</div>
+                        <div class="japanese">ご説明いたします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">이것은 ○○입니다.</div>
+                        <div class="japanese">これは○○です。</div>
+                    </div>
+
+                    <h4 class="subsection-title">質問を促す</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">궁금한 것 있으세요?</div>
+                        <div class="japanese">ご質問はございますか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">물어보세요.</div>
+                        <div class="japanese">お聞きください。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">도와드릴까요?</div>
+                        <div class="japanese">お手伝いしましょうか。</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">1-3. 会計・お見送り</h3>
+
+                    <h4 class="subsection-title">お会計の案内</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">계산해 드리겠습니다.</div>
+                        <div class="japanese">お会計いたします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">전부 ○○엔입니다.</div>
+                        <div class="japanese">合計で○○円です。</div>
+                    </div>
+
+                    <h4 class="subsection-title">支払い方法の確認</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">현금이세요? 카드세요?</div>
+                        <div class="japanese">現金ですか。カードですか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">카드 받습니다.</div>
+                        <div class="japanese">カードもお使いいただけます。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">영수증 드릴까요?</div>
+                        <div class="japanese">レシートをお渡ししましょうか。</div>
+                    </div>
+
+                    <h4 class="subsection-title">お礼の言葉</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">감사합니다!</div>
+                        <div class="japanese">ありがとうございます!</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">고맙습니다!</div>
+                        <div class="japanese">ありがとうございます!</div>
+                        <div class="note">감사합니다より少しカジュアル</div>
+                    </div>
+
+                    <h4 class="subsection-title">またのご来店を</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">또 오세요!</div>
+                        <div class="japanese">またお越しください!</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">다음에 또 뵙겠습니다.</div>
+                        <div class="japanese">またお会いしましょう。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">조심히 가세요.</div>
+                        <div class="japanese">お気をつけてお帰りください。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">좋은 하루 되세요!</div>
+                        <div class="japanese">良い一日を!</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">1-4. トラブル・困った時</h3>
+
+                    <h4 class="subsection-title">謝罪の基本</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">죄송합니다.</div>
+                        <div class="japanese">申し訳ございません。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">미안합니다.</div>
+                        <div class="japanese">すみません。</div>
+                        <div class="note">죄송합니다よりカジュアル</div>
+                    </div>
+
+                    <h4 class="subsection-title">理解できなかった時</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">다시 한번 말씀해 주세요.</div>
+                        <div class="japanese">もう一度おっしゃってください。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">천천히 말씀해 주세요.</div>
+                        <div class="japanese">ゆっくり話してください。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">잘 못 알아들었어요.</div>
+                        <div class="japanese">よく聞き取れませんでした。</div>
+                    </div>
+
+                    <h4 class="subsection-title">担当者を呼ぶ</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">잠시만요. 담당자를 부르겠습니다.</div>
+                        <div class="japanese">少々お待ちください。担当者を呼んでまいります。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">한국어 할 수 있는 사람을 부르겠습니다.</div>
+                        <div class="japanese">韓国語ができる者を呼んでまいります。</div>
+                    </div>
+
+                    <h4 class="subsection-title">少し待ってもらう</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">확인하고 올게요.</div>
+                        <div class="japanese">確認してまいります。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">잠깐만 기다려 주세요.</div>
+                        <div class="japanese">ちょっとお待ちください。</div>
+                    </div>
+
+                    <div class="column">
+                        <div class="column-title">韓国の接客スタイルとの違い</div>
+                        <p><strong>丁寧さの表現</strong><br>
+                        韓国では日本ほど形式的な丁寧さは求められません。明るくフレンドリーな対応が好まれます。</p>
+                        
+                        <p><strong>お辞儀の頻度</strong><br>
+                        日本ほど頻繁にお辞儀をする必要はありません。挨拶時と感謝を伝える時に軽く頭を下げる程度で十分です。</p>
+                        
+                        <p><strong>アイコンタクト</strong><br>
+                        日本以上にアイコンタクトが重要です。お客様の目を見て話すことで、誠意と親しみが伝わります。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 第2章 -->
+            <div class="chapter" id="chapter2">
+                <h2 class="chapter-title">第2章:飲食店での接客韓国語</h2>
+                
+                <p class="intro-text">レストラン、カフェ、居酒屋など、飲食店で使える実践的な韓国語フレーズを学びます。</p>
+
+                <div class="section">
+                    <h3 class="section-title">2-1. 席への案内〜注文</h3>
+
+                    <h4 class="subsection-title">席の希望を聞く</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">어디에 앉으시겠어요?</div>
+                        <div class="japanese">どちらにお座りになりますか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">창가 좋으세요?</div>
+                        <div class="japanese">窓際がよろしいですか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">금연석입니다.</div>
+                        <div class="japanese">禁煙席です。</div>
+                    </div>
+
+                    <h4 class="subsection-title">メニューを渡す</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">메뉴입니다.</div>
+                        <div class="japanese">メニューです。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">천천히 보세요.</div>
+                        <div class="japanese">ごゆっくりご覧ください。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">한국어 메뉴도 있어요.</div>
+                        <div class="japanese">韓国語メニューもあります。</div>
+                    </div>
+
+                    <h4 class="subsection-title">おすすめを紹介する</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">이것을 추천합니다.</div>
+                        <div class="japanese">これをおすすめします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">인기 메뉴예요.</div>
+                        <div class="japanese">人気メニューです。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">오늘의 특선입니다.</div>
+                        <div class="japanese">本日のおすすめです。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">한정 메뉴입니다.</div>
+                        <div class="japanese">限定メニューです。</div>
+                    </div>
+
+                    <h4 class="subsection-title">注文を受ける</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">주문하시겠어요?</div>
+                        <div class="japanese">ご注文をお伺いしてもよろしいでしょうか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">뭐 드시겠어요?</div>
+                        <div class="japanese">何になさいますか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">음료는 어떠세요?</div>
+                        <div class="japanese">お飲み物はいかがですか。</div>
+                    </div>
+
+                    <h4 class="subsection-title">復唱確認</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">○○ 맞으세요?</div>
+                        <div class="japanese">○○でよろしいですか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">○○ 하나요?</div>
+                        <div class="japanese">○○一つですか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">이상입니까?</div>
+                        <div class="japanese">以上でよろしいですか。</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">2-2. 料理の説明</h3>
+
+                    <h4 class="subsection-title">料理名と内容</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">이것은 ○○입니다.</div>
+                        <div class="japanese">これは○○です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">일본 전통 요리예요.</div>
+                        <div class="japanese">日本の伝統料理です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">생선 요리입니다.</div>
+                        <div class="japanese">魚料理です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">고기 요리입니다.</div>
+                        <div class="japanese">肉料理です。</div>
+                    </div>
+
+                    <h4 class="subsection-title">辛さ・味の説明</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">맵지 않아요.</div>
+                        <div class="japanese">辛くありません。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">조금 매워요.</div>
+                        <div class="japanese">少し辛いです。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">아주 매워요.</div>
+                        <div class="japanese">とても辛いです。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">달콤해요.</div>
+                        <div class="japanese">甘いです。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">짭짤해요.</div>
+                        <div class="japanese">塩気があります。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">담백해요.</div>
+                        <div class="japanese">あっさりしています。</div>
+                    </div>
+
+                    <h4 class="subsection-title">食べ方の説明</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">이렇게 드세요.</div>
+                        <div class="japanese">このように召し上がってください。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">간장에 찍어 드세요.</div>
+                        <div class="japanese">醤油につけて召し上がってください。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">뜨거우니까 조심하세요.</div>
+                        <div class="japanese">熱いのでお気をつけください。</div>
+                    </div>
+
+                    <h4 class="subsection-title">人気メニューの紹介</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">제일 인기 있는 메뉴예요.</div>
+                        <div class="japanese">一番人気のメニューです。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">한국 손님들이 좋아해요.</div>
+                        <div class="japanese">韓国のお客様に人気です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">SNS에서 유명해요.</div>
+                        <div class="japanese">SNSで有名です。</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">2-3. アレルギー・苦手な食材の確認</h3>
+
+                    <h4 class="subsection-title">アレルギー確認</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">알레르기 있으세요?</div>
+                        <div class="japanese">アレルギーはございますか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">못 드시는 거 있으세요?</div>
+                        <div class="japanese">お召し上がりになれないものはございますか。</div>
+                    </div>
+
+                    <h4 class="subsection-title">原材料の説明</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">달걀이 들어가요.</div>
+                        <div class="japanese">卵が入っています。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">우유가 들어가요.</div>
+                        <div class="japanese">牛乳が入っています。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">땅콩이 들어가요.</div>
+                        <div class="japanese">ピーナッツが入っています。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">새우가 들어가요.</div>
+                        <div class="japanese">エビが入っています。</div>
+                    </div>
+
+                    <h4 class="subsection-title">抜き・変更対応</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">빼드릴 수 있어요.</div>
+                        <div class="japanese">抜くことができます。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">변경 가능해요.</div>
+                        <div class="japanese">変更可能です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">죄송하지만 어려워요.</div>
+                        <div class="japanese">申し訳ございませんが難しいです。</div>
+                    </div>
+
+                    <h4 class="subsection-title">ベジタリアン・ハラール対応</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">채식 메뉴가 있어요.</div>
+                        <div class="japanese">ベジタリアンメニューがあります。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">고기가 안 들어가요.</div>
+                        <div class="japanese">肉は入っていません。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">돼지고기가 들어가요.</div>
+                        <div class="japanese">豚肉が入っています。</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">2-4. 食事中〜お見送り</h3>
+
+                    <h4 class="subsection-title">お料理の提供</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">나왔습니다.</div>
+                        <div class="japanese">お待たせいたしました。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">맛있게 드세요.</div>
+                        <div class="japanese">どうぞお召し上がりください。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">뜨거우니까 조심하세요.</div>
+                        <div class="japanese">熱いのでお気をつけください。</div>
+                    </div>
+
+                    <h4 class="subsection-title">追加注文を聞く</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">추가 주문 있으세요?</div>
+                        <div class="japanese">追加のご注文はございますか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">더 필요한 거 있으세요?</div>
+                        <div class="japanese">ほかに必要なものはございますか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">물 더 드릴까요?</div>
+                        <div class="japanese">お水をお持ちしましょうか。</div>
+                    </div>
+
+                    <h4 class="subsection-title">お済みかの確認</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">다 드셨어요?</div>
+                        <div class="japanese">お済みですか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">치워도 될까요?</div>
+                        <div class="japanese">お下げしてもよろしいですか。</div>
+                    </div>
+
+                    <h4 class="subsection-title">感想を聞く</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">맛있으셨어요?</div>
+                        <div class="japanese">おいしかったですか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">입에 맞으셨어요?</div>
+                        <div class="japanese">お口に合いましたか。</div>
+                    </div>
+
+                    <h4 class="subsection-title">お会計・お見送り</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">계산은 저쪽에서 해주세요.</div>
+                        <div class="japanese">お会計はあちらでお願いします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">여기서 계산하시면 돼요.</div>
+                        <div class="japanese">こちらでお会計できます。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">감사합니다. 또 오세요!</div>
+                        <div class="japanese">ありがとうございます。またお越しください!</div>
+                    </div>
+
+                    <div class="scenario-box">
+                        <div class="scenario-title">業種別フレーズ:カフェ</div>
+                        <div class="phrase-card">
+                            <div class="korean">드시고 가세요? 가져가세요?</div>
+                            <div class="japanese">店内でお召し上がりですか。お持ち帰りですか。</div>
+                        </div>
+                        
+                        <div class="phrase-card">
+                            <div class="korean">사이즈는 어떻게 하시겠어요?</div>
+                            <div class="japanese">サイズはどうなさいますか。</div>
+                        </div>
+                        
+                        <div class="phrase-card">
+                            <div class="korean">얼음 많이 넣어드릴까요?</div>
+                            <div class="japanese">氷は多めにしましょうか。</div>
+                        </div>
+                    </div>
+
+                    <div class="scenario-box">
+                        <div class="scenario-title">業種別フレーズ:居酒屋</div>
+                        <div class="phrase-card">
+                            <div class="korean">우선 뭐 드시겠어요?</div>
+                            <div class="japanese">とりあえず何になさいますか。</div>
+                        </div>
+                        
+                        <div class="phrase-card">
+                            <div class="korean">안주 추천해 드릴까요?</div>
+                            <div class="japanese">おつまみをおすすめしましょうか。</div>
+                        </div>
+                        
+                        <div class="phrase-card">
+                            <div class="korean">건배!</div>
+                            <div class="japanese">乾杯!</div>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="column-title">韓国の食事マナー、チップ文化の違い</div>
+                        <p><strong>食事のマナー</strong><br>
+                        韓国では食器を手に持たず、テーブルに置いたまま食べるのが一般的です。また、スプーンと箸を同時に持たない、年長者が箸をつけてから食べ始めるなどのマナーがあります。</p>
+                        
+                        <p><strong>チップ文化</strong><br>
+                        韓国にはチップの習慣がありません。日本と同様、サービス料は価格に含まれています。無理にチップを渡そうとすると、かえって困惑させることもあります。</p>
+                        
+                        <p><strong>食事のペース</strong><br>
+                        韓国では日本より早く食事をする傾向があります。料理の提供もテキパキとした方が好まれます。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 第3章 -->
+            <div class="chapter" id="chapter3">
+                <h2 class="chapter-title">第3章:小売店・ショップでの接客韓国語</h2>
+                
+                <p class="intro-text">アパレル、雑貨、お土産店など、小売店での接客に使える韓国語を学びます。</p>
+
+                <div class="section">
+                    <h3 class="section-title">3-1. 入店〜商品案内</h3>
+
+                    <h4 class="subsection-title">声かけのタイミング</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">찾으시는 거 있으세요?</div>
+                        <div class="japanese">お探しのものはございますか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">구경하세요.</div>
+                        <div class="japanese">ご覧ください。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">편하게 보세요.</div>
+                        <div class="japanese">ごゆっくりご覧ください。</div>
+                    </div>
+
+                    <h4 class="subsection-title">お探しのものを聞く</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">무엇을 찾으세요?</div>
+                        <div class="japanese">何をお探しですか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">선물용이세요?</div>
+                        <div class="japanese">プレゼント用ですか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">본인이 쓰실 거예요?</div>
+                        <div class="japanese">ご自分で使われますか。</div>
+                    </div>
+
+                    <h4 class="subsection-title">商品の場所を案内</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">저쪽에 있어요.</div>
+                        <div class="japanese">あちらにございます。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">2층에 있어요.</div>
+                        <div class="japanese">2階にございます。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">안내해 드릴게요.</div>
+                        <div class="japanese">ご案内いたします。</div>
+                    </div>
+
+                    <h4 class="subsection-title">試着・試用を勧める</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">입어보세요.</div>
+                        <div class="japanese">試着してみてください。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">사용해 보세요.</div>
+                        <div class="japanese">お試しください。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">탈의실은 저쪽이에요.</div>
+                        <div class="japanese">試着室はあちらです。</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">3-2. 商品説明</h3>
+
+                    <h4 class="subsection-title">サイズ・色の確認</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">사이즈는 어떻게 되세요?</div>
+                        <div class="japanese">サイズはどうなさいますか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">이 색상도 있어요.</div>
+                        <div class="japanese">この色もあります。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">잘 어울리세요!</div>
+                        <div class="japanese">よくお似合いです!</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">딱 맞네요.</div>
+                        <div class="japanese">ぴったりですね。</div>
+                    </div>
+
+                    <h4 class="subsection-title">素材・特徴の説明</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">면 100%예요.</div>
+                        <div class="japanese">綿100%です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">일본제예요.</div>
+                        <div class="japanese">日本製です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">수제품이에요.</div>
+                        <div class="japanese">手作りです。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">한정판이에요.</div>
+                        <div class="japanese">限定品です。</div>
+                    </div>
+
+                    <h4 class="subsection-title">価格の案内</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">이거는 ○○엔이에요.</div>
+                        <div class="japanese">これは○○円です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">지금 세일 중이에요.</div>
+                        <div class="japanese">今セール中です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">20% 할인이에요.</div>
+                        <div class="japanese">20%割引です。</div>
+                    </div>
+
+                    <h4 class="subsection-title">在庫確認</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">재고 확인해 볼게요.</div>
+                        <div class="japanese">在庫を確認してまいります。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">죄송해요. 품절이에요.</div>
+                        <div class="japanese">申し訳ございません。売り切れです。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">이것밖에 없어요.</div>
+                        <div class="japanese">これしかございません。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">다른 지점에 있을 수 있어요.</div>
+                        <div class="japanese">他店にあるかもしれません。</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">3-3. レジ・包装</h3>
+
+                    <h4 class="subsection-title">お会計の案内</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">계산대는 저쪽이에요.</div>
+                        <div class="japanese">レジはあちらです。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">여기서 계산하시면 돼요.</div>
+                        <div class="japanese">こちらでお会計できます。</div>
+                    </div>
+
+                    <h4 class="subsection-title">支払い方法</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">카드 되나요?</div>
+                        <div class="japanese">カードは使えますか。</div>
+                        <div class="note">お客様からよく聞かれる質問</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">네, 카드 가능해요.</div>
+                        <div class="japanese">はい、カードをお使いいただけます。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">현금만 가능해요.</div>
+                        <div class="japanese">現金のみとなります。</div>
+                    </div>
+
+                    <h4 class="subsection-title">免税手続きの案内</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">면세 가능해요.</div>
+                        <div class="japanese">免税できます。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">여권 보여주세요.</div>
+                        <div class="japanese">パスポートを見せてください。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">면세 서류예요.</div>
+                        <div class="japanese">免税の書類です。</div>
+                    </div>
+
+                    <h4 class="subsection-title">ギフト包装の確認</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">포장해 드릴까요?</div>
+                        <div class="japanese">包装いたしましょうか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">선물용으로 포장할게요.</div>
+                        <div class="japanese">プレゼント用に包装いたします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">봉투에 넣어드릴게요.</div>
+                        <div class="japanese">袋に入れます。</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">3-4. 返品・交換対応</h3>
+
+                    <h4 class="subsection-title">レシートの確認</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">영수증 있으세요?</div>
+                        <div class="japanese">レシートはお持ちですか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">언제 사셨어요?</div>
+                        <div class="japanese">いつお買い上げになりましたか。</div>
+                    </div>
+
+                    <h4 class="subsection-title">理由を聞く</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">어떤 문제가 있으세요?</div>
+                        <div class="japanese">どのような問題がございますか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">사이즈가 안 맞으세요?</div>
+                        <div class="japanese">サイズが合いませんか。</div>
+                    </div>
+
+                    <h4 class="subsection-title">手続きの説明</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">교환 가능해요.</div>
+                        <div class="japanese">交換できます。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">환불해 드릴게요.</div>
+                        <div class="japanese">返金いたします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">일주일 이내면 가능해요.</div>
+                        <div class="japanese">一週間以内であれば可能です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">죄송하지만 반품은 안 돼요.</div>
+                        <div class="japanese">申し訳ございませんが返品はできません。</div>
+                    </div>
+
+                    <div class="column">
+                        <div class="column-title">韓国の買い物文化</div>
+                        <p><strong>値引き交渉</strong><br>
+                        韓国では伝統市場などで値引き交渉が一般的ですが、日本の小売店では定価販売が基本です。「할인 안 돼요?(割引できませんか)」と聞かれることもありますが、丁寧にお断りしましょう。</p>
+                        
+                        <p><strong>返品文化</strong><br>
+                        韓国は日本より返品・交換に寛容な文化があります。返品ポリシーを事前に明確に伝えることでトラブルを防げます。</p>
+                        
+                        <p><strong>試着文化</strong><br>
+                        韓国では積極的に試着する文化があります。「입어봐도 돼요?(試着してもいいですか)」と気軽に聞いてきますので、快く対応しましょう。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 第4章 -->
+            <div class="chapter" id="chapter4">
+                <h2 class="chapter-title">第4章:ホテル・宿泊施設での接客韓国語</h2>
+                
+                <p class="intro-text">ホテル、旅館、ゲストハウスなど、宿泊施設での接客に必要な韓国語を学びます。</p>
+
+                <div class="section">
+                    <h3 class="section-title">4-1. チェックイン</h3>
+
+                    <h4 class="subsection-title">お迎えの挨拶</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">환영합니다!</div>
+                        <div class="japanese">ようこそ!</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">○○호텔에 오신 것을 환영합니다.</div>
+                        <div class="japanese">○○ホテルへようこそ。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">여행은 편안하셨어요?</div>
+                        <div class="japanese">旅は快適でしたか。</div>
+                    </div>
+
+                    <h4 class="subsection-title">予約確認</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">예약 확인해 드릴게요.</div>
+                        <div class="japanese">ご予約を確認いたします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">성함이 어떻게 되세요?</div>
+                        <div class="japanese">お名前をお伺いしてもよろしいですか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">예약 번호가 있으세요?</div>
+                        <div class="japanese">予約番号はお持ちですか。</div>
+                    </div>
+
+                    <h4 class="subsection-title">書類記入の依頼</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">여기에 기입해 주세요.</div>
+                        <div class="japanese">こちらにご記入ください。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">여권 보여주세요.</div>
+                        <div class="japanese">パスポートを見せてください。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">서명 부탁드립니다.</div>
+                        <div class="japanese">サインをお願いします。</div>
+                    </div>
+
+                    <h4 class="subsection-title">部屋の説明</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">○○호실입니다.</div>
+                        <div class="japanese">○○号室です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">3층이에요.</div>
+                        <div class="japanese">3階です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">바다가 보이는 방이에요.</div>
+                        <div class="japanese">海が見える部屋です。</div>
+                    </div>
+
+                    <h4 class="subsection-title">鍵の受け渡し</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">방 키입니다.</div>
+                        <div class="japanese">部屋の鍵です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">외출하실 때 프런트에 맡겨주세요.</div>
+                        <div class="japanese">外出される時はフロントにお預けください。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">방까지 안내해 드릴게요.</div>
+                        <div class="japanese">お部屋までご案内いたします。</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">4-2. 施設案内・サービス説明</h3>
+
+                    <h4 class="subsection-title">館内施設の案内</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">엘리베이터는 저쪽이에요.</div>
+                        <div class="japanese">エレベーターはあちらです。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">대욕장은 1층에 있어요.</div>
+                        <div class="japanese">大浴場は1階にございます。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">자판기는 각 층에 있어요.</div>
+                        <div class="japanese">自動販売機は各階にございます。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">레스토랑은 2층입니다.</div>
+                        <div class="japanese">レストランは2階です。</div>
+                    </div>
+
+                    <h4 class="subsection-title">Wi-Fi・アメニティ</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">와이파이 무료예요.</div>
+                        <div class="japanese">Wi-Fiは無料です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">비밀번호는 여기 있어요.</div>
+                        <div class="japanese">パスワードはこちらです。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">어메니티는 방에 있어요.</div>
+                        <div class="japanese">アメニティは部屋にございます。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">더 필요하시면 말씀해 주세요.</div>
+                        <div class="japanese">さらに必要でしたらおっしゃってください。</div>
+                    </div>
+
+                    <h4 class="subsection-title">朝食の案内</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">조식은 7시부터예요.</div>
+                        <div class="japanese">朝食は7時からです。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">조식 포함이에요.</div>
+                        <div class="japanese">朝食付きです。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">뷔페식이에요.</div>
+                        <div class="japanese">ビュッフェ形式です。</div>
+                    </div>
+
+                    <h4 class="subsection-title">周辺情報の提供</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">근처에 편의점이 있어요.</div>
+                        <div class="japanese">近くにコンビニがあります。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">역까지 걸어서 5분이에요.</div>
+                        <div class="japanese">駅まで歩いて5分です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">지도 드릴까요?</div>
+                        <div class="japanese">地図をお渡ししましょうか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">추천 장소를 알려드릴게요.</div>
+                        <div class="japanese">おすすめの場所をお教えします。</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">4-3. 滞在中の対応</h3>
+
+                    <h4 class="subsection-title">困りごとへの対応</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">무슨 일이세요?</div>
+                        <div class="japanese">どうなさいましたか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">어떻게 도와드릴까요?</div>
+                        <div class="japanese">どのようにお手伝いしましょうか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">바로 확인하겠습니다.</div>
+                        <div class="japanese">すぐに確認いたします。</div>
+                    </div>
+
+                    <h4 class="subsection-title">リクエスト対応</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">담요 더 드릴까요?</div>
+                        <div class="japanese">毛布を追加でお持ちしましょうか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">방 바꿔드릴까요?</div>
+                        <div class="japanese">お部屋を変更いたしましょうか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">택시 불러드릴까요?</div>
+                        <div class="japanese">タクシーをお呼びしましょうか。</div>
+                    </div>
+
+                    <h4 class="subsection-title">清掃の確認</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">청소해도 될까요?</div>
+                        <div class="japanese">清掃してもよろしいですか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">나중에 올게요.</div>
+                        <div class="japanese">後ほど伺います。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">청소 필요 없으시면 이 표지판을 걸어주세요.</div>
+                        <div class="japanese">清掃不要の場合はこの札をおかけください。</div>
+                    </div>
+
+                    <h4 class="subsection-title">追加サービス</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">룸서비스 가능해요.</div>
+                        <div class="japanese">ルームサービスが可能です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">세탁 서비스 있어요.</div>
+                        <div class="japanese">ランドリーサービスがございます。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">짐 맡아드릴게요.</div>
+                        <div class="japanese">お荷物をお預かりいたします。</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">4-4. チェックアウト</h3>
+
+                    <h4 class="subsection-title">お会計の確認</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">체크아웃 하시나요?</div>
+                        <div class="japanese">チェックアウトされますか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">추가 요금은 없습니다.</div>
+                        <div class="japanese">追加料金はございません。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">미니바 사용하셨나요?</div>
+                        <div class="japanese">ミニバーをご利用になりましたか。</div>
+                    </div>
+
+                    <h4 class="subsection-title">忘れ物確認</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">방 확인하셨나요?</div>
+                        <div class="japanese">お部屋をご確認されましたか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">두고 가시는 물건 없으세요?</div>
+                        <div class="japanese">お忘れ物はございませんか。</div>
+                    </div>
+
+                    <h4 class="subsection-title">感想を聞く</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">편안히 지내셨어요?</div>
+                        <div class="japanese">快適にお過ごしになれましたか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">불편한 점은 없으셨어요?</div>
+                        <div class="japanese">ご不便な点はございませんでしたか。</div>
+                    </div>
+
+                    <h4 class="subsection-title">お見送り</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">감사합니다. 또 오세요!</div>
+                        <div class="japanese">ありがとうございました。またお越しください!</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">좋은 여행 되세요.</div>
+                        <div class="japanese">良いご旅行を。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">조심히 가세요.</div>
+                        <div class="japanese">お気をつけてお帰りください。</div>
+                    </div>
+
+                    <div class="column">
+                        <div class="column-title">韓国のホテル文化との違い</div>
+                        <p><strong>靴の脱ぎ履き</strong><br>
+                        日本の旅館では部屋で靴を脱ぎますが、韓国のホテルでは土足が一般的です。旅館のシステムを説明する際は、「여기서 신발을 벗어주세요(ここで靴を脱いでください)」と明確に伝えましょう。</p>
+                        
+                        <p><strong>温泉・大浴場</strong><br>
+                        韓国にも温泉文化がありますが、日本の大浴場のマナー(タオルを湯船に入れない、体を洗ってから入るなど)は異なります。イラスト付きの説明があると良いでしょう。</p>
+                        
+                        <p><strong>部屋での飲食</strong><br>
+                        韓国では部屋でデリバリーを取ることが一般的です。館内での飲食ルールがあれば事前に説明しましょう。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 第5章 -->
+            <div class="chapter" id="chapter5">
+                <h2 class="chapter-title">第5章:観光案内・交通機関での韓国語</h2>
+                
+                <p class="intro-text">観光案内所、駅、空港など、旅行者をサポートする場面で使える韓国語を学びます。</p>
+
+                <div class="section">
+                    <h3 class="section-title">5-1. 道案内</h3>
+
+                    <h4 class="subsection-title">場所を聞かれた時</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">어디 가세요?</div>
+                        <div class="japanese">どちらへ行かれますか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">어디를 찾으세요?</div>
+                        <div class="japanese">どちらをお探しですか。</div>
+                    </div>
+
+                    <h4 class="subsection-title">方向を説明する</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">똑바로 가세요.</div>
+                        <div class="japanese">まっすぐ行ってください。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">오른쪽으로 도세요.</div>
+                        <div class="japanese">右に曲がってください。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">왼쪽으로 도세요.</div>
+                        <div class="japanese">左に曲がってください。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">저기 보이세요?</div>
+                        <div class="japanese">あそこが見えますか。</div>
+                    </div>
+
+                    <h4 class="subsection-title">距離・時間を伝える</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">여기서 가까워요.</div>
+                        <div class="japanese">ここから近いです。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">걸어서 10분이에요.</div>
+                        <div class="japanese">歩いて10分です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">좀 멀어요.</div>
+                        <div class="japanese">少し遠いです。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">택시 타는 게 좋아요.</div>
+                        <div class="japanese">タクシーに乗った方が良いです。</div>
+                    </div>
+
+                    <h4 class="subsection-title">地図を使った説明</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">지도 보여드릴게요.</div>
+                        <div class="japanese">地図をお見せします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">여기가 현재 위치예요.</div>
+                        <div class="japanese">ここが現在地です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">여기로 가시면 돼요.</div>
+                        <div class="japanese">ここへ行けば大丈夫です。</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">5-2. 交通機関の案内</h3>
+
+                    <h4 class="subsection-title">駅・バス停への行き方</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">역은 저쪽이에요.</div>
+                        <div class="japanese">駅はあちらです。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">버스 정류장은 저기예요.</div>
+                        <div class="japanese">バス停はあそこです。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">지하철역이 가까워요.</div>
+                        <div class="japanese">地下鉄の駅が近いです。</div>
+                    </div>
+
+                    <h4 class="subsection-title">切符の買い方</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">저 기계에서 사세요.</div>
+                        <div class="japanese">あの機械で買ってください。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">IC카드 쓸 수 있어요.</div>
+                        <div class="japanese">ICカードが使えます。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">영어로도 할 수 있어요.</div>
+                        <div class="japanese">英語でもできます。</div>
+                    </div>
+
+                    <h4 class="subsection-title">乗り換えの説明</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">○○역에서 갈아타세요.</div>
+                        <div class="japanese">○○駅で乗り換えてください。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">환승하셔야 해요.</div>
+                        <div class="japanese">乗り換えが必要です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">직행이에요.</div>
+                        <div class="japanese">直通です。</div>
+                    </div>
+
+                    <h4 class="subsection-title">タクシーの呼び方</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">택시 타는 곳은 저쪽이에요.</div>
+                        <div class="japanese">タクシー乗り場はあちらです。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">택시 불러드릴까요?</div>
+                        <div class="japanese">タクシーをお呼びしましょうか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">앱으로 부를 수 있어요.</div>
+                        <div class="japanese">アプリで呼べます。</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">5-3. 観光スポットの紹介</h3>
+
+                    <h4 class="subsection-title">おすすめスポット</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">여기가 유명해요.</div>
+                        <div class="japanese">ここが有名です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">꼭 가보세요.</div>
+                        <div class="japanese">ぜひ行ってみてください。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">사진 찍기 좋아요.</div>
+                        <div class="japanese">写真を撮るのにいいです。</div>
+                    </div>
+
+                    <h4 class="subsection-title">営業時間・料金</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">9시부터 5시까지예요.</div>
+                        <div class="japanese">9時から5時までです。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">입장료는 ○○엔이에요.</div>
+                        <div class="japanese">入場料は○○円です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">무료예요.</div>
+                        <div class="japanese">無料です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">월요일은 쉬어요.</div>
+                        <div class="japanese">月曜日は休みです。</div>
+                    </div>
+
+                    <h4 class="subsection-title">注意事項</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">사진 촬영 금지예요.</div>
+                        <div class="japanese">写真撮影は禁止です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">신발을 벗어야 해요.</div>
+                        <div class="japanese">靴を脱がなければなりません。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">조용히 해주세요.</div>
+                        <div class="japanese">静かにしてください。</div>
+                    </div>
+
+                    <h4 class="subsection-title">写真撮影スポット</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">여기서 찍으면 예뻐요.</div>
+                        <div class="japanese">ここで撮るときれいです。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">사진 찍어드릴까요?</div>
+                        <div class="japanese">お写真をお撮りしましょうか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">인스타 명소예요.</div>
+                        <div class="japanese">インスタ映えスポットです。</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">5-4. 緊急時の対応</h3>
+
+                    <h4 class="subsection-title">迷子・紛失物</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">길을 잃으셨어요?</div>
+                        <div class="japanese">道に迷われましたか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">뭘 잃어버리셨어요?</div>
+                        <div class="japanese">何を失くされましたか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">분실물 센터에 연락할게요.</div>
+                        <div class="japanese">遺失物センターに連絡します。</div>
+                    </div>
+
+                    <h4 class="subsection-title">体調不良</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">괜찮으세요?</div>
+                        <div class="japanese">大丈夫ですか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">어디가 아프세요?</div>
+                        <div class="japanese">どこが痛いですか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">병원 가실래요?</div>
+                        <div class="japanese">病院へ行かれますか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">구급차 부를까요?</div>
+                        <div class="japanese">救急車を呼びましょうか。</div>
+                    </div>
+
+                    <h4 class="subsection-title">警察・病院の案内</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">경찰서는 저쪽이에요.</div>
+                        <div class="japanese">警察署はあちらです。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">가까운 병원을 알려드릴게요.</div>
+                        <div class="japanese">近くの病院をお教えします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">신고하셔야 해요.</div>
+                        <div class="japanese">届け出が必要です。</div>
+                    </div>
+
+                    <h4 class="subsection-title">大使館情報</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">한국 대사관 연락처예요.</div>
+                        <div class="japanese">韓国大使館の連絡先です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">여권을 잃어버리셨으면 대사관에 연락하세요.</div>
+                        <div class="japanese">パスポートを失くされたら大使館に連絡してください。</div>
+                    </div>
+
+                    <div class="column">
+                        <div class="column-title">観光客が喜ぶ情報提供のコツ</div>
+                        <p><strong>具体的な時間と距離</strong><br>
+                        「가까워요(近いです)」だけでなく、「걸어서 5분(歩いて5分)」のように具体的に伝えると親切です。</p>
+                        
+                        <p><strong>代替案の提示</strong><br>
+                        休業日や満員の場合は、代わりのスポットを提案すると喜ばれます。</p>
+                        
+                        <p><strong>地元ならではの情報</strong><br>
+                        ガイドブックにない穴場スポットや、地元の人しか知らないお店の情報は特に喜ばれます。</p>
+                        
+                        <p><strong>季節の情報</strong><br>
+                        桜、紅葉、祭りなど、その時期ならではの見どころを教えてあげましょう。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 第6章 -->
+            <div class="chapter" id="chapter6">
+                <h2 class="chapter-title">第6章:美容・コスメ業界の接客韓国語</h2>
+                
+                <p class="intro-text">美容室、エステ、化粧品店、ネイルサロンなど、美容・コスメ業界で使える韓国語を学びます。</p>
+
+                <div class="section">
+                    <h3 class="section-title">6-1. カウンセリング</h3>
+
+                    <h4 class="subsection-title">肌質・髪質の確認</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">피부 타입이 어떻게 되세요?</div>
+                        <div class="japanese">肌タイプはどうですか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">건성이세요? 지성이세요?</div>
+                        <div class="japanese">乾燥肌ですか。オイリー肌ですか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">머리카락이 푸석푸석하세요?</div>
+                        <div class="japanese">髪がパサつきますか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">민감성 피부세요?</div>
+                        <div class="japanese">敏感肌ですか。</div>
+                    </div>
+
+                    <h4 class="subsection-title">悩みを聞く</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">어떤 고민이 있으세요?</div>
+                        <div class="japanese">どんなお悩みがありますか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">뭐가 제일 신경 쓰이세요?</div>
+                        <div class="japanese">何が一番気になりますか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">알레르기 있으세요?</div>
+                        <div class="japanese">アレルギーはありますか。</div>
+                    </div>
+
+                    <h4 class="subsection-title">希望を聞く</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">어떻게 하고 싶으세요?</div>
+                        <div class="japanese">どのようにされたいですか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">참고할 사진 있으세요?</div>
+                        <div class="japanese">参考になる写真はありますか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">이런 느낌 어때요?</div>
+                        <div class="japanese">こんな感じはどうですか。</div>
+                    </div>
+
+                    <h4 class="subsection-title">提案する</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">이게 어울릴 것 같아요.</div>
+                        <div class="japanese">これが似合うと思います。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">이 제품을 추천해요.</div>
+                        <div class="japanese">この製品をおすすめします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">이 색이 잘 맞을 거예요.</div>
+                        <div class="japanese">この色がよく合うでしょう。</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">6-2. 商品・施術の説明</h3>
+
+                    <h4 class="subsection-title">美容室:カット・カラー・パーマ</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">얼마나 자를까요?</div>
+                        <div class="japanese">どのくらい切りましょうか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">앞머리는 어떻게 할까요?</div>
+                        <div class="japanese">前髪はどうしましょうか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">염색하시겠어요?</div>
+                        <div class="japanese">カラーリングされますか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">이 색으로 할까요?</div>
+                        <div class="japanese">この色にしましょうか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">파마하시겠어요?</div>
+                        <div class="japanese">パーマをかけますか。</div>
+                    </div>
+
+                    <h4 class="subsection-title">エステ:コース・施術内容</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">60분 코스예요.</div>
+                        <div class="japanese">60分のコースです。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">페이셜 마사지 포함이에요.</div>
+                        <div class="japanese">フェイシャルマッサージ込みです。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">따뜻한 타월로 시작할게요.</div>
+                        <div class="japanese">温かいタオルから始めます。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">편안하게 누워계세요.</div>
+                        <div class="japanese">楽に横になっていてください。</div>
+                    </div>
+
+                    <h4 class="subsection-title">化粧品店:成分・効能</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">이건 보습 효과가 좋아요.</div>
+                        <div class="japanese">これは保湿効果がいいです。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">미백 제품이에요.</div>
+                        <div class="japanese">美白製品です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">주름 개선에 좋아요.</div>
+                        <div class="japanese">しわ改善にいいです。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">천연 성분이에요.</div>
+                        <div class="japanese">天然成分です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">무향료, 무알코올이에요.</div>
+                        <div class="japanese">無香料、無アルコールです。</div>
+                    </div>
+
+                    <h4 class="subsection-title">ネイルサロン:デザイン・持ち</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">어떤 디자인 원하세요?</div>
+                        <div class="japanese">どんなデザインがご希望ですか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">단색으로 할까요?</div>
+                        <div class="japanese">単色にしましょうか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">젤 네일이에요.</div>
+                        <div class="japanese">ジェルネイルです。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">3주 정도 유지돼요.</div>
+                        <div class="japanese">3週間ほど持ちます。</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">6-3. 施術中のコミュニケーション</h3>
+
+                    <h4 class="subsection-title">確認を取る</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">길이 괜찮으세요?</div>
+                        <div class="japanese">長さは大丈夫ですか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">색상 확인해 주세요.</div>
+                        <div class="japanese">色をご確認ください。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">이대로 괜찮으세요?</div>
+                        <div class="japanese">このままで大丈夫ですか。</div>
+                    </div>
+
+                    <h4 class="subsection-title">調整を提案する</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">조금 더 자를까요?</div>
+                        <div class="japanese">もう少し切りましょうか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">강도 조절할까요?</div>
+                        <div class="japanese">強さを調整しましょうか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">아프면 말씀하세요.</div>
+                        <div class="japanese">痛かったらおっしゃってください。</div>
+                    </div>
+
+                    <h4 class="subsection-title">仕上がりを確認</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">완성이에요!</div>
+                        <div class="japanese">完成です!</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">거울 보세요.</div>
+                        <div class="japanese">鏡をご覧ください。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">마음에 드세요?</div>
+                        <div class="japanese">お気に召しましたか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">뒷모습도 보여드릴게요.</div>
+                        <div class="japanese">後ろ姿もお見せします。</div>
+                    </div>
+
+                    <h4 class="subsection-title">アフターケアの説明</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">오늘은 샴푸하지 마세요.</div>
+                        <div class="japanese">今日はシャンプーしないでください。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">이 제품을 사용하세요.</div>
+                        <div class="japanese">この製品を使ってください。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">한 달 후에 다시 오세요.</div>
+                        <div class="japanese">一ヶ月後にまたいらしてください。</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">6-4. 商品販売・使用方法</h3>
+
+                    <h4 class="subsection-title">スキンケアステップ</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">세안 후에 사용하세요.</div>
+                        <div class="japanese">洗顔後に使ってください。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">토너 다음에 바르세요.</div>
+                        <div class="japanese">化粧水の次に塗ってください。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">순서는 이거예요.</div>
+                        <div class="japanese">順番はこれです。</div>
+                    </div>
+
+                    <h4 class="subsection-title">使用量・頻度</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">이 정도 양이면 돼요.</div>
+                        <div class="japanese">この程度の量で大丈夫です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">아침저녁으로 쓰세요.</div>
+                        <div class="japanese">朝晩使ってください。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">하루에 두 번이면 충분해요.</div>
+                        <div class="japanese">一日に二回で十分です。</div>
+                    </div>
+
+                    <h4 class="subsection-title">保管方法</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">서늘한 곳에 보관하세요.</div>
+                        <div class="japanese">涼しい場所に保管してください。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">냉장고에 넣어도 돼요.</div>
+                        <div class="japanese">冷蔵庫に入れても大丈夫です。</div>
+                    </div>
+
+                    <h4 class="subsection-title">使用期限</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">개봉 후 6개월이에요.</div>
+                        <div class="japanese">開封後6ヶ月です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">유통기한 확인하세요.</div>
+                        <div class="japanese">使用期限を確認してください。</div>
+                    </div>
+
+                    <div class="column">
+                        <div class="column-title">韓国美容文化への理解</div>
+                        <p><strong>スキンケアへのこだわり</strong><br>
+                        韓国では10ステップスキンケアなど、念入りなケアが一般的です。製品の使用順序や方法を詳しく説明すると喜ばれます。</p>
+                        
+                        <p><strong>成分への関心</strong><br>
+                        韓国の消費者は成分に非常に敏感です。主要成分や効能を説明できると良いでしょう。</p>
+                        
+                        <p><strong>美容トレンド</strong><br>
+                        韓国は美容トレンドの発信地でもあります。最新のK-beautyトレンドを知っていると会話が弾みます。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 第7章 -->
+            <div class="chapter" id="chapter7">
+                <h2 class="chapter-title">第7章:食品・物販での商品説明韓国語</h2>
+                
+                <p class="intro-text">食品店、お土産店、物販での商品説明に使える韓国語を学びます。</p>
+
+                <div class="section">
+                    <h3 class="section-title">7-1. 食品の説明</h3>
+
+                    <h4 class="subsection-title">原材料の説明</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">주재료는 ○○예요.</div>
+                        <div class="japanese">主原料は○○です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">100% 천연 재료예요.</div>
+                        <div class="japanese">100%天然素材です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">무첨가 제품이에요.</div>
+                        <div class="japanese">無添加製品です。</div>
+                    </div>
+
+                    <h4 class="subsection-title">産地・製造地</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">일본산이에요.</div>
+                        <div class="japanese">日本産です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">○○에서 만들어요.</div>
+                        <div class="japanese">○○で作っています。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">지역 특산품이에요.</div>
+                        <div class="japanese">地域の特産品です。</div>
+                    </div>
+
+                    <h4 class="subsection-title">賞味期限・消費期限</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">유통기한은 여기 있어요.</div>
+                        <div class="japanese">賞味期限はここにあります。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">○○까지예요.</div>
+                        <div class="japanese">○○までです。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">신선해요.</div>
+                        <div class="japanese">新鮮です。</div>
+                    </div>
+
+                    <h4 class="subsection-title">保存方法</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">냉장 보관하세요.</div>
+                        <div class="japanese">冷蔵保存してください。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">냉동 가능해요.</div>
+                        <div class="japanese">冷凍可能です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">실온 보관하세요.</div>
+                        <div class="japanese">常温保存してください。</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">7-2. アレルギー表示の説明</h3>
+
+                    <h4 class="subsection-title">主要アレルゲン</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">알레르기 표시예요.</div>
+                        <div class="japanese">アレルギー表示です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">밀이 들어가요.</div>
+                        <div class="japanese">小麦が入っています。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">견과류 포함이에요.</div>
+                        <div class="japanese">ナッツ類が含まれています。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">유제품이 들어가요.</div>
+                        <div class="japanese">乳製品が入っています。</div>
+                    </div>
+
+                    <h4 class="subsection-title">コンタミネーション</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">같은 공장에서 만들어요.</div>
+                        <div class="japanese">同じ工場で作っています。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">미량 포함될 수 있어요.</div>
+                        <div class="japanese">微量含まれる可能性があります。</div>
+                    </div>
+
+                    <h4 class="subsection-title">原材料一覧の見方</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">여기에 전체 성분이 있어요.</div>
+                        <div class="japanese">ここに全成分があります。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">한국어 표시도 있어요.</div>
+                        <div class="japanese">韓国語表示もあります。</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">7-3. 調理方法・食べ方</h3>
+
+                    <h4 class="subsection-title">温め方</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">전자레인지에 ○분이에요.</div>
+                        <div class="japanese">電子レンジで○分です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">끓는 물에 데우세요.</div>
+                        <div class="japanese">お湯で温めてください。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">그대로 드셔도 돼요.</div>
+                        <div class="japanese">そのまま召し上がっても大丈夫です。</div>
+                    </div>
+
+                    <h4 class="subsection-title">解凍方法</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">자연 해동하세요.</div>
+                        <div class="japanese">自然解凍してください。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">냉장고에서 천천히 녹이세요.</div>
+                        <div class="japanese">冷蔵庫でゆっくり解凍してください。</div>
+                    </div>
+
+                    <h4 class="subsection-title">アレンジ提案</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">이렇게 먹으면 맛있어요.</div>
+                        <div class="japanese">このように食べるとおいしいです。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">○○와 함께 드세요.</div>
+                        <div class="japanese">○○と一緒に召し上がってください。</div>
+                    </div>
+
+                    <h4 class="subsection-title">おすすめの食べ方</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">따뜻할 때 먹는 게 좋아요.</div>
+                        <div class="japanese">温かいうちに食べるのがいいです。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">차갑게 해서 드세요.</div>
+                        <div class="japanese">冷やして召し上がってください。</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">7-4. お土産選びのサポート</h3>
+
+                    <h4 class="subsection-title">人気商品の紹介</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">베스트셀러예요.</div>
+                        <div class="japanese">ベストセラーです。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">한국 분들이 많이 사요.</div>
+                        <div class="japanese">韓国の方がたくさん買われます。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">인기 1위예요.</div>
+                        <div class="japanese">人気ナンバーワンです。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">SNS에서 화제예요.</div>
+                        <div class="japanese">SNSで話題です。</div>
+                    </div>
+
+                    <h4 class="subsection-title">日持ちの説明</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">한 달 정도 보관할 수 있어요.</div>
+                        <div class="japanese">1ヶ月ほど保存できます。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">오래 가는 상품이에요.</div>
+                        <div class="japanese">長持ちする商品です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">빨리 드셔야 해요.</div>
+                        <div class="japanese">早めに召し上がってください。</div>
+                    </div>
+
+                    <h4 class="subsection-title">持ち帰り方法</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">기내 반입 가능해요.</div>
+                        <div class="japanese">機内持ち込み可能です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">수하물로 부쳐야 해요.</div>
+                        <div class="japanese">預け荷物にする必要があります。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">깨지지 않게 포장할게요.</div>
+                        <div class="japanese">割れないように包装します。</div>
+                    </div>
+
+                    <h4 class="subsection-title">ギフト対応</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">선물용으로 인기 많아요.</div>
+                        <div class="japanese">プレゼント用に人気です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">개별 포장이에요.</div>
+                        <div class="japanese">個別包装です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">나눠 드리기 좋아요.</div>
+                        <div class="japanese">配るのにいいです。</div>
+                    </div>
+
+                    <div class="column">
+                        <div class="column-title">韓国人観光客に人気の日本のお土産</div>
+                        <p><strong>お菓子・食品</strong><br>
+                        抹茶製品、和菓子、キットカット(特別フレーバー)、白い恋人、東京ばな奈などが人気です。</p>
+                        
+                        <p><strong>日用品・雑貨</strong><br>
+                        文房具、キャラクターグッズ、100円ショップ商品が人気。実用的で可愛いものが好まれます。</p>
+                        
+                        <p><strong>医薬品・健康食品</strong><br>
+                        目薬、湿布、サプリメントなど、日本の品質の高さが評価されています。</p>
+                        
+                        <p><strong>化粧品</strong><br>
+                        日焼け止め、美容液、メイク用品。日本ブランドの信頼性が高いです。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 第8章 -->
+            <div class="chapter" id="chapter8">
+                <h2 class="chapter-title">第8章:トラブル・クレーム対応</h2>
+                
+                <p class="intro-text">接客業では避けられないトラブルやクレームへの対応方法を学びます。誠意を持って対応することが最も重要です。</p>
+
+                <div class="section">
+                    <h3 class="section-title">8-1. 謝罪の基本</h3>
+
+                    <h4 class="subsection-title">すぐに謝る表現</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">죄송합니다.</div>
+                        <div class="japanese">申し訳ございません。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">정말 죄송합니다.</div>
+                        <div class="japanese">本当に申し訳ございません。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">대단히 죄송합니다.</div>
+                        <div class="japanese">誠に申し訳ございません。</div>
+                    </div>
+
+                    <h4 class="subsection-title">状況を確認する</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">무슨 일이세요?</div>
+                        <div class="japanese">どうなさいましたか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">자세히 말씀해 주세요.</div>
+                        <div class="japanese">詳しくお聞かせください。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">확인해 보겠습니다.</div>
+                        <div class="japanese">確認いたします。</div>
+                    </div>
+
+                    <h4 class="subsection-title">理解を示す</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">네, 이해합니다.</div>
+                        <div class="japanese">はい、理解します。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">불편하셨겠어요.</div>
+                        <div class="japanese">ご不便でしたでしょう。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">화나실 만해요.</div>
+                        <div class="japanese">お怒りになるのも当然です。</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">8-2. よくあるトラブル対応</h3>
+
+                    <h4 class="subsection-title">予約の行き違い</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">예약 확인해 보겠습니다.</div>
+                        <div class="japanese">予約を確認いたします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">다른 날짜로 되어 있네요.</div>
+                        <div class="japanese">別の日付になっていますね。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">다른 자리 준비해 드릴게요.</div>
+                        <div class="japanese">別の席をご用意いたします。</div>
+                    </div>
+
+                    <h4 class="subsection-title">商品の不具合</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">어떤 문제가 있나요?</div>
+                        <div class="japanese">どのような問題がありますか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">교환해 드리겠습니다.</div>
+                        <div class="japanese">交換いたします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">환불 가능합니다.</div>
+                        <div class="japanese">返金可能です。</div>
+                    </div>
+
+                    <h4 class="subsection-title">待ち時間が長い</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">오래 기다리게 해서 죄송합니다.</div>
+                        <div class="japanese">長くお待たせして申し訳ございません。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">곧 준비됩니다.</div>
+                        <div class="japanese">まもなくご用意できます。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">조금만 더 기다려 주세요.</div>
+                        <div class="japanese">もう少しだけお待ちください。</div>
+                    </div>
+
+                    <h4 class="subsection-title">希望と違った</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">원하시던 게 아니었나요?</div>
+                        <div class="japanese">ご希望と違いましたか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">다시 해드릴게요.</div>
+                        <div class="japanese">もう一度いたします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">다른 것으로 바꿔드릴까요?</div>
+                        <div class="japanese">別のものに変えましょうか。</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">8-3. 解決策の提示</h3>
+
+                    <h4 class="subsection-title">代替案を出す</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">이렇게 하면 어떨까요?</div>
+                        <div class="japanese">このようにしてはいかがでしょうか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">다른 방법을 제안해도 될까요?</div>
+                        <div class="japanese">別の方法を提案してもよろしいですか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">이것으로 대신하시겠어요?</div>
+                        <div class="japanese">これで代わりにされますか。</div>
+                    </div>
+
+                    <h4 class="subsection-title">返金・交換の提案</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">전액 환불해 드리겠습니다.</div>
+                        <div class="japanese">全額返金いたします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">새 제품으로 교환해 드릴게요.</div>
+                        <div class="japanese">新しい製品と交換いたします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">할인해 드리겠습니다.</div>
+                        <div class="japanese">割引いたします。</div>
+                    </div>
+
+                    <h4 class="subsection-title">責任者に相談する</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">매니저를 불러올게요.</div>
+                        <div class="japanese">マネージャーを呼んでまいります。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">책임자와 상의하겠습니다.</div>
+                        <div class="japanese">責任者と相談いたします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">잠시만 기다려 주세요.</div>
+                        <div class="japanese">少々お待ちください。</div>
+                    </div>
+
+                    <h4 class="subsection-title">フォローアップ</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">만족하셨나요?</div>
+                        <div class="japanese">ご満足いただけましたか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">다시 한번 죄송합니다.</div>
+                        <div class="japanese">改めてお詫び申し上げます。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">다음엔 더 잘하겠습니다.</div>
+                        <div class="japanese">次回はより良くいたします。</div>
+                    </div>
+
+                    <div class="column">
+                        <div class="column-title">クレーム対応の文化差</div>
+                        <p><strong>直接的な表現</strong><br>
+                        韓国では日本よりも直接的に不満を表現することがあります。驚かずに冷静に対応しましょう。</p>
+                        
+                        <p><strong>迅速な対応</strong><br>
+                        韓国では即座の解決を期待されることが多いです。できることとできないことを明確に伝え、できることはすぐに実行しましょう。</p>
+                        
+                        <p><strong>誠意の示し方</strong><br>
+                        言葉だけでなく、具体的な解決策を提示することで誠意が伝わります。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 第9章 -->
+            <div class="chapter" id="chapter9">
+                <h2 class="chapter-title">第9章:SNS時代の顧客対応</h2>
+                
+                <p class="intro-text">現代の接客では、SNSを通じた顧客対応も重要です。オンラインでのコミュニケーションに使える韓国語を学びます。</p>
+
+                <div class="section">
+                    <h3 class="section-title">9-1. 写真撮影の許可・協力</h3>
+
+                    <h4 class="subsection-title">撮影許可を得る</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">사진 찍어도 되나요?</div>
+                        <div class="japanese">写真を撮ってもいいですか。</div>
+                        <div class="note">お客様から聞かれることが多い質問</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">네, 괜찮아요.</div>
+                        <div class="japanese">はい、大丈夫です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">여기는 촬영 금지예요.</div>
+                        <div class="japanese">ここは撮影禁止です。</div>
+                    </div>
+
+                    <h4 class="subsection-title">撮影を手伝う</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">사진 찍어드릴까요?</div>
+                        <div class="japanese">お写真をお撮りしましょうか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">여기가 예쁘게 나와요.</div>
+                        <div class="japanese">ここがきれいに撮れます。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">이 각도가 좋아요.</div>
+                        <div class="japanese">この角度がいいです。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">한 장 더 찍을까요?</div>
+                        <div class="japanese">もう一枚撮りましょうか。</div>
+                    </div>
+
+                    <h4 class="subsection-title">インスタ映えスポット案内</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">포토존이에요.</div>
+                        <div class="japanese">フォトスポットです。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">인스타에서 유명한 곳이에요.</div>
+                        <div class="japanese">インスタで有名な場所です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">여기서 많이 찍어요.</div>
+                        <div class="japanese">ここでみんな撮ります。</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">9-2. オンラインでの事前対応</h3>
+
+                    <h4 class="subsection-title">Instagram DMでの問い合わせ</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">문의 감사합니다.</div>
+                        <div class="japanese">お問い合わせありがとうございます。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">영업 시간은 ○시부터 ○시까지예요.</div>
+                        <div class="japanese">営業時間は○時から○時までです。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">예약 가능해요.</div>
+                        <div class="japanese">予約可能です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">DM으로 예약해 주세요.</div>
+                        <div class="japanese">DMでご予約ください。</div>
+                    </div>
+
+                    <h4 class="subsection-title">予約メッセージの返信</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">예약 확인했습니다.</div>
+                        <div class="japanese">ご予約を確認いたしました。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">○월 ○일 ○시로 예약되었습니다.</div>
+                        <div class="japanese">○月○日○時でご予約承りました。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">기다리고 있겠습니다.</div>
+                        <div class="japanese">お待ちしております。</div>
+                    </div>
+
+                    <h4 class="subsection-title">レビューへの返信</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">리뷰 감사합니다!</div>
+                        <div class="japanese">レビューありがとうございます!</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">좋은 평가 감사드립니다.</div>
+                        <div class="japanese">良い評価をありがとうございます。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">또 방문해 주세요.</div>
+                        <div class="japanese">またご来店ください。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">불편을 드려 죄송합니다. 개선하겠습니다.</div>
+                        <div class="japanese">ご不便をおかけして申し訳ございません。改善いたします。</div>
+                        <div class="note">ネガティブなレビューへの対応</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">9-3. SNSでの顧客対応</h3>
+
+                    <h4 class="subsection-title">投稿へのコメント</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">방문 감사합니다!</div>
+                        <div class="japanese">ご来店ありがとうございます!</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">예쁘게 찍어주셨네요!</div>
+                        <div class="japanese">きれいに撮ってくださいましたね!</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">공유해 주셔서 감사해요.</div>
+                        <div class="japanese">シェアしてくださってありがとうございます。</div>
+                    </div>
+
+                    <h4 class="subsection-title">質問への返信</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">네, 있어요!</div>
+                        <div class="japanese">はい、あります!</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">품절이에요 ㅠㅠ</div>
+                        <div class="japanese">売り切れです(涙)</div>
+                        <div class="note">絵文字を使ってフレンドリーに</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">DM 보내주세요!</div>
+                        <div class="japanese">DMを送ってください!</div>
+                    </div>
+
+                    <h4 class="subsection-title">ハッシュタグのお願い</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">해시태그 달아주세요!</div>
+                        <div class="japanese">ハッシュタグをつけてください!</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">태그해 주시면 감사하겠습니다.</div>
+                        <div class="japanese">タグしていただければ嬉しいです。</div>
+                    </div>
+
+                    <div class="column">
+                        <div class="column-title">SNSマーケティングと韓国人観光客</div>
+                        <p><strong>SNSの影響力</strong><br>
+                        韓国人観光客の多くはInstagramやブログで情報収集します。お店の公式アカウントがあると信頼度が上がります。</p>
+                        
+                        <p><strong>写真撮影への理解</strong><br>
+                        韓国では料理や商品の写真を撮ることが一般的です。撮影を歓迎する姿勢を示しましょう。</p>
+                        
+                        <p><strong>口コミの重要性</strong><br>
+                        良いサービスはすぐにSNSで拡散されます。一人一人のお客様を大切にすることが最高のマーケティングです。</p>
+                        
+                        <p><strong>韓国語でのSNS発信</strong><br>
+                        簡単な韓国語で情報発信すると、韓国人観光客に見つけてもらいやすくなります。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 付録 -->
+            <div class="chapter" id="appendix">
+                <h2 class="chapter-title">付録</h2>
+
+                <div class="section">
+                    <h3 class="section-title">数字・金額の言い方</h3>
+
+                    <h4 class="subsection-title">漢数詞(金額・日付)</h4>
+                    <table>
+                        <tr>
+                            <th>日本語</th>
+                            <th>韓国語</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>일</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>이</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>삼</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>십</td>
+                        </tr>
+                        <tr>
+                            <td>100</td>
+                            <td>백</td>
+                        </tr>
+                        <tr>
+                            <td>1,000</td>
+                            <td>천</td>
+                        </tr>
+                        <tr>
+                            <td>10,000</td>
+                            <td>만</td>
+                        </tr>
+                    </table>
+
+                    <h4 class="subsection-title">固有数詞(個数・時間)</h4>
+                    <table>
+                        <tr>
+                            <th>日本語</th>
+                            <th>韓国語</th>
+                        </tr>
+                        <tr>
+                            <td>1つ</td>
+                            <td>하나</td>
+                        </tr>
+                        <tr>
+                            <td>2つ</td>
+                            <td>둘</td>
+                        </tr>
+                        <tr>
+                            <td>3つ</td>
+                            <td>셋</td>
+                        </tr>
+                        <tr>
+                            <td>4つ</td>
+                            <td>넷</td>
+                        </tr>
+                        <tr>
+                            <td>5つ</td>
+                            <td>다섯</td>
+                        </tr>
+                    </table>
+
+                    <div class="phrase-card">
+                        <div class="korean">천 엔입니다.</div>
+                        <div class="japanese">千円です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">세 개 주세요.</div>
+                        <div class="japanese">3つください。</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">よく使う形容詞50</h3>
+
+                    <table>
+                        <tr>
+                            <th>日本語</th>
+                            <th>韓国語</th>
+                        </tr>
+                        <tr>
+                            <td>おいしい</td>
+                            <td>맛있다</td>
+                        </tr>
+                        <tr>
+                            <td>きれい</td>
+                            <td>예쁘다</td>
+                        </tr>
+                        <tr>
+                            <td>便利</td>
+                            <td>편리하다</td>
+                        </tr>
+                        <tr>
+                            <td>安い</td>
+                            <td>싸다</td>
+                        </tr>
+                        <tr>
+                            <td>高い</td>
+                            <td>비싸다</td>
+                        </tr>
+                        <tr>
+                            <td>大きい</td>
+                            <td>크다</td>
+                        </tr>
+                        <tr>
+                            <td>小さい</td>
+                            <td>작다</td>
+                        </tr>
+                        <tr>
+                            <td>新しい</td>
+                            <td>새롭다</td>
+                        </tr>
+                        <tr>
+                            <td>古い</td>
+                            <td>오래되다</td>
+                        </tr>
+                        <tr>
+                            <td>近い</td>
+                            <td>가깝다</td>
+                        </tr>
+                        <tr>
+                            <td>遠い</td>
+                            <td>멀다</td>
+                        </tr>
+                        <tr>
+                            <td>暑い</td>
+                            <td>덥다</td>
+                        </tr>
+                        <tr>
+                            <td>寒い</td>
+                            <td>춥다</td>
+                        </tr>
+                        <tr>
+                            <td>良い</td>
+                            <td>좋다</td>
+                        </tr>
+                        <tr>
+                            <td>悪い</td>
+                            <td>나쁘다</td>
+                        </tr>
+                        <tr>
+                            <td>新鮮</td>
+                            <td>신선하다</td>
+                        </tr>
+                        <tr>
+                            <td>人気</td>
+                            <td>인기 있다</td>
+                        </tr>
+                        <tr>
+                            <td>有名</td>
+                            <td>유명하다</td>
+                        </tr>
+                        <tr>
+                            <td>可愛い</td>
+                            <td>귀엽다</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">接客でよく使う動詞50</h3>
+
+                    <table>
+                        <tr>
+                            <th>日本語</th>
+                            <th>韓国語</th>
+                        </tr>
+                        <tr>
+                            <td>いらっしゃる</td>
+                            <td>오시다</td>
+                        </tr>
+                        <tr>
+                            <td>座る</td>
+                            <td>앉다</td>
+                        </tr>
+                        <tr>
+                            <td>見る</td>
+                            <td>보다</td>
+                        </tr>
+                        <tr>
+                            <td>選ぶ</td>
+                            <td>고르다</td>
+                        </tr>
+                        <tr>
+                            <td>買う</td>
+                            <td>사다</td>
+                        </tr>
+                        <tr>
+                            <td>食べる</td>
+                            <td>먹다</td>
+                        </tr>
+                        <tr>
+                            <td>飲む</td>
+                            <td>마시다</td>
+                        </tr>
+                        <tr>
+                            <td>待つ</td>
+                            <td>기다리다</td>
+                        </tr>
+                        <tr>
+                            <td>案内する</td>
+                            <td>안내하다</td>
+                        </tr>
+                        <tr>
+                            <td>説明する</td>
+                            <td>설명하다</td>
+                        </tr>
+                        <tr>
+                            <td>包装する</td>
+                            <td>포장하다</td>
+                        </tr>
+                        <tr>
+                            <td>予約する</td>
+                            <td>예약하다</td>
+                        </tr>
+                        <tr>
+                            <td>確認する</td>
+                            <td>확인하다</td>
+                        </tr>
+                        <tr>
+                            <td>準備する</td>
+                            <td>준비하다</td>
+                        </tr>
+                        <tr>
+                            <td>交換する</td>
+                            <td>교환하다</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">困った時の魔法のフレーズ集</h3>
+                    <p>どうしても困った時は、これらのフレーズで乗り切りましょう。</p>
+
+                    <div class="phrase-card">
+                        <div class="korean">잠시만요!</div>
+                        <div class="japanese">ちょっと待ってください!</div>
+                        <div class="note">時間を稼ぎたい時に</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">한국어 잘 못해요.</div>
+                        <div class="japanese">韓国語があまりできません。</div>
+                        <div class="note">正直に伝えることで相手も配慮してくれます</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">천천히 말씀해 주세요.</div>
+                        <div class="japanese">ゆっくり話してください。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">한국어 할 수 있는 사람 불러올게요.</div>
+                        <div class="japanese">韓国語ができる人を呼んできます。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">영어 괜찮으세요?</div>
+                        <div class="japanese">英語は大丈夫ですか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">써주시겠어요?</div>
+                        <div class="japanese">書いていただけますか。</div>
+                        <div class="note">聞き取れない時に</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">조금만 기다려 주세요.</div>
+                        <div class="japanese">少しだけ待ってください。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">감사합니다!</div>
+                        <div class="japanese">ありがとうございます!</div>
+                        <div class="note">困った時も笑顔で感謝を伝えましょう</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">韓国の主要都市・地名の読み方</h3>
+
+                    <table>
+                        <tr>
+                            <th>日本語</th>
+                            <th>韓国語</th>
+                        </tr>
+                        <tr>
+                            <td>ソウル</td>
+                            <td>서울</td>
+                        </tr>
+                        <tr>
+                            <td>釜山</td>
+                            <td>부산</td>
+                        </tr>
+                        <tr>
+                            <td>済州島</td>
+                            <td>제주도</td>
+                        </tr>
+                        <tr>
+                            <td>仁川</td>
+                            <td>인천</td>
+                        </tr>
+                        <tr>
+                            <td>大邱</td>
+                            <td>대구</td>
+                        </tr>
+                        <tr>
+                            <td>光州</td>
+                            <td>광주</td>
+                        </tr>
+                        <tr>
+                            <td>大田</td>
+                            <td>대전</td>
+                        </tr>
+                        <tr>
+                            <td>江南</td>
+                            <td>강남</td>
+                        </tr>
+                        <tr>
+                            <td>明洞</td>
+                            <td>명동</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">指差し会話シート</h3>
+                    <p>緊急時や困った時に、この部分を印刷してお客様に指差してもらうと便利です。</p>
+
+                    <div class="scenario-box">
+                        <div class="scenario-title">基本的な質問</div>
+                        <ul>
+                            <li>화장실 어디예요? (トイレはどこですか)</li>
+                            <li>와이파이 비밀번호 뭐예요? (Wi-Fiのパスワードは何ですか)</li>
+                            <li>신용카드 되나요? (クレジットカードは使えますか)</li>
+                            <li>면세 되나요? (免税できますか)</li>
+                            <li>포장 가능해요? (包装できますか)</li>
+                        </ul>
+                    </div>
+
+                    <div class="scenario-box">
+                        <div class="scenario-title">アレルギー・食事制限</div>
+                        <ul>
+                            <li>달걀 알레르기 (卵アレルギー)</li>
+                            <li>새우 알레르기 (エビアレルギー)</li>
+                            <li>땅콩 알레르기 (ピーナッツアレルギー)</li>
+                            <li>유제품 알레르기 (乳製品アレルギー)</li>
+                            <li>채식주의자 (ベジタリアン)</li>
+                            <li>돼지고기 안 먹어요 (豚肉は食べません)</li>
+                        </ul>
+                    </div>
+
+                    <div class="scenario-box">
+                        <div class="scenario-title">困った時</div>
+                        <ul>
+                            <li>길을 잃었어요 (道に迷いました)</li>
+                            <li>지갑을 잃어버렸어요 (財布を失くしました)</li>
+                            <li>아파요 (痛いです)</li>
+                            <li>도와주세요 (助けてください)</li>
+                            <li>경찰 불러주세요 (警察を呼んでください)</li>
+                            <li>병원 가고 싶어요 (病院に行きたいです)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">最後に</h3>
+                    <p class="intro-text">この教材で学んだ韓国語を、ぜひ実際の接客で使ってみてください。最初は緊張するかもしれませんが、お客様の喜ぶ顔を見れば、きっと続けたくなるはずです。</p>
+
+                    <div class="column">
+                        <div class="column-title">継続的な学習のために</div>
+                        <p><strong>毎日1フレーズから</strong><br>
+                        完璧を目指さず、まずは1日1フレーズから始めましょう。使えば使うほど自然に口から出てくるようになります。</p>
+                        
+                        <p><strong>お客様から学ぶ</strong><br>
+                        韓国人のお客様との会話が最高の学習機会です。積極的にコミュニケーションを取りましょう。</p>
+                        
+                        <p><strong>笑顔が一番の言語</strong><br>
+                        韓国語が完璧でなくても、笑顔と誠意があれば気持ちは伝わります。言葉は気持ちを伝える道具です。</p>
+                        
+                        <p><strong>文化への理解を深める</strong><br>
+                        言葉だけでなく、韓国の文化や習慣への理解を深めることで、より良いおもてなしができます。</p>
+                        
+                        <p><strong>仲間と練習する</strong><br>
+                        同僚と一緒にロールプレイをしたり、韓国語を学び合うことで、楽しく上達できます。</p>
+                    </div>
+
+                    <div class="tips-box">
+                        <div class="tips-title">成功のための心構え</div>
+                        <ul>
+                            <li>間違いを恐れない:完璧を目指さず、まずは話してみる</li>
+                            <li>お客様の反応を楽しむ:喜んでもらえることがモチベーション</li>
+                            <li>小さな成功を積み重ねる:一つずつできることを増やしていく</li>
+                            <li>文化の違いを楽しむ:違いを学ぶことが成長につながる</li>
+                            <li>継続は力なり:毎日少しずつ続けることが大切</li>
+                        </ul>
+                    </div>
+
+                    <p class="intro-text" style="text-align: center; margin-top: 40px; font-size: 1.2em; color: #bf360c;">
+                        환영합니다!<br>
+                        <span style="font-size: 0.9em;">心を込めたおもてなしで、<br>素敵な思い出を作ってあげてください!</span>
+                    </p>
+
+                    <p style="text-align: center; margin-top: 30px; color: #666;">
+                        この教材が、あなたと韓国からのお客様との<br>
+                        素晴らしい出会いの架け橋となりますように。
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer" style="text-align: center; padding: 50px 20px 80px; background-color: #fff; border-top: 1px solid #eee;">
+            <p style="text-align: center; margin: 0; color: #666;">© 2025 Nico. All Rights Reserved.</p>
+        </div>
+
+    </div>
+</body>
+</html>
