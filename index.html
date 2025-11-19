@@ -3,133 +3,429 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Special Gift</title>
+    
+    <!-- ▼ 検索除外設定（必須） ▼ -->
+    <meta name="robots" content="noindex, nofollow">
+
+    <title>Member's Library | 大人の韓国語学習データベース</title>
+    
+    <!-- フォント読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@600&display=swap" rel="stylesheet">
+    
+    <!-- アイコンフォント -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
+        :root {
+            --primary-color: #1a2a44; /* 信頼のネイビー */
+            --accent-color: #c5a059;  /* 高級感のあるゴールド */
+            --bg-color: #f4f6f8;      /* 清潔感のある背景色 */
+            --text-color: #333333;
+            --card-bg: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
         body {
             font-family: 'Noto Sans JP', sans-serif;
-            background-color: #fdfaf6;
-            margin: 0;
-            padding: 20px;
-            color: #4a4a4a;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
         }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-        }
-        .header {
-            text-align: center;
-            padding: 40px 20px;
-            background: linear-gradient(135deg, #FF7F50, #FFD700);
-            border-radius: 16px;
+
+        /* --- ヘッダー --- */
+        header {
+            background: var(--primary-color);
             color: white;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
         }
-        .header h1 {
-            font-size: 2.5em;
-            font-weight: 900;
-            margin: 0;
+
+        .site-title {
+            font-family: 'Noto Serif JP', serif;
+            font-size: 1.8rem;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5rem;
         }
-        .header p {
-            font-size: 1.1em;
-            margin-top: 10px;
-            opacity: 0.9;
+
+        .site-subtitle {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            font-weight: 400;
         }
-        .tokuten-grid {
-            margin-top: 40px;
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 30px;
+
+        /* --- メインコンテンツ --- */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
         }
-        .tokuten-card {
+
+        /* --- ウェルカムメッセージ --- */
+        .welcome-box {
             background: white;
-            border-radius: 16px;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 3rem;
+            text-align: center;
+            border-top: 4px solid var(--accent-color);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        /* --- セクション共通 --- */
+        .section-title {
+            font-family: 'Noto Serif JP', serif;
+            font-size: 1.4rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            border-left: 5px solid var(--accent-color);
+            padding-left: 15px;
+            display: flex;
+            align-items: center;
+            margin-top: 3rem; /* カテゴリ間の余白 */
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        /* --- カードデザイン --- */
+        .card {
+            background: var(--card-bg);
+            border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-            transition: transform 0.3s, box-shadow 0.3s;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
             display: flex;
             flex-direction: column;
+            border: 1px solid #e0e0e0;
+            text-decoration: none;
+            color: inherit;
+            position: relative;
         }
-        .tokuten-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            border-color: var(--accent-color);
         }
-        .tokuten-card .content {
-            padding: 30px;
-        }
-        .tokuten-card h2 {
-            font-size: 1.6em;
-            font-weight: 700;
-            margin-bottom: 10px;
-            color: #FF7F50;
-        }
-        .tokuten-card p {
-            font-size: 1em;
-            line-height: 1.7;
+
+        .card-body {
+            padding: 1.5rem;
             flex-grow: 1;
         }
-        .tokuten-card a {
+
+        .card-tag {
+            font-size: 0.75rem;
+            color: var(--accent-color);
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
             display: block;
-            background: #FF7F50;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            text-decoration: none;
-            font-weight: 700;
-            margin-top: 20px;
-            border-radius: 0 0 16px 16px;
-            transition: background-color 0.3s;
         }
-        .tokuten-card a:hover {
-            background-color: #ff6347;
+
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.8rem;
+            color: var(--primary-color);
+            line-height: 1.4;
+        }
+
+        .card-desc {
+            font-size: 0.85rem;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .card-footer {
+            background: #f9f9f9;
+            padding: 1rem 1.5rem;
+            text-align: right;
+            border-top: 1px solid #eee;
+        }
+
+        .btn-text {
+            font-size: 0.9rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+        
+        .card:hover .btn-text { color: var(--accent-color); }
+
+        /* --- TOP3 特別デザイン --- */
+        .top3-section {
+            background: linear-gradient(135deg, #fffbf0 0%, #fff 100%);
+            border: 2px solid var(--accent-color);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+        
+        .rank-badge {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: var(--accent-color);
+            color: white;
+            padding: 5px 15px;
+            font-weight: bold;
+            font-family: 'Noto Serif JP', serif;
+            border-bottom-right-radius: 10px;
+            z-index: 10;
+        }
+
+        /* --- フッター --- */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #888;
+            font-size: 0.8rem;
+            border-top: 1px solid #ddd;
+            margin-top: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            .site-title { font-size: 1.4rem; }
+            .grid { grid-template-columns: 1fr; }
+            .top3-section { padding: 1.5rem 1rem; }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>Special Gift</h1>
-            <p>アンケートにご協力いただき、誠にありがとうございました。<br>🎁感謝の気持ちを込めて、以下の特典をプレゼントいたします。</p>
-        </div>
 
-        <div class="tokuten-grid">
-            <!-- 特典1: 大人の学習戦略 -->
-            <div class="tokuten-card">
-                <div class="content">
-                    <h2>【年齢の壁打破】40代・50代からでも結果を出す「大人の学習戦略」完全ガイド</h2>
-                    <p>年齢を言い訳にしない、科学的根拠に基づいた大人のための韓国語学習法。あなたの経験を最強の武器に変えるための完全設計図です。</p>
-                </div>
-                <a href="strategy.html">ガイドを読む →</a>
-            </div>
+<header>
+    <div class="site-subtitle"><i class="fas fa-lock"></i> Member's Only Library</div>
+    <h1 class="site-title">大人の韓国語攻略・特別戦略ライブラリ</h1>
+    <p>Authorized Access Only</p>
+</header>
 
-            <!-- 特典2: 自己学習診断 -->
-            <div class="tokuten-card">
-                <div class="content">
-                    <h2>【自己学習診断】あなたの韓国語が伸び悩む本当の原因がわかる！「学習タイプ別 弱点克服診断シート」</h2>
-                    <p>簡単な質問に答えるだけで、あなたの学習のクセを科学的に分析。4つのタイプ別に、あなただけの最適な学習戦略（処方箋）をご提案します。</p>
-                </div>
-                <a href="diagnosis.html">診断を始める →</a>
-            </div>
+<div class="container">
 
-            <!-- 特典3: 習慣化テンプレート -->
-            <div class="tokuten-card">
-                <div class="content">
-                    <h2>挫折率ゼロへ！あなたの1週間が変わる「韓国語学習 習慣化実践テンプレート」</h2>
-                    <p>「意志力」ではなく「仕組み」で学習を自動化するための実践ワークシート。このテンプレートを埋めるだけで、あなたの1週間が劇的に変わります。</p>
-                </div>
-                <a href="template.html">テンプレートを開く →</a>
-            </div>
-            
-            <!-- 特典4: 推し活韓国語フレーズBOOK -->
-            <div class="tokuten-card">
-                <div class="content">
-                    <h2>推し活韓国語フレーズBOOK</h2>
-                    <p>SNS、ライブ、ファンミーティングで使える！あなたの「好き」を伝えるための実践的なフレーズを集めた、推し活がもっと楽しくなる特別な一冊です。</p>
-                </div>
-                <a href="phrasebook.html">フレーズBOOKを開く →</a>
-            </div>
+    <!-- ウェルカムメッセージ -->
+    <div class="welcome-box">
+        <p>
+            <strong>会員限定ライブラリへようこそ！</strong><br>
+            ここは市販の教材には載らない「戦略・ツール・実用教材」を集めた非公開ライブラリです。<br>
+            このページへのアクセス権は、会員メンバーの方のみに発行されています。
+        </p>
+    </div>
 
+    <!-- 👑 人気ランキング TOP3 -->
+    <div class="top3-section">
+        <h2 class="section-title" style="border:none; padding:0; justify-content:center; font-size:1.6rem; margin-top:0;">
+            <i class="fas fa-crown" style="color:#f1c40f; margin-right:10px;"></i> 利用者人気ランキング TOP3
+        </h2>
+        <p style="text-align:center; margin-bottom:2rem; color:#666;">迷ったら、まずはこの3つの教材から始めてください</p>
+
+        <div class="grid">
+            <!-- 1位 -->
+            <a href="ai_voice_tech_s5t1r.html" class="card">
+                <div class="rank-badge">NO.1</div>
+                <div class="card-body">
+                    <span class="card-tag">AI・会話練習</span>
+                    <h3 class="card-title">【AI音声特化】初級者でもラリーが続く！ChatGPT音声モード完全攻略</h3>
+                    <p class="card-desc">会話相手がいなくても大丈夫。AIを「専属コーチ」にして、自宅で英会話ならぬ韓国語会話を実現する裏ワザ集。</p>
+                </div>
+                <div class="card-footer"><span class="btn-text">閲覧する <i class="fas fa-chevron-right"></i></span></div>
+            </a>
+
+            <!-- 2位 -->
+            <a href="over40_strategy_v9x2m.html" class="card">
+                <div class="rank-badge" style="background:#95a5a6;">NO.2</div>
+                <div class="card-body">
+                    <span class="card-tag">必読・戦略</span>
+                    <h3 class="card-title">【年齢の壁打破】40代・50代から結果を出す「大人の学習戦略」</h3>
+                    <p class="card-desc">若者のマネをしてはいけません。大人の脳の特性を活かした「勝ちパターン」を完全解説。</p>
+                </div>
+                <div class="card-footer"><span class="btn-text">閲覧する <i class="fas fa-chevron-right"></i></span></div>
+            </a>
+
+            <!-- 3位 -->
+            <a href="selftalk_daily_g5j8k.html" class="card">
+                <div class="rank-badge" style="background:#cd7f32;">NO.3</div>
+                <div class="card-body">
+                    <span class="card-tag">独り言・単語</span>
+                    <h3 class="card-title">独り言で覚える韓国語！忙しい大人女子のためのセルフトーク単語帳</h3>
+                    <p class="card-desc">スキマ時間が学習時間に変わる。日常の動作をそのまま韓国語にする習慣化ツール。</p>
+                </div>
+                <div class="card-footer"><span class="btn-text">閲覧する <i class="fas fa-chevron-right"></i></span></div>
+            </a>
         </div>
     </div>
+
+    <!-- ▼ ここからカテゴリー別リスト ▼ -->
+
+    <!-- 1. 学習戦略・診断 -->
+    <h2 class="section-title"><i class="fas fa-chess-king" style="margin-right:10px;"></i> 学習戦略・診断</h2>
+    <div class="grid">
+        <a href="over40_strategy_v9x2m.html" class="card">
+            <div class="card-body">
+                <span class="card-tag">必読・戦略</span>
+                <h3 class="card-title">【年齢の壁打破】40代・50代から結果を出す「大人の学習戦略」</h3>
+                <p class="card-desc">大人のための学習バイブル。</p>
+            </div>
+            <div class="card-footer"><span class="btn-text">閲覧する <i class="fas fa-chevron-right"></i></span></div>
+        </a>
+        <a href="study_diag_check_c7r4z.html" class="card">
+            <div class="card-body">
+                <span class="card-tag">診断ツール</span>
+                <h3 class="card-title">【自己学習診断】伸び悩む本当の原因がわかる！弱点克服診断シート</h3>
+                <p class="card-desc">あなたのタイプ別攻略法を提示。</p>
+            </div>
+            <div class="card-footer"><span class="btn-text">閲覧する <i class="fas fa-chevron-right"></i></span></div>
+        </a>
+        <a href="habit_routine_tmpl_m3n8v.html" class="card">
+            <div class="card-body">
+                <span class="card-tag">習慣化</span>
+                <h3 class="card-title">挫折率ゼロへ！あなたの1週間が変わる「習慣化実践テンプレート」</h3>
+                <p class="card-desc">書き込むだけで学習時間が生まれる。</p>
+            </div>
+            <div class="card-footer"><span class="btn-text">閲覧する <i class="fas fa-chevron-right"></i></span></div>
+        </a>
+        <a href="tool_master_guide_j4x9q.html" class="card">
+            <div class="card-body">
+                <span class="card-tag">効率化</span>
+                <h3 class="card-title">あなたの時間を最大化！忙しい大人のための韓国語学習最強ツールガイド</h3>
+                <p class="card-desc">学習効率を10倍にする神ツール集。</p>
+            </div>
+            <div class="card-footer"><span class="btn-text">閲覧する <i class="fas fa-chevron-right"></i></span></div>
+        </a>
+        <a href="qa_solution_book_h8n4v.html" class="card">
+            <div class="card-body">
+                <span class="card-tag">Q&A</span>
+                <h3 class="card-title">初中級の壁を突破!韓国語学習者の悩み解決Q&A</h3>
+                <p class="card-desc">よくある壁の乗り越え方を回答。</p>
+            </div>
+            <div class="card-footer"><span class="btn-text">閲覧する <i class="fas fa-chevron-right"></i></span></div>
+        </a>
+    </div>
+
+    <!-- 2. アウトプット強化 -->
+    <h2 class="section-title"><i class="fas fa-comment-dots" style="margin-right:10px;"></i> アウトプット強化</h2>
+    <div class="grid">
+        <a href="science_output20_w6r3q.html" class="card">
+            <div class="card-body">
+                <span class="card-tag">練習リスト</span>
+                <h3 class="card-title">【科学的戦略】最短で会話力が向上するアウトプット練習リスト20選</h3>
+                <p class="card-desc">「何を話せばいいか」の具体的メニュー。</p>
+            </div>
+            <div class="card-footer"><span class="btn-text">閲覧する <i class="fas fa-chevron-right"></i></span></div>
+        </a>
+        <a href="30day_output_prog_d9f5c.html" class="card">
+            <div class="card-body">
+                <span class="card-tag">プログラム</span>
+                <h3 class="card-title">１日15分でOK！忙しい大人のためのアウトプット強化＆習慣化30日プログラム</h3>
+                <p class="card-desc">迷わないための実践カレンダー。</p>
+            </div>
+            <div class="card-footer"><span class="btn-text">閲覧する <i class="fas fa-chevron-right"></i></span></div>
+        </a>
+        <a href="sokuto_training_z6h2p.html" class="card">
+            <div class="card-body">
+                <span class="card-tag">トレーニング</span>
+                <h3 class="card-title">「間違えるのが怖くて話せない」を克服！大人の韓国語即答力トレーニング</h3>
+                <p class="card-desc">反射神経を鍛えるドリル。</p>
+            </div>
+            <div class="card-footer"><span class="btn-text">閲覧する <i class="fas fa-chevron-right"></i></span></div>
+        </a>
+        <a href="ai_voice_tech_s5t1r.html" class="card">
+            <div class="card-body">
+                <span class="card-tag">AI・会話</span>
+                <h3 class="card-title">【AI音声特化】初級者でもラリーが続く！ChatGPT音声モード完全攻略</h3>
+                <p class="card-desc">AIを相手に無限会話練習。</p>
+            </div>
+            <div class="card-footer"><span class="btn-text">閲覧する <i class="fas fa-chevron-right"></i></span></div>
+        </a>
+    </div>
+
+    <!-- 3. 単語・文法マスター -->
+    <h2 class="section-title"><i class="fas fa-book" style="margin-right:10px;"></i> 単語・文法マスター</h2>
+    <div class="grid">
+        <a href="selftalk_daily_g5j8k.html" class="card">
+            <div class="card-body">
+                <span class="card-tag">独り言</span>
+                <h3 class="card-title">独り言で覚える韓国語！忙しい大人女子のためのセルフトーク単語帳</h3>
+                <p class="card-desc">日常動作をそのまま韓国語にする習慣。</p>
+            </div>
+            <div class="card-footer"><span class="btn-text">閲覧する <i class="fas fa-chevron-right"></i></span></div>
+        </a>
+        <a href="story_vocab_memo_l2p9x.html" class="card">
+            <div class="card-body">
+                <span class="card-tag">記憶術</span>
+                <h3 class="card-title">単語帳から卒業! 科学の力で記憶に定着するミニストーリー単語学習</h3>
+                <p class="card-desc">文脈で覚えるから忘れないメソッド。</p>
+            </div>
+            <div class="card-footer"><span class="btn-text">閲覧する <i class="fas fa-chevron-right"></i></span></div>
+        </a>
+        <a href="mindmap_irregular_f4d2z.html" class="card">
+            <div class="card-body">
+                <span class="card-tag">文法・活用</span>
+                <h3 class="card-title">もう暗記は不要！韓国語不規則活用完全攻略マインドマップ</h3>
+                <p class="card-desc">複雑なルールを一枚の地図で整理。</p>
+            </div>
+            <div class="card-footer"><span class="btn-text">閲覧する <i class="fas fa-chevron-right"></i></span></div>
+        </a>
+    </div>
+
+    <!-- 4. シーン別実践フレーズ -->
+    <h2 class="section-title"><i class="fas fa-heart" style="margin-right:10px;"></i> シーン別実践フレーズ</h2>
+    <div class="grid">
+        <a href="banno_phrase50_y3k7m.html" class="card">
+            <div class="card-body">
+                <span class="card-tag">日常会話</span>
+                <h3 class="card-title">初級でも会話が途切れない！万能韓国語フレーズ50選</h3>
+                <p class="card-desc">沈黙が怖くなくなる便利なクッション言葉。</p>
+            </div>
+            <div class="card-footer"><span class="btn-text">閲覧する <i class="fas fa-chevron-right"></i></span></div>
+        </a>
+        <a href="oshi_fan_phrase_k9p2x.html" class="card">
+            <div class="card-body">
+                <span class="card-tag">推し活</span>
+                <h3 class="card-title">推しに想いが届く！推し活韓国語フレーズBOOK</h3>
+                <p class="card-desc">ファンレターやSNSで使える魔法の言葉。</p>
+            </div>
+            <div class="card-footer"><span class="btn-text">閲覧する <i class="fas fa-chevron-right"></i></span></div>
+        </a>
+    </div>
+
+    <!-- 5. ビジネス・接客 -->
+    <h2 class="section-title"><i class="fas fa-briefcase" style="margin-right:10px;"></i> ビジネス・接客</h2>
+    <div class="grid">
+        <a href="biz_comm_guide_r5d3w.html" class="card">
+            <div class="card-body">
+                <span class="card-tag">ビジネス</span>
+                <h3 class="card-title">取引先との円滑なコミュニケーションが可能になる！ビジネス韓国語実践ガイド</h3>
+                <p class="card-desc">失礼がなく親密度を上げる仕事の韓国語。</p>
+            </div>
+            <div class="card-footer"><span class="btn-text">閲覧する <i class="fas fa-chevron-right"></i></span></div>
+        </a>
+        <a href="omotenashi_work_b2g8h.html" class="card">
+            <div class="card-body">
+                <span class="card-tag">接客</span>
+                <h3 class="card-title">初級でもおもてなしの現場ですぐ使える！業種別接客韓国語実用フレーズ大全</h3>
+                <p class="card-desc">お客様に喜ばれるプロの一言。</p>
+            </div>
+            <div class="card-footer"><span class="btn-text">閲覧する <i class="fas fa-chevron-right"></i></span></div>
+        </a>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2025 Nico. All Rights Reserved.</p>
+    <p>※このページは会員限定エリアです。第三者への共有はご遠慮ください。</p>
+</footer>
+
 </body>
 </html>
