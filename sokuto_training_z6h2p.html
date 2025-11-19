@@ -1,0 +1,2307 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+
+    <title>【克服】間違える恐怖を打ち破る!大人のための即答力トレーニング</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Hiragino Sans', 'Yu Gothic', 'Meiryo', sans-serif;
+            line-height: 1.9;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 20px;
+        }
+        
+        .book-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 10px 60px rgba(0,0,0,0.2);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .cover {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 60px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cover::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 30px 30px;
+            animation: movePattern 20s linear infinite;
+        }
+        
+        @keyframes movePattern {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(30px, 30px); }
+        }
+        
+        .cover-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .cover-label {
+            display: inline-block;
+            background: rgba(255,255,255,0.25);
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+        }
+        
+        .cover h1 {
+            font-size: 42px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            line-height: 1.5;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .cover-subtitle {
+            font-size: 18px;
+            opacity: 0.95;
+            line-height: 1.8;
+            margin-top: 20px;
+        }
+        
+        .content {
+            padding: 60px;
+        }
+        
+        .chapter {
+            margin-bottom: 80px;
+            animation: fadeIn 0.8s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .chapter-number {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 10px 25px;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+        
+        .chapter h2 {
+            font-size: 32px;
+            color: #2d3748;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .chapter h3 {
+            font-size: 24px;
+            color: #4a5568;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-left: 15px;
+            border-left: 5px solid #667eea;
+        }
+        
+        .chapter h4 {
+            font-size: 20px;
+            color: #667eea;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        
+        .chapter p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #f6f8fb 0%, #e9ecef 100%);
+            border-left: 5px solid #667eea;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .highlight-box strong {
+            color: #667eea;
+            font-size: 18px;
+        }
+        
+        .mindset-box {
+            background: linear-gradient(135deg, #fff5f5 0%, #ffe5e5 100%);
+            border-left: 5px solid #f56565;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 8px;
+        }
+        
+        .mindset-box h4 {
+            color: #c53030;
+            margin-top: 0;
+        }
+        
+        .training-box {
+            background: linear-gradient(135deg, #f0fff4 0%, #d4f4dd 100%);
+            border-left: 5px solid #48bb78;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 8px;
+        }
+        
+        .training-box h4 {
+            color: #2f855a;
+            margin-top: 0;
+        }
+        
+        .phrase-box {
+            background: white;
+            border: 2px solid #e2e8f0;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .phrase-box:hover {
+            border-color: #667eea;
+            box-shadow: 0 4px 15px rgba(102,126,234,0.2);
+            transform: translateY(-2px);
+        }
+        
+        .korean {
+            font-size: 20px;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 8px;
+        }
+        
+        .japanese {
+            font-size: 16px;
+            color: #4a5568;
+        }
+        
+        ul, ol {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+        
+        li {
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        
+        .schedule-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .schedule-table th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 18px;
+            text-align: left;
+            font-size: 16px;
+        }
+        
+        .schedule-table td {
+            padding: 18px;
+            border-bottom: 1px solid #e2e8f0;
+            font-size: 15px;
+        }
+        
+        .schedule-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .schedule-table tr:hover {
+            background: #f7fafc;
+        }
+        
+        .checklist {
+            background: white;
+            border: 2px solid #e2e8f0;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 8px;
+        }
+        
+        .checklist-item {
+            padding: 12px;
+            margin: 10px 0;
+            background: #f7fafc;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .checklist-item::before {
+            content: '□';
+            font-size: 24px;
+            color: #667eea;
+            margin-right: 15px;
+            font-weight: bold;
+        }
+        
+        .emphasis {
+            color: #667eea;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        .quote-box {
+            background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+            border-left: 5px solid #f59e0b;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 8px;
+            font-style: italic;
+            font-size: 17px;
+            color: #78350f;
+        }
+        
+        .footer {
+            background: #2d3748;
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .footer p {
+            margin-bottom: 10px;
+            opacity: 0.9;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                padding: 30px;
+            }
+            
+            .cover {
+                padding: 50px 30px;
+            }
+            
+            .cover h1 {
+                font-size: 28px;
+            }
+            
+            .chapter h2 {
+                font-size: 26px;
+            }
+            
+            .chapter h3 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="book-container">
+        <!-- 表紙 -->
+        <div class="cover">
+            <div class="cover-content">
+                <div class="cover-label">【克服】心理的ブロック突破教材</div>
+                <h1>「間違える恐怖」を打ち破る!<br>大人のための即答力トレーニング</h1>
+                <p class="cover-subtitle">反射的に韓国語が口から出てくる状態へ<br>〜完璧主義を手放し、会話の流暢さを手に入れる〜</p>
+            </div>
+        </div>
+
+        <!-- 本文 -->
+        <div class="content">
+            <!-- はじめに -->
+            <div class="chapter">
+                <h2>はじめに</h2>
+                <p>「韓国語は読める、聞き取れる、でも話せない」</p>
+                <p>「頭の中では文章ができているのに、口から出てこない」</p>
+                <p>「間違えるのが怖くて、黙ってしまう」</p>
+                
+                <p>もしあなたがこのような悩みを抱えているなら、この教材はあなたのために作られました。</p>
+                
+                <p>1年以上韓国語を学んでいるのに会話ができない理由は、あなたの能力不足ではありません。それは、<span class="emphasis">「間違える恐怖」という心理的ブロック</span>と、<span class="emphasis">「即答力」という技術の不足</span>が原因なのです。</p>
+                
+                <div class="highlight-box">
+                    <strong>この教材で得られるもの:</strong>
+                    <ul>
+                        <li>間違いを恐れない強いメンタル</li>
+                        <li>反射的に韓国語が出てくる即答力</li>
+                        <li>詰まった時のサバイバル戦略</li>
+                        <li>30日間で変化を実感できる実践プログラム</li>
+                    </ul>
+                </div>
+                
+                <p>さあ、一緒に「間違える恐怖」を打ち破り、韓国語で自由に話せる自分に生まれ変わりましょう。</p>
+            </div>
+
+            <!-- 第1章 -->
+            <div class="chapter">
+                <span class="chapter-number">第1章</span>
+                <h2>なぜ私たちは「間違える」ことを恐れるのか</h2>
+                
+                <h3>大人の学習者特有の心理的ブロック</h3>
+                <p>大人になってから外国語を学ぶとき、私たちは子どもとは全く異なる心理状態に置かれます。仕事や日常生活で「できる人」として認識されている私たちは、語学学習の場面でも無意識に「できる自分」を演じようとしてしまうのです。</p>
+                
+                <p>しかし、語学学習はまさに「できない状態」からスタートするもの。この現実と自己イメージのギャップが、強い心理的ブロックを生み出します。</p>
+                
+                <div class="highlight-box">
+                    <strong>大人の学習者が抱える3つの心理的ブロック:</strong>
+                    <ul>
+                        <li><strong>プライドの壁:</strong> 「こんな簡単なことも言えないなんて恥ずかしい」</li>
+                        <li><strong>評価への恐れ:</strong> 「間違えたら笑われる、バカにされる」</li>
+                        <li><strong>完璧主義:</strong> 「正確に言えないなら、言わない方がマシ」</li>
+                    </ul>
+                </div>
+                
+                <h3>「正確性」へのこだわりが生む悪循環</h3>
+                <p>多くの大人の学習者は、文法的に正しい文章を作ることに強くこだわります。これは学校教育の影響や、仕事で培った「正確性が重要」という価値観が原因です。</p>
+                
+                <p>しかし、会話において最も重要なのは「正確性」ではなく「コミュニケーションの成立」です。完璧な文法で話そうとするあまり、頭の中で文章を組み立てている間に会話のタイミングを逃し、結局黙ってしまう。これが、正確性へのこだわりが生む悪循環なのです。</p>
+                
+                <div class="quote-box">
+                    「完璧な一言を待つより、不完全でも十の言葉を発する方が、あなたの韓国語力を飛躍的に高めます」
+                </div>
+                
+                <h3>子どもと大人の語学習得の違い</h3>
+                <p>子どもは間違いを恐れません。なぜなら、彼らにとって「間違い」という概念が存在しないからです。子どもは試行錯誤を通じて自然に言語を習得していきます。</p>
+                
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>特徴</th>
+                            <th>子どもの学習</th>
+                            <th>大人の学習</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>間違いへの反応</strong></td>
+                            <td>気にせず何度も挑戦</td>
+                            <td>恐れて発言を控える</td>
+                        </tr>
+                        <tr>
+                            <td><strong>学習の動機</strong></td>
+                            <td>コミュニケーションの喜び</td>
+                            <td>正確性への追求</td>
+                        </tr>
+                        <tr>
+                            <td><strong>失敗の捉え方</strong></td>
+                            <td>学びのプロセス</td>
+                            <td>恥ずかしい経験</td>
+                        </tr>
+                        <tr>
+                            <td><strong>発言の頻度</strong></td>
+                            <td>非常に高い</td>
+                            <td>低い(考えすぎて黙る)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p>大人の私たちは、子どものように「間違いを気にしない」という純粋な状態には戻れません。しかし、<span class="emphasis">意識的に「間違いは学びのデータ」と捉え直すこと</span>で、子どもと同じように恐れなく挑戦できるようになります。</p>
+                
+                <h3>「完璧主義」が会話力を奪うメカニズム</h3>
+                <p>完璧主義は、一見すると良い性質のように思えます。しかし、会話においては最大の敵となります。</p>
+                
+                <p>会話は「リアルタイム」で進行します。相手の発言に対して、2秒、3秒、長くても5秒以内に何らかの反応を返さなければ、会話は途切れてしまいます。</p>
+                
+                <p>完璧主義の学習者は、頭の中で次のような思考プロセスを辿ります:</p>
+                
+                <div class="highlight-box">
+                    <strong>完璧主義者の思考の罠:</strong>
+                    <ol>
+                        <li>相手の質問を聞く</li>
+                        <li>「正確な文法で答えなければ」と考える</li>
+                        <li>単語を思い出そうとする</li>
+                        <li>文法を確認する</li>
+                        <li>発音が正しいか不安になる</li>
+                        <li>考えている間に時間が経過</li>
+                        <li>沈黙が長くなり、余計に不安に</li>
+                        <li>結局、「잘 모르겠어요(よくわかりません)」と逃げる</li>
+                    </ol>
+                </div>
+                
+                <p>このプロセスの中で、あなたの脳は「完璧な答え」を探すことに全エネルギーを費やし、「とにかく何か伝える」という本来の目的を見失ってしまうのです。</p>
+                
+                <h3>間違いは「失敗」ではなく「データ」である</h3>
+                <p>ここで発想を大きく転換しましょう。間違いは失敗ではありません。それは貴重な「学習データ」なのです。</p>
+                
+                <p>科学的な研究によれば、人間の脳は「間違いを犯したとき」に最も強く学習します。間違えた瞬間、脳内では「予測と現実のズレ」が生じ、このズレを修正するために神経回路が強化されるのです。</p>
+                
+                <div class="mindset-box">
+                    <h4>マインドセットの転換:</h4>
+                    <p><strong>×</strong> 間違い = 恥ずかしい失敗 = 避けるべきもの</p>
+                    <p><strong>○</strong> 間違い = 学習データ = 成長のチャンス</p>
+                </div>
+                
+                <p>韓国人のネイティブスピーカーも、日常会話で文法的な間違いを犯しています。しかし、それで会話が成立しないことはほとんどありません。なぜなら、コミュニケーションの本質は「完璧な文法」ではなく「意味を伝えること」だからです。</p>
+                
+                <p>あなたが今日犯す10の間違いは、明日のあなたを10倍強くします。間違える勇気を持つこと。それが、会話力向上への最初の、そして最も重要なステップなのです。</p>
+            </div>
+
+            <!-- 第2章 -->
+            <div class="chapter">
+                <span class="chapter-number">第2章</span>
+                <h2>即答力とは何か?—反射神経を育てる意味</h2>
+                
+                <h3>「考えて話す」から「反射的に話す」への転換</h3>
+                <p>初級者と上級者の最も大きな違いは、語彙力や文法知識の量ではありません。それは「反応速度」です。</p>
+                
+                <p>初級者は、相手の言葉を聞いてから答えを出すまでに長い「思考時間」を必要とします。一方、上級者は瞬時に、まるで反射神経のように言葉が出てきます。</p>
+                
+                <p>この違いを生むのが「即答力」です。即答力とは、<span class="emphasis">頭で考えなくても、口から自動的に韓国語が出てくる状態</span>を指します。</p>
+                
+                <div class="highlight-box">
+                    <strong>「考えて話す」と「反射的に話す」の違い:</strong>
+                    <ul>
+                        <li><strong>考えて話す:</strong> 聞く → 日本語で考える → 韓国語に翻訳 → 文法を確認 → 話す(遅い、不自然)</li>
+                        <li><strong>反射的に話す:</strong> 聞く → 韓国語で反応(速い、自然)</li>
+                    </ul>
+                </div>
+                
+                <p>日本語で会話するとき、あなたは文法を意識していません。相手の「おはよう」に対して、瞬時に「おはよう」と返せます。これと同じ状態を韓国語でも作ること。それが即答力トレーニングの目標です。</p>
+                
+                <h3>即答力と正確性は対立しない</h3>
+                <p>「即答」と聞くと、「正確性を犠牲にして速く話すこと?」と誤解する方がいます。しかし、それは違います。</p>
+                
+                <p>即答力とは、<span class="emphasis">頻繁に使う表現やフレーズが「自動化」された状態</span>を指します。自動化された表現は、考えなくても正確に、そして速く出てきます。</p>
+                
+                <p>例えば、「안녕하세요(こんにちは)」という挨拶。あなたはこれを言うとき、文法を考えていません。それは、何度も繰り返し使ったことで「自動化」されているからです。</p>
+                
+                <p>即答力トレーニングの目的は、この「自動化された表現」の数を増やすことです。よく使うフレーズや反応パターンを自動化することで、会話全体のスピードと流暢さが劇的に向上します。</p>
+                
+                <h3>脳科学から見た言語の自動化プロセス</h3>
+                <p>脳科学の研究によれば、新しいスキルが「自動化」されるまでには、明確なステップがあります。</p>
+                
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>段階</th>
+                            <th>状態</th>
+                            <th>特徴</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>第1段階: 認知段階</strong></td>
+                            <td>意識的な努力が必要</td>
+                            <td>一つ一つ考えながら話す。遅く、疲れる</td>
+                        </tr>
+                        <tr>
+                            <td><strong>第2段階: 連合段階</strong></td>
+                            <td>パターンが見え始める</td>
+                            <td>よく使う表現は速く出るが、まだ考える必要がある</td>
+                        </tr>
+                        <tr>
+                            <td><strong>第3段階: 自動化段階</strong></td>
+                            <td>無意識に実行できる</td>
+                            <td>考えなくても口から出る。速く、疲れない</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p>多くの学習者は第1段階で止まっています。なぜなら、「練習量」が圧倒的に不足しているからです。</p>
+                
+                <p>脳が新しいスキルを自動化するには、<span class="emphasis">反復練習による神経回路の強化</span>が必要です。同じフレーズを何度も何度も口に出すことで、脳内に「高速道路」が作られ、考えなくても言葉が出てくる状態になるのです。</p>
+                
+                <h3>韓国人はなぜ即座に応答できるのか</h3>
+                <p>韓国人が韓国語を即座に話せるのは、彼らが特別な才能を持っているからではありません。それは単純に、<span class="emphasis">膨大な反復練習の結果</span>なのです。</p>
+                
+                <p>韓国人は子どもの頃から毎日、何千回、何万回と韓国語を聞き、話してきました。その結果、基本的な表現やフレーズが完全に自動化されているのです。</p>
+                
+                <p>つまり、私たちもまた、十分な反復練習を積めば、韓国人と同じように即座に応答できるようになります。必要なのは才能ではなく、正しい練習方法と継続です。</p>
+                
+                <h3>流暢さの正体:スピードか、それとも「詰まらない力」か</h3>
+                <p>「流暢に話す」とはどういう状態でしょうか。多くの人は「速く話すこと」だと誤解しています。しかし、実際には違います。</p>
+                
+                <p>流暢さの本質は、<span class="emphasis">「詰まらずに話し続けられること」</span>です。たとえ話すスピードが遅くても、止まらずに話し続けられれば、それは流暢な会話なのです。</p>
+                
+                <div class="highlight-box">
+                    <strong>流暢さを決める3つの要素:</strong>
+                    <ul>
+                        <li><strong>連続性:</strong> 詰まらずに話し続けられるか</li>
+                        <li><strong>自然なリズム:</strong> 不自然な間や沈黙がないか</li>
+                        <li><strong>自動化された表現:</strong> 考えなくても出てくるフレーズがどれだけあるか</li>
+                    </ul>
+                </div>
+                
+                <p>即答力トレーニングは、この3つの要素すべてを高めます。自動化された表現が増えれば、詰まる回数が減り、自然なリズムで会話が続けられるようになります。</p>
+                
+                <p>あなたの目標は「速く話すこと」ではありません。それは「詰まらずに話し続けられること」です。この違いを理解することが、効果的な練習への第一歩となります。</p>
+            </div>
+
+            <!-- 第3章 -->
+            <div class="chapter">
+                <span class="chapter-number">第3章</span>
+                <h2>即答力を高める5つのマインドセット</h2>
+                
+                <p>技術的なトレーニングに入る前に、まず心の準備が必要です。どんなに優れた練習方法も、間違った心構えでは効果を発揮しません。ここでは、即答力を高めるために不可欠な5つのマインドセットをご紹介します。</p>
+                
+                <div class="mindset-box">
+                    <h4>マインドセット1:「70%で話す勇気」を持つ</h4>
+                    <p>完璧な100点を目指すのではなく、70点で十分だと考えましょう。</p>
+                    
+                    <p>多くの学習者は「完璧に言えないなら言わない」という選択をします。しかし、これは0点の選択です。70点の不完全な発言は、0点の完璧な沈黙よりも、はるかに価値があります。</p>
+                    
+                    <p><strong>実践例:</strong></p>
+                    <ul>
+                        <li>完璧: 何も言えず黙る(0点)</li>
+                        <li>70点: 「저는... 어... 좋아해요(私は...えっと...好きです)」と詰まりながらも伝える</li>
+                    </ul>
+                    
+                    <p>70点の発言をすれば、相手は理解してくれます。そして、その経験があなたの次の80点、90点につながります。完璧を待つのではなく、今できる最善を出す。その勇気が、あなたの会話力を飛躍的に高めます。</p>
+                </div>
+                
+                <div class="mindset-box">
+                    <h4>マインドセット2:「間違いは修正のチャンス」と捉え直す</h4>
+                    <p>間違いを「恥ずかしい失敗」ではなく「修正のチャンス」と捉え直しましょう。</p>
+                    
+                    <p>間違えたとき、あなたは2つの情報を得られます:</p>
+                    <ul>
+                        <li><strong>何が間違っているか</strong>(改善点が明確になる)</li>
+                        <li><strong>正しい表現は何か</strong>(相手が訂正してくれる)</li>
+                    </ul>
+                    
+                    <p>例えば、あなたが「어제 학교에 갔어요?(昨日学校に行きましたか?)」と言おうとして、「어제 학교 가요?」と間違えたとします。相手は優しく「아, 갔어요?」と訂正してくれるでしょう。</p>
+                    
+                    <p>この瞬間、あなたの脳は「過去形は -았어요/-었어요 を使うんだ!」と強く記憶します。教科書で100回読むより、実際に間違えて訂正される1回の方が、はるかに記憶に残るのです。</p>
+                    
+                    <div class="quote-box">
+                        「間違えた数だけ、あなたは強くなる。間違いは恥ではなく、成長の証です」
+                    </div>
+                </div>
+                
+                <div class="mindset-box">
+                    <h4>マインドセット3:「沈黙は最大の敵」と知る</h4>
+                    <p>会話において、最も避けるべきは「間違い」ではなく「沈黙」です。</p>
+                    
+                    <p>間違った韓国語を話しても、会話は続きます。しかし、黙ってしまうと会話は止まります。会話が止まると、相手は困惑し、気まずい空気が流れ、コミュニケーション自体が成立しなくなります。</p>
+                    
+                    <p><strong>会話における優先順位:</strong></p>
+                    <ol>
+                        <li><strong>最優先:</strong> 何か言葉を発する(会話を繋ぐ)</li>
+                        <li><strong>次に重要:</strong> 意味が伝わる(完璧でなくてもOK)</li>
+                        <li><strong>最後:</strong> 文法的に正確(これは後から磨ける)</li>
+                    </ol>
+                    
+                    <p>たとえ「음...」「어...」「그...」といった繋ぎ言葉だけでも、声を出し続けることが重要です。これにより「今、考えています」というメッセージが相手に伝わり、会話が途切れません。</p>
+                    
+                    <p>沈黙の3秒は、会話において非常に長く感じられます。3秒以上黙ると、相手は「何か問題があるのかな?」と不安になります。だからこそ、完璧な答えを探して黙るより、不完全でも何か発することを優先しましょう。</p>
+                </div>
+                
+                <div class="mindset-box">
+                    <h4>マインドセット4:「相手は減点法で聞いていない」を信じる</h4>
+                    <p>多くの学習者は「相手が自分の間違いを数えて、採点している」と思い込んでいます。しかし、これは完全な誤解です。</p>
+                    
+                    <p>韓国人は、あなたの韓国語を「減点法」で聞いていません。むしろ、<span class="emphasis">「外国人が韓国語を話してくれている!」という驚きと喜び</span>を感じています。</p>
+                    
+                    <p>実際、多くの韓国人は外国人学習者に対して:</p>
+                    <ul>
+                        <li>「韓国語上手ですね!」と褒めてくれる</li>
+                        <li>小さな文法ミスは気にせず、意味を理解しようとしてくれる</li>
+                        <li>むしろ、挑戦する姿勢を尊敬してくれる</li>
+                    </ul>
+                    
+                    <p>あなたが恐れている「笑われる」「バカにされる」という状況は、実際にはほとんど起こりません。相手はあなたの味方です。この事実を信じることで、恐怖は大きく軽減されます。</p>
+                </div>
+                
+                <div class="mindset-box">
+                    <h4>マインドセット5:「今日より明日」の成長思考を持つ</h4>
+                    <p>語学学習は、短距離走ではなくマラソンです。今日の自分と昨日の自分を比べ、小さな成長を喜ぶ。それが、長期的な上達の鍵です。</p>
+                    
+                    <p>多くの学習者は「ネイティブレベル」という遠い目標だけを見て、現在の自分を否定します。「まだ全然話せない」「こんなに勉強したのに、まだこのレベル...」と。</p>
+                    
+                    <p>しかし、重要なのは<span class="emphasis">「今日の自分が、昨日の自分より少しでも成長したか」</span>です。</p>
+                    
+                    <p><strong>成長を実感する方法:</strong></p>
+                    <ul>
+                        <li>昨日言えなかったフレーズが、今日は言えた → 成長!</li>
+                        <li>先週より0.5秒速く反応できた → 成長!</li>
+                        <li>沈黙せずに何か発することができた → 成長!</li>
+                    </ul>
+                    
+                    <p>完璧な未来の自分と比べるのではなく、過去の自分と比べる。この視点の転換が、あなたに自信と継続の力を与えます。</p>
+                    
+                    <div class="quote-box">
+                        「ネイティブと比べるな。昨日の自分と比べよ。そして、今日の小さな成長を祝おう」
+                    </div>
+                </div>
+                
+                <p>これら5つのマインドセットは、即答力トレーニングの土台となります。技術的な練習と並行して、毎日この心構えを思い出してください。正しいマインドセットがあれば、どんな練習も効果的になり、どんな失敗も学びに変わります。</p>
+            </div>
+
+            <!-- 第4章 -->
+            <div class="chapter">
+                <span class="chapter-number">第4章</span>
+                <h2>即答力トレーニング【基礎編】—反射神経を作る練習法</h2>
+                
+                <p>マインドセットが整ったら、次は具体的なトレーニングです。ここでは、韓国語の「反射神経」を作るための5つの基礎トレーニングをご紹介します。</p>
+                
+                <div class="training-box">
+                    <h4>トレーニング1: 3秒ルール応答練習</h4>
+                    
+                    <p><strong>目的:</strong> 考えすぎて黙る癖を直し、瞬時に反応する習慣を作る</p>
+                    
+                    <p><strong>方法:</strong></p>
+                    <ol>
+                        <li>韓国語の質問を用意する(YouTubeの会話動画、教材の会話例など)</li>
+                        <li>質問を聞いたら、3秒以内に必ず何か答える</li>
+                        <li>完璧な答えでなくてもOK。「네(はい)」「아니요(いいえ)」だけでも良い</li>
+                        <li>慣れてきたら、もう一言追加することに挑戦</li>
+                    </ol>
+                    
+                    <p><strong>練習例:</strong></p>
+                    <div class="phrase-box">
+                        <div class="korean">질문: 주말에 뭐 했어요?</div>
+                        <div class="japanese">質問: 週末何をしましたか?</div>
+                        <div class="korean" style="margin-top:15px;">응답(初級): 영화 봤어요.</div>
+                        <div class="japanese">応答(初級): 映画を見ました。</div>
+                        <div class="korean" style="margin-top:10px;">응답(中級): 영화 봤어요. 재미있었어요.</div>
+                        <div class="japanese">応答(中級): 映画を見ました。面白かったです。</div>
+                    </div>
+                    
+                    <p><strong>重要ポイント:</strong></p>
+                    <ul>
+                        <li>タイマーを使って3秒を測る(最初は厳密に)</li>
+                        <li>答えられなくても、「음...」「글쎄요...」など何か声を出す</li>
+                        <li>完璧な文章を作ろうとしない。単語の羅列でもOK</li>
+                    </ul>
+                </div>
+                
+                <div class="training-box">
+                    <h4>トレーニング2: 音読スピードチャレンジ(段階的加速法)</h4>
+                    
+                    <p><strong>目的:</strong> 口の筋肉を韓国語に慣れさせ、発音の自動化を促進する</p>
+                    
+                    <p><strong>方法:</strong></p>
+                    <ol>
+                        <li>短い会話文やフレーズ集を用意する(5〜10文程度)</li>
+                        <li><strong>第1段階:</strong> ゆっくり正確に音読(1回)</li>
+                        <li><strong>第2段階:</strong> 少し速く音読(2回)</li>
+                        <li><strong>第3段階:</strong> できるだけ速く音読(3回)</li>
+                        <li><strong>第4段階:</strong> 通常速度で滑らかに音読(1回)</li>
+                    </ol>
+                    
+                    <p><strong>練習例:</strong></p>
+                    <div class="phrase-box">
+                        <div class="korean">안녕하세요. 만나서 반갑습니다. 저는 일본 사람입니다. 한국어를 공부하고 있어요. 잘 부탁드립니다.</div>
+                        <div class="japanese">こんにちは。お会いできて嬉しいです。私は日本人です。韓国語を勉強しています。よろしくお願いします。</div>
+                    </div>
+                    
+                    <p><strong>重要ポイント:</strong></p>
+                    <ul>
+                        <li>速く読むことが目的ではなく、「滑らかに」読めることが目標</li>
+                        <li>毎日同じ文章を1週間続けると、驚くほど滑らかになる</li>
+                        <li>口が覚えるまで繰り返す(目安:同じ文章を100回以上)</li>
+                    </ul>
+                </div>
+                
+                <div class="training-box">
+                    <h4>トレーニング3: シャドーイング(影のように追いかける)</h4>
+                    
+                    <p><strong>目的:</strong> リアルな発音、リズム、イントネーションを体に染み込ませる</p>
+                    
+                    <p><strong>方法:</strong></p>
+                    <ol>
+                        <li>YouTubeのVlog、ドラマ、ニュースなど、自然な韓国語音声を用意</li>
+                        <li>音声を再生し、0.5〜1秒遅れて同じことを声に出す</li>
+                        <li>最初は聞き取れなくてもOK。聞こえた音をそのまま真似る</li>
+                        <li>字幕は見ない(耳だけに集中)</li>
+                    </ol>
+                    
+                    <p><strong>おすすめ素材:</strong></p>
+                    <ul>
+                        <li>韓国のVlogger(日常会話が自然)</li>
+                        <li>韓国ドラマの日常シーン(感情表現が豊富)</li>
+                        <li>KBSニュース(明瞭な発音)</li>
+                        <li>Korean Unnie、Talk To Me In Koreanなどの学習チャンネル</li>
+                    </ul>
+                    
+                    <p><strong>段階別練習:</strong></p>
+                    <ul>
+                        <li><strong>初級:</strong> 0.75倍速で短いフレーズ(5〜10秒)を繰り返しシャドーイング</li>
+                        <li><strong>中級:</strong> 通常速度で30秒〜1分のセクションをシャドーイング</li>
+                        <li><strong>上級:</strong> 通常速度で長いセクションを、途中で止めずにシャドーイング</li>
+                    </ul>
+                    
+                    <p><strong>重要ポイント:</strong></p>
+                    <ul>
+                        <li>完璧に真似る必要はない。「音の流れ」を掴むことが重要</li>
+                        <li>毎日10分でも効果的(長時間より毎日の継続が大切)</li>
+                        <li>口が疲れるまでやる(筋トレと同じ。口の筋肉を鍛える)</li>
+                    </ul>
+                </div>
+                
+                <div class="training-box">
+                    <h4>トレーニング4: クイックレスポンス・ドリル(質問→即答)</h4>
+                    
+                    <p><strong>目的:</strong> 日本語を介さず、韓国語で直接考えて答える回路を作る</p>
+                    
+                    <p><strong>方法:</strong></p>
+                    <ol>
+                        <li>簡単な質問リストを用意する</li>
+                        <li>質問を読む(または聞く)</li>
+                        <li>2秒以内に韓国語で答える</li>
+                        <li>答えられなかったら、すぐに正解例を確認し、3回音読</li>
+                        <li>同じ質問を翌日もう一度練習</li>
+                    </ol>
+                    
+                    <p><strong>練習用質問例(日常会話):</strong></p>
+                    <div class="phrase-box">
+                        <div class="korean">이름이 뭐예요?</div>
+                        <div class="japanese">名前は何ですか?</div>
+                    </div>
+                    <div class="phrase-box">
+                        <div class="korean">어디에서 왔어요?</div>
+                        <div class="japanese">どこから来ましたか?</div>
+                    </div>
+                    <div class="phrase-box">
+                        <div class="korean">취미가 뭐예요?</div>
+                        <div class="japanese">趣味は何ですか?</div>
+                    </div>
+                    <div class="phrase-box">
+                        <div class="korean">주말에 보통 뭐 해요?</div>
+                        <div class="japanese">週末は普通何をしますか?</div>
+                    </div>
+                    <div class="phrase-box">
+                        <div class="korean">한국 음식 좋아해요?</div>
+                        <div class="japanese">韓国料理は好きですか?</div>
+                    </div>
+                    
+                    <p><strong>重要ポイント:</strong></p>
+                    <ul>
+                        <li>最初は超簡単な質問から始める</li>
+                        <li>答えは短くてOK(単語だけでも良い)</li>
+                        <li>同じ質問を何度も繰り返し、「自動化」させる</li>
+                        <li>慣れたら質問の難易度を上げる</li>
+                    </ul>
+                </div>
+                
+                <div class="training-box">
+                    <h4>トレーニング5: 独り言スピーキング(思考の言語化)</h4>
+                    
+                    <p><strong>目的:</strong> 日常的に韓国語で考え、話す習慣を作る。会話相手がいなくても練習できる最強の方法</p>
+                    
+                    <p><strong>方法:</strong></p>
+                    <ol>
+                        <li>日常生活の中で、今していることを韓国語で実況中継する</li>
+                        <li>最初は単語だけでもOK</li>
+                        <li>慣れてきたら文章にする</li>
+                        <li>さらに慣れたら、感想や理由も付け加える</li>
+                    </ol>
+                    
+                    <p><strong>実況中継の例:</strong></p>
+                    <div class="phrase-box">
+                        <div class="korean">【初級】물... 마셔요. 맛있어요.</div>
+                        <div class="japanese">【初級】水...飲みます。美味しいです。</div>
+                    </div>
+                    <div class="phrase-box">
+                        <div class="korean">【中級】지금 물을 마시고 있어요. 목이 말랐어요.</div>
+                        <div class="japanese">【中級】今、水を飲んでいます。喉が渇きました。</div>
+                    </div>
+                    <div class="phrase-box">
+                        <div class="korean">【上級】너무 목이 말라서 물을 마시고 있어요. 오늘 날씨가 더워서 그런 것 같아요.</div>
+                        <div class="japanese">【上級】とても喉が渇いて水を飲んでいます。今日、天気が暑いからだと思います。</div>
+                    </div>
+                    
+                    <p><strong>おすすめシチュエーション:</strong></p>
+                    <ul>
+                        <li>朝の準備: 「일어나요. 세수해요. 옷 입어요.(起きます。顔を洗います。服を着ます)」</li>
+                        <li>料理中: 「지금 요리하고 있어요. 야채를 썰어요.(今、料理しています。野菜を切ります)」</li>
+                        <li>通勤中: 「전철을 타고 있어요. 사람이 많아요.(電車に乗っています。人が多いです)」</li>
+                        <li>買い物中: 「이거 사고 싶어요. 하지만 비싸요.(これを買いたいです。でも高いです)」</li>
+                    </ul>
+                    
+                    <p><strong>重要ポイント:</strong></p>
+                    <ul>
+                        <li>完璧な文法は気にしない。とにかく声に出すことが重要</li>
+                        <li>1日10分でも効果絶大</li>
+                        <li>スマホで録音して、後で聞き返すと成長が実感できる</li>
+                        <li>言えなかった表現はメモして、後で調べる</li>
+                    </ul>
+                </div>
+                
+                <div class="highlight-box">
+                    <strong>5つのトレーニングの組み合わせ方:</strong>
+                    <ul>
+                        <li><strong>毎日必ずやる:</strong> 独り言スピーキング(10分)</li>
+                        <li><strong>平日:</strong> 3秒ルール応答練習(10分) + 音読スピードチャレンジ(10分)</li>
+                        <li><strong>週末:</strong> シャドーイング(20分) + クイックレスポンス・ドリル(20分)</li>
+                    </ul>
+                    <p>合計: 平日30分、週末40分の練習で、30日後には劇的な変化を実感できます。</p>
+                </div>
+            </div>
+
+            <!-- 第5章 -->
+            <div class="chapter">
+                <span class="chapter-number">第5章</span>
+                <h2>即答力トレーニング【実践編】—シチュエーション別・即応フレーズ集</h2>
+                
+                <p>基礎トレーニングで反射神経を鍛えたら、次は実践的なフレーズを自動化します。ここでは、会話で頻繁に使う「即応フレーズ」を、シチュエーション別に紹介します。これらのフレーズを完全に自動化することで、会話の流暢さが劇的に向上します。</p>
+                
+                <h3>場面1: 挨拶・返事(反射的に返せる基本応答)</h3>
+                <p>挨拶と基本的な返事は、会話の入り口です。これらが瞬時に出てくるだけで、会話全体がスムーズになります。</p>
+                
+                <div class="phrase-box">
+                    <div class="korean">안녕하세요!</div>
+                    <div class="japanese">こんにちは!</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">안녕히 가세요 / 안녕히 계세요</div>
+                    <div class="japanese">さようなら(去る人に) / さようなら(残る人に)</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">네, 알겠습니다</div>
+                    <div class="japanese">はい、わかりました</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">아니요, 괜찮아요</div>
+                    <div class="japanese">いいえ、大丈夫です</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">감사합니다 / 고맙습니다</div>
+                    <div class="japanese">ありがとうございます</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">천만에요 / 아니에요</div>
+                    <div class="japanese">どういたしまして</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">죄송합니다 / 미안합니다</div>
+                    <div class="japanese">申し訳ございません / ごめんなさい</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">괜찮습니다 / 괜찮아요</div>
+                    <div class="japanese">大丈夫です(気にしないで)</div>
+                </div>
+                
+                <p><strong>練習方法:</strong> これらのフレーズを、声に出して100回繰り返しましょう。考えなくても口から出てくる状態になるまで練習します。</p>
+                
+                <h3>場面2: 相づち・リアクション(会話を繋ぐ魔法の言葉)</h3>
+                <p>相づちは、「あなたの話を聞いています」というサインであり、会話を自然に繋ぐ潤滑油です。これらが自動的に出てくるだけで、会話がスムーズに流れます。</p>
+                
+                <h4>【基本の相づち】</h4>
+                <div class="phrase-box">
+                    <div class="korean">네 / 응</div>
+                    <div class="japanese">はい / うん</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">아</div>
+                    <div class="japanese">あぁ</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">그래요? / 그래?</div>
+                    <div class="japanese">そうなんですか? / そう?</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">정말요? / 진짜?</div>
+                    <div class="japanese">本当ですか? / マジ?</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">그렇군요 / 그렇구나</div>
+                    <div class="japanese">そうなんですね / そうなんだ</div>
+                </div>
+                
+                <h4>【共感の相づち】</h4>
+                <div class="phrase-box">
+                    <div class="korean">맞아요 / 맞아</div>
+                    <div class="japanese">そうですね / そうだね</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">저도요 / 나도</div>
+                    <div class="japanese">私もです / 私も</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">그렇죠 / 그치</div>
+                    <div class="japanese">そうですよね / でしょ</div>
+                </div>
+                
+                <h4>【驚きのリアクション】</h4>
+                <div class="phrase-box">
+                    <div class="korean">와! / 우와!</div>
+                    <div class="japanese">わぁ! / すごい!</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">대박!</div>
+                    <div class="japanese">やばい!(すごい!)</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">헐!</div>
+                    <div class="japanese">え!?(驚愕)</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">어머! / 어머나!</div>
+                    <div class="japanese">あら! / まあ!</div>
+                </div>
+                
+                <p><strong>使い方のコツ:</strong> 相手の話の途中で自然に挟みます。黙って聞くだけではなく、適度にリアクションすることで「聞いていますよ」という姿勢を示せます。</p>
+                
+                <h3>場面3: 質問への即答(Yes/No、好み、頻度など)</h3>
+                <p>質問への即答は、会話の基本です。ここでは、よく聞かれる質問とその即答パターンを紹介します。</p>
+                
+                <h4>【Yes/Noの即答】</h4>
+                <div class="phrase-box">
+                    <div class="korean">네, 그래요 / 응, 그래</div>
+                    <div class="japanese">はい、そうです / うん、そう</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">아니요, 아니에요 / 아니, 아니야</div>
+                    <div class="japanese">いいえ、違います / ううん、違う</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">네, 좋아요</div>
+                    <div class="japanese">はい、いいですよ</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">아니요, 괜찮아요</div>
+                    <div class="japanese">いいえ、大丈夫です(結構です)</div>
+                </div>
+                
+                <h4>【好みに関する即答】</h4>
+                <div class="phrase-box">
+                    <div class="korean">질문: 커피 좋아해요?</div>
+                    <div class="japanese">質問: コーヒーは好きですか?</div>
+                    <div class="korean" style="margin-top:10px;">네, 좋아해요 / 네, 아주 좋아해요</div>
+                    <div class="japanese">はい、好きです / はい、とても好きです</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">아니요, 안 좋아해요 / 별로 안 좋아해요</div>
+                    <div class="japanese">いいえ、好きじゃないです / あまり好きじゃないです</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">그냥 그래요 / 보통이에요</div>
+                    <div class="japanese">まあまあです / 普通です</div>
+                </div>
+                
+                <h4>【頻度に関する即答】</h4>
+                <div class="phrase-box">
+                    <div class="korean">질문: 자주 운동해요?</div>
+                    <div class="japanese">質問: よく運動しますか?</div>
+                    <div class="korean" style="margin-top:10px;">네, 자주 해요 / 매일 해요</div>
+                    <div class="japanese">はい、よくします / 毎日します</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">가끔 해요 / 일주일에 한두 번 해요</div>
+                    <div class="japanese">たまにします / 週に1、2回します</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">별로 안 해요 / 거의 안 해요</div>
+                    <div class="japanese">あまりしません / ほとんどしません</div>
+                </div>
+                
+                <h4>【場所・時間に関する即答】</h4>
+                <div class="phrase-box">
+                    <div class="korean">질문: 어디에 살아요?</div>
+                    <div class="japanese">質問: どこに住んでいますか?</div>
+                    <div class="korean" style="margin-top:10px;">도쿄에 살아요 / 오사카에 살아요</div>
+                    <div class="japanese">東京に住んでいます / 大阪に住んでいます</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">질문: 몇 시에 일어나요?</div>
+                    <div class="japanese">質問: 何時に起きますか?</div>
+                    <div class="korean" style="margin-top:10px;">7시에 일어나요 / 보통 7시쯤 일어나요</div>
+                    <div class="japanese">7時に起きます / だいたい7時頃起きます</div>
+                </div>
+                
+                <p><strong>練習方法:</strong> これらの質問と答えをペアで覚え、質問を聞いたら瞬時に答えられるまで反復練習します。</p>
+                
+                <h3>場面4: 予想外の質問への時間稼ぎフレーズ</h3>
+                <p>すぐに答えられない質問を受けたとき、沈黙するのではなく「時間稼ぎフレーズ」を使うことで、会話を繋ぎながら考える時間を作れます。</p>
+                
+                <h4>【考える時間を作るフレーズ】</h4>
+                <div class="phrase-box">
+                    <div class="korean">음... / 어...</div>
+                    <div class="japanese">えーと... / あの...</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">글쎄요...</div>
+                    <div class="japanese">さあ...どうでしょう...</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">그게...</div>
+                    <div class="japanese">それが...</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">잠깐만요 / 잠시만요</div>
+                    <div class="japanese">ちょっと待ってください / 少々お待ちください</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">뭐라고 할까... / 어떻게 말하지...</div>
+                    <div class="japanese">何て言うか... / どう言おうか...</div>
+                </div>
+                
+                <h4>【質問を確認するフレーズ】</h4>
+                <div class="phrase-box">
+                    <div class="korean">다시 한번 말씀해 주시겠어요?</div>
+                    <div class="japanese">もう一度おっしゃっていただけますか?</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">무슨 뜻이에요? / 무슨 말이에요?</div>
+                    <div class="japanese">どういう意味ですか? / どういうことですか?</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">예를 들어 주시겠어요?</div>
+                    <div class="japanese">例を挙げていただけますか?</div>
+                </div>
+                
+                <h4>【正直に伝えるフレーズ】</h4>
+                <div class="phrase-box">
+                    <div class="korean">잘 모르겠어요</div>
+                    <div class="japanese">よくわかりません</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">생각해 볼게요</div>
+                    <div class="japanese">考えてみます</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">어려운 질문이네요</div>
+                    <div class="japanese">難しい質問ですね</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">한국어로 어떻게 말하는지 모르겠어요</div>
+                    <div class="japanese">韓国語でどう言うかわかりません</div>
+                </div>
+                
+                <p><strong>重要:</strong> これらのフレーズは「逃げ」ではありません。会話を繋ぎながら、誠実にコミュニケーションを続けるための大切なツールです。</p>
+                
+                <h3>場面5: 感情表現の即答(驚き、喜び、残念など)</h3>
+                <p>感情をすぐに表現できることで、会話が生き生きとします。ここでは、感情別の即答フレーズを紹介します。</p>
+                
+                <h4>【喜び】</h4>
+                <div class="phrase-box">
+                    <div class="korean">좋아요! / 좋다!</div>
+                    <div class="japanese">嬉しいです! / 嬉しい!</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">기뻐요! / 기쁘다!</div>
+                    <div class="japanese">嬉しいです! / 嬉しい!(より強い喜び)</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">최고예요! / 최고다!</div>
+                    <div class="japanese">最高です! / 最高!</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">다행이에요 / 다행이다</div>
+                    <div class="japanese">良かったです / 良かった</div>
+                </div>
+                
+                <h4>【驚き】</h4>
+                <div class="phrase-box">
+                    <div class="korean">놀라워요! / 놀랍다!</div>
+                    <div class="japanese">驚きです! / 驚いた!</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">믿을 수 없어요 / 믿을 수 없어</div>
+                    <div class="japanese">信じられません / 信じられない</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">정말요? / 진짜요?</div>
+                    <div class="japanese">本当ですか? / 本当に?</div>
+                </div>
+                
+                <h4>【残念】</h4>
+                <div class="phrase-box">
+                    <div class="korean">아쉬워요 / 아쉽다</div>
+                    <div class="japanese">残念です / 残念だ</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">안타까워요 / 안타깝다</div>
+                    <div class="japanese">残念です(より深い残念さ)</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">아쉽네요 / 아깝다</div>
+                    <div class="japanese">惜しいですね / もったいない</div>
+                </div>
+                
+                <h4>【困惑・悩み】</h4>
+                <div class="phrase-box">
+                    <div class="korean">어떡하지? / 어떻게 하지?</div>
+                    <div class="japanese">どうしよう?</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">힘들어요 / 힘들다</div>
+                    <div class="japanese">大変です / 辛い</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">고민이에요 / 고민이다</div>
+                    <div class="japanese">悩みです / 悩んでる</div>
+                </div>
+                
+                <h4>【同情・共感】</h4>
+                <div class="phrase-box">
+                    <div class="korean">안됐어요 / 안됐다</div>
+                    <div class="japanese">お気の毒です / 可哀想</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">이해해요 / 이해해</div>
+                    <div class="japanese">わかります / わかる</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">힘내세요 / 힘내</div>
+                    <div class="japanese">頑張ってください / 頑張って</div>
+                </div>
+                
+                <div class="highlight-box">
+                    <strong>フレーズ自動化のための3ステップ練習法:</strong>
+                    <ol>
+                        <li><strong>第1週:</strong> 各カテゴリーのフレーズを毎日音読(各10回)</li>
+                        <li><strong>第2週:</strong> シチュエーションを想像しながら、感情を込めて発声</li>
+                        <li><strong>第3週:</strong> 実際の会話(言語交換、オンラインレッスンなど)で意識的に使う</li>
+                        <li><strong>第4週以降:</strong> 無意識に使えるまで継続</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- 第6章 -->
+            <div class="chapter">
+                <span class="chapter-number">第6章</span>
+                <h2>「詰まった時」のサバイバル戦略</h2>
+                
+                <p>どんなに練習しても、会話の中で「言葉が出てこない」「詰まってしまう」瞬間は必ずあります。重要なのは、詰まったときにパニックにならず、冷静に対処することです。ここでは、詰まったときのサバイバル戦略を具体的に紹介します。</p>
+                
+                <h3>沈黙を避ける「つなぎ言葉」リスト</h3>
+                <p>会話で最も避けるべきは「完全な沈黙」です。以下の「つなぎ言葉」を使うことで、「今、考えています」というメッセージを相手に伝え、沈黙による気まずさを防げます。</p>
+                
+                <h4>【基本のつなぎ言葉】</h4>
+                <div class="phrase-box">
+                    <div class="korean">음...</div>
+                    <div class="japanese">うーん...</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">어...</div>
+                    <div class="japanese">えーと...</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">그...</div>
+                    <div class="japanese">その...</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">저...</div>
+                    <div class="japanese">あの...</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">뭐랄까...</div>
+                    <div class="japanese">何て言うか...</div>
+                </div>
+                
+                <h4>【考える時間を稼ぐフレーズ】</h4>
+                <div class="phrase-box">
+                    <div class="korean">잠깐만요</div>
+                    <div class="japanese">ちょっと待ってください</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">생각 좀 해볼게요</div>
+                    <div class="japanese">ちょっと考えてみます</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">어떻게 말하지...</div>
+                    <div class="japanese">どう言おうか...</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">한국어로 뭐라고 하더라...</div>
+                    <div class="japanese">韓国語で何て言うんだっけ...</div>
+                </div>
+                
+                <h4>【話題を切り替えるフレーズ】</h4>
+                <div class="phrase-box">
+                    <div class="korean">아, 그건 그렇고...</div>
+                    <div class="japanese">あ、それはそうと...</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">그런데...</div>
+                    <div class="japanese">ところで...</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">다른 얘기인데...</div>
+                    <div class="japanese">別の話なんですが...</div>
+                </div>
+                
+                <p><strong>使い方のコツ:</strong> これらのフレーズを使うことは恥ずかしいことではありません。韓国人も日常会話で頻繁に使っています。むしろ、完全に黙るよりも、これらのフレーズで場を繋ぐ方がはるかに自然です。</p>
+                
+                <h3>言い換え力を鍛える練習法</h3>
+                <p>「言いたい単語が出てこない!」というとき、その単語だけに固執するのではなく、別の言い方で伝える力が重要です。これが「言い換え力」です。</p>
+                
+                <h4>【言い換えの基本戦略】</h4>
+                <ol>
+                    <li><strong>簡単な言葉で説明する:</strong> 難しい単語を簡単な言葉の組み合わせで表現</li>
+                    <li><strong>例を挙げる:</strong> 具体例を示すことで意味を伝える</li>
+                    <li><strong>ジェスチャーを使う:</strong> 言葉だけでなく、身振り手振りで補う</li>
+                    <li><strong>類似の言葉を使う:</strong> 正確でなくても、近い意味の言葉で代用</li>
+                </ol>
+                
+                <h4>【言い換え練習例】</h4>
+                <div class="phrase-box">
+                    <div class="korean"><strong>言いたいこと:</strong> 「冷蔵庫」(단어가 생각 안 날 때)</div>
+                    <div class="japanese">単語が思い出せない場合</div>
+                    <div class="korean" style="margin-top:10px;"><strong>言い換え:</strong> 음식을 차갑게 보관하는 거요</div>
+                    <div class="japanese">食べ物を冷たく保管するやつです</div>
+                </div>
+                
+                <div class="phrase-box">
+                    <div class="korean"><strong>言いたいこと:</strong> 「充電器」</div>
+                    <div class="korean" style="margin-top:10px;"><strong>言い換え:</strong> 휴대폰 배터리를 채우는 거요</div>
+                    <div class="japanese">携帯のバッテリーを満たすやつです</div>
+                </div>
+                
+                <div class="phrase-box">
+                    <div class="korean"><strong>言いたいこと:</strong> 「懐かしい」</div>
+                    <div class="korean" style="margin-top:10px;"><strong>言い換え:</strong> 옛날 생각이 나요 / 예전이 그리워요</div>
+                    <div class="japanese">昔のことを思い出します / 以前が恋しいです</div>
+                </div>
+                
+                <h4>【言い換え力を鍛える練習法】</h4>
+                <div class="training-box">
+                    <h4>練習1: 3語制限ゲーム</h4>
+                    <p>1つの単語を、3つの簡単な韓国語だけで説明する練習。</p>
+                    <p><strong>例:</strong> 「図書館」→ 책(本) + 읽다(読む) + 장소(場所)</p>
+                </div>
+                
+                <div class="training-box">
+                    <h4>練習2: ジェスチャー併用練習</h4>
+                    <p>言葉が出てこない単語をジェスチャーで表現しながら、簡単な説明を加える。</p>
+                    <p><strong>例:</strong> 「傘」が言えない → (傘を開くジェスチャー) + 「비 올 때 쓰는 거예요(雨が降るときに使うやつです)」</p>
+                </div>
+                
+                <h3>わからない時の正直な表現集</h3>
+                <p>わからないことを正直に伝えることは、恥ずかしいことではありません。むしろ、誠実なコミュニケーションの一部です。</p>
+                
+                <div class="phrase-box">
+                    <div class="korean">잘 모르겠어요</div>
+                    <div class="japanese">よくわかりません</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">이해가 안 돼요</div>
+                    <div class="japanese">理解できません</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">한국어로 어떻게 말해야 할지 모르겠어요</div>
+                    <div class="japanese">韓国語でどう言えばいいかわかりません</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">단어가 생각이 안 나요</div>
+                    <div class="japanese">単語が思い出せません</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">아직 한국어를 잘 못해요</div>
+                    <div class="japanese">まだ韓国語があまりできません</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">배우고 있어요</div>
+                    <div class="japanese">学んでいるところです</div>
+                </div>
+                
+                <h3>ジェスチャーと韓国語の組み合わせテクニック</h3>
+                <p>言葉だけで伝わらないとき、ジェスチャーは最強の味方です。韓国でよく使われるジェスチャーと、それに添える簡単なフレーズを紹介します。</p>
+                
+                <h4>【よく使うジェスチャー】</h4>
+                <ul>
+                    <li><strong>指差し:</strong> 「이거요(これです)」「저거요(あれです)」</li>
+                    <li><strong>手で大きさを示す:</strong> 「이만큼이요(これくらいです)」</li>
+                    <li><strong>数を指で示す:</strong> 「세 개요(3つです)」</li>
+                    <li><strong>首を横に振る:</strong> 「아니요(いいえ)」</li>
+                    <li><strong>首を縦に振る:</strong> 「네(はい)」</li>
+                    <li><strong>手を振る:</strong> 「괜찮아요(大丈夫です・結構です)」</li>
+                </ul>
+                
+                <div class="highlight-box">
+                    <strong>ジェスチャー使用の注意点:</strong>
+                    <p>韓国では、年上の人に対して指を指すのは失礼とされます。代わりに手のひら全体で示すか、「저기요(あの、すみません)」と声をかけましょう。</p>
+                </div>
+                
+                <h3>「助けて!」を上手に求めるフレーズ</h3>
+                <p>困ったときは、助けを求めることが最も有効な戦略です。韓国人は外国人学習者に非常に親切なので、遠慮せず助けを求めましょう。</p>
+                
+                <div class="phrase-box">
+                    <div class="korean">도와주세요</div>
+                    <div class="japanese">助けてください</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">천천히 말씀해 주세요</div>
+                    <div class="japanese">ゆっくり話してください</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">다시 한번 말씀해 주시겠어요?</div>
+                    <div class="japanese">もう一度言っていただけますか?</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">이거 한국어로 뭐라고 해요?</div>
+                    <div class="japanese">これは韓国語で何と言いますか?</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">제가 말한 게 맞아요?</div>
+                    <div class="japanese">私が言ったこと、合ってますか?</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">틀렸으면 고쳐 주세요</div>
+                    <div class="japanese">間違っていたら直してください</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">써 주시겠어요?</div>
+                    <div class="japanese">書いていただけますか?</div>
+                </div>
+                
+                <div class="quote-box">
+                    「助けを求めることは弱さではありません。それは、学び続ける強さの証です」
+                </div>
+                
+                <p>詰まったときのサバイバル戦略を身につけることで、あなたは「完璧に話せる人」ではなく「どんな状況でもコミュニケーションを続けられる人」になります。これこそが、真の会話力なのです。</p>
+            </div>
+
+            <!-- 第7章 -->
+            <div class="chapter">
+                <span class="chapter-number">第7章</span>
+                <h2>間違えた後のリカバリー術</h2>
+                
+                <p>間違いは避けられません。しかし、間違えた後にどう対処するかで、あなたの成長速度は大きく変わります。ここでは、間違えた後のリカバリー術と、間違いを最大の学びに変える方法を紹介します。</p>
+                
+                <h3>間違いに気づいた時の訂正フレーズ</h3>
+                <p>自分の間違いに気づいたとき、すぐに訂正することで、正しい表現が記憶に定着します。</p>
+                
+                <div class="phrase-box">
+                    <div class="korean">아, 아니 / 아, 잠깐</div>
+                    <div class="japanese">あ、違った / あ、ちょっと待って</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">잘못 말했어요</div>
+                    <div class="japanese">間違って言いました</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">다시 말할게요</div>
+                    <div class="japanese">もう一度言います</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">제 말은... (正しい表現)</div>
+                    <div class="japanese">私が言いたかったのは...(正しい表現)</div>
+                </div>
+                
+                <h4>【実践例】</h4>
+                <div class="phrase-box">
+                    <div class="korean"><strong>間違い:</strong> 어제 학교 가요 (×)</div>
+                    <div class="japanese">昨日学校に行きます(時制が間違い)</div>
+                    <div class="korean" style="margin-top:10px;"><strong>訂正:</strong> 아, 잠깐! 어제 학교 갔어요 (○)</div>
+                    <div class="japanese">あ、ちょっと待って!昨日学校に行きました</div>
+                </div>
+                
+                <p><strong>重要:</strong> 訂正することで、正しい表現が脳に強く印象づけられます。間違いに気づいたら、恥ずかしがらずに訂正しましょう。</p>
+                
+                <h3>相手に訂正してもらう依頼の仕方</h3>
+                <p>韓国人の友人や先生に、積極的に訂正をお願いすることで、学習スピードが飛躍的に上がります。</p>
+                
+                <div class="phrase-box">
+                    <div class="korean">제가 틀렸으면 고쳐 주세요</div>
+                    <div class="japanese">私が間違っていたら直してください</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">이상하게 들리면 말해 주세요</div>
+                    <div class="japanese">変に聞こえたら教えてください</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">더 자연스러운 표현이 있으면 알려 주세요</div>
+                    <div class="japanese">もっと自然な表現があったら教えてください</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">제 발음이 이상하면 지적해 주세요</div>
+                    <div class="japanese">私の発音がおかしかったら指摘してください</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">한국 사람은 이렇게 안 말해요?</div>
+                    <div class="japanese">韓国人はこう言わないですか?</div>
+                </div>
+                
+                <h4>【訂正をお願いするタイミング】</h4>
+                <ul>
+                    <li><strong>会話の最初:</strong> 「今日は間違いを直してもらいたいので、よろしくお願いします」</li>
+                    <li><strong>言語交換の時:</strong> 「お互いに訂正し合いましょう」</li>
+                    <li><strong>オンラインレッスン:</strong> 「文法ミスは全部指摘してください」</li>
+                </ul>
+                
+                <div class="highlight-box">
+                    <strong>訂正をお願いするメリット:</strong>
+                    <ul>
+                        <li>正しい表現がその場で学べる</li>
+                        <li>同じ間違いを繰り返さなくなる</li>
+                        <li>相手も「どこまで指摘していいかわかる」ので安心</li>
+                        <li>学習意欲が伝わり、相手がより協力的になる</li>
+                    </ul>
+                </div>
+                
+                <h3>「恥ずかしい」感情との付き合い方</h3>
+                <p>間違えた後に感じる「恥ずかしさ」は自然な感情です。しかし、この感情に支配されると、次の挑戦ができなくなります。</p>
+                
+                <h4>【恥ずかしさを軽減する思考法】</h4>
+                
+                <div class="mindset-box">
+                    <h4>思考法1: 相対化する</h4>
+                    <p>「5年後の自分から見たら、今の間違いは可愛いものに見えるだろう」と考える。</p>
+                    <p>実際、1年後のあなたは今日の間違いを笑って振り返れます。時間が解決してくれると知ることで、今の恥ずかしさが軽くなります。</p>
+                </div>
+                
+                <div class="mindset-box">
+                    <h4>思考法2: 主語を変える</h4>
+                    <p>「私が恥ずかしい」ではなく「この状況が恥ずかしい」と考える。</p>
+                    <p>恥ずかしいのは「あなたという人間」ではなく「今この瞬間の状況」だけ。あなたの価値は、一つの間違いで変わりません。</p>
+                </div>
+                
+                <div class="mindset-box">
+                    <h4>思考法3: リフレーミング</h4>
+                    <p>「恥ずかしい経験」→「面白いエピソード」に変換する。</p>
+                    <p>多くの上級者は、初級時代の失敗談を笑いながら語ります。今の恥ずかしさは、未来の面白いストーリーになるのです。</p>
+                </div>
+                
+                <h4>【恥ずかしさを感じたときの対処法】</h4>
+                <ol>
+                    <li><strong>深呼吸する:</strong> 3秒吸って、5秒吐く。これだけで冷静になれる</li>
+                    <li><strong>笑顔を作る:</strong> 笑顔は脳に「大丈夫だ」という信号を送る</li>
+                    <li><strong>正直に言う:</strong> 「恥ずかしいです」と口に出すことで、感情が軽くなる</li>
+                    <li><strong>すぐに次に進む:</strong> 間違いを引きずらず、次の文章を話す</li>
+                </ol>
+                
+                <div class="quote-box">
+                    「恥ずかしさは、成長している証拠です。恥ずかしいと感じるなら、あなたは挑戦しているということ。それは誇るべきことです」
+                </div>
+                
+                <h3>間違いを記録・分析して成長につなげる方法</h3>
+                <p>間違いをただ経験するだけでなく、記録して分析することで、同じ間違いを繰り返さなくなります。</p>
+                
+                <h4>【間違いノートの作り方】</h4>
+                <div class="training-box">
+                    <h4>ステップ1: 記録する</h4>
+                    <p>間違えた表現をその場でメモ(スマホのメモアプリでOK)</p>
+                    <ul>
+                        <li>間違えた表現</li>
+                        <li>正しい表現</li>
+                        <li>いつ、どこで間違えたか</li>
+                    </ul>
+                </div>
+                
+                <div class="training-box">
+                    <h4>ステップ2: 分類する</h4>
+                    <p>間違いをカテゴリー別に分ける</p>
+                    <ul>
+                        <li><strong>文法の間違い:</strong> 時制、助詞、語尾など</li>
+                        <li><strong>語彙の間違い:</strong> 単語の選び間違い</li>
+                        <li><strong>発音の間違い:</strong> 濃音、激音、パッチムなど</li>
+                        <li><strong>表現の不自然さ:</strong> 文法的には正しいが、韓国人は使わない表現</li>
+                    </ul>
+                </div>
+                
+                <div class="training-box">
+                    <h4>ステップ3: パターンを見つける</h4>
+                    <p>同じ種類の間違いを繰り返していないか確認</p>
+                    <p><strong>例:</strong> 「過去形の間違いが多い」→ 過去形の集中練習が必要</p>
+                </div>
+                
+                <div class="training-box">
+                    <h4>ステップ4: 復習する</h4>
+                    <p>週に1回、間違いノートを見返し、正しい表現を音読する</p>
+                    <ul>
+                        <li>間違えた表現を見る → 正しい表現を3回音読</li>
+                        <li>1ヶ月後にもう一度同じ間違いをしていないか確認</li>
+                    </ul>
+                </div>
+                
+                <h4>【デジタルツールの活用】</h4>
+                <ul>
+                    <li><strong>スマホのメモアプリ:</strong> 外出先でもすぐに記録できる</li>
+                    <li><strong>Notion/Evernote:</strong> カテゴリー分けや検索が簡単</li>
+                    <li><strong>Anki/Quizlet:</strong> 間違えた表現をフラッシュカードにして復習</li>
+                </ul>
+                
+                <h3>成功体験の積み重ね方</h3>
+                <p>間違いから学ぶことも大切ですが、同時に「できたこと」を認識し、祝うことも重要です。</p>
+                
+                <h4>【小さな成功を記録する】</h4>
+                <div class="checklist">
+                    <div class="checklist-item">今日、韓国語で3文以上話せた</div>
+                    <div class="checklist-item">詰まらずに挨拶できた</div>
+                    <div class="checklist-item">相手の質問を理解できた</div>
+                    <div class="checklist-item">新しいフレーズを1つ使えた</div>
+                    <div class="checklist-item">間違いを恐れずに話せた</div>
+                    <div class="checklist-item">訂正された表現をすぐに使い直せた</div>
+                </div>
+                
+                <h4>【成功日記のつけ方】</h4>
+                <p>毎日寝る前に、今日の「韓国語成功体験」を1つ書く。</p>
+                
+                <div class="phrase-box">
+                    <div class="korean"><strong>例:</strong> 오늘 카페에서 주문할 때 "아메리카노 한 잔 주세요"를 막힘없이 말할 수 있었다!</div>
+                    <div class="japanese"><strong>例:</strong> 今日、カフェで注文するとき「アメリカーノ1杯ください」を詰まらずに言えた!</div>
+                </div>
+                
+                <p><strong>効果:</strong></p>
+                <ul>
+                    <li>自信が積み重なる</li>
+                    <li>成長が可視化される</li>
+                    <li>モチベーションが維持できる</li>
+                    <li>落ち込んだときに読み返せる</li>
+                </ul>
+                
+                <div class="highlight-box">
+                    <strong>「7:3の法則」:</strong>
+                    <p>間違いの記録と成功の記録の比率は「3:7」が理想的です。間違いから学びつつ、成功体験をより多く記録することで、ポジティブな学習サイクルが生まれます。</p>
+                </div>
+                
+                <p>間違えた後のリカバリー術を身につけることで、あなたは「間違いを恐れる人」から「間違いを活かせる人」へと変わります。そして、その変化こそが、真の上達への道なのです。</p>
+            </div>
+
+            <!-- 第8章 -->
+            <div class="chapter">
+                <span class="chapter-number">第8章</span>
+                <h2>30日間・即答力強化プログラム</h2>
+                
+                <p>これまで学んだすべてのトレーニングを、30日間の実践的なプログラムとして体系化します。このプログラムを忠実に実行すれば、30日後のあなたは確実に変わっています。</p>
+                
+                <h3>1週目: 基礎反射神経を作る</h3>
+                <p><strong>目標:</strong> 基本的な挨拶と相づちを自動化し、「考えずに反応する」感覚を掴む</p>
+                
+                <h4>【毎日のルーティン(1週目)】</h4>
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>時間</th>
+                            <th>トレーニング</th>
+                            <th>内容</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>朝(10分)</strong></td>
+                            <td>音読スピードチャレンジ</td>
+                            <td>基本挨拶10フレーズを、段階的に加速して音読</td>
+                        </tr>
+                        <tr>
+                            <td><strong>昼(5分)</strong></td>
+                            <td>3秒ルール応答練習</td>
+                            <td>簡単な質問5つに、3秒以内に答える練習</td>
+                        </tr>
+                        <tr>
+                            <td><strong>夜(15分)</strong></td>
+                            <td>独り言スピーキング</td>
+                            <td>夕食の準備や入浴中に、今していることを韓国語で実況</td>
+                        </tr>
+                        <tr>
+                            <td><strong>就寝前(5分)</strong></td>
+                            <td>成功日記</td>
+                            <td>今日使えたフレーズ、できたことを1つ記録</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h4>【1週目の重点フレーズ】</h4>
+                <ul>
+                    <li>基本挨拶10個(안녕하세요、감사합니다、등)</li>
+                    <li>相づち10個(네、그래요、정말요、등)</li>
+                    <li>基本応答10個(좋아요、괜찮아요、아니요、등)</li>
+                </ul>
+                
+                <h4>【1週目終了時の目標】</h4>
+                <div class="checklist">
+                    <div class="checklist-item">基本挨拶を考えずに言える</div>
+                    <div class="checklist-item">相づちを自然に打てる</div>
+                    <div class="checklist-item">簡単な質問に3秒以内に反応できる</div>
+                    <div class="checklist-item">1日10分以上、韓国語を声に出す習慣ができた</div>
+                </div>
+                
+                <h3>2週目: フレーズの自動化を進める</h3>
+                <p><strong>目標:</strong> 日常会話で頻出するフレーズを自動化し、会話の流れに乗れるようになる</p>
+                
+                <h4>【毎日のルーティン(2週目)】</h4>
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>時間</th>
+                            <th>トレーニング</th>
+                            <th>内容</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>朝(15分)</strong></td>
+                            <td>音読 + クイックレスポンス</td>
+                            <td>日常フレーズ20個を音読後、質問→即答ドリル10セット</td>
+                        </tr>
+                        <tr>
+                            <td><strong>昼(10分)</strong></td>
+                            <td>シャドーイング</td>
+                            <td>YouTubeのVlogや会話動画を使ってシャドーイング</td>
+                        </tr>
+                        <tr>
+                            <td><strong>夜(15分)</strong></td>
+                            <td>独り言スピーキング</td>
+                            <td>今日の出来事を韓国語で振り返る(日記形式)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>就寝前(5分)</strong></td>
+                            <td>復習 + 成功日記</td>
+                            <td>今日使った新フレーズを3回音読、成功体験を記録</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h4>【2週目の重点フレーズ】</h4>
+                <ul>
+                    <li>好みの表現(좋아해요、싫어해요、등)</li>
+                    <li>頻度の表現(자주、가끔、거의 안、등)</li>
+                    <li>時間稼ぎフレーズ(음...、글쎄요...、등)</li>
+                    <li>質問フレーズ(뭐예요?、어디예요?、언제예요?、등)</li>
+                </ul>
+                
+                <h4>【2週目終了時の目標】</h4>
+                <div class="checklist">
+                    <div class="checklist-item">20個以上のフレーズが自動的に出てくる</div>
+                    <div class="checklist-item">詰まったときに時間稼ぎフレーズを使える</div>
+                    <div class="checklist-item">簡単な質問ができる</div>
+                    <div class="checklist-item">シャドーイングで音の流れを掴めるようになった</div>
+                </div>
+                
+                <h3>3週目: 実践的なシチュエーション練習</h3>
+                <p><strong>目標:</strong> 実際の会話場面を想定した練習で、即答力を実戦レベルに引き上げる</p>
+                
+                <h4>【毎日のルーティン(3週目)】</h4>
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>時間</th>
+                            <th>トレーニング</th>
+                            <th>内容</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>朝(20分)</strong></td>
+                            <td>シチュエーション別練習</td>
+                            <td>カフェ、買い物、道案内など、1つのシチュエーションを集中練習</td>
+                        </tr>
+                        <tr>
+                            <td><strong>昼(10分)</strong></td>
+                            <td>ロールプレイ練習</td>
+                            <td>想像上の相手と会話する(独り二役)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>夜(15分)</strong></td>
+                            <td>実践準備</td>
+                            <td>言語交換やオンラインレッスンで使う表現を準備・練習</td>
+                        </tr>
+                        <tr>
+                            <td><strong>週末</strong></td>
+                            <td>実践会話</td>
+                            <td>言語交換アプリやオンラインレッスンで実際に会話</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h4>【3週目の重点練習】</h4>
+                <ul>
+                    <li><strong>月・火:</strong> カフェでの注文シーン</li>
+                    <li><strong>水・木:</strong> 買い物・値段交渉シーン</li>
+                    <li><strong>金・土:</strong> 自己紹介・趣味の話</li>
+                    <li><strong>日:</strong> 週末の出来事を話す練習</li>
+                </ul>
+                
+                <h4>【3週目終了時の目標】</h4>
+                <div class="checklist">
+                    <div class="checklist-item">5つ以上のシチュエーションで自信を持って話せる</div>
+                    <div class="checklist-item">実際に韓国人と10分以上会話できた</div>
+                    <div class="checklist-item">間違いを恐れず、とにかく話す姿勢ができた</div>
+                    <div class="checklist-item">詰まったときの対処法を実践で使えた</div>
+                </div>
+                
+                <h3>4週目: 総合力の確認と次のステップ</h3>
+                <p><strong>目標:</strong> これまでの成長を確認し、さらなる上達のための計画を立てる</p>
+                
+                <h4>【毎日のルーティン(4週目)】</h4>
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>時間</th>
+                            <th>トレーニング</th>
+                            <th>内容</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>朝(15分)</strong></td>
+                            <td>弱点強化</td>
+                            <td>間違いノートを見返し、苦手な表現を集中練習</td>
+                        </tr>
+                        <tr>
+                            <td><strong>昼(15分)</strong></td>
+                            <td>総合練習</td>
+                            <td>これまで学んだすべてのフレーズを使った会話練習</td>
+                        </tr>
+                        <tr>
+                            <td><strong>夜(20分)</strong></td>
+                            <td>実践会話</td>
+                            <td>可能な限り実際の会話機会を作る(毎日)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>週末</strong></td>
+                            <td>30日間の振り返り</td>
+                            <td>成長の記録を見返し、次の30日の目標を設定</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h4>【4週目の重点活動】</h4>
+                <ul>
+                    <li>これまでの成功日記を読み返す</li>
+                    <li>30日前と今の自分を比較する</li>
+                    <li>できるようになったことリストを作る</li>
+                    <li>次の30日で達成したい目標を3つ設定する</li>
+                </ul>
+                
+                <h4>【30日間プログラム完了時の達成目標】</h4>
+                <div class="checklist">
+                    <div class="checklist-item">50個以上のフレーズが自動的に出てくる</div>
+                    <div class="checklist-item">基本的な会話で詰まる回数が減った</div>
+                    <div class="checklist-item">間違いを恐れずに話せるようになった</div>
+                    <div class="checklist-item">3秒以内に何らかの反応ができる</div>
+                    <div class="checklist-item">沈黙せず、つなぎ言葉で会話を繋げられる</div>
+                    <div class="checklist-item">訂正を前向きに受け入れられる</div>
+                    <div class="checklist-item">韓国語で話すことが楽しくなった</div>
+                </div>
+                
+                <h3>日々の練習チェックリスト</h3>
+                <p>毎日の練習をしっかり実行するために、チェックリストを活用しましょう。</p>
+                
+                <div class="checklist">
+                    <h4 style="margin-top:0;">【毎日の基本チェックリスト】</h4>
+                    <div class="checklist-item">朝のトレーニングを完了した</div>
+                    <div class="checklist-item">昼のトレーニングを完了した</div>
+                    <div class="checklist-item">夜のトレーニングを完了した</div>
+                    <div class="checklist-item">新しいフレーズを1つ以上学んだ</div>
+                    <div class="checklist-item">独り言スピーキングをした</div>
+                    <div class="checklist-item">間違いを1つ以上記録した</div>
+                    <div class="checklist-item">成功体験を1つ記録した</div>
+                </div>
+                
+                <div class="highlight-box">
+                    <strong>継続のコツ:</strong>
+                    <ul>
+                        <li><strong>完璧を求めない:</strong> 80%の実行で十分。完璧主義は挫折の原因</li>
+                        <li><strong>小さく始める:</strong> 最初は1日15分からでOK。習慣化が最優先</li>
+                        <li><strong>記録する:</strong> チェックリストに✓をつけることで達成感が得られる</li>
+                        <li><strong>休息日を作る:</strong> 週に1日は完全休息日にして、燃え尽きを防ぐ</li>
+                        <li><strong>仲間を作る:</strong> SNSで学習仲間を見つけ、励まし合う</li>
+                    </ul>
+                </div>
+                
+                <div class="quote-box">
+                    「30日後、あなたは完璧にはなっていません。でも、確実に変わっています。そして、その変化こそが、さらなる成長への推進力となります」
+                </div>
+            </div>
+
+            <!-- 第9章 -->
+            <div class="chapter">
+                <span class="chapter-number">第9章</span>
+                <h2>即答力が開く新しい世界</h2>
+                
+                <p>即答力を身につけると、あなたの韓国語人生は大きく変わります。ここでは、即答力がもたらす具体的な変化と、その先に広がる可能性についてお話しします。</p>
+                
+                <h3>会話が楽しくなる瞬間</h3>
+                <p>即答力が身につくと、会話は「苦痛な試練」から「楽しいコミュニケーション」へと変わります。</p>
+                
+                <h4>【変化を実感する瞬間】</h4>
+                <div class="phrase-box">
+                    <p><strong>瞬間1: 笑いが生まれる</strong></p>
+                    <p>相手のジョークにすぐ反応できたとき、初めて「言葉のキャッチボール」の楽しさを感じます。</p>
+                    <div class="korean">상대: 오늘 날씨 진짜 춥다!</div>
+                    <div class="japanese">相手: 今日の天気、本当に寒い!</div>
+                    <div class="korean" style="margin-top:10px;">당신: 맞아요! 겨울이 온 것 같아요.</div>
+                    <div class="japanese">あなた: そうですね!冬が来たみたいです。</div>
+                </div>
+                
+                <div class="phrase-box">
+                    <p><strong>瞬間2: 沈黙がなくなる</strong></p>
+                    <p>以前は気まずかった沈黙が消え、自然な会話のリズムが生まれます。</p>
+                </div>
+                
+                <div class="phrase-box">
+                    <p><strong>瞬間3: 相手の表情が変わる</strong></p>
+                    <p>スムーズに答えられたとき、相手の顔に「おっ!」という驚きと喜びが浮かびます。その瞬間、あなたは「通じた!」という喜びを感じます。</p>
+                </div>
+                
+                <div class="phrase-box">
+                    <p><strong>瞬間4: 自分から話しかけられる</strong></p>
+                    <p>以前は待ちの姿勢だったのが、自分から質問したり、話題を提供できるようになります。</p>
+                </div>
+                
+                <p>これらの瞬間が積み重なることで、韓国語は「勉強するもの」から「使って楽しむもの」へと変わっていきます。</p>
+                
+                <h3>韓国人との関係性が変わる体験談</h3>
+                <p>即答力が身につくと、韓国人との関係性が劇的に深まります。</p>
+                
+                <div class="highlight-box">
+                    <p><strong>学習者Aさんの体験談:</strong></p>
+                    <p>「以前は韓国人の友人と会っても、ほとんど彼女が日本語で話してくれていました。私はただ笑って頷くだけ。でも、即答力トレーニングを始めて2ヶ月後、初めて韓国語だけで30分間会話が続いたんです。</p>
+                    <p>友人が『今日、すごく韓国語上手になったね!』と驚いてくれました。それ以降、彼女は積極的に韓国語で話しかけてくれるようになり、関係がもっと深くなりました。言葉が通じると、心も通じるんだと実感しました」</p>
+                </div>
+                
+                <div class="highlight-box">
+                    <p><strong>学習者Bさんの体験談:</strong></p>
+                    <p>「韓国旅行で、タクシーの運転手さんと会話できたことが忘れられません。以前なら『네(はい)』しか言えなかったのに、今回は『오늘 날씨 좋네요(今日、天気いいですね)』と自分から話しかけられました。</p>
+                    <p>運転手さんは驚いて、『일본 사람이에요? 한국말 잘하시네요!(日本人ですか?韓国語お上手ですね!)』と褒めてくれて、そこから10分間も楽しく会話が続きました。降りるとき、『또 오세요!(また来てください!)』と笑顔で手を振ってくれて、本当に嬉しかったです」</p>
+                </div>
+                
+                <p>これらの体験談が示すように、即答力は単なる「技術」ではありません。それは、人と人を繋ぐ「架け橋」なのです。</p>
+                
+                <h3>「伝わる喜び」が次の学習意欲を生む</h3>
+                <p>即答力が身につき、実際に会話で「伝わった!」という体験をすると、不思議なことが起こります。もっと学びたくなるのです。</p>
+                
+                <h4>【好循環のサイクル】</h4>
+                <div class="highlight-box">
+                    <ol>
+                        <li><strong>即答力が上がる</strong> → 会話がスムーズになる</li>
+                        <li><strong>会話がスムーズになる</strong> → 「伝わった!」という成功体験</li>
+                        <li><strong>成功体験</strong> → 自信がつく</li>
+                        <li><strong>自信がつく</strong> → もっと話したくなる</li>
+                        <li><strong>もっと話す</strong> → さらに上達する</li>
+                        <li><strong>さらに上達する</strong> → もっと複雑な会話ができる</li>
+                        <li><strong>複雑な会話ができる</strong> → さらに深い関係が築ける</li>
+                    </ol>
+                </div>
+                
+                <p>この好循環に一度入ると、学習は「義務」ではなく「楽しみ」になります。教科書を開くことも、単語を覚えることも、すべてが「次の会話をもっと楽しくするための準備」に変わるのです。</p>
+                
+                <div class="quote-box">
+                    「伝わる喜びは、どんな学習法よりも強力なモチベーションです。一度その喜びを知ったら、もう後戻りはできません」
+                </div>
+                
+                <h3>即答力がもたらす自信の連鎖</h3>
+                <p>即答力は、韓国語の能力だけでなく、あなたの人生全体に良い影響を与えます。</p>
+                
+                <h4>【即答力がもたらす変化】</h4>
+                <div class="training-box">
+                    <h4>変化1: コミュニケーションへの自信</h4>
+                    <p>韓国語で即座に反応できるようになると、「私はコミュニケーションができる人だ」という自信が生まれます。この自信は、日本語での会話や仕事の場面にも波及します。</p>
+                </div>
+                
+                <div class="training-box">
+                    <h4>変化2: 挑戦する勇気</h4>
+                    <p>「間違いを恐れずに話せた」という経験は、他の場面での挑戦にも勇気を与えます。「韓国語で挑戦できたんだから、他のことにも挑戦できる」という思考が生まれます。</p>
+                </div>
+                
+                <div class="training-box">
+                    <h4>変化3: 学習への自信</h4>
+                    <p>「継続すれば必ず上達する」という実感を得ることで、他の学習にも積極的になります。「大人になっても学べる」という自信は、人生を豊かにします。</p>
+                </div>
+                
+                <div class="training-box">
+                    <h4>変化4: 異文化への開放性</h4>
+                    <p>韓国語を通じて韓国文化を深く理解できるようになると、他の文化にも興味が広がります。世界が広がる感覚を味わえます。</p>
+                </div>
+                
+                <h3>あなたの韓国語人生はここから変わる</h3>
+                <p>この教材を最後まで読んでくださった、あなた。あなたはもう、「間違える恐怖」に支配される人ではありません。</p>
+                
+                <p>あなたは今、<span class="emphasis">新しいスタートラインに立っています。</span></p>
+                
+                <h4>【これからのあなたへ】</h4>
+                <div class="mindset-box">
+                    <p><strong>覚えておいてほしいこと:</strong></p>
+                    <ul>
+                        <li>完璧である必要はない。70%で十分</li>
+                        <li>間違いは恥ではなく、成長のデータ</li>
+                        <li>沈黙が最大の敵。何か声を出し続けよう</li>
+                        <li>相手はあなたの味方。減点法で聞いていない</li>
+                        <li>昨日の自分より、今日の自分が少しでも成長していればOK</li>
+                    </ul>
+                </div>
+                
+                <h4>【30日後のあなたへのメッセージ】</h4>
+                <p>30日間のトレーニングを終えたあなたへ。おめでとうございます!</p>
+                
+                <p>あなたは今、30日前の自分とは違う人になっています。完璧な韓国語話者になったわけではないかもしれません。でも、確実に変わっています。</p>
+                
+                <ul>
+                    <li>間違いを恐れずに話せるようになった</li>
+                    <li>詰まっても対処法を知っている</li>
+                    <li>基本的なフレーズが自動的に出てくる</li>
+                    <li>会話を楽しめるようになった</li>
+                </ul>
+                
+                <p>これらの変化は、さらなる成長への確かな土台です。</p>
+                
+                <h4>【1年後、3年後のあなたへ】</h4>
+                <p>今日から始めた即答力トレーニングを継続すれば、1年後、3年後のあなたは想像以上の場所にいるでしょう。</p>
+                
+                <div class="highlight-box">
+                    <p><strong>1年後のあなたは:</strong></p>
+                    <ul>
+                        <li>韓国人の友人と自然に会話を楽しんでいる</li>
+                        <li>韓国旅行で現地の人と交流できる</li>
+                        <li>韓国ドラマを字幕なしで楽しめる部分が増えている</li>
+                        <li>韓国語で自分の考えや感情を表現できる</li>
+                    </ul>
+                </div>
+                
+                <div class="highlight-box">
+                    <p><strong>3年後のあなたは:</strong></p>
+                    <ul>
+                        <li>韓国語が「第二の言語」になっている</li>
+                        <li>仕事で韓国語を使える可能性が広がっている</li>
+                        <li>韓国文化を深く理解し、人生が豊かになっている</li>
+                        <li>他の学習者にアドバイスできるレベルになっている</li>
+                    </ul>
+                </div>
+                
+                <p>すべては、今日のあなたの「一歩」から始まります。</p>
+                
+                <div class="quote-box">
+                    「あなたの韓国語人生は、今日、この瞬間から変わり始めます。恐れずに、楽しんで、そして何より、あなた自身を信じてください。あなたは必ずできます」
+                </div>
+            </div>
+            
+            <!-- おわりに -->
+            <div class="chapter">
+                <h2>おわりに</h2>
+                <p>この教材を閉じたら、すぐに実践してください。明日ではなく、今日。今、この瞬間から。</p>
+                <p>基本挨拶を10回音読することから始めましょう。独り言で「지금 뭐 하고 있어요?(今、何していますか?)」「이 책을 읽고 있어요(この本を読んでいます)」と声に出してみましょう。</p>
+                <p>その小さな一歩が、あなたの人生を変える大きな一歩になります。</p>
+                <p style="text-align:center; font-size:18px; margin-top:20px;">あなたの成功を心から応援しています。</p>
+            </div>
+
+            <!-- 付録 -->
+            <div class="chapter">
+                <span class="chapter-number">付録</span>
+                <h2>即答トレーニング用・練習素材集</h2>
+                
+                <p>ここでは、日々のトレーニングで使える実践的な練習素材を提供します。これらを繰り返し練習することで、即答力が確実に身につきます。</p>
+                
+                <h3>基本フレーズ100(音読用)</h3>
+                <p>毎日音読することで、自動化を促進します。1日20個ずつ、5日で1周するペースがおすすめです。</p>
+                
+                <h4>【挨拶・基本応答 (1-20)】</h4>
+                <div class="phrase-box"><div class="korean">1. 안녕하세요</div><div class="japanese">こんにちは</div></div>
+                <div class="phrase-box"><div class="korean">2. 안녕히 가세요</div><div class="japanese">さようなら(去る人に)</div></div>
+                <div class="phrase-box"><div class="korean">3. 안녕히 계세요</div><div class="japanese">さようなら(残る人に)</div></div>
+                <div class="phrase-box"><div class="korean">4. 감사합니다</div><div class="japanese">ありがとうございます</div></div>
+                <div class="phrase-box"><div class="korean">5. 천만에요</div><div class="japanese">どういたしまして</div></div>
+                <div class="phrase-box"><div class="korean">6. 죄송합니다</div><div class="japanese">申し訳ございません</div></div>
+                <div class="phrase-box"><div class="korean">7. 괜찮습니다</div><div class="japanese">大丈夫です</div></div>
+                <div class="phrase-box"><div class="korean">8. 네, 알겠습니다</div><div class="japanese">はい、わかりました</div></div>
+                <div class="phrase-box"><div class="korean">9. 아니요, 괜찮아요</div><div class="japanese">いいえ、大丈夫です</div></div>
+                <div class="phrase-box"><div class="korean">10. 잘 부탁드립니다</div><div class="japanese">よろしくお願いします</div></div>
+                <div class="phrase-box"><div class="korean">11. 만나서 반갑습니다</div><div class="japanese">お会いできて嬉しいです</div></div>
+                <div class="phrase-box"><div class="korean">12. 오래간만이에요</div><div class="japanese">お久しぶりです</div></div>
+                <div class="phrase-box"><div class="korean">13. 잘 지냈어요?</div><div class="japanese">元気でしたか?</div></div>
+                <div class="phrase-box"><div class="korean">14. 네, 잘 지냈어요</div><div class="japanese">はい、元気でした</div></div>
+                <div class="phrase-box"><div class="korean">15. 또 봬요</div><div class="japanese">また会いましょう</div></div>
+                <div class="phrase-box"><div class="korean">16. 안녕</div><div class="japanese">バイバイ(カジュアル)</div></div>
+                <div class="phrase-box"><div class="korean">17. 고마워요</div><div class="japanese">ありがとう</div></div>
+                <div class="phrase-box"><div class="korean">18. 미안해요</div><div class="japanese">ごめんなさい</div></div>
+                <div class="phrase-box"><div class="korean">19. 수고하세요</div><div class="japanese">お疲れ様です</div></div>
+                <div class="phrase-box"><div class="korean">20. 좋은 하루 되세요</div><div class="japanese">良い一日を</div></div>
+                
+                <h4>【相づち・リアクション (21-40)】</h4>
+                <div class="phrase-box"><div class="korean">21. 네 / 응</div><div class="japanese">はい / うん</div></div>
+                <div class="phrase-box"><div class="korean">22. 그래요</div><div class="japanese">そうです</div></div>
+                <div class="phrase-box"><div class="korean">23. 정말요?</div><div class="japanese">本当ですか?</div></div>
+                <div class="phrase-box"><div class="korean">24. 진짜요?</div><div class="japanese">マジですか?</div></div>
+                <div class="phrase-box"><div class="korean">25. 그렇군요</div><div class="japanese">そうなんですね</div></div>
+                <div class="phrase-box"><div class="korean">26. 맞아요</div><div class="japanese">そうですね</div></div>
+                <div class="phrase-box"><div class="korean">27. 저도요</div><div class="japanese">私もです</div></div>
+                <div class="phrase-box"><div class="korean">28. 와! 대박!</div><div class="japanese">わぁ!すごい!</div></div>
+                <div class="phrase-box"><div class="korean">29. 어머!</div><div class="japanese">あら!</div></div>
+                <div class="phrase-box"><div class="korean">30. 헐!</div><div class="japanese">え!?(驚愕)</div></div>
+                <div class="phrase-box"><div class="korean">31. 좋아요!</div><div class="japanese">いいですね!</div></div>
+                <div class="phrase-box"><div class="korean">32. 최고예요!</div><div class="japanese">最高です!</div></div>
+                <div class="phrase-box"><div class="korean">33. 아쉬워요</div><div class="japanese">残念です</div></div>
+                <div class="phrase-box"><div class="korean">34. 다행이에요</div><div class="japanese">良かったです</div></div>
+                <div class="phrase-box"><div class="korean">35. 그렇죠</div><div class="japanese">そうですよね</div></div>
+                <div class="phrase-box"><div class="korean">36. 물론이죠</div><div class="japanese">もちろんです</div></div>
+                <div class="phrase-box"><div class="korean">37. 글쎄요</div><div class="japanese">さあ...どうでしょう</div></div>
+                <div class="phrase-box"><div class="korean">38. 아마도요</div><div class="japanese">たぶんです</div></div>
+                <div class="phrase-box"><div class="korean">39. 아니에요</div><div class="japanese">いいえ、違います</div></div>
+                <div class="phrase-box"><div class="korean">40. 몰라요</div><div class="japanese">わかりません</div></div>
+                
+                <h4>【日常会話フレーズ (41-60)】</h4>
+                <div class="phrase-box"><div class="korean">41. 좋아해요</div><div class="japanese">好きです</div></div>
+                <div class="phrase-box"><div class="korean">42. 싫어해요</div><div class="japanese">嫌いです</div></div>
+                <div class="phrase-box"><div class="korean">43. 보통이에요</div><div class="japanese">普通です</div></div>
+                <div class="phrase-box"><div class="korean">44. 자주 해요</div><div class="japanese">よくします</div></div>
+                <div class="phrase-box"><div class="korean">45. 가끔 해요</div><div class="japanese">たまにします</div></div>
+                <div class="phrase-box"><div class="korean">46. 거의 안 해요</div><div class="japanese">ほとんどしません</div></div>
+                <div class="phrase-box"><div class="korean">47. 할 수 있어요</div><div class="japanese">できます</div></div>
+                <div class="phrase-box"><div class="korean">48. 할 수 없어요</div><div class="japanese">できません</div></div>
+                <div class="phrase-box"><div class="korean">49. 하고 싶어요</div><div class="japanese">したいです</div></div>
+                <div class="phrase-box"><div class="korean">50. 하고 싶지 않아요</div><div class="japanese">したくないです</div></div>
+                <div class="phrase-box"><div class="korean">51. 배고파요</div><div class="japanese">お腹が空きました</div></div>
+                <div class="phrase-box"><div class="korean">52. 목말라요</div><div class="japanese">喉が渇きました</div></div>
+                <div class="phrase-box"><div class="korean">53. 피곤해요</div><div class="japanese">疲れました</div></div>
+                <div class="phrase-box"><div class="korean">54. 졸려요</div><div class="japanese">眠いです</div></div>
+                <div class="phrase-box"><div class="korean">55. 아파요</div><div class="japanese">痛いです</div></div>
+                <div class="phrase-box"><div class="korean">56. 괜찮아요</div><div class="japanese">大丈夫です</div></div>
+                <div class="phrase-box"><div class="korean">57. 재미있어요</div><div class="japanese">面白いです</div></div>
+                <div class="phrase-box"><div class="korean">58. 재미없어요</div><div class="japanese">つまらないです</div></div>
+                <div class="phrase-box"><div class="korean">59. 어려워요</div><div class="japanese">難しいです</div></div>
+                <div class="phrase-box"><div class="korean">60. 쉬워요</div><div class="japanese">簡単です</div></div>
+                
+                <h4>【質問フレーズ (61-80)】</h4>
+                <div class="phrase-box"><div class="korean">61. 뭐예요?</div><div class="japanese">何ですか?</div></div>
+                <div class="phrase-box"><div class="korean">62. 어디예요?</div><div class="japanese">どこですか?</div></div>
+                <div class="phrase-box"><div class="korean">63. 언제예요?</div><div class="japanese">いつですか?</div></div>
+                <div class="phrase-box"><div class="korean">64. 누구예요?</div><div class="japanese">誰ですか?</div></div>
+                <div class="phrase-box"><div class="korean">65. 왜요?</div><div class="japanese">なぜですか?</div></div>
+                <div class="phrase-box"><div class="korean">66. 어떻게요?</div><div class="japanese">どうやってですか?</div></div>
+                <div class="phrase-box"><div class="korean">67. 얼마예요?</div><div class="japanese">いくらですか?</div></div>
+                <div class="phrase-box"><div class="korean">68. 몇 개예요?</div><div class="japanese">いくつですか?</div></div>
+                <div class="phrase-box"><div class="korean">69. 어느 거예요?</div><div class="japanese">どれですか?</div></div>
+                <div class="phrase-box"><div class="korean">70. 무슨 뜻이에요?</div><div class="japanese">どういう意味ですか?</div></div>
+                <div class="phrase-box"><div class="korean">71. 이름이 뭐예요?</div><div class="japanese">名前は何ですか?</div></div>
+                <div class="phrase-box"><div class="korean">72. 어디에서 왔어요?</div><div class="japanese">どこから来ましたか?</div></div>
+                <div class="phrase-box"><div class="korean">73. 뭐 해요?</div><div class="japanese">何していますか?</div></div>
+                <div class="phrase-box"><div class="korean">74. 어디 가요?</div><div class="japanese">どこに行きますか?</div></div>
+                <div class="phrase-box"><div class="korean">75. 뭐 먹어요?</div><div class="japanese">何を食べますか?</div></div>
+                <div class="phrase-box"><div class="korean">76. 좋아해요?</div><div class="japanese">好きですか?</div></div>
+                <div class="phrase-box"><div class="korean">77. 할 수 있어요?</div><div class="japanese">できますか?</div></div>
+                <div class="phrase-box"><div class="korean">78. 괜찮아요?</div><div class="japanese">大丈夫ですか?</div></div>
+                <div class="phrase-box"><div class="korean">79. 알아요?</div><div class="japanese">わかりますか?</div></div>
+                <div class="phrase-box"><div class="korean">80. 있어요?</div><div class="japanese">ありますか?</div></div>
+                
+                <h4>【助けを求める・時間稼ぎフレーズ (81-100)】</h4>
+                <div class="phrase-box"><div class="korean">81. 도와주세요</div><div class="japanese">助けてください</div></div>
+                <div class="phrase-box"><div class="korean">82. 천천히 말씀해 주세요</div><div class="japanese">ゆっくり話してください</div></div>
+                <div class="phrase-box"><div class="korean">83. 다시 한번 말씀해 주세요</div><div class="japanese">もう一度言ってください</div></div>
+                <div class="phrase-box"><div class="korean">84. 잘 모르겠어요</div><div class="japanese">よくわかりません</div></div>
+                <div class="phrase-box"><div class="korean">85. 한국어로 뭐라고 해요?</div><div class="japanese">韓国語で何と言いますか?</div></div>
+                <div class="phrase-box"><div class="korean">86. 이해가 안 돼요</div><div class="japanese">理解できません</div></div>
+                <div class="phrase-box"><div class="korean">87. 써 주시겠어요?</div><div class="japanese">書いていただけますか?</div></div>
+                <div class="phrase-box"><div class="korean">88. 틀렸으면 고쳐 주세요</div><div class="japanese">間違っていたら直してください</div></div>
+                <div class="phrase-box"><div class="korean">89. 잠깐만요</div><div class="japanese">ちょっと待ってください</div></div>
+                <div class="phrase-box"><div class="korean">90. 생각 좀 해볼게요</div><div class="japanese">ちょっと考えてみます</div></div>
+                <div class="phrase-box"><div class="korean">91. 어떻게 말하지...</div><div class="japanese">どう言おうか...</div></div>
+                <div class="phrase-box"><div class="korean">92. 음...</div><div class="japanese">うーん...</div></div>
+                <div class="phrase-box"><div class="korean">93. 글쎄요...</div><div class="japanese">さあ...</div></div>
+                <div class="phrase-box"><div class="korean">94. 그게...</div><div class="japanese">それが...</div></div>
+                <div class="phrase-box"><div class="korean">95. 한국말 잘 못해요</div><div class="japanese">韓国語があまりできません</div></div>
+                <div class="phrase-box"><div class="korean">96. 배우고 있어요</div><div class="japanese">学んでいるところです</div></div>
+                <div class="phrase-box"><div class="korean">97. 단어가 생각 안 나요</div><div class="japanese">単語が思い出せません</div></div>
+                <div class="phrase-box"><div class="korean">98. 아, 잠깐!</div><div class="japanese">あ、ちょっと待って!</div></div>
+                <div class="phrase-box"><div class="korean">99. 다시 말할게요</div><div class="japanese">もう一度言います</div></div>
+                <div class="phrase-box"><div class="korean">100. 잘못 말했어요</div><div class="japanese">間違って言いました</div></div>
+                
+                <h3>質問→即答ドリル20セット</h3>
+                <p>質問を見たら(または聞いたら)、2秒以内に答える練習です。最初は簡単な答えでOK。慣れてきたら詳しい答えに挑戦しましょう。</p>
+                
+                <h4>【自己紹介編】</h4>
+                <div class="phrase-box">
+                    <div class="korean">Q1: 이름이 뭐예요?</div><div class="japanese">質問: 名前は何ですか?</div>
+                    <div class="korean" style="margin-top:10px;">A: (あなたの名前)이에요/예요</div><div class="japanese">答え: (あなたの名前)です</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">Q2: 어디에서 왔어요?</div><div class="japanese">質問: どこから来ましたか?</div>
+                    <div class="korean" style="margin-top:10px;">A: 일본에서 왔어요</div><div class="japanese">答え: 日本から来ました</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">Q3: 직업이 뭐예요?</div><div class="japanese">質問: 職業は何ですか?</div>
+                    <div class="korean" style="margin-top:10px;">A: (あなたの職業)이에요/예요</div><div class="japanese">答え: (あなたの職業)です</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">Q4: 취미가 뭐예요?</div><div class="japanese">質問: 趣味は何ですか?</div>
+                    <div class="korean" style="margin-top:10px;">A: (趣味)을/를 좋아해요</div><div class="japanese">答え: (趣味)が好きです</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">Q5: 한국어 공부한 지 얼마나 됐어요?</div><div class="japanese">質問: 韓国語を勉強してどれくらいですか?</div>
+                    <div class="korean" style="margin-top:10px;">A: (기간) 정도 됐어요</div><div class="japanese">答え: (期間)くらいです</div>
+                </div>
+                
+                <h4>【日常生活編】</h4>
+                <div class="phrase-box">
+                    <div class="korean">Q6: 아침에 보통 몇 시에 일어나요?</div><div class="japanese">質問: 朝、普通何時に起きますか?</div>
+                    <div class="korean" style="margin-top:10px;">A: (시간)에 일어나요</div><div class="japanese">答え: (時間)に起きます</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">Q7: 아침 먹었어요?</div><div class="japanese">質問: 朝ごはん食べましたか?</div>
+                    <div class="korean" style="margin-top:10px;">A: 네, 먹었어요 / 아니요, 안 먹었어요</div><div class="japanese">答え: はい、食べました / いいえ、食べませんでした</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">Q8: 주말에 보통 뭐 해요?</div><div class="japanese">質問: 週末は普通何をしますか?</div>
+                    <div class="korean" style="margin-top:10px;">A: (활동)을/를 해요</div><div class="japanese">答え: (活動)をします</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">Q9: 어제 뭐 했어요?</div><div class="japanese">質問: 昨日何をしましたか?</div>
+                    <div class="korean" style="margin-top:10px;">A: (활동)했어요</div><div class="japanese">答え: (活動)しました</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">Q10: 내일 뭐 할 거예요?</div><div class="japanese">質問: 明日何をする予定ですか?</div>
+                    <div class="korean" style="margin-top:10px;">A: (활동)할 거예요</div><div class="japanese">答え: (活動)する予定です</div>
+                </div>
+                
+                <h4>【好み・意見編】</h4>
+                <div class="phrase-box">
+                    <div class="korean">Q11: 한국 음식 좋아해요?</div><div class="japanese">質問: 韓国料理は好きですか?</div>
+                    <div class="korean" style="margin-top:10px;">A: 네, 좋아해요 / 아주 좋아해요</div><div class="japanese">答え: はい、好きです / とても好きです</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">Q12: 어떤 음식을 제일 좋아해요?</div><div class="japanese">質問: どんな食べ物が一番好きですか?</div>
+                    <div class="korean" style="margin-top:10px;">A: (음식)을/를 제일 좋아해요</div><div class="japanese">答え: (食べ物)が一番好きです</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">Q13: 커피 좋아해요?</div><div class="japanese">質問: コーヒーは好きですか?</div>
+                    <div class="korean" style="margin-top:10px;">A: 네, 좋아해요 / 아니요, 별로예요</div><div class="japanese">答え: はい、好きです / いいえ、あまりです</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">Q14: 한국 드라마 봐요?</div><div class="japanese">質問: 韓国ドラマを見ますか?</div>
+                    <div class="korean" style="margin-top:10px;">A: 네, 자주 봐요 / 가끔 봐요</div><div class="japanese">答え: はい、よく見ます / たまに見ます</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">Q15: K-POP 좋아해요?</div><div class="japanese">質問: K-POPは好きですか?</div>
+                    <div class="korean" style="margin-top:10px;">A: 네, 좋아해요 / 잘 모르겠어요</div><div class="japanese">答え: はい、好きです / よくわかりません</div>
+                </div>
+                
+                <h4>【天気・季節編】</h4>
+                <div class="phrase-box">
+                    <div class="korean">Q16: 오늘 날씨 어때요?</div><div class="japanese">質問: 今日の天気はどうですか?</div>
+                    <div class="korean" style="margin-top:10px;">A: 좋아요 / 안 좋아요 / 추워요 / 더워요</div><div class="japanese">答え: いいです / 良くないです / 寒いです / 暑いです</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">Q17: 어느 계절을 제일 좋아해요?</div><div class="japanese">質問: どの季節が一番好きですか?</div>
+                    <div class="korean" style="margin-top:10px;">A: (계절)을/를 제일 좋아해요</div><div class="japanese">答え: (季節)が一番好きです</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">Q18: 비 오는 날 좋아해요?</div><div class="japanese">質問: 雨の日は好きですか?</div>
+                    <div class="korean" style="margin-top:10px;">A: 네, 좋아해요 / 아니요, 별로예요</div><div class="japanese">答え: はい、好きです / いいえ、あまりです</div>
+                </div>
+                
+                <h4>【能力・経験編】</h4>
+                <div class="phrase-box">
+                    <div class="korean">Q19: 요리할 수 있어요?</div><div class="japanese">質問: 料理はできますか?</div>
+                    <div class="korean" style="margin-top:10px;">A: 네, 할 수 있어요 / 조금 할 수 있어요</div><div class="japanese">答え: はい、できます / 少しできます</div>
+                </div>
+                <div class="phrase-box">
+                    <div class="korean">Q20: 한국에 가 봤어요?</div><div class="japanese">質問: 韓国に行ったことがありますか?</div>
+                    <div class="korean" style="margin-top:10px;">A: 네, 가 봤어요 / 아니요, 아직 안 가 봤어요</div><div class="japanese">答え: はい、行ったことがあります / いいえ、まだ行ったことがありません</div>
+                </div>
+                
+                <div class="highlight-box">
+                    <p><strong>練習のポイント:</strong></p>
+                    <ul>
+                        <li>最初は質問を読みながら答える</li>
+                        <li>慣れてきたら、質問だけ見て瞬時に答える</li>
+                        <li>さらに慣れたら、目を閉じて質問を思い浮かべ、声に出して答える</li>
+                        <li>完璧な文章でなくてもOK。単語だけでも良い</li>
+                        <li>毎日10セットずつ、5日で1周するペースで練習</li>
+                    </ul>
+                </div>
+                
+                <h3>シチュエーション別ロールプレイ台本</h3>
+                <p>実際の会話場面を想定したロールプレイ練習です。一人で両方の役を演じることで、会話の流れを体に染み込ませます。</p>
+                
+                <h4>【シチュエーション1: カフェで注文】</h4>
+                <div class="training-box">
+                    <div class="phrase-box"><div class="korean"><strong>직원:</strong> 어서 오세요. 주문하시겠어요?</div><div class="japanese"><strong>店員:</strong> いらっしゃいませ。ご注文されますか?</div></div>
+                    <div class="phrase-box"><div class="korean"><strong>당신:</strong> 네. 아메리카노 한 잔 주세요.</div><div class="japanese"><strong>あなた:</strong> はい。アメリカーノ1杯ください。</div></div>
+                    <div class="phrase-box"><div class="korean"><strong>직원:</strong> 아이스로 드릴까요, 핫으로 드릴까요?</div><div class="japanese"><strong>店員:</strong> アイスになさいますか、ホットになさいますか?</div></div>
+                    <div class="phrase-box"><div class="korean"><strong>당신:</strong> 아이스로 주세요.</div><div class="japanese"><strong>あなた:</strong> アイスでください。</div></div>
+                    <div class="phrase-box"><div class="korean"><strong>직원:</strong> 사이즈는요?</div><div class="japanese"><strong>店員:</strong> サイズは?</div></div>
+                    <div class="phrase-box"><div class="korean"><strong>당신:</strong> 톨 사이즈로 주세요.</div><div class="japanese"><strong>あなた:</strong> トールサイズでください。</div></div>
+                    <div class="phrase-box"><div class="korean"><strong>직원:</strong> 네, 알겠습니다. 4,500원입니다.</div><div class="japanese"><strong>店員:</strong> はい、わかりました。4,500ウォンです。</div></div>
+                    <div class="phrase-box"><div class="korean"><strong>당신:</strong> 카드로 할게요.</div><div class="japanese"><strong>あなた:</strong> カードでします。</div></div>
+                    <div class="phrase-box"><div class="korean"><strong>직원:</strong> 여기 카드 찍어 주세요.</div><div class="japanese"><strong>店員:</strong> こちらにカードをタッチしてください。</div></div>
+                    <div class="phrase-box"><div class="korean"><strong>당신:</strong> 감사합니다.</div><div class="japanese"><strong>あなた:</strong> ありがとうございます。</div></div>
+                </div>
+                
+                <h4>【シチュエーション2: 道を尋ねる】</h4>
+                <div class="training-box">
+                    <div class="phrase-box"><div class="korean"><strong>당신:</strong> 저기요, 실례합니다.</div><div class="japanese"><strong>あなた:</strong> すみません、失礼します。</div></div>
+                    <div class="phrase-box"><div class="korean"><strong>행인:</strong> 네, 무슨 일이세요?</div><div class="japanese"><strong>通行人:</strong> はい、何でしょうか?</div></div>
+                    <div class="phrase-box"><div class="korean"><strong>당신:</strong> 지하철역이 어디예요?</div><div class="japanese"><strong>あなた:</strong> 地下鉄駅はどこですか?</div></div>
+                    <div class="phrase-box"><div class="korean"><strong>행인:</strong> 아, 저기 똑바로 가시면 돼요.</div><div class="japanese"><strong>通行人:</strong> ああ、あそこをまっすぐ行けばいいですよ。</div></div>
+                    <div class="phrase-box"><div class="korean"><strong>당신:</strong> 얼마나 걸려요?</div><div class="japanese"><strong>あなた:</strong> どれくらいかかりますか?</div></div>
+                    <div class="phrase-box"><div class="korean"><strong>행인:</strong> 걸어서 5분 정도 걸려요.</div><div class="japanese"><strong>通行人:</strong> 歩いて5分くらいかかりますよ。</div></div>
+                    <div class="phrase-box"><div class="korean"><strong>당신:</strong> 감사합니다!</div><div class="japanese"><strong>あなた:</strong> ありがとうございます!</div></div>
+                    <div class="phrase-box"><div class="korean"><strong>행인:</strong> 천만에요. 잘 찾아가세요.</div><div class="japanese"><strong>通行人:</strong> どういたしまして。無事に着いてください。</div></div>
+                </div>
+                
+                <h4>【シチュエーション3: 友人との会話】</h4>
+                <div class="training-box">
+                    <div class="phrase-box"><div class="korean"><strong>친구:</strong> 주말에 뭐 했어?</div><div class="japanese"><strong>友人:</strong> 週末何した?</div></div>
+                    <div class="phrase-box"><div class="korean"><strong>당신:</strong> 영화 봤어. 너는?</div><div class="japanese"><strong>あなた:</strong> 映画見た。君は?</div></div>
+                    <div class="phrase-box"><div class="korean"><strong>친구:</strong> 나는 집에서 쉬었어. 무슨 영화 봤어?</div><div class="japanese"><strong>友人:</strong> 私は家で休んだ。何の映画見た?</div></div>
+                    <div class="phrase-box"><div class="korean"><strong>당신:</strong> 액션 영화 봤어. 진짜 재미있었어!</div><div class="japanese"><strong>あなた:</strong> アクション映画見た。本当に面白かった!</div></div>
+                    <div class="phrase-box"><div class="korean"><strong>친구:</strong> 오, 나도 보고 싶다! 같이 볼까?</div><div class="japanese"><strong>友人:</strong> おお、私も見たい!一緒に見る?</div></div>
+                    <div class="phrase-box"><div class="korean"><strong>당신:</strong> 좋아! 언제가 좋아?</div><div class="japanese"><strong>あなた:</strong> いいね!いつがいい?</div></div>
+                    <div class="phrase-box"><div class="korean"><strong>친구:</strong> 다음 주 토요일은 어때?</div><div class="japanese"><strong>友人:</strong> 来週の土曜日はどう?</div></div>
+                    <div class="phrase-box"><div class="korean"><strong>당신:</strong> 완벽해! 그럼 그때 봐!</div><div class="japanese"><strong>あなた:</strong> 完璧!じゃあそのとき会おう!</div></div>
+                </div>
+                
+                <div class="highlight-box">
+                    <p><strong>ロールプレイ練習のコツ:</strong></p>
+                    <ul>
+                        <li>最初は台本を読みながら練習</li>
+                        <li>慣れてきたら、台本を見ずに記憶で話す</li>
+                        <li>さらに慣れたら、自分でアレンジして会話を広げる</li>
+                        <li>実際に会話しているつもりで、感情を込めて話す</li>
+                        <li>スマホで録音して、後で聞き返すと効果的</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- あなたへのメッセージ -->
+            <div class="chapter">
+                <h2>あなたへのメッセージ</h2>
+                <p>最後までお読みいただき、本当にありがとうございます。</p>
+                <p>この教材を通じて、あなたに最も伝えたかったこと。それは、<span class="emphasis">「間違える恐怖」は克服できる</span>ということです。</p>
+                <p>そして、その恐怖を克服したとき、あなたの韓国語人生は劇的に変わります。</p>
+                <p>即答力は、単なる「速く話す技術」ではありません。それは:</p>
+                <ul>
+                    <li>コミュニケーションへの自信</li>
+                    <li>間違いを恐れない勇気</li>
+                    <li>異文化を楽しむ心</li>
+                    <li>成長し続ける力</li>
+                </ul>
+                <p>これらすべてを含む、あなたの人生を豊かにする「生きる力」なのです。</p>
+                <div class="quote-box">
+                    「完璧な韓国語を話す人」になる必要はありません。<br>
+                    「韓国語で心を通わせられる人」になればいいのです。
+                </div>
+                <p>30日後、1年後、3年後のあなたが、今日の決断に感謝する日が必ず来ます。</p>
+                <p>その日まで、一緒に頑張りましょう。</p>
+                <p style="margin-top:40px; font-size:18px;">あなたの成功を心から願っています&#128522;</p>
+                <p style="text-align:center; font-size:28px; font-weight:bold; margin-top:60px; color:#667eea;"> 화이팅!</p>
+            </div>
+            
+        </div>
+
+        <!-- フッター -->
+        <div class="footer">
+            <p>【克服】「間違える恐怖」を打ち破る!大人のための即答力トレーニング</p>
+            <p style="margin-top:20px; opacity:0.7;">© 2025 Nico. All Rights Reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
+```

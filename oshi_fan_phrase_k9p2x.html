@@ -1,0 +1,1381 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+
+    <title>推し活韓国語フレーズBOOK - 完全版 (文字拡大・ページ調整完了版)</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Yu Gothic', 'YuGothic', 'Meiryo', sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .page {
+            width: 210mm;
+            height: 297mm;
+            background: white;
+            margin: 0 auto 20px;
+            padding: 20mm;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            page-break-after: always;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cover {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        
+        .cover h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .cover .subtitle {
+            font-size: 24px;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+        
+        .cover .badge {
+            background: white;
+            color: #667eea;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 18px;
+            margin: 20px 0;
+        }
+        
+        .cover .icons {
+            font-size: 40px;
+            margin-top: 30px;
+            letter-spacing: 20px;
+        }
+        
+        .toc {
+            padding-top: 25px;
+        }
+        
+        .toc h2 {
+            font-size: 26px;
+            color: #667eea;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+        
+        .toc-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0; /* 行間拡大 */
+            border-bottom: 1px dashed #ddd;
+            font-size: 16px; /* 文字拡大 */
+        }
+        
+        .toc-item .title {
+            color: #333;
+        }
+        
+        .toc-item .page-num {
+            color: #667eea;
+            font-weight: bold;
+        }
+        
+        .section-title {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px;
+            border-radius: 10px;
+            font-size: 24px; /* 文字拡大 */
+            font-weight: bold;
+            margin-bottom: 18px;
+            text-align: center;
+        }
+        
+        .scene-header {
+            background: #f8f9ff;
+            border-left: 4px solid #667eea;
+            padding: 8px 12px;
+            margin-bottom: 15px; /* 余白拡大 */
+            border-radius: 4px;
+        }
+        
+        .scene-header h3 {
+            color: #667eea;
+            font-size: 20px; /* 文字拡大 */
+            margin-bottom: 2px;
+        }
+        
+        .scene-header p {
+            color: #666;
+            font-size: 13px; /* 文字拡大 */
+        }
+        
+        .phrase-box {
+            background: #ffffff;
+            border: 2px solid #e8ebff;
+            border-radius: 8px;
+            padding: 12px;
+            margin-bottom: 12px; /* 余白拡大 */
+        }
+        
+        .phrase-korean {
+            font-size: 19px; /* 文字拡大 */
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 4px;
+        }
+        
+        .phrase-japanese {
+            font-size: 14px; /* 文字拡大 */
+            color: #666;
+        }
+        
+        .usage-note {
+            background: #fff9e6;
+            border-left: 3px solid #ffc107;
+            padding: 10px; /* 余白拡大 */
+            margin-top: 10px;
+            border-radius: 4px;
+            font-size: 13px; /* 文字拡大 */
+            line-height: 1.5;
+        }
+        
+        .usage-note strong {
+            color: #f57c00;
+        }
+        
+        .column-box {
+            background: linear-gradient(135deg, #e8ebff 0%, #f8f9ff 100%);
+            border-radius: 8px;
+            padding: 12px;
+            margin-top: 15px; /* 余白拡大 */
+        }
+        
+        .column-box h4 {
+            color: #667eea;
+            font-size: 16px; /* 文字拡大 */
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .column-box h4::before {
+            content: '💡';
+            margin-right: 5px;
+        }
+        
+        .column-box p {
+            font-size: 13px; /* 文字拡大 */
+            line-height: 1.6;
+            color: #555;
+        }
+        
+        .example-box {
+            background: #f0f8ff;
+            border-left: 3px solid #667eea;
+            padding: 10px;
+            margin: 8px 0; /* 余白拡大 */
+            border-radius: 4px;
+            font-size: 14px; /* 文字拡大 */
+            line-height: 1.6;
+        }
+        
+        .vocab-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 12px; /* 余白拡大 */
+            font-size: 14px; /* 文字拡大 */
+        }
+        
+        .vocab-table th {
+            background: #667eea;
+            color: white;
+            padding: 8px;
+            text-align: left;
+            font-size: 15px; /* 文字拡大 */
+        }
+        
+        .vocab-table td {
+            padding: 8px;
+            border-bottom: 1px solid #e8ebff;
+        }
+        
+        .vocab-table tr:hover {
+            background: #f8f9ff;
+        }
+        
+        .vocab-korean {
+            font-weight: bold;
+            color: #333;
+            font-size: 16px; /* 文字拡大 */
+        }
+        
+        .vocab-meaning {
+            color: #666;
+            font-size: 13px; /* 文字拡大 */
+        }
+        
+        .vocab-example {
+            color: #888;
+            font-size: 12px; /* 文字拡大 */
+            font-style: italic;
+        }
+        
+        .category-header {
+            background: #764ba2;
+            color: white;
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 18px; /* 文字拡大 */
+            font-weight: bold;
+            margin: 18px 0 10px 0; /* 余白拡大 */
+            text-align: center;
+        }
+        
+        .level-header {
+            background: #f8f9ff;
+            border-left: 4px solid #667eea;
+            padding: 8px 12px;
+            margin: 15px 0 10px 0; /* 余白拡大 */
+            border-radius: 4px;
+            font-size: 17px; /* 文字拡大 */
+            font-weight: bold;
+            color: #667eea;
+        }
+        
+        .emotion-box {
+            background: #ffffff;
+            border: 2px solid #e8ebff;
+            border-radius: 6px;
+            padding: 10px;
+            margin-bottom: 10px; /* 余白拡大 */
+            display: flex;
+            align-items: center;
+        }
+        
+        .emotion-number {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 14px; /* 文字拡大 */
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        
+        .emotion-content {
+            flex: 1;
+        }
+        
+        .emotion-korean {
+            font-size: 18px; /* 文字拡大 */
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 3px;
+        }
+        
+        .emotion-japanese {
+            font-size: 13px; /* 文字拡大 */
+            color: #666;
+        }
+        
+        .worksheet-box {
+            background: #f8f9ff;
+            border: 2px dashed #667eea;
+            border-radius: 8px;
+            padding: 15px; /* 余白拡大 */
+            margin-bottom: 15px;
+        }
+        
+        .worksheet-title {
+            background: #667eea;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-size: 16px; /* 文字拡大 */
+            font-weight: bold;
+            margin-bottom: 12px;
+            display: inline-block;
+        }
+        
+        .write-line {
+            border-bottom: 1px dotted #999;
+            margin: 10px 0;
+            min-height: 20px;
+        }
+        
+        .template-text {
+            line-height: 2.0;
+            font-size: 15px; /* 文字拡大 */
+            color: #333;
+        }
+        
+        .blank-space {
+            display: inline-block;
+            border-bottom: 1px solid #667eea;
+            min-width: 80px;
+            margin: 0 5px;
+        }
+        
+        .bonus-box {
+            background: linear-gradient(135deg, #ffd89b 0%, #19547b 100%);
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .bonus-box h3 {
+            font-size: 18px; /* 文字拡大 */
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .bonus-box h3::before {
+            content: '🎁';
+            margin-right: 6px;
+        }
+        
+        .bonus-content {
+            background: rgba(255, 255, 255, 0.95);
+            color: #333;
+            padding: 12px;
+            border-radius: 6px;
+            margin-top: 10px;
+        }
+        
+        .birthday-phrase {
+            background: white;
+            border-left: 3px solid #ff6b9d;
+            padding: 8px 10px;
+            margin: 8px 0;
+            border-radius: 4px;
+            font-size: 14px; /* 文字拡大 */
+        }
+        
+        .grammar-item {
+            background: white;
+            padding: 8px 10px;
+            margin: 8px 0;
+            border-radius: 5px;
+            border: 2px solid #e8ebff;
+        }
+        
+        .grammar-pattern {
+            color: #667eea;
+            font-weight: bold;
+            font-size: 15px; /* 文字拡大 */
+            margin-bottom: 3px;
+        }
+        
+        .grammar-meaning {
+            color: #666;
+            font-size: 13px; /* 文字拡大 */
+            margin-bottom: 3px;
+        }
+        
+        .grammar-example {
+            color: #888;
+            font-size: 12px; /* 文字拡大 */
+            font-style: italic;
+        }
+        
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .calendar-item {
+            background: white;
+            padding: 10px;
+            border-radius: 6px;
+            border: 2px solid #e8ebff;
+            text-align: center;
+        }
+        
+        .calendar-week {
+            color: #667eea;
+            font-weight: bold;
+            font-size: 15px; /* 文字拡大 */
+            margin-bottom: 6px;
+        }
+        
+        .calendar-task {
+            color: #666;
+            font-size: 12px; /* 文字拡大 */
+            line-height: 1.5;
+        }
+        
+        .checklist {
+            margin: 8px 0;
+        }
+        
+        .checklist-item {
+            padding: 6px 0;
+            font-size: 14px; /* 文字拡大 */
+            color: #555;
+        }
+        
+        .checklist-item::before {
+            content: '☐ ';
+            color: #667eea;
+            font-size: 16px;
+            margin-right: 5px;
+        }
+        
+        .page-number {
+            position: absolute;
+            bottom: 12mm;
+            right: 20mm;
+            color: #999;
+            font-size: 13px; /* 文字拡大 */
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .page {
+                margin: 0;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page cover">
+        <div class="icons">💜✨🎤</div>
+        <h1>推しに想いが届く!</h1>
+        <div class="subtitle">推し活韓国語フレーズBOOK</div>
+        <div class="badge">今日から使える実用フレーズ満載!</div>
+    </div>
+
+    <div class="page toc">
+        <h2>目次 Contents</h2>
+        <div class="toc-item">
+            <span class="title">Part 1: シーン別必須フレーズ</span>
+            <span class="page-num">P.3</span>
+        </div>
+        <div class="toc-item" style="padding-left: 20px;">
+            <span class="title">Scene 1: SNS・ファンカフェ編</span>
+            <span class="page-num">P.3</span>
+        </div>
+        <div class="toc-item" style="padding-left: 20px;">
+            <span class="title">Scene 2: コンサート・音楽番組編</span>
+            <span class="page-num">P.5</span>
+        </div>
+        <div class="toc-item" style="padding-left: 20px;">
+            <span class="title">Scene 3: ファンレター編</span>
+            <span class="page-num">P.7</span>
+        </div>
+        <div class="toc-item" style="padding-left: 20px;">
+            <span class="title">Scene 4: オタ友との会話編</span>
+            <span class="page-num">P.9</span>
+        </div>
+        <div class="toc-item">
+            <span class="title">Part 2: 推し活必須単語集</span>
+            <span class="page-num">P.11</span>
+        </div>
+        <div class="toc-item">
+            <span class="title">Part 3: 推しへの愛を伝える感情表現20選</span>
+            <span class="page-num">P.13</span>
+        </div>
+        <div class="toc-item">
+            <span class="title">Part 4: 書き込み式ワークシート</span>
+            <span class="page-num">P.16</span>
+        </div>
+        <div class="toc-item">
+            <span class="title">Part 5: ボーナスページ</span>
+            <span class="page-num">P.18</span>
+        </div>
+        <div class="page-number">Page 2</div>
+    </div>
+
+    <div class="page">
+        <div class="section-title">Part 1: シーン別必須フレーズ</div>
+        
+        <div class="scene-header">
+            <h3>Scene 1: SNS・ファンカフェ編 📱</h3>
+            <p>Weverse、ファンカフェ、X(旧Twitter)で推しにコメントする時に!</p>
+        </div>
+
+        <div class="phrase-box">
+            <div class="phrase-korean">오늘도 너무 멋있어요!</div>
+            <div class="phrase-japanese">今日もとてもかっこいいです!</div>
+        </div>
+
+        <div class="phrase-box">
+            <div class="phrase-korean">최고예요 ㅠㅠ</div>
+            <div class="phrase-japanese">最高です ㅠㅠ</div>
+            <div class="usage-note">
+                <strong>使い方:</strong> 「ㅠㅠ」は泣いている顔文字。感動した時によく使います!
+            </div>
+        </div>
+
+        <div class="phrase-box">
+            <div class="phrase-korean">평생 응원할게요 💜</div>
+            <div class="phrase-japanese">一生応援します 💜</div>
+        </div>
+
+        <div class="phrase-box">
+            <div class="phrase-korean">행복하게 해줘서 고마워요</div>
+            <div class="phrase-japanese">幸せにしてくれてありがとう</div>
+        </div>
+
+        <div class="phrase-box">
+            <div class="phrase-korean">사랑해요 ♡</div>
+            <div class="phrase-japanese">愛してます ♡</div>
+        </div>
+
+        <div class="column-box" style="margin-top: 18px;">
+            <h4>よく使う顔文字・絵文字</h4>
+            <p>
+                <strong>ㅠㅠ</strong> = 涙の顔文字<br>
+                <strong>ㅋㅋㅋ</strong> = 笑い(www)<br>
+                <strong>ㅎㅎ</strong> = 優しい笑い<br>
+                <strong>💜</strong> = K-POPファンのハート
+            </p>
+        </div>
+
+        <div class="page-number">Page 3</div>
+    </div>
+
+    <div class="page">
+        <div class="scene-header" style="margin-top: 40px;">
+            <h3>実際の使用例</h3>
+        </div>
+
+        <div class="example-box">
+            <strong>例文1:</strong> 오늘 무대 너무 멋있었어요! 최고예요 ㅠㅠ<br>
+            <span style="color: #666; font-size: 13px;">(今日のステージとてもかっこよかったです!最高です ㅠㅠ)</span>
+        </div>
+
+        <div class="example-box">
+            <strong>例文2:</strong> 항상 행복하게 해줘서 고마워요. 평생 응원할게요 💜<br>
+            <span style="color: #666; font-size: 13px;">(いつも幸せにしてくれてありがとう。一生応援します 💜)</span>
+        </div>
+
+        <div class="example-box">
+            <strong>例文3:</strong> 오늘도 예쁘다... 사랑해요 ♡<br>
+            <span style="color: #666; font-size: 13px;">(今日も綺麗...愛してます ♡)</span>
+        </div>
+
+        <div class="column-box" style="margin-top: 25px;">
+            <h4>ワンポイントアドバイス</h4>
+            <p><strong>「멋있다」vs「예쁘다」</strong><br>
+            멋있다は「かっこいい」、예쁘다は「綺麗・可愛い」という意味です。男性アイドルには「멋있어요」、女性アイドルには「예뻐요」を使うことが多いです!</p>
+        </div>
+
+        <div class="page-number">Page 4</div>
+    </div>
+
+    <div class="page">
+        <div class="scene-header">
+            <h3>Scene 2: コンサート・音楽番組編 🎤</h3>
+            <p>コンサート会場や音楽番組で使えるフレーズ集!</p>
+        </div>
+
+        <div class="phrase-box">
+            <div class="phrase-korean">현장 보고 싶어요!</div>
+            <div class="phrase-japanese">現場で見たいです!</div>
+        </div>
+
+        <div class="phrase-box">
+            <div class="phrase-korean">1위 축하해요! 🎉</div>
+            <div class="phrase-japanese">1位おめでとう! 🎉</div>
+        </div>
+
+        <div class="phrase-box">
+            <div class="phrase-korean">떼창 성공!</div>
+            <div class="phrase-japanese">ファン大合唱成功!</div>
+        </div>
+
+        <div class="phrase-box">
+            <div class="phrase-korean">오늘 직관 왔어요!</div>
+            <div class="phrase-japanese">今日直接観覧に来ました!</div>
+        </div>
+
+        <div class="phrase-box">
+            <div class="phrase-korean">응원법 완벽해요!</div>
+            <div class="phrase-japanese">応援法完璧です!</div>
+        </div>
+
+        <div class="phrase-box">
+            <div class="phrase-korean">수고하셨어요! 💪</div>
+            <div class="phrase-japanese">お疲れ様でした! 💪</div>
+        </div>
+
+        <div class="column-box" style="margin-top: 18px;">
+            <h4>コンサート用語</h4>
+            <p>
+                <strong>직관</strong> = 直接観覧 / <strong>현장</strong> = 現場<br>
+                <strong>떼창</strong> = ファン大合唱 / <strong>음방</strong> = 音楽番組
+            </p>
+        </div>
+
+        <div class="page-number">Page 5</div>
+    </div>
+
+    <div class="page">
+        <div class="scene-header" style="margin-top: 40px;">
+            <h3>実際の使用例</h3>
+        </div>
+
+        <div class="example-box">
+            <strong>例文1:</strong> 오늘 직관 왔어요! 현장에서 보니까 진짜 최고예요 ㅠㅠ<br>
+            <span style="color: #666; font-size: 13px;">(今日直接観覧に来ました!現場で見たら本当に最高です)</span>
+        </div>
+
+        <div class="example-box">
+            <strong>例文2:</strong> 1위 축하해요! 수고하셨어요! 💜<br>
+            <span style="color: #666; font-size: 13px;">(1位おめでとう!お疲れ様でした!)</span>
+        </div>
+
+        <div class="example-box">
+            <strong>例文3:</strong> 떼창 성공! 응원법 완벽했어요! 🎉<br>
+            <span style="color: #666; font-size: 13px;">(ファン大合唱成功!応援法完璧でした!)</span>
+        </div>
+
+        <div class="column-box" style="margin-top: 25px;">
+            <h4>音楽番組投票の応援フレーズ</h4>
+            <p>
+                <strong>투표했어요!</strong> = 投票しました!<br>
+                <strong>같이 투표해요!</strong> = 一緒に投票しましょう!<br>
+                <strong>1위 가자!</strong> = 1位行こう!
+            </p>
+        </div>
+
+        <div class="page-number">Page 6</div>
+    </div>
+
+    <div class="page">
+        <div class="scene-header">
+            <h3>Scene 3: ファンレター編 ✉️</h3>
+            <p>推しへの想いを韓国語で伝えよう!</p>
+        </div>
+
+        <div class="phrase-box">
+            <div class="phrase-korean">항상 응원하고 있어요</div>
+            <div class="phrase-japanese">いつも応援しています</div>
+        </div>
+
+        <div class="phrase-box">
+            <div class="phrase-korean">덕분에 힘이 나요</div>
+            <div class="phrase-japanese">おかげで元気が出ます</div>
+        </div>
+
+        <div class="phrase-box">
+            <div class="phrase-korean">건강 챙기세요</div>
+            <div class="phrase-japanese">健康に気をつけてください</div>
+        </div>
+
+        <div class="phrase-box">
+            <div class="phrase-korean">앞으로도 잘 부탁드려요</div>
+            <div class="phrase-japanese">これからもよろしくお願いします</div>
+        </div>
+
+        <div class="phrase-box">
+            <div class="phrase-korean">항상 감사해요</div>
+            <div class="phrase-japanese">いつもありがとうございます</div>
+        </div>
+
+        <div class="column-box" style="margin-top: 18px;">
+            <h4>ファンレターの基本構成</h4>
+            <p>
+                <strong>書き出し:</strong> ○○님께 / 안녕하세요<br>
+                <strong>本文:</strong> 항상 응원하고 있어요<br>
+                <strong>締め:</strong> 건강 조심하세요 / 사랑해요 ♡
+            </p>
+        </div>
+
+        <div class="page-number">Page 7</div>
+    </div>
+
+    <div class="page">
+        <div class="scene-header" style="margin-top: 40px;">
+            <h3>ファンレター例文</h3>
+        </div>
+
+        <div class="example-box" style="line-height: 2.0; padding: 15px; font-size: 15px;">
+            지민님께<br><br>
+            안녕하세요. 저는 일본에서 온 팬이에요.<br>
+            항상 응원하고 있어요. 덕분에 힘이 나요.<br>
+            건강 챙기세요. 앞으로도 잘 부탁드려요.<br><br>
+            사랑해요 💜<br>
+            유미 드림
+        </div>
+
+        <div class="column-box" style="margin-top: 25px;">
+            <h4>よく使える表現</h4>
+            <p>
+                <strong>항상 행복하게 해줘서</strong> (いつも幸せにしてくれて)<br>
+                <strong>노래 불러줘서</strong> (歌を歌ってくれて)<br>
+                <strong>웃게 해줘서</strong> (笑わせてくれて)
+            </p>
+        </div>
+
+        <div class="page-number">Page 8</div>
+    </div>
+
+    <div class="page">
+        <div class="scene-header">
+            <h3>Scene 4: オタ友との会話編 👯</h3>
+            <p>同じ推しを持つ友達とのカジュアルな会話!</p>
+        </div>
+
+        <div class="phrase-box">
+            <div class="phrase-korean">누구 덕질해요?</div>
+            <div class="phrase-japanese">誰のオタクしてますか?</div>
+        </div>
+
+        <div class="phrase-box">
+            <div class="phrase-korean">저도 팬이에요!</div>
+            <div class="phrase-japanese">私もファンです!</div>
+        </div>
+
+        <div class="phrase-box">
+            <div class="phrase-korean">같이 공방 갈래요?</div>
+            <div class="phrase-japanese">一緒に音楽番組観覧行きますか?</div>
+        </div>
+
+        <div class="phrase-box">
+            <div class="phrase-korean">입덕 언제 했어요?</div>
+            <div class="phrase-japanese">いつファンになりましたか?</div>
+        </div>
+
+        <div class="phrase-box">
+            <div class="phrase-korean">최애가 누구예요?</div>
+            <div class="phrase-japanese">推しは誰ですか?</div>
+        </div>
+
+        <div class="phrase-box">
+            <div class="phrase-korean">앨범 샀어요?</div>
+            <div class="phrase-japanese">アルバム買いましたか?</div>
+        </div>
+
+        <div class="column-box" style="margin-top: 18px;">
+            <h4>オタ活用語</h4>
+            <p>
+                <strong>덕질</strong> = オタ活 / <strong>입덕</strong> = ファンになること<br>
+                <strong>최애</strong> = 推し / <strong>스밍</strong> = ストリーミング
+            </p>
+        </div>
+
+        <div class="page-number">Page 9</div>
+    </div>
+
+    <div class="page">
+        <div class="scene-header" style="margin-top: 40px;">
+            <h3>実際の会話例</h3>
+        </div>
+
+        <div class="example-box" style="font-size: 15px;">
+            <strong>会話例1:</strong><br>
+            A: 누구 덕질해요?<br>
+            B: 방탄소년단이요! 저도 팬이에요?<br>
+            A: 저도요! 최애가 누구예요?<br>
+            <span style="color: #666; font-size: 13px;">(誰のオタクしてますか?/BTSです!あなたもファンですか?/私もです!推しは誰ですか?)</span>
+        </div>
+
+        <div class="example-box" style="font-size: 15px;">
+            <strong>会話例2:</strong><br>
+            A: 같이 공방 갈래요?<br>
+            B: 좋아요! 언제예요?<br>
+            <span style="color: #666; font-size: 13px;">(一緒に音楽番組観覧行きますか?/いいですよ!いつですか?)</span>
+        </div>
+
+        <div class="column-box" style="margin-top: 25px;">
+            <h4>オタ友と使えるフレーズ</h4>
+            <p>
+                <strong>대박!</strong> = すごい!<br>
+                <strong>완전 좋아!</strong> = めっちゃ好き!<br>
+                <strong>진짜?</strong> = 本当?<br>
+                <strong>부럽다...</strong> = 羨ましい...
+            </p>
+        </div>
+
+        <div class="page-number">Page 10</div>
+    </div>
+
+    <div class="page">
+        <div class="section-title">Part 2: 推し活必須単語集</div>
+
+        <div class="category-header">🎵 音楽活動用語</div>
+        
+        <table class="vocab-table">
+            <thead>
+                <tr>
+                    <th style="width: 25%;">韓国語</th>
+                    <th style="width: 30%;">意味</th>
+                    <th style="width: 45%;">例文</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><div class="vocab-korean">컴백</div></td>
+                    <td class="vocab-meaning">カムバック</td>
+                    <td class="vocab-example">컴백 언제예요?</td>
+                </tr>
+                <tr>
+                    <td><div class="vocab-korean">직캠</div></td>
+                    <td class="vocab-meaning">直カメラ</td>
+                    <td class="vocab-example">직캠 봤어요?</td>
+                </tr>
+                <tr>
+                    <td><div class="vocab-korean">음방</div></td>
+                    <td class="vocab-meaning">音楽番組</td>
+                    <td class="vocab-example">음방 1위!</td>
+                </tr>
+                <tr>
+                    <td><div class="vocab-korean">뮤비</div></td>
+                    <td class="vocab-meaning">MV</td>
+                    <td class="vocab-example">뮤비 나왔어요!</td>
+                </tr>
+                <tr>
+                    <td><div class="vocab-korean">앨범</div></td>
+                    <td class="vocab-meaning">アルバム</td>
+                    <td class="vocab-example">앨범 샀어요</td>
+                </tr>
+                <tr>
+                    <td><div class="vocab-korean">타이틀곡</div></td>
+                    <td class="vocab-meaning">タイトル曲</td>
+                    <td class="vocab-example">타이틀곡 좋아요</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="category-header" style="margin-top: 25px;">🎪 イベント用語</div>
+        
+        <table class="vocab-table">
+            <tbody>
+                <tr>
+                    <td style="width: 25%;"><div class="vocab-korean">팬싸</div></td>
+                    <td style="width: 30%;" class="vocab-meaning">ファンサイン会</td>
+                    <td style="width: 45%;" class="vocab-example">팬싸 당첨됐어요!</td>
+                </tr>
+                <tr>
+                    <td><div class="vocab-korean">콘서트</div></td>
+                    <td class="vocab-meaning">コンサート</td>
+                    <td class="vocab-example">콘서트 가요!</td>
+                </tr>
+                <tr>
+                    <td><div class="vocab-korean">공방</div></td>
+                    <td class="vocab-meaning">公開放送</td>
+                    <td class="vocab-example">공방 신청했어요</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="page-number">Page 11</div>
+    </div>
+
+    <div class="page">
+        <div class="category-header">🛍️ グッズ・購買用語</div>
+        
+        <table class="vocab-table">
+            <thead>
+                <tr>
+                    <th style="width: 25%;">韓国語</th>
+                    <th style="width: 30%;">意味</th>
+                    <th style="width: 45%;">例文</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><div class="vocab-korean">포토카드</div></td>
+                    <td class="vocab-meaning">トレカ</td>
+                    <td class="vocab-example">포토카드 교환해요</td>
+                </tr>
+                <tr>
+                    <td><div class="vocab-korean">굿즈</div></td>
+                    <td class="vocab-meaning">グッズ</td>
+                    <td class="vocab-example">굿즈 샀어요</td>
+                </tr>
+                <tr>
+                    <td><div class="vocab-korean">응원봉</div></td>
+                    <td class="vocab-meaning">ペンライト</td>
+                    <td class="vocab-example">응원봉 있어요?</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="category-header" style="margin-top: 25px;">💜 ファン文化用語</div>
+        
+        <table class="vocab-table">
+            <tbody>
+                <tr>
+                    <td style="width: 25%;"><div class="vocab-korean">최애</div></td>
+                    <td style="width: 30%;" class="vocab-meaning">推し</td>
+                    <td style="width: 45%;" class="vocab-example">최애가 누구예요?</td>
+                </tr>
+                <tr>
+                    <td><div class="vocab-korean">입덕</div></td>
+                    <td class="vocab-meaning">ファンになること</td>
+                    <td class="vocab-example">언제 입덕했어요?</td>
+                </tr>
+                <tr>
+                    <td><div class="vocab-korean">덕질</div></td>
+                    <td class="vocab-meaning">オタ活</td>
+                    <td class="vocab-example">덕질 재밌어요</td>
+                </tr>
+                <tr>
+                    <td><div class="vocab-korean">사녹</div></td>
+                    <td class="vocab-meaning">事前収録</td>
+                    <td class="vocab-example">사녹 갔어요</td>
+                </tr>
+                <tr>
+                    <td><div class="vocab-korean">영통</div></td>
+                    <td class="vocab-meaning">ビデオ通話</td>
+                    <td class="vocab-example">영통 당첨!</td>
+                </tr>
+                <tr>
+                    <td><div class="vocab-korean">스밍</div></td>
+                    <td class="vocab-meaning">ストリーミング</td>
+                    <td class="vocab-example">스밍해요!</td>
+                </tr>
+                <tr>
+                    <td><div class="vocab-korean">떼창</div></td>
+                    <td class="vocab-meaning">ファン大合唱</td>
+                    <td class="vocab-example">떼창 성공!</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="page-number">Page 12</div>
+    </div>
+
+    <div class="page">
+        <div class="section-title">Part 3: 推しへの愛を伝える感情表現20選</div>
+
+        <div class="level-header">💜 レベル1: 基本表現</div>
+
+        <div class="emotion-box">
+            <div class="emotion-number">1</div>
+            <div class="emotion-content">
+                <div class="emotion-korean">좋아해요</div>
+                <div class="emotion-japanese">好きです</div>
+            </div>
+        </div>
+
+        <div class="emotion-box">
+            <div class="emotion-number">2</div>
+            <div class="emotion-content">
+                <div class="emotion-korean">사랑해요</div>
+                <div class="emotion-japanese">愛してます</div>
+            </div>
+        </div>
+
+        <div class="emotion-box">
+            <div class="emotion-number">3</div>
+            <div class="emotion-content">
+                <div class="emotion-korean">보고 싶어요</div>
+                <div class="emotion-japanese">会いたいです</div>
+            </div>
+        </div>
+
+        <div class="emotion-box">
+            <div class="emotion-number">4</div>
+            <div class="emotion-content">
+                <div class="emotion-korean">행복해요</div>
+                <div class="emotion-japanese">幸せです</div>
+            </div>
+        </div>
+
+        <div class="emotion-box">
+            <div class="emotion-number">5</div>
+            <div class="emotion-content">
+                <div class="emotion-korean">너무 예뻐요</div>
+                <div class="emotion-japanese">とても綺麗です</div>
+            </div>
+        </div>
+
+        <div class="level-header">💕 レベル2: 中級表現</div>
+
+        <div class="emotion-box">
+            <div class="emotion-number">6</div>
+            <div class="emotion-content">
+                <div class="emotion-korean">심장이 떨려요</div>
+                <div class="emotion-japanese">心臓がドキドキします</div>
+            </div>
+        </div>
+
+        <div class="emotion-box">
+            <div class="emotion-number">7</div>
+            <div class="emotion-content">
+                <div class="emotion-korean">눈물 날 것 같아요</div>
+                <div class="emotion-japanese">涙が出そうです</div>
+            </div>
+        </div>
+
+        <div class="emotion-box">
+            <div class="emotion-number">8</div>
+            <div class="emotion-content">
+                <div class="emotion-korean">심장이 녹아요</div>
+                <div class="emotion-japanese">心が溶けます</div>
+            </div>
+        </div>
+        <div class="page-number">Page 13</div>
+    </div>
+
+    <div class="page">
+        <div class="level-header">💕 レベル2: 中級表現 (続き)</div>
+
+        <div class="emotion-box">
+            <div class="emotion-number">9</div>
+            <div class="emotion-content">
+                <div class="emotion-korean">숨이 멎을 것 같아요</div>
+                <div class="emotion-japanese">息が止まりそうです</div>
+            </div>
+        </div>
+
+        <div class="emotion-box">
+            <div class="emotion-number">10</div>
+            <div class="emotion-content">
+                <div class="emotion-korean">완전 설레요</div>
+                <div class="emotion-japanese">めっちゃドキドキします</div>
+            </div>
+        </div>
+
+        <div class="level-header">💖 レベル3: 推し活上級表現</div>
+
+        <div class="emotion-box">
+            <div class="emotion-number">11</div>
+            <div class="emotion-content">
+                <div class="emotion-korean">죽을 것 같아요</div>
+                <div class="emotion-japanese">死にそうです</div>
+            </div>
+        </div>
+
+        <div class="emotion-box">
+            <div class="emotion-number">12</div>
+            <div class="emotion-content">
+                <div class="emotion-korean">심장 미쳤다...</div>
+                <div class="emotion-japanese">心臓がおかしくなった</div>
+            </div>
+        </div>
+
+        <div class="emotion-box">
+            <div class="emotion-number">13</div>
+            <div class="emotion-content">
+                <div class="emotion-korean">이건 사람 얼굴이 아니야</div>
+                <div class="emotion-japanese">これは人間の顔じゃない</div>
+            </div>
+        </div>
+
+        <div class="emotion-box">
+            <div class="emotion-number">14</div>
+            <div class="emotion-content">
+                <div class="emotion-korean">실물이 더 예뻐요</div>
+                <div class="emotion-japanese">実物がもっと綺麗です</div>
+            </div>
+        </div>
+
+        <div class="emotion-box">
+            <div class="emotion-number">15</div>
+            <div class="emotion-content">
+                <div class="emotion-korean">말도 안 돼...</div>
+                <div class="emotion-japanese">信じられない...</div>
+            </div>
+        </div>
+
+        <div class="emotion-box">
+            <div class="emotion-number">16</div>
+            <div class="emotion-content">
+                <div class="emotion-korean">미쳤다 진짜</div>
+                <div class="emotion-japanese">やばい本当に</div>
+            </div>
+        </div>
+        <div class="page-number">Page 14</div>
+    </div>
+
+    <div class="page">
+        <div class="level-header">💖 レベル3: 推し活上級表現 (続き)</div>
+
+        <div class="emotion-box">
+            <div class="emotion-number">17</div>
+            <div class="emotion-content">
+                <div class="emotion-korean">숨 쉬는 것만으로도 감사해요</div>
+                <div class="emotion-japanese">息をしているだけで感謝です</div>
+            </div>
+        </div>
+
+        <div class="emotion-box">
+            <div class="emotion-number">18</div>
+            <div class="emotion-content">
+                <div class="emotion-korean">당신 덕분에 살아요</div>
+                <div class="emotion-japanese">あなたのおかげで生きてます</div>
+            </div>
+        </div>
+
+        <div class="emotion-box">
+            <div class="emotion-number">19</div>
+            <div class="emotion-content">
+                <div class="emotion-korean">평생 사랑할게요</div>
+                <div class="emotion-japanese">一生愛します</div>
+            </div>
+        </div>
+
+        <div class="emotion-box">
+            <div class="emotion-number">20</div>
+            <div class="emotion-content">
+                <div class="emotion-korean">세상에서 제일 소중해요</div>
+                <div class="emotion-japanese">世界で一番大切です</div>
+            </div>
+        </div>
+
+        <div class="usage-note" style="margin-top: 15px;">
+            <strong>使い方のヒント:</strong> レベル3の表現は親しいオタ友同士やSNSでよく使われるカジュアルな表現です!
+        </div>
+
+        <div class="page-number">Page 15</div>
+    </div>
+
+
+    <div class="page">
+        <div class="section-title">Part 4: 書き込み式ワークシート</div>
+
+        <div class="worksheet-box">
+            <div class="worksheet-title">✍️ ワーク1: ファンレターを書いてみよう!</div>
+            
+            <div class="template-text">
+                <span class="blank-space" style="min-width: 100px;"></span>님께<br><br>
+                
+                안녕하세요. 저는 <span class="blank-space"></span>에서 온<br>
+                <span class="blank-space" style="min-width: 120px;"></span>입니다.<br><br>
+                
+                항상 <span class="blank-space" style="min-width: 180px;"></span><br>
+                해서 정말 고마워요.<br><br>
+                
+                <span class="blank-space" style="min-width: 220px;"></span><br><br>
+                
+                건강 조심하세요. 사랑해요 ♡<br><br>
+                
+                <span class="blank-space" style="min-width: 100px;"></span>より
+            </div>
+        </div>
+
+        <div class="worksheet-box" style="margin-top: 15px;">
+            <div class="worksheet-title">✨ ワーク2: 私の推しについて書いてみよう!</div>
+            
+            <p style="font-weight: bold; margin-bottom: 8px; color: #667eea; font-size: 15px;">Q1: 私の推しは?</p>
+            <div class="write-line"></div>
+            
+            <p style="font-weight: bold; margin: 15px 0 8px 0; color: #667eea; font-size: 15px;">Q2: 推しのどこが好き?</p>
+            <div class="write-line"></div>
+            <div class="write-line"></div>
+            
+            <p style="font-weight: bold; margin: 15px 0 8px 0; color: #667eea; font-size: 15px;">Q3: 推しに伝えたいことは?</p>
+            <div class="write-line"></div>
+            <div class="write-line"></div>
+        </div>
+
+        <div class="page-number">Page 16</div>
+    </div>
+
+    <div class="page">
+        <div class="worksheet-box">
+            <div class="worksheet-title">📝 ワーク3: 今日覚えたフレーズチェックリスト</div>
+            
+            <div class="checklist">
+                <div class="checklist-item">오늘도 너무 멋있어요!</div>
+                <div class="checklist-item">최고예요 ㅠㅠ</div>
+                <div class="checklist-item">평생 응원할게요</div>
+                <div class="checklist-item">1위 축하해요!</div>
+                <div class="checklist-item">항상 응원하고 있어요</div>
+                <div class="checklist-item">덕분에 힘이 나요</div>
+                <div class="checklist-item">누구 덕질해요?</div>
+                <div class="checklist-item">심장이 떨려요</div>
+            </div>
+        </div>
+
+        <div class="column-box" style="margin-top: 25px;">
+            <h4>書き方のヒント</h4>
+            <p>
+                <strong>よく使える表現:</strong><br>
+                • 항상 행복하게 해줘서 (いつも幸せにしてくれて)<br>
+                • 웃게 해줘서 (笑わせてくれて)<br><br>
+                
+                <strong>締めの言葉:</strong><br>
+                • 응원할게요 (応援します)<br>
+                • 사랑할게요 (愛します)
+            </p>
+        </div>
+
+        <div class="page-number">Page 17</div>
+    </div>
+
+    <div class="page">
+        <div class="section-title">Part 5: ボーナスページ 🎁</div>
+
+        <div class="bonus-box">
+            <h3>ボーナス1: 誕生日お祝いメッセージ</h3>
+            <div class="bonus-content">
+                <div class="birthday-phrase">
+                    <strong>생일 축하해요! 🎂</strong><br>
+                    <span style="color: #666; font-size: 12px;">誕生日おめでとう!</span>
+                </div>
+                
+                <div class="birthday-phrase">
+                    <strong>태어나 줘서 고마워요 ♡</strong><br>
+                    <span style="color: #666; font-size: 12px;">生まれてきてくれてありがとう</span>
+                </div>
+                
+                <div class="birthday-phrase">
+                    <strong>올해도 좋은 일만 가득하길!</strong><br>
+                    <span style="color: #666; font-size: 12px;">今年も良いことだけいっぱいありますように!</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="bonus-box" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+            <h3>ボーナス2: K-POP歌詞によく出る文法</h3>
+            <div class="bonus-content">
+                <div class="grammar-item">
+                    <div class="grammar-pattern">~고 싶다</div>
+                    <div class="grammar-meaning">〜したい</div>
+                    <div class="grammar-example">例: 보고 싶어 (会いたい)</div>
+                </div>
+                
+                <div class="grammar-item">
+                    <div class="grammar-pattern">~아/어 줘</div>
+                    <div class="grammar-meaning">〜してちょうだい</div>
+                    <div class="grammar-example">例: 사랑해 줘 (愛してちょうだい)</div>
+                </div>
+                
+                <div class="grammar-item">
+                    <div class="grammar-pattern">~ㄹ게</div>
+                    <div class="grammar-meaning">〜するね(約束)</div>
+                    <div class="grammar-example">例: 사랑할게 (愛するね)</div>
+                </div>
+                
+                <div class="grammar-item">
+                    <div class="grammar-pattern">~지 마</div>
+                    <div class="grammar-meaning">〜しないで</div>
+                    <div class="grammar-example">例: 가지 마 (行かないで)</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-number">Page 18</div>
+    </div>
+
+    <div class="page">
+        <div class="bonus-box" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);">
+            <h3>ボーナス3: 3ヶ月マスター計画</h3>
+            <div class="bonus-content">
+                <div class="calendar-grid">
+                    <div class="calendar-item">
+                        <div class="calendar-week">Week 1-2</div>
+                        <div class="calendar-task">基本フレーズ<br>毎日3フレーズ</div>
+                    </div>
+                    
+                    <div class="calendar-item">
+                        <div class="calendar-week">Week 3-4</div>
+                        <div class="calendar-task">SNS投稿<br>実践練習</div>
+                    </div>
+                    
+                    <div class="calendar-item">
+                        <div class="calendar-week">Week 5-6</div>
+                        <div class="calendar-task">感情表現<br>習得</div>
+                    </div>
+                    
+                    <div class="calendar-item">
+                        <div class="calendar-week">Week 7-8</div>
+                        <div class="calendar-task">推し活単語<br>20語暗記</div>
+                    </div>
+                    
+                    <div class="calendar-item">
+                        <div class="calendar-week">Week 9-10</div>
+                        <div class="calendar-task">ファンレター<br>作成</div>
+                    </div>
+                    
+                    <div class="calendar-item">
+                        <div class="calendar-week">Week 11-12</div>
+                        <div class="calendar-task">総復習<br>聞き取り挑戦</div>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 15px; padding: 12px; background: white; border-radius: 6px;">
+                    <p style="color: #667eea; font-weight: bold; margin-bottom: 8px; font-size: 14px;">📌 毎日の学習習慣</p>
+                    <p style="font-size: 13px; line-height: 1.6; color: #555;">
+                        ☐ 毎日1フレーズをSNSで使ってみる<br>
+                        ☐ 推しのVliveを5分見る<br>
+                        ☐ 覚えたフレーズを音読する
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column-box" style="margin-top: 25px;">
+            <h4>学習のコツ</h4>
+            <p>
+                <strong>1. 推しのコンテンツで学ぶ</strong><br>
+                Vlive、Weverseなど、推しが話す韓国語を教材にすると楽しく続けられます!<br><br>
+                
+                <strong>2. 実際に使ってみる</strong><br>
+                覚えたフレーズをSNSで実際に使うと記憶に定着します!<br><br>
+                
+                <strong>3. オタ友と練習</strong><br>
+                同じ推しを持つ友達と韓国語で会話すると、モチベーションが上がります!
+            </p>
+        </div>
+
+        <div class="page-number">Page 19</div>
+    </div>
+
+    <div class="page" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+        <div style="font-size: 48px; margin-bottom: 30px;">💜</div>
+        <h2 style="font-size: 36px; margin-bottom: 20px;">推しへの想い、届きますように</h2>
+        <p style="font-size: 20px; opacity: 0.9; margin-bottom: 40px;">이 책과 함께 행복한 덕질 되세요!</p>
+        <p style="font-size: 16px; opacity: 0.8;">(この本と一緒に幸せなオタ活を!)</p>
+        
+        <div style="margin-top: 60px; padding: 30px; background: rgba(255,255,255,0.1); border-radius: 15px; backdrop-filter: blur(10px);">
+            <p style="font-size: 18px; margin-bottom: 15px;">もっと学びたい方は...</p>
+            <p style="font-size: 14px; opacity: 0.9; line-height: 1.8;">
+                ✨ 会話練習<br>
+                ✨ 聞き取りトレーニング<br>
+                ✨ 推し活実践レッスン
+            </p>
+        </div>
+        
+        <div style="margin-top: 40px; font-size: 14px; opacity: 0.7;">
+            © 2025 推し活韓国語フレーズBOOK
+        </div>
+        <div class="page-number" style="color: rgba(255, 255, 255, 0.7);">Page 20</div>
+    </div>
+
+</body>
+</html>

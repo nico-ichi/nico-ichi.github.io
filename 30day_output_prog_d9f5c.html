@@ -1,0 +1,2506 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="robots" content="noindex, nofollow">
+
+    <title>挫折ゼロ!30日間アウトプット強化プログラム</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;600&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            line-height: 1.8;
+            color: #2c2c2c;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 20px;
+        }
+        
+        .book-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .cover {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 60px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cover::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 30px 30px;
+            animation: float 20s linear infinite;
+        }
+        
+        @keyframes float {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(30px, 30px); }
+        }
+        
+        .cover h1 {
+            font-family: 'Noto Serif JP', serif;
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-bottom: 20px;
+            position: relative;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .cover .subtitle {
+            font-size: 1.3em;
+            margin-bottom: 40px;
+            opacity: 0.95;
+            position: relative;
+        }
+        
+        .cover .tagline {
+            font-size: 0.95em;
+            opacity: 0.85;
+            position: relative;
+            letter-spacing: 2px;
+        }
+        
+        .content {
+            padding: 60px;
+        }
+        
+        .chapter {
+            margin-bottom: 60px;
+            page-break-inside: avoid;
+        }
+        
+        .chapter-title {
+            font-family: 'Noto Serif JP', serif;
+            font-size: 2em;
+            color: #667eea;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #667eea;
+            position: relative;
+        }
+        
+        .chapter-title::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 100px;
+            height: 3px;
+            background: #764ba2;
+        }
+        
+        .section-title {
+            font-size: 1.5em;
+            color: #764ba2;
+            margin: 40px 0 20px;
+            padding-left: 20px;
+            border-left: 5px solid #667eea;
+        }
+        
+        .subsection-title {
+            font-size: 1.2em;
+            color: #555;
+            margin: 30px 0 15px;
+            font-weight: 600;
+        }
+        
+        p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf3 100%);
+            border-left: 4px solid #667eea;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .week-box {
+            background: white;
+            border: 2px solid #667eea;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 30px 0;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.1);
+        }
+        
+        .week-title {
+            font-size: 1.4em;
+            color: #667eea;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .day-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            border-radius: 8px;
+            padding: 25px;
+            margin: 20px 0;
+            border-left: 5px solid #764ba2;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+        
+        .day-header {
+            font-size: 1.3em;
+            color: #764ba2;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .goal {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+            border-left: 4px solid #ffc107;
+        }
+        
+        .practice-item {
+            margin: 20px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .practice-item::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        
+        .korean-text {
+            color: #667eea;
+            font-weight: 600;
+            font-size: 1.05em;
+        }
+        
+        .time-badge {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            margin: 5px 5px 5px 0;
+        }
+        
+        .checkbox-item {
+            padding: 10px;
+            margin: 10px 0;
+            background: #f8f9fa;
+            border-radius: 5px;
+        }
+        
+        .checkbox-item::before {
+            content: '☐ ';
+            color: #667eea;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        
+        .emergency-box {
+            background: #fff0f0;
+            border: 2px solid #dc3545;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .tip-box {
+            background: #e7f3ff;
+            border-left: 4px solid #2196F3;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        ul, ol {
+            margin: 20px 0 20px 30px;
+        }
+        
+        li {
+            margin: 10px 0;
+        }
+        
+        .version-tabs {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        
+        .version-tab {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 25px;
+            text-align: center;
+            flex: 1;
+            margin: 10px;
+            min-width: 200px;
+            box-shadow: 0 4px 10px rgba(102, 126, 234, 0.3);
+            font-weight: 600;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px;
+            text-align: left;
+        }
+        
+        td {
+            padding: 15px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        tr:hover {
+            background: #f8f9fa;
+        }
+        
+        .page-number {
+            text-align: center;
+            color: #999;
+            margin: 40px 0 20px;
+            font-size: 0.9em;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .book-container {
+                box-shadow: none;
+                max-width: 100%;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                padding: 30px 20px;
+            }
+            .cover {
+                padding: 50px 30px;
+            }
+            .cover h1 {
+                font-size: 1.8em;
+            }
+            .version-tab {
+                min-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="book-container">
+        <!-- 表紙 -->
+        <div class="cover">
+            <h1>挫折ゼロ!<br>30日間アウトプット強化プログラム</h1>
+            <div class="subtitle">〜何を・いつ・どうやるかが一目瞭然〜</div>
+            <div class="tagline">忙しいあなたでも必ず続けられる、科学的習慣化メソッド</div>
+        </div>
+
+        <!-- 本文 -->
+        <div class="content">
+            
+            <!-- 前書き -->
+            <div class="chapter">
+                <h2 class="chapter-title">前書き</h2>
+                
+                <div class="section-title">なぜ「良い練習法を知っても」続かないのか</div>
+                <p>
+                    韓国語を1年以上勉強しているのに、いざ会話になると言葉が出てこない。そんな悩みを抱えているあなたは、決して努力が足りないわけではありません。問題は「何をすればいいか知っている」ことと「実際に続けられる」ことの間にある、大きな壁なのです。
+                </p>
+                <p>
+                    多くの学習者が、優れた練習法を見つけても三日坊主で終わってしまいます。それは意志の弱さではなく、「いつ」「どのくらい」「どうやって」実践すればいいのかが明確でないからです。忙しい毎日の中で、曖昧な計画は必ず後回しになります。
+                </p>
+                <p>
+                    このプログラムは、その壁を取り除くために設計されました。あなたがすべきことは、毎日指示通りに実践するだけ。迷う必要も、計画を立てる必要もありません。
+                </p>
+
+                <div class="section-title">30日で習慣化する脳科学的根拠</div>
+                <p>
+                    「習慣化には21日かかる」という説を聞いたことがあるかもしれません。しかし、最新の研究では、新しい習慣が自動的な行動になるまでには平均66日かかることが分かっています。
+                </p>
+                <p>
+                    ただし、重要なのは「完璧な習慣」ではなく「続けられる習慣」を作ることです。このプログラムの30日間は、習慣化の最も辛い初期段階を乗り越え、行動を自動化するための強固な土台を築くのに十分な期間です。30日後、あなたは「やらないと物足りない」と感じる状態になっているでしょう。
+                </p>
+                <div class="highlight-box">
+                    <strong>脳科学が証明する習慣化の3つの段階:</strong>
+                    <ul>
+                        <li><strong>第1段階(1〜7日):</strong> 意識的な努力が必要。抵抗感が最も強い時期。</li>
+                        <li><strong>第2段階(8〜21日):</strong> 徐々に自然になってくる。忘れることもあるが、思い出せばできる。</li>
+                        <li><strong>第3段階(22〜30日):</strong> しないと物足りなく感じ始める。自動化の兆しが見える。</li>
+                    </ul>
+                </div>
+                <p>
+                    このプログラムは、この3つの段階に合わせて設計されています。最初は易しく、徐々に負荷を増やし、最後には自分でカスタマイズできるようになります。
+                </p>
+
+                <div class="section-title">このプログラムの3つの特徴</div>
+                
+                <div class="highlight-box">
+                    <div class="subsection-title">1. 段階的な設計</div>
+                    <p>
+                        いきなり難しいことはしません。最初の1週間は「韓国語を口に出すことへの抵抗をなくす」ことだけに集中します。5分から始めて、徐々に時間と難易度を上げていくので、無理なく続けられます。
+                    </p>
+                    <p>
+                        <span class="korean-text">Week 1</span>: 5〜10分 → <span class="korean-text">Week 2</span>: 10〜15分 → <span class="korean-text">Week 3</span>: 15〜20分 → <span class="korean-text">Week 4</span>: 自分で設計
+                    </p>
+                </div>
+
+                <div class="highlight-box">
+                    <div class="subsection-title">2. 選択式のメニュー</div>
+                    <p>
+                        「これをやらなければいけない」というプレッシャーは挫折の原因になります。このプログラムでは、各週で複数の練習法を提示し、あなたが自分に合ったものを選べるようになっています。
+                    </p>
+                    <p>
+                        特に4週目は、これまでの練習法の中から自分が好きなもの、効果を感じたものを組み合わせて、自分だけのメニューを作ります。これにより、31日目以降も自然に続けられるようになります。
+                    </p>
+                </div>
+
+                <div class="highlight-box">
+                    <div class="subsection-title">3. 柔軟性の確保</div>
+                    <p>
+                        忙しい日は誰にでもあります。このプログラムでは、各日のメニューに加えて「忙しい日の最低限メニュー(3分バージョン)」も用意しています。
+                    </p>
+                    <p>
+                        完璧を求めて挫折するより、少しでも続ける方が100倍効果的です。「今日は3分しかできなかった」ではなく「今日も続けられた!」と考えることが、習慣化の鍵です。
+                    </p>
+                </div>
+
+                <div class="section-title">使い方の説明</div>
+                <p>
+                    このプログラムは、あなたの生活リズムに合わせてカスタマイズできるように設計されています。
+                </p>
+                
+                <div class="tip-box">
+                    <strong>基本的な使い方:</strong>
+                    <ol>
+                        <li><strong>開始日を決める:</strong> カレンダーに30日間の期間をマークしましょう。</li>
+                        <li><strong>生活スタイルを選ぶ:</strong> 朝型、夜型、スキマ時間分散型の3パターンから選択します。</li>
+                        <li><strong>毎日のメニューを実践:</strong> 指示通りに進めるだけでOKです。</li>
+                        <li><strong>チェックシートで記録:</strong> 達成感を可視化することでモチベーションを維持します。</li>
+                        <li><strong>週末に振り返り:</strong> 何ができて、何が難しかったかを確認し、次週に活かします。</li>
+                    </ol>
+                </div>
+
+                <div class="emergency-box">
+                    <strong>⚠️ 重要な約束</strong>
+                    <p>
+                        このプログラムを始めるにあたって、自分自身と約束してください:
+                    </p>
+                    <ul>
+                        <li>「完璧にできなくても自分を責めない」</li>
+                        <li>「1日抜けても、次の日から再開する」</li>
+                        <li>「他人と比較せず、昨日の自分と比較する」</li>
+                    </ul>
+                    <p>
+                        習慣化の敵は「完璧主義」です。60%の達成度で30日続ける方が、100%の達成度で3日で挫折するよりはるかに効果的なのです。
+                    </p>
+                </div>
+
+                <p>
+                    それでは、あなたの韓国語会話力を飛躍的に向上させる30日間の旅を始めましょう!
+                </p>
+            </div>
+
+            <div class="page-number">- 1 -</div>
+
+            <!-- プログラムの全体設計 -->
+            <div class="chapter">
+                <h2 class="chapter-title">プログラムの全体設計</h2>
+                
+                <p>
+                    30日間を4つの週に分け、それぞれ明確な目標を設定しています。各週の概要を理解してから始めることで、今どの段階にいるのか、次に何が待っているのかが分かり、モチベーションを維持しやすくなります。
+                </p>
+
+                <!-- Week 1 -->
+                <div class="week-box">
+                    <div class="week-title">Week 1(1〜7日目):基礎習慣づくり</div>
+                    <div class="goal"><strong>今週の目標:</strong> 「韓国語を口に出す」ことへの抵抗をなくす</div>
+                    <p><span class="time-badge">1日の練習時間: 5〜10分</span></p>
+                    <div class="subsection-title">使用する練習法</div>
+                    <div class="practice-item"><strong>セルフトーク(혼잣말 / 独り言):</strong> 今していること、見えるものを韓国語で声に出す練習。誰にも聞かれないので、間違いを気にせず話せます。</div>
+                    <div class="practice-item"><strong>声に出す3行日記(말하는 3줄 일기):</strong> 今日あったことを3文だけ韓国語で話して録音します。書くのではなく、話すことでスピーキング力を直接鍛えます。</div>
+                    <div class="practice-item"><strong>シンプル描写ゲーム(간단한 묘사 게임):</strong> 目の前の物や写真を見て、知っている単語だけで説明する練習。完璧な文法は不要です。</div>
+                    <div class="subsection-title">各日の具体的メニュー</div>
+                    <ul>
+                        <li><strong>1日目:</strong> セルフトーク入門(家の中の物を韓国語で言う)</li>
+                        <li><strong>2日目:</strong> セルフトーク実践(朝の支度を実況中継)</li>
+                        <li><strong>3日目:</strong> 3行日記デビュー(テンプレート使用)</li>
+                        <li><strong>4日目:</strong> シンプル描写ゲーム(色と形だけ)</li>
+                        <li><strong>5日目:</strong> セルフトーク+描写の組み合わせ</li>
+                        <li><strong>6日目:</strong> 3行日記(自由形式にチャレンジ)</li>
+                        <li><strong>7日目:</strong> 今週の振り返り+好きな練習を選んで実践</li>
+                    </ul>
+                    <div class="subsection-title">ミニチャレンジ(達成感を得るための小目標)</div>
+                    <div class="checkbox-item">3日連続で声に出して韓国語を話した</div>
+                    <div class="checkbox-item">1日10個以上の韓国語単語を口に出した</div>
+                    <div class="checkbox-item">録音した自分の声を聞き返した</div>
+                    <div class="checkbox-item">完璧でなくても続けることができた</div>
+                    <div class="tip-box">
+                        <strong>よくあるつまずきと対処法</strong>
+                        <ul>
+                            <li><strong>「何を言えばいいか分からない」</strong> → 今見えているものを単語だけでもOK。「책(本)」「컵(カップ)」だけでも立派な練習です。</li>
+                            <li><strong>「発音が悪くて恥ずかしい」</strong> → この週は誰にも聞かせません。完璧を目指さず、とにかく声に出すことが目標です。</li>
+                            <li><strong>「忙しくて時間がない」</strong> → 通勤中、お風呂、寝る前の3分だけでもOK。習慣化のために「毎日」が最優先です。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Week 2 -->
+                <div class="week-box">
+                    <div class="week-title">Week 2(8〜14日目):基礎の定着と拡張</div>
+                    <div class="goal"><strong>今週の目標:</strong> 練習のバリエーションを増やし、自分に合った方法を見つける</div>
+                    <p><span class="time-badge">1日の練習時間: 10〜15分</span></p>
+                    <div class="subsection-title">使用する練習法</div>
+                    <div class="practice-item"><strong>質問→即答(질문→즉답):</strong> 自分で質問を作り、すぐに答える練習。会話のリズムを体感できます。例:「오늘 뭐 먹었어요?(今日何を食べましたか?)」→「김치찌개 먹었어요(キムチチゲを食べました)」</div>
+                    <div class="practice-item"><strong>音読+自分化(음독+자기화):</strong> テキストを音読した後、同じ内容を自分の言葉で言い換える練習。暗記ではなく、自分のものにすることが目標です。</div>
+                    <div class="practice-item"><strong>デジタルツール導入:</strong> 音声認識アプリやAI会話練習ツールを使って、自分の発音をチェックしたり、簡単な会話練習をします。</div>
+                    <div class="subsection-title">各日の具体的メニュー</div>
+                    <ul>
+                        <li><strong>8日目:</strong> 質問→即答入門(基本的な質問5個)</li>
+                        <li><strong>9日目:</strong> 音読+自分化(短い例文3つ)</li>
+                        <li><strong>10日目:</strong> デジタルツールで発音チェック</li>
+                        <li><strong>11日目:</strong> 質問→即答応用(自分で質問を作る)</li>
+                        <li><strong>12日目:</strong> 音読+自分化(自分の経験に置き換える)</li>
+                        <li><strong>13日目:</strong> AI会話練習ツールで簡単な対話</li>
+                        <li><strong>14日目:</strong> 今週の振り返り+組み合わせ練習</li>
+                    </ul>
+                    <div class="subsection-title">レベルアップのサイン</div>
+                    <div class="checkbox-item">韓国語を話すことに抵抗がなくなってきた</div>
+                    <div class="checkbox-item">5分以上連続で韓国語を話せるようになった</div>
+                    <div class="checkbox-item">自分で文を作ることが前より早くなった</div>
+                    <div class="checkbox-item">間違いを気にせず、とりあえず言ってみることができる</div>
+                    <div class="tip-box">
+                        <strong>停滞を感じた時の調整方法</strong>
+                        <ul>
+                            <li><strong>「成長を感じない」</strong> → 1週目の録音と比べてみましょう。必ず流暢になっているはずです。</li>
+                            <li><strong>「練習がマンネリ化してきた」</strong> → 練習する場所や時間帯を変えてみましょう。新鮮な気持ちで取り組めます。</li>
+                            <li><strong>「難しすぎる」</strong> → 1週目の練習に戻ってもOK。無理せず、できることを続けることが大切です。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Week 3 -->
+                <div class="week-box">
+                    <div class="week-title">Week 3(15〜21日目):実践力強化</div>
+                    <div class="goal"><strong>今週の目標:</strong> 会話に近い状況での練習で、実践力を高める</div>
+                    <p><span class="time-badge">1日の練習時間: 15〜20分</span></p>
+                    <div class="subsection-title">使用する練習法</div>
+                    <div class="practice-item"><strong>ロールプレイ(역할극):</strong> カフェでの注文、道案内など、実際の場面を想定して一人二役で会話練習します。</div>
+                    <div class="practice-item"><strong>リプロダクション(재현):</strong> 韓国ドラマやYouTubeの短いシーンを見て、すぐに真似して言う練習。記憶力と瞬発力が鍛えられます。</div>
+                    <div class="practice-item"><strong>即興スピーチ(즉흥 스피치):</strong> テーマを決めて1〜2分間韓国語で話し続ける練習。思考を韓国語に変換する力がつきます。</div>
+                    <div class="subsection-title">各日の具体的メニュー</div>
+                    <ul>
+                        <li><strong>15日目:</strong> ロールプレイ入門(カフェで注文)</li>
+                        <li><strong>16日目:</strong> リプロダクション練習(短いフレーズ)</li>
+                        <li><strong>17日目:</strong> 即興スピーチ(自己紹介1分間)</li>
+                        <li><strong>18日目:</strong> ロールプレイ応用(道案内・買い物)</li>
+                        <li><strong>19日目:</strong> リプロダクション練習(会話シーン)</li>
+                        <li><strong>20日目:</strong> 即興スピーチ(好きなもの・趣味)</li>
+                        <li><strong>21日目:</strong> 今週の振り返り+総合練習</li>
+                    </ul>
+                    <div class="subsection-title">自己評価のポイント</div>
+                    <div class="checkbox-item">詰まっても韓国語で言い直すことができた</div>
+                    <div class="checkbox-item">知らない単語があっても他の言葉で説明できた</div>
+                    <div class="checkbox-item">1分以上韓国語だけで話し続けられた</div>
+                    <div class="checkbox-item">実際の会話でも使えそうだと感じた</div>
+                    <div class="tip-box">
+                        <strong>難易度調整のコツ</strong>
+                        <ul>
+                            <li><strong>「難しすぎる」</strong> → まずは日本語で何を言うか考えてから、韓国語に変換しましょう。</li>
+                            <li><strong>「長く話せない」</strong> → 最初は30秒から。徐々に時間を延ばしていけばOKです。</li>
+                            <li><strong>「言葉が出てこない」</strong> → 知っている単語だけで言い換える練習になります。これが実践力です。</li>
+                            <li><strong>「簡単すぎる」</strong> → より複雑な状況設定や、敬語・ため口の使い分けにチャレンジしましょう。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Week 4 -->
+                <div class="week-box">
+                    <div class="week-title">Week 4(22〜30日目):総合実践と習慣化</div>
+                    <div class="goal"><strong>今週の目標:</strong> 自分に合った練習スタイルを確立し、31日目以降も続けられる土台を作る</div>
+                    <p><span class="time-badge">1日の練習時間: 自分で設計</span></p>
+                    <div class="subsection-title">使用する練習法</div>
+                    <p>これまでの3週間で学んだすべての練習法から、自分が好きなもの、効果を感じたものを自由に選択・組み合わせます。</p>
+                    <div class="practice-item">Week 1の練習法:セルフトーク、3行日記、シンプル描写ゲーム</div>
+                    <div class="practice-item">Week 2の練習法:質問→即答、音読+自分化、デジタルツール</div>
+                    <div class="practice-item">Week 3の練習法:ロールプレイ、リプロダクション、即興スピーチ</div>
+                    <div class="subsection-title">各日の具体的メニュー(複数の選択肢提示)</div>
+                    <p>各日に3つのメニュー例を提示します。自分の気分や状況に合わせて選んでください。慣れてきたら、自分でオリジナルメニューを作ってもOKです。</p>
+                    <ul>
+                        <li><strong>22日目:</strong> 【選択肢A】セルフトーク+ロールプレイ 【選択肢B】リプロダクション+即興スピーチ 【選択肢C】自由組み合わせ</li>
+                        <li><strong>23日目:</strong> 【選択肢A】3行日記+質問即答 【選択肢B】音読+自分化+描写ゲーム 【選択肢C】デジタルツール活用日</li>
+                        <li><strong>24日目:</strong> 【選択肢A】ロールプレイ強化日 【選択肢B】リプロダクション強化日 【選択肢C】総復習日</li>
+                        <li><strong>25日目:</strong> 【選択肢A】即興スピーチ(テーマ自由) 【選択肢B】好きな練習2つ組み合わせ 【選択肢C】新しい挑戦日</li>
+                        <li><strong>26日目:</strong> 【選択肢A】弱点克服日 【選択肢B】得意練習を極める日 【選択肢C】気分転換に新しい方法</li>
+                        <li><strong>27日目:</strong> 【選択肢A】総合練習(全ての方法を少しずつ) 【選択肢B】集中練習(1つの方法を深掘り) 【選択肢C】自由練習</li>
+                        <li><strong>28日目:</strong> 【選択肢A】これまでの録音を聞いて成長確認+練習 【選択肢B】最も効果を感じた練習法 【選択肢C】挑戦日</li>
+                        <li><strong>29日目:</strong> 【選択肢A】明日に向けた総復習 【選択肢B】31日目以降のメニュー作り+練習 【選択肢C】好きな練習</li>
+                        <li><strong>30日目:</strong> 【最終日特別メニュー】30日間の振り返り+自分の変化を韓国語でスピーチ+今後の目標設定</li>
+                    </ul>
+                    <div class="subsection-title">31日目以降の継続プラン</div>
+                    <div class="highlight-box">
+                        <strong>習慣化成功!次のステップへ</strong>
+                        <p>30日間続けられたあなたは、もう「韓国語を話すこと」が生活の一部になっています。ここからは、さらに実践力を高めるフェーズです。</p>
+                        <p><strong>31日目以降の基本方針:</strong></p>
+                        <ul>
+                            <li><strong>週5日は維持:</strong> 毎日でなくてもOK。週に5日続けられれば十分です。</li>
+                            <li><strong>時間は10〜15分:</strong> 長時間より継続が大切。無理のない範囲で。</li>
+                            <li><strong>新しい挑戦を追加:</strong> 月に1つ、新しい練習法や場面設定にチャレンジ。</li>
+                            <li><strong>実践の機会を作る:</strong> オンライン会話レッスン、韓国語カフェなど、実際に話す機会を月1回以上。</li>
+                        </ul>
+                    </div>
+                    <div class="subsection-title">次のステップへの移行ガイド</div>
+                    <div class="tip-box">
+                        <strong>レベル別の次のステップ</strong>
+                        <p><strong>【初級を脱却したい方】</strong></p>
+                        <ul>
+                            <li>過去形・未来形を使った表現を増やす</li>
+                            <li>接続詞を使って文を長くする練習</li>
+                            <li>感情や理由を説明する練習</li>
+                        </ul>
+                        <p><strong>【中級の壁を越えたい方】</strong></p>
+                        <ul>
+                            <li>ニュアンスの異なる表現を使い分ける</li>
+                            <li>自分の意見を理由とともに述べる練習</li>
+                            <li>韓国人との実際の会話にチャレンジ</li>
+                        </ul>
+                        <p><strong>【さらに流暢になりたい方】</strong></p>
+                        <ul>
+                            <li>慣用表現や俗語を取り入れる</li>
+                            <li>長いスピーチやプレゼンテーションに挑戦</li>
+                            <li>ディスカッションやディベート練習</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-number">- 2 -</div>
+
+            <!-- 各日のメニュー構成 -->
+            <div class="chapter">
+                <h2 class="chapter-title">各日のメニュー構成(全30日分)</h2>
+                
+                <p>
+                    ここからは、30日間の具体的な練習メニューを日ごとに詳しく説明します。各日のメニューは以下の構成になっています:
+                </p>
+                <div class="highlight-box">
+                    <ul>
+                        <li><strong>今日の目標:</strong> その日に達成すべき具体的なゴール</li>
+                        <li><strong>練習メニュー:</strong> 何をどのくらい、どうやって行うかの詳細な手順</li>
+                        <li><strong>今日のポイント:</strong> 練習する際に特に意識すべきこと</li>
+                        <li><strong>できたらチェック☐:</strong> 達成感を得るための確認項目</li>
+                        <li><strong>忙しい日の最低限メニュー:</strong> 時間がない時の3分バージョン</li>
+                    </ul>
+                </div>
+
+                <!-- Week 1 詳細 -->
+                <div class="section-title">Week 1: 基礎習慣づくり(1〜7日目)</div>
+
+                <!-- Day 1 -->
+                <div class="day-card">
+                    <div class="day-header">【Day 1】韓国語を声に出す第一歩</div>
+                    <div class="goal"><strong>今日の目標:</strong> 家の中にある物を10個以上、韓国語で声に出して言う</div>
+                    <div class="subsection-title">練習メニュー</div>
+                    <div class="practice-item">
+                        <strong>練習1:物の名前を言う(5分)</strong><br>
+                        家の中を見回して、見えるものを韓国語で言います。分からないものは辞書で調べてOK。<br>
+                        例:책(本)、컵(カップ)、의자(椅子)、시계(時計)、전화기(電話)、텔레비전(テレビ)、냉장고(冷蔵庫)、창문(窓)、문(ドア)、가방(カバン)
+                    </div>
+                    <div class="practice-item">
+                        <strong>練習2:文にして言う(5分)</strong><br>
+                        「이것은 ○○입니다(これは○○です)」の形で言ってみます。<br>
+                        例:이것은 책입니다(これは本です)、이것은 컵입니다(これはカップです)
+                    </div>
+                    <div class="subsection-title">今日のポイント</div>
+                    <ul>
+                        <li>完璧な発音でなくてOK。とにかく声に出すことが大切</li>
+                        <li>誰も聞いていないので、恥ずかしがらない</li>
+                        <li>知らない単語は調べながらでOK。調べることも学習です</li>
+                    </ul>
+                    <div class="subsection-title">できたらチェック☐</div>
+                    <div class="checkbox-item">10個以上の物の名前を韓国語で言えた</div>
+                    <div class="checkbox-item">「이것은 ○○입니다」の文を5回以上言えた</div>
+                    <div class="checkbox-item">恥ずかしさや抵抗感があっても、声に出せた</div>
+                    <div class="emergency-box">
+                        <strong>⏰ 忙しい日の最低限メニュー(3分)</strong>
+                        <p>目の前にある物を5個だけ韓国語で言う。文にしなくても単語だけでOK。</p>
+                    </div>
+                </div>
+
+                <!-- Day 2 -->
+                <div class="day-card">
+                    <div class="day-header">【Day 2】動作を実況中継してみよう</div>
+                    <div class="goal"><strong>今日の目標:</strong> 朝の支度や家事をしながら、自分の動作を韓国語で実況する</div>
+                    <div class="subsection-title">練習メニュー</div>
+                    <div class="practice-item">
+                        <strong>練習1:基本動作を言う(5分)</strong><br>
+                        朝の支度をしながら、動作を韓国語で言います。<br>
+                        例:일어나다(起きる)、세수하다(顔を洗う)、양치하다(歯を磨く)、옷을 입다(服を着る)、아침을 먹다(朝食を食べる)、커피를 마시다(コーヒーを飲む)
+                    </div>
+                    <div class="practice-item">
+                        <strong>練習2:現在形で実況する(5分)</strong><br>
+                        「지금 ○○해요(今○○しています)」の形で言います。<br>
+                        例:지금 세수해요(今顔を洗っています)、지금 커피를 마셔요(今コーヒーを飲んでいます)
+                    </div>
+                    <div class="subsection-title">今日のポイント</div>
+                    <ul>
+                        <li>動作と韓国語を同時にすることで、記憶に定着しやすくなります</li>
+                        <li>「지금(今)」をつけることで、現在進行形の感覚が身につきます</li>
+                        <li>ゆっくりでOK。動作と言葉を一致させることが大切</li>
+                    </ul>
+                    <div class="subsection-title">できたらチェック☐</div>
+                    <div class="checkbox-item">5つ以上の動作を韓国語で言えた</div>
+                    <div class="checkbox-item">「지금 ○○해요」の形で実況できた</div>
+                    <div class="checkbox-item">昨日より抵抗感が減った</div>
+                    <div class="emergency-box">
+                        <strong>⏰ 忙しい日の最低限メニュー(3分)</strong>
+                        <p>朝の支度の中で1つだけ(歯磨きやコーヒーなど)を韓国語で実況。</p>
+                    </div>
+                </div>
+
+                <!-- Day 3 -->
+                <div class="day-card">
+                    <div class="day-header">【Day 3】3行日記デビュー</div>
+                    <div class="goal"><strong>今日の目標:</strong> 今日あったことを3文、韓国語で声に出して録音する</div>
+                    <div class="subsection-title">練習メニュー</div>
+                    <div class="practice-item">
+                        <strong>練習1:テンプレートで文を作る(5分)</strong><br>
+                        以下のテンプレートを使って3文作ります。<br>
+                        1. 오늘은 ○○했어요(今日は○○しました)<br>
+                        2. ○○을/를 먹었어요(○○を食べました)<br>
+                        3. 날씨가 ○○했어요(天気が○○でした)
+                    </div>
+                    <div class="practice-item">
+                        <strong>練習2:録音して聞き返す(5分)</strong><br>
+                        スマホのボイスメモや録音アプリで自分の声を録音し、聞き返します。
+                    </div>
+                    <div class="subsection-title">今日のポイント</div>
+                    <ul>
+                        <li>書かずに声に出すことで、会話力に直結します</li>
+                        <li>録音することで、客観的に自分の韓国語を聞けます</li>
+                        <li>完璧な文でなくてOK。単語を並べるだけでも立派な日記です</li>
+                        <li>日付をファイル名にすれば、後で成長を確認できます</li>
+                    </ul>
+                    <div class="subsection-title">できたらチェック☐</div>
+                    <div class="checkbox-item">3文を韓国語で言えた</div>
+                    <div class="checkbox-item">録音して保存できた</div>
+                    <div class="checkbox-item">自分の声を聞き返した</div>
+                    <div class="emergency-box">
+                        <strong>⏰ 忙しい日の最低限メニュー(3分)</strong>
+                        <p>1文だけでOK。「오늘은 ○○했어요」だけ言って録音。</p>
+                    </div>
+                </div>
+
+                <!-- Day 4 -->
+                <div class="day-card">
+                    <div class="day-header">【Day 4】シンプル描写ゲーム</div>
+                    <div class="goal"><strong>今日の目標:</strong> 目の前の物や写真を、色・形・大きさだけで韓国語で説明する</div>
+                    <div class="subsection-title">練習メニュー</div>
+                    <div class="practice-item">
+                        <strong>練習1:色と形の単語確認(3分)</strong><br>
+                        빨간색(赤)、파란색(青)、노란색(黄色)、검은색(黒)、하얀색(白)<br>
+                        동그란(丸い)、네모난(四角い)、큰(大きい)、작은(小さい)
+                    </div>
+                    <div class="practice-item">
+                        <strong>練習2:物を描写する(7分)</strong><br>
+                        スマホで写真を1枚選んで(または実物を見て)、知っている単語だけで説明します。<br>
+                        例:빨간 사과(赤いリンゴ)、큰 가방(大きいカバン)、파란 하늘(青い空)
+                    </div>
+                    <div class="subsection-title">今日のポイント</div>
+                    <ul>
+                        <li>完璧な文法は不要。単語を繋げるだけでOK</li>
+                        <li>知らない単語があっても、知っている言葉で説明する練習</li>
+                        <li>これが実際の会話で最も重要なスキルです</li>
+                    </ul>
+                    <div class="subsection-title">できたらチェック☐</div>
+                    <div class="checkbox-item">色や形の単語を5個以上使えた</div>
+                    <div class="checkbox-item">3つ以上の物を韓国語で描写できた</div>
+                    <div class="checkbox-item">知らない単語があっても他の言葉で説明できた</div>
+                    <div class="emergency-box">
+                        <strong>⏰ 忙しい日の最低限メニュー(3分)</strong>
+                        <p>目の前の物を1つだけ、色と形で説明。例:빨간 컵(赤いカップ)</p>
+                    </div>
+                </div>
+
+                <!-- Day 5 -->
+                <div class="day-card">
+                    <div class="day-header">【Day 5】セルフトーク+描写の組み合わせ</div>
+                    <div class="goal"><strong>今日の目標:</strong> これまでの練習を組み合わせて、より自然な独り言を話す</div>
+                    <div class="subsection-title">練習メニュー</div>
+                    <div class="practice-item">
+                        <strong>練習1:朝のルーティンを描写しながら実況(5分)</strong><br>
+                        「지금 ○○을/를 해요(今○○をしています)」+「○○이/가 있어요(○○があります)」を組み合わせます。<br>
+                        例:지금 커피를 마셔요. 하얀 컵이 있어요(今コーヒーを飲んでいます。白いカップがあります)
+                    </div>
+                    <div class="practice-item">
+                        <strong>練習2:部屋の中を見回して説明(5分)</strong><br>
+                        歩きながら、見えるものと自分の動作を交互に説明します。
+                    </div>
+                    <div class="subsection-title">今日のポイント</div>
+                    <ul>
+                        <li>2つの文を繋げることで、会話らしくなります</li>
+                        <li>詰まっても止まらず、単語だけでも続けましょう</li>
+                        <li>5日目まで来たあなたは、もう「話すこと」に慣れてきています</li>
+                    </ul>
+                    <div class="subsection-title">できたらチェック☐</div>
+                    <div class="checkbox-item">2文以上繋げて話せた</div>
+                    <div class="checkbox-item">5分間、詰まっても止まらずに続けられた</div>
+                    <div class="checkbox-item">1日目より明らかに流暢になった</div>
+                    <div class="emergency-box">
+                        <strong>⏰ 忙しい日の最低限メニュー(3分)</strong>
+                        <p>朝の動作を1つだけ実況+その時見えるものを1つ描写。</p>
+                    </div>
+                </div>
+
+                <!-- Day 6 -->
+                <div class="day-card">
+                    <div class="day-header">【Day 6】3行日記の自由形式にチャレンジ</div>
+                    <div class="goal"><strong>今日の目標:</strong> テンプレートを使わず、自分の言葉で3文話す</div>
+                    <div class="subsection-title">練習メニュー</div>
+                    <div class="practice-item">
+                        <strong>練習1:話したい内容を決める(2分)</strong><br>
+                        今日あったこと、感じたこと、食べたもの、会った人など、何でもOK。
+                    </div>
+                    <div class="practice-item">
+                        <strong>練習2:自由に3文話して録音(5分)</strong><br>
+                        テンプレートは使わず、自分の言葉で話します。詰まったらやり直してOK。
+                    </div>
+                    <div class="practice-item">
+                        <strong>練習3:Day 3の録音と比較(3分)</strong><br>
+                        3日前の録音を聞いて、今日の録音と比べてみましょう。
+                    </div>
+                    <div class="subsection-title">今日のポイント</div>
+                    <ul>
+                        <li>完璧を目指さない。60%の完成度でOK</li>
+                        <li>知らない単語は、知っている単語で言い換えましょう</li>
+                        <li>3日前と比べて、必ず成長しています</li>
+                    </ul>
+                    <div class="subsection-title">できたらチェック☐</div>
+                    <div class="checkbox-item">テンプレートなしで3文話せた</div>
+                    <div class="checkbox-item">録音して保存できた</div>
+                    <div class="checkbox-item">3日前より流暢になっていることを確認できた</div>
+                    <div class="emergency-box">
+                        <strong>⏰ 忙しい日の最低限メニュー(3分)</strong>
+                        <p>「오늘은 ○○했어요」を1文だけ、自由な内容で話して録音。</p>
+                    </div>
+                </div>
+
+                <!-- Day 7 -->
+                <div class="day-card">
+                    <div class="day-header">【Day 7】Week 1 振り返りと自由練習</div>
+                    <div class="goal"><strong>今日の目標:</strong> 1週間を振り返り、自分の成長を確認する。好きな練習法を選んで実践する</div>
+                    <div class="subsection-title">練習メニュー</div>
+                    <div class="practice-item">
+                        <strong>練習1:1週間の振り返り(5分)</strong><br>
+                        これまでの録音を聞き返したり、何ができるようになったかを確認します。<br>
+                        質問:一番楽しかった練習は?一番難しかった練習は?継続できた自分をどう思う?
+                    </div>
+                    <div class="practice-item">
+                        <strong>練習2:好きな練習を選んで実践(10分)</strong><br>
+                        Day 1〜6の中で一番好きだった、または効果を感じた練習を選んでやってみましょう。
+                    </div>
+                    <div class="subsection-title">今日のポイント</div>
+                    <ul>
+                        <li>1週間続けられた自分を褒めてあげましょう</li>
+                        <li>完璧にできなくても、続けたことが何より素晴らしい</li>
+                        <li>自分に合った練習法が少しずつ見えてきているはずです</li>
+                    </ul>
+                    <div class="subsection-title">できたらチェック☐</div>
+                    <div class="checkbox-item">1週間の成長を実感できた</div>
+                    <div class="checkbox-item">好きな練習法を見つけられた</div>
+                    <div class="checkbox-item">来週も続ける意欲が湧いた</div>
+                    <div class="checkbox-item">Week 1のミニチャレンジを確認した</div>
+                    <div class="tip-box">
+                        <strong>💡 Week 1 達成おめでとうございます!</strong>
+                        <p>韓国語を話すことへの抵抗感は、かなり減ってきたはずです。ここまで来たあなたなら、必ず30日間完走できます。Week 2では、練習のバリエーションを増やして、さらに楽しく学んでいきましょう!</p>
+                    </div>
+                </div>
+
+                <div class="page-number">- 3 -</div>
+
+                <!-- Week 2 詳細 -->
+                <div class="section-title">Week 2: 基礎の定着と拡張(8〜14日目)</div>
+
+                <!-- Day 8 -->
+                <div class="day-card">
+                    <div class="day-header">【Day 8】質問→即答入門</div>
+                    <div class="goal"><strong>今日の目標:</strong> 自分で質問を作り、すぐに答える練習を5回以上行う</div>
+                    <div class="subsection-title">練習メニュー</div>
+                    <div class="practice-item">
+                        <strong>練習1:基本質問5つを準備(3分)</strong><br>
+                        以下の質問を声に出して読みます:<br>
+                        1. 오늘 뭐 먹었어요?(今日何を食べましたか?)<br>
+                        2. 어제 뭐 했어요?(昨日何をしましたか?)<br>
+                        3. 취미가 뭐예요?(趣味は何ですか?)<br>
+                        4. 좋아하는 음식이 뭐예요?(好きな食べ物は何ですか?)<br>
+                        5. 주말에 뭐 할 거예요?(週末に何をしますか?)
+                    </div>
+                    <div class="practice-item">
+                        <strong>練習2:質問→即答(7分)</strong><br>
+                        質問を自分で言った後、3秒以内に答えます。完璧な答えでなくてOK。<br>
+                        例:질문「오늘 뭐 먹었어요?」→ 즉답「비빔밥 먹었어요(ビビンバを食べました)」
+                    </div>
+                    <div class="subsection-title">今日のポイント</div>
+                    <ul>
+                        <li>考える時間を短くすることで、瞬発力が鍛えられます</li>
+                        <li>詰まったら単語だけでもOK。「비빔밥!」だけでも答えです</li>
+                        <li>会話のリズムを体感することが目的です</li>
+                    </ul>
+                    <div class="subsection-title">できたらチェック☐</div>
+                    <div class="checkbox-item">5つの質問を韓国語で言えた</div>
+                    <div class="checkbox-item">各質問に3秒以内に答えられた</div>
+                    <div class="checkbox-item">会話のリズムを感じられた</div>
+                    <div class="emergency-box">
+                        <strong>⏰ 忙しい日の最低限メニュー(3分)</strong>
+                        <p>質問1つだけ選んで、質問→即答を3回繰り返す。</p>
+                    </div>
+                </div>
+
+                <!-- Day 9 -->
+                <div class="day-card">
+                    <div class="day-header">【Day 9】音読+自分化</div>
+                    <div class="goal"><strong>今日の目標:</strong> 例文を音読した後、自分の言葉で言い換える</div>
+                    <div class="subsection-title">練習メニュー</div>
+                    <div class="practice-item">
+                        <strong>練習1:例文を音読(5分)</strong><br>
+                        以下の3つの例文を、各3回ずつ音読します:<br>
+                        1. 저는 매일 아침 7시에 일어나요(私は毎朝7時に起きます)<br>
+                        2. 저는 커피를 좋아해요. 하루에 두 잔 마셔요(私はコーヒーが好きです。1日に2杯飲みます)<br>
+                        3. 주말에는 친구를 만나요. 같이 영화를 봐요(週末には友達に会います。一緒に映画を見ます)
+                    </div>
+                    <div class="practice-item">
+                        <strong>練習2:自分の状況に置き換える(7分)</strong><br>
+                        同じ構造で、自分の実際の状況を話します。<br>
+                        例:저는 매일 아침 6시에 일어나요 / 저는 차를 좋아해요. 하루에 세 잔 마셔요
+                    </div>
+                    <div class="subsection-title">今日のポイント</div>
+                    <ul>
+                        <li>暗記ではなく、構造を理解して応用することが目的</li>
+                        <li>自分のことを話すことで、実用的な表現が身につきます</li>
+                        <li>数字や時間の表現も自然に練習できます</li>
+                    </ul>
+                    <div class="subsection-title">できたらチェック☐</div>
+                    <div class="checkbox-item">3つの例文を音読できた</div>
+                    <div class="checkbox-item">自分の言葉に言い換えられた</div>
+                    <div class="checkbox-item">数字や時間を使えた</div>
+                    <div class="emergency-box">
+                        <strong>⏰ 忙しい日の最低限メニュー(3分)</strong>
+                        <p>例文1つだけ選んで音読→自分化を1回行う。</p>
+                    </div>
+                </div>
+
+                <!-- Day 10 -->
+                <div class="day-card">
+                    <div class="day-header">【Day 10】デジタルツールで発音チェック</div>
+                    <div class="goal"><strong>今日の目標:</strong> 音声認識アプリやツールを使って、自分の発音を客観的に確認する</div>
+                    <div class="subsection-title">練習メニュー</div>
+                    <div class="practice-item">
+                        <strong>練習1:ツールの準備(2分)</strong><br>
+                        Google翻訳の音声入力、Papago、またはスマホの韓国語音声入力機能を使います。設定で韓国語音声認識をオンにしましょう。
+                    </div>
+                    <div class="practice-item">
+                        <strong>練習2:基本フレーズで発音チェック(8分)</strong><br>
+                        以下のフレーズを言って、正しく認識されるか確認します:<br>
+                        안녕하세요(こんにちは)、감사합니다(ありがとうございます)、저는 ○○입니다(私は○○です)、좋아요(いいです)、맛있어요(おいしいです)
+                    </div>
+                    <div class="practice-item">
+                        <strong>練習3:認識されなかったものを再挑戦(5分)</strong><br>
+                        正しく認識されなかったフレーズを、ゆっくり丁寧に発音し直します。
+                    </div>
+                    <div class="subsection-title">今日のポイント</div>
+                    <ul>
+                        <li>完璧な発音を目指すより、通じる発音を目指しましょう</li>
+                        <li>認識されなくても落ち込まない。発音改善のヒントです</li>
+                        <li>特に濃音(된소리: ㄲ, ㄸ, ㅃ, ㅆ, ㅉ)や激音(ㅋ, ㅌ, ㅍ, ㅊ)の区別を意識します</li>
+                    </ul>
+                    <div class="subsection-title">できたらチェック☐</div>
+                    <div class="checkbox-item">デジタルツールを使えた</div>
+                    <div class="checkbox-item">5つ以上のフレーズが正しく認識された</div>
+                    <div class="checkbox-item">発音の改善点を見つけられた</div>
+                    <div class="emergency-box">
+                        <strong>⏰ 忙しい日の最低限メニュー(3分)</strong>
+                        <p>안녕하세요、감사합니다、좋아요の3つだけ発音チェック。</p>
+                    </div>
+                </div>
+
+                <!-- Day 11 -->
+                <div class="day-card">
+                    <div class="day-header">【Day 11】質問→即答応用編</div>
+                    <div class="goal"><strong>今日の目標:</strong> 自分で質問を作り、より自然な答え方を練習する</div>
+                    <div class="subsection-title">練習メニュー</div>
+                    <div class="practice-item">
+                        <strong>練習1:自分で質問を5つ作る(5分)</strong><br>
+                        日常生活に関する質問を自分で考えます。<br>
+                        例:오늘 날씨가 어때요?(今日の天気はどうですか?)、지금 뭐 하고 있어요?(今何をしていますか?)
+                    </div>
+                    <div class="practice-item">
+                        <strong>練習2:長めの答えで即答(10分)</strong><br>
+                        単語だけでなく、理由や状況も加えて答えます。<br>
+                        例:질문「오늘 날씨가 어때요?」→ 즉답「오늘 날씨가 좋아요. 하늘이 파래요(今日天気がいいです。空が青いです)」
+                    </div>
+                    <div class="subsection-title">今日のポイント</div>
+                    <ul>
+                        <li>1文から2文に増やすことで、会話らしくなります</li>
+                        <li>接続詞(그리고 / そして、그래서 / だから)を使ってみましょう</li>
+                        <li>完璧な文法より、言いたいことを伝えることが大切</li>
+                    </ul>
+                    <div class="subsection-title">できたらチェック☐</div>
+                    <div class="checkbox-item">自分で5つの質問を作れた</div>
+                    <div class="checkbox-item">2文以上で答えられた</div>
+                    <div class="checkbox-item">Day 8より流暢に答えられた</div>
+                    <div class="emergency-box">
+                        <strong>⏰ 忙しい日の最低限メニュー(3分)</strong>
+                        <p>質問1つ作って、2文で答える練習を3回繰り返す。</p>
+                    </div>
+                </div>
+
+                <!-- Day 12 -->
+                <div class="day-card">
+                    <div class="day-header">【Day 12】音読+自分化の発展</div>
+                    <div class="goal"><strong>今日の目標:</strong> より長い例文を自分の経験に置き換えて話す</div>
+                    <div class="subsection-title">練習メニュー</div>
+                    <div class="practice-item">
+                        <strong>練習1:長めの例文を音読(5分)</strong><br>
+                        이번 주말에 친구를 만났어요. 같이 맛있는 식당에 갔어요. 불고기를 먹었어요. 정말 맛있었어요(今週末に友達に会いました。一緒においしいレストランに行きました。プルゴギを食べました。本当においしかったです)
+                    </div>
+                    <div class="practice-item">
+                        <strong>練習2:自分の経験で言い換え(10分)</strong><br>
+                        最近の出来事を、同じ構造で話します。過去形の練習にもなります。
+                    </div>
+                    <div class="subsection-title">今日のポイント</div>
+                    <ul>
+                        <li>4文繋げることで、ストーリーが作れます</li>
+                        <li>過去形(았어요/었어요)を自然に使えるようになります</li>
+                        <li>詰まったら日本語で考えてから韓国語にしてもOK</li>
+                    </ul>
+                    <div class="subsection-title">できたらチェック☐</div>
+                    <div class="checkbox-item">長めの例文を音読できた</div>
+                    <div class="checkbox-item">自分の経験を4文で話せた</div>
+                    <div class="checkbox-item">過去形を使えた</div>
+                    <div class="emergency-box">
+                        <strong>⏰ 忙しい日の最低限メニュー(3分)</strong>
+                        <p>「어제 ○○했어요(昨日○○しました)」を3文繋げて話す。</p>
+                    </div>
+                </div>
+
+                <!-- Day 13 -->
+                <div class="day-card">
+                    <div class="day-header">【Day 13】AI会話練習ツールで対話</div>
+                    <div class="goal"><strong>今日の目標:</strong> AI会話ツールやアプリで、簡単な対話練習をする</div>
+                    <div class="subsection-title">練習メニュー</div>
+                    <div class="practice-item">
+                        <strong>練習1:ツールの選択(2分)</strong><br>
+                        ChatGPT、Claude、または韓国語学習アプリの会話機能を使います。「韓国語で会話練習がしたいです。簡単な質問をしてください」と伝えましょう。
+                    </div>
+                    <div class="practice-item">
+                        <strong>練習2:5往復の対話(10分)</strong><br>
+                        AIからの質問に韓国語で答え、自分からも質問します。音声入力を使うとより効果的です。
+                    </div>
+                    <div class="practice-item">
+                        <strong>練習3:分からなかった表現をメモ(3分)</strong><br>
+                        対話の中で新しく学んだ表現を3つメモします。
+                    </div>
+                    <div class="subsection-title">今日のポイント</div>
+                    <ul>
+                        <li>実際の会話に近い練習ができます</li>
+                        <li>AIは間違いを気にせず何度でも練習できる相手です</li>
+                        <li>分からないことはその場で質問できます</li>
+                    </ul>
+                    <div class="subsection-title">できたらチェック☐</div>
+                    <div class="checkbox-item">AIとの対話ができた</div>
+                    <div class="checkbox-item">5往復以上会話を続けられた</div>
+                    <div class="checkbox-item">新しい表現を3つ学べた</div>
+                    <div class="emergency-box">
+                        <strong>⏰ 忙しい日の最低限メニュー(3分)</strong>
+                        <p>AIに「간단한 질문 하나 해주세요(簡単な質問を1つしてください)」と言って1往復だけ会話。</p>
+                    </div>
+                </div>
+
+                <!-- Day 14 -->
+                <div class="day-card">
+                    <div class="day-header">【Day 14】Week 2 振り返りと組み合わせ練習</div>
+                    <div class="goal"><strong>今日の目標:</strong> Week 2の練習法を振り返り、複数の方法を組み合わせる</div>
+                    <div class="subsection-title">練習メニュー</div>
+                    <div class="practice-item">
+                        <strong>練習1:Week 2の振り返り(5分)</strong><br>
+                        質問→即答、音読+自分化、デジタルツールの3つの中で、どれが一番効果的でしたか?どれが一番楽しかったですか?
+                    </div>
+                    <div class="practice-item">
+                        <strong>練習2:好きな方法2つを組み合わせ(10分)</strong><br>
+                        例:質問→即答を録音して、後で聞き返す / 音読+自分化をした後、デジタルツールで発音チェック
+                    </div>
+                    <div class="subsection-title">今日のポイント</div>
+                    <ul>
+                        <li>練習法を組み合わせることで、より効果的になります</li>
+                        <li>自分に合った練習スタイルが見えてきているはずです</li>
+                        <li>2週間続けられた自分を褒めましょう</li>
+                    </ul>
+                    <div class="subsection-title">できたらチェック☐</div>
+                    <div class="checkbox-item">Week 2の成長を実感できた</div>
+                    <div class="checkbox-item">2つの練習法を組み合わせられた</div>
+                    <div class="checkbox-item">Week 1より明らかに話せるようになった</div>
+                    <div class="checkbox-item">Week 2のレベルアップのサインを確認した</div>
+                    <div class="tip-box">
+                        <strong>💡 Week 2 達成おめでとうございます!</strong>
+                        <p>練習のバリエーションが増えて、韓国語を話すことが日常になってきたはずです。Week 3では、いよいよ実践的な会話練習に入ります。ここまでの基礎があれば、必ずできます!</p>
+                    </div>
+                </div>
+
+                <!-- Week 3 詳細 -->
+                <div class="section-title">Week 3: 実践力強化(15〜21日目)</div>
+
+                <!-- Day 15 -->
+                <div class="day-card">
+                    <div class="day-header">【Day 15】ロールプレイ入門:カフェで注文</div>
+                    <div class="goal"><strong>今日の目標:</strong> カフェでの注文場面を想定して、店員と客の両方を演じる</div>
+                    <div class="subsection-title">練習メニュー</div>
+                    <div class="practice-item">
+                        <strong>練習1:基本フレーズの確認(5分)</strong><br>
+                        店員:어서 오세요. 주문하시겠어요?(いらっしゃいませ。ご注文されますか?)<br>
+                        客:아메리카노 한 잔 주세요(アメリカーノを1杯ください)<br>
+                        店員:따뜻한 거요, 차가운 거요?(温かいものですか、冷たいものですか?)<br>
+                        客:차가운 걸로 주세요(冷たいものでお願いします)
+                    </div>
+                    <div class="practice-item">
+                        <strong>練習2:一人二役で対話(10分)</strong><br>
+                        店員と客を演じ分けて、3回繰り返します。慣れたら注文する飲み物を変えてみましょう。
+                    </div>
+                    <div class="subsection-title">今日のポイント</div>
+                    <ul>
+                        <li>実際の場面を想像しながら話すと、記憶に残りやすくなります</li>
+                        <li>店員と客で声のトーンを変えると、より臨場感が出ます</li>
+                        <li>これが実際に韓国旅行で使える会話です</li>
+                    </ul>
+                    <div class="subsection-title">できたらチェック☐</div>
+                    <div class="checkbox-item">店員と客の両方を演じられた</div>
+                    <div class="checkbox-item">3回以上対話を繰り返せた</div>
+                    <div class="checkbox-item">実際の場面を想像できた</div>
+                    <div class="emergency-box">
+                        <strong>⏰ 忙しい日の最低限メニュー(3分)</strong>
+                        <p>客のセリフだけを3回言う。「○○ 한 잔 주세요」</p>
+                    </div>
+                </div>
+
+                <!-- Day 16 -->
+                <div class="day-card">
+                    <div class="day-header">【Day 16】リプロダクション:短いフレーズ</div>
+                    <div class="goal"><strong>今日の目標:</strong> 韓国ドラマやYouTubeの短いフレーズを聞いて、すぐに真似する</div>
+                    <div class="subsection-title">練習メニュー</div>
+                    <div class="practice-item">
+                        <strong>練習1:素材の準備(2分)</strong><br>
+                        韓国ドラマの短いシーン(10秒程度)、またはYouTubeの韓国語会話動画を用意します。
+                    </div>
+                    <div class="practice-item">
+                        <strong>練習2:聞く→一時停止→真似する(10分)</strong><br>
+                        1文聞いたら一時停止して、そのまま真似して言います。イントネーションも含めて完コピを目指しましょう。同じフレーズを5回繰り返します。
+                    </div>
+                    <div class="practice-item">
+                        <strong>練習3:何も見ずに再現(3分)</strong><br>
+                        動画を見ずに、記憶だけで同じフレーズを言ってみます。
+                    </div>
+                    <div class="subsection-title">今日のポイント</div>
+                    <ul>
+                        <li>ネイティブのリズムやイントネーションを体感できます</li>
+                        <li>完璧に聞き取れなくてもOK。聞こえた通りに真似しましょう</li>
+                        <li>記憶力と瞬発力が同時に鍛えられます</li>
+                    </ul>
+                    <div class="subsection-title">できたらチェック☐</div>
+                    <div class="checkbox-item">短いフレーズを選べた</div>
+                    <div class="checkbox-item">5回繰り返して真似できた</div>
+                    <div class="checkbox-item">イントネーションも真似できた</div>
+                    <div class="emergency-box">
+                        <strong>⏰ 忙しい日の最低限メニュー(3分)</strong>
+                        <p>よく知っているフレーズ1つ(例:안녕하세요)をドラマから聞いて真似する。</p>
+                    </div>
+                </div>
+
+                <!-- Day 17 -->
+                <div class="day-card">
+                    <div class="day-header">【Day 17】即興スピーチ:自己紹介1分間</div>
+                    <div class="goal"><strong>今日の目標:</strong> 自己紹介を1分間、韓国語だけで話し続ける</div>
+                    <div class="subsection-title">練習メニュー</div>
+                    <div class="practice-item">
+                        <strong>練習1:構成を考える(5分)</strong><br>
+                        話す内容を決めます:名前、年齢、住んでいる場所、仕事/学校、趣味、好きなものなど。日本語でメモしてもOK。
+                    </div>
+                    <div class="practice-item">
+                        <strong>練習2:1分間スピーチに挑戦(10分)</strong><br>
+                        タイマーをセットして、1分間韓国語で話し続けます。詰まっても止まらず、何か言い続けましょう。3回挑戦します。
+                    </div>
+                    <div class="subsection-title">今日のポイント</div>
+                    <ul>
+                        <li>完璧な内容より、止まらずに話し続けることが大切</li>
+                        <li>詰まったら「음...(えーと)」「그리고...(そして)」で繋ぎましょう</li>
+                        <li>1分は意外と長い!でもあなたならできます</li>
+                    </ul>
+                    <div class="subsection-title">できたらチェック☐</div>
+                    <div class="checkbox-item">1分間話し続けられた</div>
+                    <div class="checkbox-item">詰まっても止まらなかった</div>
+                    <div class="checkbox-item">3回挑戦できた</div>
+                    <div class="emergency-box">
+                        <strong>⏰ 忙しい日の最低限メニュー(3分)</strong>
+                        <p>30秒だけの自己紹介。名前+1つの情報だけでOK。</p>
+                    </div>
+                </div>
+
+                <!-- Day 18 -->
+                <div class="day-card">
+                    <div class="day-header">【Day 18】ロールプレイ応用:道案内・買い物</div>
+                    <div class="goal"><strong>今日の目標:</strong> 道案内や買い物の場面をロールプレイする</div>
+                    <div class="subsection-title">練習メニュー</div>
+                    <div class="practice-item">
+                        <strong>練習1:道案内フレーズ(7分)</strong><br>
+                        질문:실례지만, 지하철역이 어디에 있어요?(すみません、地下鉄の駅はどこにありますか?)<br>
+                        답변:저기 가면 오른쪽에 있어요(あそこに行くと右側にあります)<br>
+                        質問と答えを一人二役で3回練習。
+                    </div>
+                    <div class="practice-item">
+                        <strong>練習2:買い物フレーズ(8分)</strong><br>
+                        질문:이거 얼마예요?(これいくらですか?)<br>
+                        답변:만 원이에요(1万ウォンです)<br>
+                        질문:좀 깎아 주세요(少し安くしてください)<br>
+                        答えを変えながら3回練習。
+                    </div>
+                    <div class="subsection-title">今日のポイント</div>
+                    <ul>
+                        <li>実用的な場面を想定することで、記憶に定着しやすくなります</li>
+                        <li>方向(왼쪽/左、오른쪽/右、직진/直進)を使って道案内の練習</li>
+                        <li>数字(가격/値段)の練習にもなります</li>
+                    </ul>
+                    <div class="subsection-title">できたらチェック☐</div>
+                    <div class="checkbox-item">道案内のロールプレイができた</div>
+                    <div class="checkbox-item">買い物のロールプレイができた</div>
+                    <div class="checkbox-item">方向や数字を使えた</div>
+                    <div class="emergency-box">
+                        <strong>⏰ 忙しい日の最低限メニュー(3分)</strong>
+                        <p>「실례지만, ○○이/가 어디에 있어요?」を3回、場所を変えて言う。</p>
+                    </div>
+                </div>
+
+                <!-- Day 19 -->
+                <div class="day-card">
+                    <div class="day-header">【Day 19】リプロダクション:会話シーン</div>
+                    <div class="goal"><strong>今日の目標:</strong> より長い会話シーン(20秒程度)をリプロダクションする</div>
+                    <div class="subsection-title">練習メニュー</div>
+                    <div class="practice-item">
+                        <strong>練習1:会話シーンを選ぶ(2分)</strong><br>
+                        韓国ドラマやYouTubeから、2人の短い会話(往復3回程度)を選びます。
+                    </div>
+                    <div class="practice-item">
+                        <strong>練習2:1文ずつ真似(8分)</strong><br>
+                        会話を1文ずつ止めながら、順番に真似します。各文を3回ずつ練習。
+                    </div>
+                    <div class="practice-item">
+                        <strong>練習3:通しで一人二役(5分)</strong><br>
+                        動画を見ずに、会話全体を一人二役で再現します。
+                    </div>
+                    <div class="subsection-title">今日のポイント</div>
+                    <ul>
+                        <li>会話の流れを体感することで、実践力がつきます</li>
+                        <li>2つの役を演じ分けることで、柔軟性が身につきます</li>
+                        <li>Day 16より長い内容に挑戦しています</li>
+                    </ul>
+                    <div class="subsection-title">できたらチェック☐</div>
+                    <div class="checkbox-item">会話シーンを選べた</div>
+                    <div class="checkbox-item">1文ずつ真似できた</div>
+                    <div class="checkbox-item">通しで一人二役ができた</div>
+                    <div class="emergency-box">
+                        <strong>⏰ 忙しい日の最低限メニュー(3分)</strong>
+                        <p>短い会話の最初の1往復だけを5回真似する。</p>
+                    </div>
+                </div>
+
+                <!-- Day 20 -->
+                <div class="day-card">
+                    <div class="day-header">【Day 20】即興スピーチ:好きなもの・趣味</div>
+                    <div class="goal"><strong>今日の目標:</strong> 自分の好きなものや趣味について、1分半話す</div>
+                    <div class="subsection-title">練習メニュー</div>
+                    <div class="practice-item">
+                        <strong>練習1:テーマを選ぶ(2分)</strong><br>
+                        話しやすいテーマを1つ選びます:좋아하는 음식(好きな食べ物)、취미(趣味)、좋아하는 계절(好きな季節)、좋아하는 영화/드라마(好きな映画/ドラマ)
+                    </div>
+                    <div class="practice-item">
+                        <strong>練習2:構成を考える(3分)</strong><br>
+                        何について話すか、なぜ好きか、いつするか/食べるか、どんな気分かなど、4〜5つのポイントをメモ。
+                    </div>
+                    <div class="practice-item">
+                        <strong>練習3:1分半スピーチ(10分)</strong><br>
+                        タイマーをセットして挑戦。3回行い、毎回少しずつ内容を増やします。
+                    </div>
+                    <div class="subsection-title">今日のポイント</div>
+                    <ul>
+                        <li>Day 17より30秒長くなっています。成長を実感しましょう</li>
+                        <li>理由を説明する表現(왜냐하면/なぜなら)を使ってみましょう</li>
+                        <li>好きなテーマなので、自然と言葉が出てくるはずです</li>
+                    </ul>
+                    <div class="subsection-title">できたらチェック☐</div>
+                    <div class="checkbox-item">1分半話し続けられた</div>
+                    <div class="checkbox-item">理由も説明できた</div>
+                    <div class="checkbox-item">Day 17より流暢になった</div>
+                    <div class="emergency-box">
+                        <strong>⏰ 忙しい日の最低限メニュー(3分)</strong>
+                        <p>「저는 ○○을/를 좋아해요. 왜냐하면...」を1分だけ話す。</p>
+                    </div>
+                </div>
+
+                <!-- Day 21 -->
+                <div class="day-card">
+                    <div class="day-header">【Day 21】Week 3 振り返りと総合練習</div>
+                    <div class="goal"><strong>今日の目標:</strong> Week 3の3つの練習法を振り返り、すべてを少しずつ実践する</div>
+                    <div class="subsection-title">練習メニュー</div>
+                    <div class="practice-item">
+                        <strong>練習1:振り返り(5分)</strong><br>
+                        ロールプレイ、リプロダクション、即興スピーチの中で、どれが一番実践的でしたか?どれが一番成長を感じましたか?
+                    </div>
+                    <div class="practice-item">
+                        <strong>練習2:総合練習(15分)</strong><br>
+                        3つの練習法を各5分ずつ行います。自分の好きな場面や題材を選んでOK。
+                    </div>
+                    <div class="subsection-title">今日のポイント</div>
+                    <ul>
+                        <li>3週間続けたあなたは、もう初心者ではありません</li>
+                        <li>実践的な会話ができる土台ができています</li>
+                        <li>あと1週間で習慣が完全に定着します</li>
+                    </ul>
+                    <div class="subsection-title">できたらチェック☐</div>
+                    <div class="checkbox-item">Week 3の成長を実感できた</div>
+                    <div class="checkbox-item">3つの練習法をすべて行えた</div>
+                    <div class="checkbox-item">1分以上韓国語だけで話せるようになった</div>
+                    <div class="checkbox-item">Week 3の自己評価ポイントを確認した</div>
+                    <div class="tip-box">
+                        <strong>💡 Week 3 達成おめでとうございます!</strong>
+                        <p>実践的な会話練習を通して、あなたの韓国語は飛躍的に向上しました。Week 4では、これまでの練習法を自由に組み合わせて、自分だけのメニューを作ります。習慣化の最終段階です!</p>
+                    </div>
+                </div>
+
+                <div class="page-number">- 4 -</div>
+
+                <!-- Week 4 詳細 -->
+                <div class="section-title">Week 4: 総合実践と習慣化(22〜30日目)</div>
+                <p>
+                    最終週では、これまでの3週間で学んだすべての練習法から、自分に合ったものを自由に選んで組み合わせます。各日に3つの選択肢を提示しますが、慣れてきたら自分でオリジナルのメニューを作ってもOKです。
+                </p>
+
+                <!-- Day 22 -->
+                <div class="day-card">
+                    <div class="day-header">【Day 22】自由選択の始まり</div>
+                    <div class="goal"><strong>今日の目標:</strong> 下記の選択肢から選んで実践し、自分で練習メニューを作る感覚をつかむ</div>
+                    <div class="subsection-title">選択肢A:セルフトーク+ロールプレイ(15分)</div>
+                    <p>朝の支度をセルフトークで実況(5分)→カフェや買い物のロールプレイ(10分)</p>
+                    <div class="subsection-title">選択肢B:リプロダクション+即興スピーチ(15分)</div>
+                    <p>ドラマの短いシーンをリプロダクション(8分)→同じテーマで即興スピーチ(7分)</p>
+                    <div class="subsection-title">選択肢C:自由組み合わせ(15分)</div>
+                    <p>Week 1〜3の練習法から好きなものを2〜3個選んで、自分で時間配分を決めます。</p>
+                    <div class="subsection-title">今日のポイント</div>
+                    <ul>
+                        <li>選択肢に迷ったら、一番楽しそうなものを選びましょう</li>
+                        <li>時間は目安です。5分短くても長くてもOK</li>
+                        <li>今日から「自分で決める」練習が始まります</li>
+                    </ul>
+                    <div class="subsection-title">できたらチェック☐</div>
+                    <div class="checkbox-item">自分で選択肢を選べた</div>
+                    <div class="checkbox-item">15分程度練習できた</div>
+                    <div class="checkbox-item">楽しく練習できた</div>
+                    <div class="emergency-box">
+                        <strong>⏰ 忙しい日の最低限メニュー(3分)</strong>
+                        <p>一番好きな練習法を1つだけ3分間。</p>
+                    </div>
+                </div>
+
+                <!-- Day 23 -->
+                <div class="day-card">
+                    <div class="day-header">【Day 23】バリエーション練習</div>
+                    <div class="goal"><strong>今日の目標:</strong> 昨日とは違う練習法を試して、柔軟性を保つ</div>
+                    <div class="subsection-title">選択肢A:3行日記+質問即答(15分)</div>
+                    <p>今日あったことを3行日記で録音(5分)→その内容について自分で質問を作って即答(10分)</p>
+                    <div class="subsection-title">選択肢B:音読+自分化+描写ゲーム(15分)</div>
+                    <p>例文を音読+自分化(8分)→周りのものを描写するゲーム(7分)</p>
+                    <div class="subsection-title">選択肢C:デジタルツール活用日(15分)</div>
+                    <p>AIとの会話練習(10分)→発音チェック(5分)</p>
+                    <div class="subsection-title">今日のポイント</div>
+                    <ul>
+                        <li>同じ練習ばかりだとマンネリ化します。バリエーションが大切</li>
+                        <li>苦手だった練習も、今ならできるかもしれません</li>
+                        <li>デジタルツールは気分転換に最適です</li>
+                    </ul>
+                    <div class="subsection-title">できたらチェック☐</div>
+                    <div class="checkbox-item">昨日と違う練習法を選べた</div>
+                    <div class="checkbox-item">新鮮な気持ちで取り組めた</div>
+                    <div class="checkbox-item">マンネリ化を防げた</div>
+                    <div class="emergency-box">
+                        <strong>⏰ 忙しい日の最低限メニュー(3分)</strong>
+                        <p>3行日記を1行だけ録音。</p>
+                    </div>
+                </div>
+
+                <!-- Day 24 -->
+                <div class="day-card">
+                    <div class="day-header">【Day 24】強化日</div>
+                    <div class="goal"><strong>今日の目標:</strong> 特定の練習法を集中的に行い、スキルを深める</div>
+                    <div class="subsection-title">選択肢A:ロールプレイ強化日(15分)</div>
+                    <p>3つの異なる場面(カフェ、買い物、道案内など)を各5分ずつロールプレイ</p>
+                    <div class="subsection-title">選択肢B:リプロダクション強化日(15分)</div>
+                    <p>1つのシーンを完璧に再現することを目指して、繰り返し練習</p>
+                    <div class="subsection-title">選択肢C:総復習日(15分)</div>
+                    <p>Week 1〜3のすべての練習法を各2分ずつ行う(スピード復習)</p>
+                    <div class="subsection-title">今日のポイント</div>
+                    <ul>
+                        <li>1つのことを集中的に練習すると、急激に上達します</li>
+                        <li>または、すべてを少しずつ復習することで全体のバランスを整えます</li>
+                        <li>どちらのアプローチも効果的です</li>
+                    </ul>
+                    <div class="subsection-title">できたらチェック☐</div>
+                    <div class="checkbox-item">集中的に練習できた</div>
+                    <div class="checkbox-item">スキルの向上を感じた</div>
+                    <div class="checkbox-item">15分間充実した練習ができた</div>
+                    <div class="emergency-box">
+                        <strong>⏰ 忙しい日の最低限メニュー(3分)</strong>
+                        <p>一番得意な練習法を3分間だけ。</p>
+                    </div>
+                </div>
+
+                <!-- Day 25 -->
+                <div class="day-card">
+                    <div class="day-header">【Day 25】テーマスピーチ</div>
+                    <div class="goal"><strong>今日の目標:</strong> 自由なテーマで2分間のスピーチに挑戦する</div>
+                    <div class="subsection-title">選択肢A:即興スピーチ(テーマ自由)(15分)</div>
+                    <p>3つのテーマを用意し、各テーマで2分ずつスピーチ(準備時間1分+スピーチ2分×3)</p>
+                    <div class="subsection-title">選択肢B:好きな練習2つ組み合わせ(15分)</div>
+                    <p>自分が好きな練習法を2つ選んで、各7〜8分ずつ実践</p>
+                    <div class="subsection-title">選択肢C:新しい挑戦日(15分)</div>
+                    <p>まだ試していない場面設定や、難易度の高い練習にチャレンジ</p>
+                    <div class="subsection-title">今日のポイント</div>
+                    <ul>
+                        <li>2分間のスピーチができれば、基本的な会話力は十分です</li>
+                        <li>新しい挑戦は、停滞感を打破します</li>
+                        <li>4週目の折り返し地点です。あと少し!</li>
+                    </ul>
+                    <div class="subsection-title">できたらチェック☐</div>
+                    <div class="checkbox-item">2分間スピーチができた(選択肢Aの場合)</div>
+                    <div class="checkbox-item">または新しい挑戦ができた</div>
+                    <div class="checkbox-item">25日間継続できている自分を褒めた</div>
+                    <div class="emergency-box">
+                        <strong>⏰ 忙しい日の最低限メニュー(3分)</strong>
+                        <p>1つのテーマで1分間スピーチ。</p>
+                    </div>
+                </div>
+
+                <!-- Day 26 -->
+                <div class="day-card">
+                    <div class="day-header">【Day 26】調整日</div>
+                    <div class="goal"><strong>今日の目標:</strong> 自分の弱点を克服するか、得意分野を極める</div>
+                    <div class="subsection-title">選択肢A:弱点克服日(15分)</div>
+                    <p>苦手だった練習法や、まだ慣れていない表現に集中的に取り組む</p>
+                    <div class="subsection-title">選択肢B:得意練習を極める日(15分)</div>
+                    <p>最も得意な練習法を、より高いレベルで実践(時間を延ばす、難易度を上げるなど)</p>
+                    <div class="subsection-title">選択肢C:気分転換に新しい方法(15分)</div>
+                    <p>外で歩きながらセルフトーク、音楽に合わせて韓国語など、環境や方法を変えてみる</p>
+                    <div class="subsection-title">今日のポイント</div>
+                    <ul>
+                        <li>弱点克服も、強みを伸ばすことも、どちらも成長です</li>
+                        <li>環境を変えることで、新鮮な気持ちで取り組めます</li>
+                        <li>完璧を目指さず、楽しむことが長続きの秘訣です</li>
+                    </ul>
+                    <div class="subsection-title">できたらチェック☐</div>
+                    <div class="checkbox-item">弱点克服または強み強化ができた</div>
+                    <div class="checkbox-item">新しい工夫を試せた</div>
+                    <div class="checkbox-item">楽しく練習できた</div>
+                    <div class="emergency-box">
+                        <strong>⏰ 忙しい日の最低限メニュー(3分)</strong>
+                        <p>得意な練習を3分間だけ。</p>
+                    </div>
+                </div>
+
+                <!-- Day 27 -->
+                <div class="day-card">
+                    <div class="day-header">【Day 27】総合練習日</div>
+                    <div class="goal"><strong>今日の目標:</strong> これまでの練習法を統合し、自分のスタイルを確立する</div>
+                    <div class="subsection-title">選択肢A:総合練習(全ての方法を少しずつ)(15分)</div>
+                    <p>Week 1〜3の練習法を各2〜3分ずつ行い、全体のバランスを確認</p>
+                    <div class="subsection-title">選択肢B:集中練習(1つの方法を深掘り)(15分)</div>
+                    <p>一番効果を感じた練習法を15分間みっちり行う</p>
+                    <div class="subsection-title">選択肢C:自由練習(完全オリジナルメニュー)(15分)</div>
+                    <p>自分で練習内容、時間配分、方法をすべて決めて実践</p>
+                    <div class="subsection-title">今日のポイント</div>
+                    <ul>
+                        <li>選択肢Cが選べたら、もう自立した学習者です</li>
+                        <li>自分に合った練習スタイルが見えてきているはずです</li>
+                        <li>残り3日。最後まで走り抜けましょう!</li>
+                    </ul>
+                    <div class="subsection-title">できたらチェック☐</div>
+                    <div class="checkbox-item">総合的な練習ができた</div>
+                    <div class="checkbox-item">自分のスタイルが見えてきた</div>
+                    <div class="checkbox-item">27日間継続できている</div>
+                    <div class="emergency-box">
+                        <strong>⏰ 忙しい日の最低限メニュー(3分)</strong>
+                        <p>今日の気分で選んだ練習を3分間。</p>
+                    </div>
+                </div>
+
+                <!-- Day 28 -->
+                <div class="day-card">
+                    <div class="day-header">【Day 28】成長確認日</div>
+                    <div class="goal"><strong>今日の目標:</strong> これまでの録音を聞いて成長を確認し、練習も行う</div>
+                    <div class="subsection-title">選択肢A:過去の録音を聞いて成長確認+練習(15分)</div>
+                    <p>Day 1、Day 7、Day 14、Day 21の録音を聞く(5分)→同じ内容を今話してみる(10分)</p>
+                    <div class="subsection-title">選択肢B:最も効果を感じた練習法(15分)</div>
+                    <p>28日間で最も効果を感じた練習法を、もう一度じっくり実践</p>
+                    <div class="subsection-title">選択肢C:挑戦日(15分)</div>
+                    <p>これまでで最も難しい練習(3分間スピーチ、複雑なロールプレイなど)にチャレンジ</p>
+                    <div class="subsection-title">今日のポイント</div>
+                    <ul>
+                        <li>Day 1の録音と比べれば、驚くほど成長しているはずです</li>
+                        <li>成長を実感することが、継続のモチベーションになります</li>
+                        <li>あと2日で30日間達成です!</li>
+                    </ul>
+                    <div class="subsection-title">できたらチェック☐</div>
+                    <div class="checkbox-item">過去の録音を聞いた</div>
+                    <div class="checkbox-item">成長を実感できた</div>
+                    <div class="checkbox-item">今日も練習を楽しめた</div>
+                    <div class="emergency-box">
+                        <strong>⏰ 忙しい日の最低限メニュー(3分)</strong>
+                        <p>Day 1の録音を聞くだけでもOK。成長を実感することが大切。</p>
+                    </div>
+                </div>
+
+                <!-- Day 29 -->
+                <div class="day-card">
+                    <div class="day-header">【Day 29】準備日</div>
+                    <div class="goal"><strong>今日の目標:</strong> 明日の最終日に向けた準備と、31日目以降のプランを考える</div>
+                    <div class="subsection-title">選択肢A:明日に向けた総復習(15分)</div>
+                    <p>30日間で学んだことを振り返りながら、好きな練習法を組み合わせる</p>
+                    <div class="subsection-title">選択肢B:31日目以降のメニュー作り+練習(15分)</div>
+                    <p>今後続ける練習法を選び、週間メニューを作る(5分)→実際に練習(10分)</p>
+                    <div class="subsection-title">選択肢C:好きな練習(15分)</div>
+                    <p>深く考えず、今日やりたい練習を自由に選んで楽しむ</p>
+                    <div class="subsection-title">今日のポイント</div>
+                    <ul>
+                        <li>31日目以降も続けるための準備をしましょう</li>
+                        <li>週5日、1日10〜15分が理想的な継続ペースです</li>
+                        <li>明日で30日間達成です。最後まで走り抜けましょう!</li>
+                    </ul>
+                    <div class="subsection-title">できたらチェック☐</div>
+                    <div class="checkbox-item">明日への準備ができた</div>
+                    <div class="checkbox-item">31日目以降のプランを考えた</div>
+                    <div class="checkbox-item">29日間継続できた自分を褒めた</div>
+                    <div class="emergency-box">
+                        <strong>⏰ 忙しい日の最低限メニュー(3分)</strong>
+                        <p>31日目以降のプランだけ考える(練習は明日でもOK)。</p>
+                    </div>
+                </div>
+
+                <!-- Day 30 -->
+                <div class="day-card">
+                    <div class="day-header">【Day 30】最終日:30日間の集大成</div>
+                    <div class="goal"><strong>今日の目標:</strong> 30日間の振り返りと、自分の変化を韓国語でスピーチし、今後の目標を設定する</div>
+                    <div class="subsection-title">特別メニュー</div>
+                    <div class="practice-item">
+                        <strong>Part 1:30日間の振り返り(5分)</strong><br>
+                        - Day 1とDay 30の自分を比較する<br>
+                        - 何ができるようになったか?<br>
+                        - 一番印象に残っている練習は?<br>
+                        - 一番成長を感じたのはいつ?
+                    </div>
+                    <div class="practice-item">
+                        <strong>Part 2:成長スピーチ(韓国語で3分)(10分)</strong><br>
+                        30日間の変化を韓国語で話します。準備時間5分、スピーチ3分、録音して保存しましょう。<br>
+                        話す内容:始めたきっかけ、難しかったこと、嬉しかったこと、今の気持ち、これからの目標
+                    </div>
+                    <div class="practice-item">
+                        <strong>Part 3:今後の目標設定(5分)</strong><br>
+                        - 次の30日間で達成したいことは?<br>
+                        - どんな練習を続けたいか?<br>
+                        - 最終的にどうなりたいか?
+                    </div>
+                    <div class="subsection-title">今日のポイント</div>
+                    <ul>
+                        <li>30日間やり遂げた自分を最大限に褒めてあげましょう</li>
+                        <li>成長スピーチは、あなたの努力の結晶です。最高の記念になります</li>
+                        <li>今日がゴールではなく、新しいスタートです</li>
+                    </ul>
+                    <div class="subsection-title">できたらチェック☐</div>
+                    <div class="checkbox-item">30日間の振り返りができた</div>
+                    <div class="checkbox-item">3分間の成長スピーチを録音できた</div>
+                    <div class="checkbox-item">今後の目標を設定できた</div>
+                    <div class="checkbox-item">30日間完走した自分を心から褒めた</div>
+                    <div class="tip-box">
+                        <strong>🎉 30日間完走、本当におめでとうございます! 🎉</strong>
+                        <p>このプログラムを最後までやり遂げたあなたは、素晴らしい継続力と行動力の持ち主です。「韓国語を話す」という習慣は、もうあなたのものです。これからも自信を持って、楽しみながら韓国語学習を続けていってください!</p>
+                    </div>
+                </div>
+
+            </div>
+            
+            <!-- 3つの時間帯別バージョン -->
+            <div class="chapter">
+                <h2 class="chapter-title">3つの時間帯別バージョン</h2>
+                
+                <p>
+                    同じ30日間プログラムを、あなたの生活スタイルに合わせて実践できるよう、3つのバージョンを用意しました。自分に最も合ったものを選んでください。途中で変更してもOKです。
+                </p>
+
+                <div class="version-tabs">
+                    <div class="version-tab">朝型バージョン</div>
+                    <div class="version-tab">夜型バージョン</div>
+                    <div class="version-tab">スキマ時間分散型</div>
+                </div>
+
+                <!-- 朝型バージョン -->
+                <div class="week-box">
+                    <div class="week-title">1. 朝型バージョン(朝の時間を活用)</div>
+                    
+                    <div class="subsection-title">こんな方におすすめ</div>
+                    <ul>
+                        <li>朝は比較的時間に余裕がある</li>
+                        <li>朝に頭が冴えている</li>
+                        <li>朝のルーティンに韓国語を組み込みたい</li>
+                        <li>夜は疲れて続かない</li>
+                    </ul>
+
+                    <div class="subsection-title">実践スケジュール例</div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>時間帯</th>
+                                <th>活動</th>
+                                <th>韓国語練習</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>6:30-6:40</td>
+                                <td>起床・洗面</td>
+                                <td>朝の支度をセルフトークで実況</td>
+                            </tr>
+                            <tr>
+                                <td>7:00-7:10</td>
+                                <td>朝食・コーヒー</td>
+                                <td>3行日記(音声)または質問→即答</td>
+                            </tr>
+                            <tr>
+                                <td>通勤・移動中</td>
+                                <td>電車・車内</td>
+                                <td>リプロダクション(イヤホンで)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="subsection-title">朝型のメリット</div>
+                    <ul>
+                        <li>脳が疲れていないので、吸収力が高い</li>
+                        <li>1日のスタートを韓国語で切ることで、モチベーションアップ</li>
+                        <li>朝のルーティンと結びつけることで、習慣化しやすい</li>
+                        <li>夜に時間を気にせず、リラックスできる</li>
+                    </ul>
+
+                    <div class="tip-box">
+                        <strong>朝型実践のコツ</strong>
+                        <ul>
+                            <li>前日の夜に翌朝の練習内容を決めておく</li>
+                            <li>洗面台の鏡に「今日の目標フレーズ」を貼る</li>
+                            <li>朝食を食べながらでもできる練習を選ぶ</li>
+                            <li>通勤時間も有効活用(音読・リスニング)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 夜型バージョン -->
+                <div class="week-box">
+                    <div class="week-title">2. 夜型バージョン(夜のリラックスタイムに)</div>
+                    
+                    <div class="subsection-title">こんな方におすすめ</div>
+                    <ul>
+                        <li>夜の方が集中できる</li>
+                        <li>朝は忙しくて時間がない</li>
+                        <li>寝る前のリラックスタイムに学習したい</li>
+                        <li>1日の終わりに韓国語で振り返りたい</li>
+                    </ul>
+
+                    <div class="subsection-title">実践スケジュール例</div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>時間帯</th>
+                                <th>活動</th>
+                                <th>韓国語練習</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>21:00-21:10</td>
+                                <td>夕食後</td>
+                                <td>今日の3行日記(音声)を録音</td>
+                            </tr>
+                            <tr>
+                                <td>22:00-22:10</td>
+                                <td>お風呂上がり</td>
+                                <td>ロールプレイまたは即興スピーチ</td>
+                            </tr>
+                            <tr>
+                                <td>23:00-23:05</td>
+                                <td>就寝前</td>
+                                <td>軽いセルフトークでリラックス</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="subsection-title">夜型のメリット</div>
+                    <ul>
+                        <li>1日の出来事を韓国語で振り返ることで、実用的な表現が身につく</li>
+                        <li>時間に追われず、じっくり練習できる</li>
+                        <li>リラックスした状態で学習できる</li>
+                        <li>寝る前の学習は記憶に定着しやすい</li>
+                    </ul>
+
+                    <div class="tip-box">
+                        <strong>夜型実践のコツ</strong>
+                        <ul>
+                            <li>夕食後すぐに練習すると習慣化しやすい</li>
+                            <li>お風呂の中でもセルフトークができる</li>
+                            <li>寝る直前は激しい練習より、ゆったりした内容を</li>
+                            <li>その日にあったことを題材にすると、話しやすい</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- スキマ時間分散型 -->
+                <div class="week-box">
+                    <div class="week-title">3. スキマ時間分散型(1日数回に分けて実践)</div>
+                    
+                    <div class="subsection-title">こんな方におすすめ</div>
+                    <ul>
+                        <li>まとまった時間が取れない</li>
+                        <li>家事や育児で忙しい</li>
+                        <li>仕事が不規則</li>
+                        <li>短時間を複数回の方が集中できる</li>
+                    </ul>
+
+                    <div class="subsection-title">実践スケジュール例</div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>時間帯</th>
+                                <th>活動</th>
+                                <th>韓国語練習(各2〜5分)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>朝</td>
+                                <td>朝の支度中</td>
+                                <td>セルフトーク(3分)</td>
+                            </tr>
+                            <tr>
+                                <td>昼</td>
+                                <td>昼休み・移動中</td>
+                                <td>質問→即答またはリプロダクション(5分)</td>
+                            </tr>
+                            <tr>
+                                <td>午後</td>
+                                <td>家事の合間</td>
+                                <td>描写ゲームまたはセルフトーク(3分)</td>
+                            </tr>
+                            <tr>
+                                <td>夜</td>
+                                <td>寝る前</td>
+                                <td>3行日記(音声)(3分)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="subsection-title">分散型のメリット</div>
+                    <ul>
+                        <li>忙しい人でも確実に続けられる</li>
+                        <li>1日に複数回触れることで、記憶に定着しやすい</li>
+                        <li>集中力が続きやすい</li>
+                        <li>生活のあらゆる場面で韓国語を使える</li>
+                    </ul>
+
+                    <div class="tip-box">
+                        <strong>分散型実践のコツ</strong>
+                        <ul>
+                            <li>スマホのリマインダーを1日3〜4回セットする</li>
+                            <li>各スキマ時間に「何をするか」を事前に決めておく</li>
+                            <li>1回2〜3分でもOK。回数を重視する</li>
+                            <li>家事(料理、洗濯、掃除)をしながらセルフトーク</li>
+                            <li>通勤・移動時間は必ず活用する</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <strong>どのバージョンを選ぶべき?</strong>
+                    <p>
+                        迷ったら、まず「朝型」「夜型」「分散型」のどれが自分の生活に合っているか考えましょう。ただし、決めたバージョンに固執する必要はありません。
+                    </p>
+                    <ul>
+                        <li>平日は分散型、週末は朝型</li>
+                        <li>忙しい週は分散型、余裕がある週は朝型または夜型</li>
+                        <li>月曜は朝型、火曜は夜型など、曜日で変える</li>
+                    </ul>
+                    <p>
+                        <strong>柔軟に組み合わせることが、長続きの秘訣です。</strong>
+                    </p>
+                </div>
+            </div>
+
+            <!-- 付録 -->
+            <div class="chapter">
+                <h2 class="chapter-title">付録:実践ツール集</h2>
+
+                <div class="section-title">1. 30日間チェックシート(印刷用)</div>
+                <p>
+                    毎日の達成を記録することで、モチベーションを維持できます。このシートを印刷して、冷蔵庫や机の前など、目につく場所に貼りましょう。
+                </p>
+
+                <div class="highlight-box">
+                    <strong>使い方:</strong>
+                    <ul>
+                        <li>練習が終わったら☐にチェック✓を入れる</li>
+                        <li>練習時間を記録する(3分でも立派な記録です)</li>
+                        <li>気づきや感想を簡単にメモする</li>
+                        <li>1週間ごとに見返して、継続できていることを確認する</li>
+                    </ul>
+                </div>
+
+                <table style="font-size: 0.85em;">
+                    <thead>
+                        <tr>
+                            <th style="width: 70px;">日</th>
+                            <th style="width: 90px;">日付</th>
+                            <th>練習内容</th>
+                            <th style="width: 70px;">時間</th>
+                            <th style="width: 50px;">達成</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Day 1</td><td>___/___</td><td>____________________</td><td>___分</td><td>☐</td></tr>
+                        <tr><td>Day 2</td><td>___/___</td><td>____________________</td><td>___分</td><td>☐</td></tr>
+                        <tr><td>Day 3</td><td>___/___</td><td>____________________</td><td>___分</td><td>☐</td></tr>
+                        <tr><td>Day 4</td><td>___/___</td><td>____________________</td><td>___分</td><td>☐</td></tr>
+                        <tr><td>Day 5</td><td>___/___</td><td>____________________</td><td>___分</td><td>☐</td></tr>
+                        <tr><td>Day 6</td><td>___/___</td><td>____________________</td><td>___分</td><td>☐</td></tr>
+                        <tr><td>Day 7</td><td>___/___</td><td>____________________</td><td>___分</td><td>☐</td></tr>
+                        <tr style="background: #f0f0f0; font-weight: bold;"><td colspan="5">Week 1 達成: ___/7日</td></tr>
+                        <tr><td>Day 8</td><td>___/___</td><td>____________________</td><td>___分</td><td>☐</td></tr>
+                        <tr><td>Day 9</td><td>___/___</td><td>____________________</td><td>___分</td><td>☐</td></tr>
+                        <tr><td>Day 10</td><td>___/___</td><td>____________________</td><td>___分</td><td>☐</td></tr>
+                        <tr><td>Day 11</td><td>___/___</td><td>____________________</td><td>___分</td><td>☐</td></tr>
+                        <tr><td>Day 12</td><td>___/___</td><td>____________________</td><td>___分</td><td>☐</td></tr>
+                        <tr><td>Day 13</td><td>___/___</td><td>____________________</td><td>___分</td><td>☐</td></tr>
+                        <tr><td>Day 14</td><td>___/___</td><td>____________________</td><td>___分</td><td>☐</td></tr>
+                        <tr style="background: #f0f0f0; font-weight: bold;"><td colspan="5">Week 2 達成: ___/7日</td></tr>
+                        <tr><td>Day 15</td><td>___/___</td><td>____________________</td><td>___分</td><td>☐</td></tr>
+                        <tr><td>Day 16</td><td>___/___</td><td>____________________</td><td>___分</td><td>☐</td></tr>
+                        <tr><td>Day 17</td><td>___/___</td><td>____________________</td><td>___分</td><td>☐</td></tr>
+                        <tr><td>Day 18</td><td>___/___</td><td>____________________</td><td>___分</td><td>☐</td></tr>
+                        <tr><td>Day 19</td><td>___/___</td><td>____________________</td><td>___分</td><td>☐</td></tr>
+                        <tr><td>Day 20</td><td>___/___</td><td>____________________</td><td>___分</td><td>☐</td></tr>
+                        <tr><td>Day 21</td><td>___/___</td><td>____________________</td><td>___分</td><td>☐</td></tr>
+                        <tr style="background: #f0f0f0; font-weight: bold;"><td colspan="5">Week 3 達成: ___/7日</td></tr>
+                        <tr><td>Day 22</td><td>___/___</td><td>____________________</td><td>___分</td><td>☐</td></tr>
+                        <tr><td>Day 23</td><td>___/___</td><td>____________________</td><td>___分</td><td>☐</td></tr>
+                        <tr><td>Day 24</td><td>___/___</td><td>____________________</td><td>___分</td><td>☐</td></tr>
+                        <tr><td>Day 25</td><td>___/___</td><td>____________________</td><td>___分</td><td>☐</td></tr>
+                        <tr><td>Day 26</td><td>___/___</td><td>____________________</td><td>___分</td><td>☐</td></tr>
+                        <tr><td>Day 27</td><td>___/___</td><td>____________________</td><td>___分</td><td>☐</td></tr>
+                        <tr><td>Day 28</td><td>___/___</td><td>____________________</td><td>___分</td><td>☐</td></tr>
+                        <tr><td>Day 29</td><td>___/___</td><td>____________________</td><td>___分</td><td>☐</td></tr>
+                        <tr><td>Day 30</td><td>___/___</td><td>____________________</td><td>___分</td><td>☐</td></tr>
+                        <tr style="background: #f0f0f0; font-weight: bold;"><td colspan="5">Week 4 達成: ___/9日</td></tr>
+                        <tr style="background: #667eea; color: white; font-weight: bold;"><td colspan="5">🎉 30日間 総達成: ___/30日</td></tr>
+                    </tbody>
+                </table>
+
+                <div class="section-title">2. 週ごとの振り返りシート</div>
+                <p>
+                    毎週末に、この振り返りシートを記入しましょう。自分の成長を可視化し、次週の目標を設定することで、モチベーションを維持できます。
+                </p>
+
+                <!-- Week 1 -->
+                <div class="week-box">
+                    <div class="week-title">Week 1 振り返りシート(Day 1-7)</div>
+                    
+                    <div class="subsection-title">📊 達成度チェック</div>
+                    <div class="practice-item">7日間のうち何日練習できましたか? → ___/7日</div>
+                    <div class="practice-item">合計練習時間 → 約____分</div>
+                    <div class="practice-item">1日平均 → 約____分</div>
+
+                    <div class="subsection-title">💡 成長の確認</div>
+                    <p><strong>1. 今週できるようになったこと(3つ)</strong></p>
+                    <p style="border-bottom: 1px dotted #ccc; padding: 8px 0;">①________________________________________________</p>
+                    <p style="border-bottom: 1px dotted #ccc; padding: 8px 0;">②________________________________________________</p>
+                    <p style="border-bottom: 1px dotted #ccc; padding: 8px 0;">③________________________________________________</p>
+
+                    <p><strong>2. 一番効果を感じた練習法</strong></p>
+                    <p style="border-bottom: 1px dotted #ccc; padding: 8px 0;">________________________________________________</p>
+                    <p style="border-bottom: 1px dotted #ccc; padding: 8px 0;">理由:___________________________________________</p>
+
+                    <p><strong>3. 難しかったこと</strong></p>
+                    <p style="border-bottom: 1px dotted #ccc; padding: 8px 0;">________________________________________________</p>
+
+                    <div class="subsection-title">🎯 Week 2の目標</div>
+                    <p style="border-bottom: 1px dotted #ccc; padding: 8px 0;">練習頻度: 7日中___日</p>
+                    <p style="border-bottom: 1px dotted #ccc; padding: 8px 0;">挑戦したいこと:__________________________________</p>
+                </div>
+
+                <!-- Week 2 -->
+                <div class="week-box">
+                    <div class="week-title">Week 2 振り返りシート(Day 8-14)</div>
+                    
+                    <div class="subsection-title">📊 達成度チェック</div>
+                    <div class="practice-item">7日間のうち何日練習できましたか? → ___/7日</div>
+                    <div class="practice-item">Week 1と比べて上達を感じますか? → (はい・少し・まだ)</div>
+
+                    <div class="subsection-title">💡 成長の確認</div>
+                    <p><strong>1. Week 1と比べて明らかに上達したこと</strong></p>
+                    <p style="border-bottom: 1px dotted #ccc; padding: 8px 0;">________________________________________________</p>
+
+                    <p><strong>2. 新しく学んだ表現(5つ)</strong></p>
+                    <p style="border-bottom: 1px dotted #ccc; padding: 8px 0;">________________________________________________</p>
+
+                    <p><strong>3. 14日間継続できている自分への一言</strong></p>
+                    <p style="border-bottom: 1px dotted #ccc; padding: 8px 0;">________________________________________________</p>
+
+                    <div class="subsection-title">🎯 Week 3の目標</div>
+                    <p style="border-bottom: 1px dotted #ccc; padding: 8px 0;">ロールプレイで挑戦したい場面:______________________</p>
+                    <p style="border-bottom: 1px dotted #ccc; padding: 8px 0;">即興スピーチのテーマ:______________________________</p>
+                </div>
+
+                <!-- Week 3 -->
+                <div class="week-box">
+                    <div class="week-title">Week 3 振り返りシート(Day 15-21)</div>
+                    
+                    <div class="subsection-title">📊 達成度チェック</div>
+                    <div class="practice-item">7日間のうち何日練習できましたか? → ___/7日</div>
+                    <div class="practice-item">1分以上韓国語だけで話せますか? → (はい・まだ)</div>
+                    <div class="practice-item">21日間の累計達成日数 → ___/21日</div>
+
+                    <div class="subsection-title">💡 成長の確認</div>
+                    <p><strong>1. 一番効果を感じた練習法</strong></p>
+                    <p style="border-bottom: 1px dotted #ccc; padding: 8px 0;">________________________________________________</p>
+
+                    <p><strong>2. 実際の会話で使えそうなフレーズ(3つ)</strong></p>
+                    <p style="border-bottom: 1px dotted #ccc; padding: 8px 0;">________________________________________________</p>
+
+                    <p><strong>3. Day 1と比べた成長度(10段階)</strong></p>
+                    <p style="border-bottom: 1px dotted #ccc; padding: 8px 0;">___/10点  理由:_________________________________</p>
+
+                    <div class="subsection-title">🎯 Week 4の目標</div>
+                    <p style="border-bottom: 1px dotted #ccc; padding: 8px 0;">最後の9日間で達成したいこと:_______________________</p>
+                    <p style="border-bottom: 1px dotted #ccc; padding: 8px 0;">31日目以降も続けたい練習法:________________________</p>
+                </div>
+
+                <!-- Week 4 -->
+                <div class="week-box">
+                    <div class="week-title">Week 4 最終振り返りシート(Day 22-30)</div>
+                    
+                    <div class="subsection-title">🎉 30日間達成おめでとうございます!</div>
+                    
+                    <div class="subsection-title">📊 最終達成度</div>
+                    <div class="practice-item">Week 4は何日練習できましたか? → ___/9日</div>
+                    <div class="practice-item">30日間の総達成日数 → ___/30日</div>
+                    <div class="practice-item">総練習時間 → 約____分</div>
+
+                    <div class="subsection-title">💡 30日間の総括</div>
+                    <p><strong>1. 一番大きな変化</strong></p>
+                    <p style="border-bottom: 1px dotted #ccc; padding: 8px 0;">________________________________________________</p>
+                    <p style="border-bottom: 1px dotted #ccc; padding: 8px 0;">________________________________________________</p>
+
+                    <p><strong>2. 一番印象に残っている出来事</strong></p>
+                    <p style="border-bottom: 1px dotted #ccc; padding: 8px 0;">________________________________________________</p>
+
+                    <p><strong>3. 続けられた秘訣</strong></p>
+                    <p style="border-bottom: 1px dotted #ccc; padding: 8px 0;">________________________________________________</p>
+
+                    <p><strong>4. 30日前の自分に伝えたいこと</strong></p>
+                    <p style="border-bottom: 1px dotted #ccc; padding: 8px 0;">________________________________________________</p>
+
+                    <div class="subsection-title">🎯 31日目以降のプラン</div>
+                    <p style="border-bottom: 1px dotted #ccc; padding: 8px 0;">週___日、1日約___分、練習法:_______________________</p>
+                    <p style="border-bottom: 1px dotted #ccc; padding: 8px 0;">3ヶ月後の目標:_____________________________________</p>
+                    <p style="border-bottom: 1px dotted #ccc; padding: 8px 0;">1年後の目標:_______________________________________</p>
+                </div>
+
+                <div class="section-title">3. 挫折しそうになった時の緊急対処法</div>
+                
+                <p>
+                    30日間の中で、必ず「続けられない」と感じる瞬間が訪れます。それは自然なことです。この対処法リストを見て、自分に合った方法を試してください。
+                </p>
+
+                <div class="emergency-box">
+                    <strong>🆘 症状別緊急対処法</strong>
+                    
+                    <div class="subsection-title">症状1:「今日はやる気が出ない」</div>
+                    <p><strong>緊急度:★☆☆</strong></p>
+                    <ul>
+                        <li><strong>3分ルール:</strong> とりあえず3分だけやってみる。3分やれば続けられることが多い</li>
+                        <li><strong>最低限メニュー:</strong> 各日の「忙しい日の3分メニュー」だけをやる</li>
+                        <li><strong>過去の録音:</strong> Day 1の録音と今を比べて、成長を実感する</li>
+                        <li><strong>好きな練習だけ:</strong> 義務感を捨てて、一番楽しい練習だけをやる</li>
+                        <li><strong>環境を変える:</strong> いつもと違う場所(公園、カフェなど)で練習</li>
+                    </ul>
+
+                    <div class="subsection-title">症状2:「忙しすぎて時間がない」</div>
+                    <p><strong>緊急度:★★☆</strong></p>
+                    <ul>
+                        <li><strong>1分でもOK:</strong> 안녕하세요と1回言うだけでも「続けた」記録になります</li>
+                        <li><strong>ながら練習:</strong> お風呂で独り言、通勤中に頭の中で韓国語思考</li>
+                        <li><strong>完璧主義を捨てる:</strong> 60%の達成度でも続けることに意味があります</li>
+                        <li><strong>分散型に切り替え:</strong> 1日1回ではなく、2分×3回に分ける</li>
+                        <li><strong>記録だけ残す:</strong> 今日は練習できなくても、「今日の目標」だけメモ</li>
+                    </ul>
+
+                    <div class="subsection-title">症状3:「成長を感じられない」</div>
+                    <p><strong>緊急度:★★★</strong></p>
+                    <ul>
+                        <li><strong>録音比較:</strong> Day 1、Week 1、Week 2の録音を順番に聞く(必ず違いがあります)</li>
+                        <li><strong>できることリスト:</strong> 30日前にできなかったことを10個書き出す</li>
+                        <li><strong>階段状成長:</strong> 成長は停滞期の後に飛躍します。今は準備期間です</li>
+                        <li><strong>他人と比較しない:</strong> 1週間前の自分とだけ比べる</li>
+                        <li><strong>小さな成長:</strong> 「詰まる回数が減った」も立派な成長です</li>
+                    </ul>
+
+                    <div class="subsection-title">症状4:「同じことの繰り返しで飽きた」</div>
+                    <p><strong>緊急度:★★☆</strong></p>
+                    <ul>
+                        <li><strong>場所を変える:</strong> 外、カフェ、車の中、公園など新しい環境で</li>
+                        <li><strong>新しい練習法:</strong> まだ試していない練習法にチャレンジ</li>
+                        <li><strong>テーマを変える:</strong> 食べ物→旅行→映画→趣味など、話す内容を変える</li>
+                        <li><strong>難易度を上げる:</strong> 1分→2分、簡単な表現→複雑な表現</li>
+                        <li><strong>仲間を見つける:</strong> SNSで韓国語学習者と繋がり、刺激を受ける</li>
+                    </ul>
+
+                    <div class="subsection-title">症状5:「1日(数日)抜けてしまった」</div>
+                    <p><strong>緊急度:★★★</strong></p>
+                    <ul>
+                        <li><strong>今すぐ再開:</strong> 1日抜けても問題なし。今日から再開すればOK</li>
+                        <li><strong>「ゼロか100か」思考を捨てる:</strong>  30日間のうち29日できたなら、それは97%の達成です。挫折ではありません</li>
+                        <li><strong>抜けた日を責めない:</strong> 続けた日を数えて、自分を褒める</li>
+                        <li><strong>完璧を目指さない:</strong> 30日のうち20日できれば大成功です</li>
+                        <li><strong>最低限から再開:</strong> 3分メニューから再スタートで十分</li>
+                        <li><strong>原因を分析:</strong> なぜ抜けたか考え、次週の計画に活かす</li>
+                    </ul>
+
+                    <div class="subsection-title">症状6:「発音が通じない」</div>
+                    <p><strong>緊急度:★☆☆</strong></p>
+                    <ul>
+                        <li><strong>完璧は不要:</strong> ネイティブでなくても通じる発音を目指す</li>
+                        <li><strong>間違いは成長の証:</strong> 間違えるほど、挑戦している証拠です</li>
+                        <li><strong>デジタルツール:</strong> 音声認識で客観的にチェック</li>
+                        <li><strong>ゆっくり話す:</strong> 流暢さより、正確さを優先</li>
+                        <li><strong>録音を聞き返す:</strong> 自分では気づかない改善点が見つかります</li>
+                    </ul>
+
+                    <div class="subsection-title">症状7:「実際の会話で使えるか不安」</div>
+                    <p><strong>緊急度:★☆☆</strong></p>
+                    <ul>
+                        <li><strong>30日後に挑戦:</strong> まず30日間完走してから実践に進む</li>
+                        <li><strong>土台はできている:</strong> アウトプット練習を続けたあなたには基礎があります</li>
+                        <li><strong>失敗してOK:</strong> 実践の場での失敗は、最高の学習機会です</li>
+                        <li><strong>段階的に:</strong> いきなり長時間ではなく、5分から始める</li>
+                        <li><strong>オンラインから:</strong> 対面より、オンライン会話から始めると気楽です</li>
+                    </ul>
+                </div>
+
+                <div class="section-title">4. よくある質問(Q&A)</div>
+
+                <div class="tip-box">
+                    <strong>Q1. Day 5ですが、まだ流暢に話せません。大丈夫でしょうか?</strong>
+                    <p><strong>A.</strong> 全く問題ありません! 5日で流暢になる人はいません。大切なのは「Day 1より少しでも話せるようになったか」です。詰まりながらでも、単語だけでも、口から韓国語が出ていれば順調です。流暢さは20日目、30日目と徐々に改善していきます。</p>
+                </div>
+
+                <div class="tip-box">
+                    <strong>Q2. Day 10で、発音が全然通じません。続けて意味がありますか?</strong>
+                    <p><strong>A.</strong> 意味があります! 発音は最も時間がかかるスキルの一つです。今は「口の筋肉を鍛えている段階」と考えてください。韓国語特有の音(ㅓ、ㅡ、濃音など)は、日本語にない口の動きなので、慣れるまで時間がかかります。Day 20、Day 30と続けるうちに必ず改善します。</p>
+                </div>
+
+                <div class="tip-box">
+                    <strong>Q3. Day 15ですが、Week 2の方が楽でした。Week 3は難しすぎます。</strong>
+                    <p><strong>A.</strong> それは正常な反応です! Week 3は実践力を鍛えるため、意図的に難易度を上げています。難しいと感じたら:(1)Week 2の練習法に戻ってもOK、(2)ロールプレイの台本を短くする、(3)即興スピーチを30秒から始める。週の後半になれば必ず慣れてきます。</p>
+                </div>
+
+                <div class="tip-box">
+                    <strong>Q4. Day 20ですが、3日連続で抜けました。もう挫折でしょうか?</strong>
+                    <p><strong>A.</strong> 挫折ではありません! 20日のうち17日続けられたことが素晴らしいです。30日のうち20日以上できれば十分習慣化できます。大切なのは「もう一度始める勇気」です。今日から再開すれば、残り10日で必ず完走できます。</p>
+                </div>
+
+                <div class="tip-box">
+                    <strong>Q5. Day 25ですが、実際の会話で使えるか不安です。</strong>
+                    <p><strong>A.</strong> その不安は自然です。しかし、25日間アウトプット練習を続けたあなたは、確実に「話す基礎」ができています。実践の場では最初は緊張しても、2〜3回目には対応できるようになります。Day 30後、オンライン会話レッスン(5分だけでOK)にチャレンジしてみてください。</p>
+                </div>
+
+                <div class="tip-box">
+                    <strong>Q6. Day 30達成しましたが、31日目以降が不安です。</strong>
+                    <p><strong>A.</strong> 30日間続けたあなたなら絶対に大丈夫! ポイントは:(1)「毎日」ではなく「週5日」を目標、(2)好きな練習法を中心に10〜15分続ける、(3)月1回は実践の機会を作る。これだけで習慣は維持できます。</p>
+                </div>
+
+                <div class="tip-box">
+                    <strong>Q7. 録音を聞き返すのが恥ずかしくてできません。</strong>
+                    <p><strong>A.</strong> 多くの人が同じ気持ちです。でも録音を聞き返すことは成長確認の最良の方法です。コツは「完璧を求めない」こと。下手でも、それが「今の自分」です。1週間後、2週間後に聞き返すと必ず成長を実感できます。どうしても無理なら、録音せずに練習してもOKです。</p>
+                </div>
+
+                <div class="tip-box">
+                    <strong>Q8. 週に3〜4日しかできません。それでも効果がありますか?</strong>
+                    <p><strong>A.</strong> もちろん効果があります! 週3〜4日でも、1ヶ月続ければ12〜16日分の練習になります。ゼロよりはるかに良いです。ポイントは「できる日に確実にやる」こと。自分のペースで無理なく続けることが最も大切です。</p>
+                </div>
+
+                <div class="tip-box">
+                    <strong>Q9. 文法が不安です。このプログラムだけで大丈夫ですか?</strong>
+                    <p><strong>A.</strong> このプログラムは「アウトプット力」を鍛えることに特化しています。文法学習も大切ですが、アウトプット練習をしながら自然に文法も身につきます。もし不安が強いなら、週末だけ文法書で復習し、平日はアウトプット練習に集中するという組み合わせがおすすめです。</p>
+                </div>
+
+                <div class="tip-box">
+                    <strong>Q10. 家族がいて、声を出せません。どうすればいいですか?</strong>
+                    <p><strong>A.</strong> 以下の工夫を試してください:(1)小声でささやく、(2)車の中、お風呂、トイレで練習、(3)家族が寝た後や外出中に練習、(4)散歩しながら小声で練習、(5)頭の中で韓国語で考える(サイレントスピーチ)。完全な環境でなくても工夫次第で練習できます。</p>
+                </div>
+
+                <div class="section-title">5. 31日目以降の継続ガイド</div>
+                
+                <p>
+                    30日間のプログラムを完走したあなたは、もう「韓国語を話すこと」が生活の一部になっています。ここからは、その習慣を維持しながら、さらに実践力を高めていくフェーズです。
+                </p>
+
+                <div class="week-box">
+                    <div class="week-title">31日目以降の基本方針</div>
+                    
+                    <div class="subsection-title">1. 週5日ペースを維持</div>
+                    <ul>
+                        <li>毎日でなくてもOK。週に5日続けられれば十分</li>
+                        <li>平日3日、週末2日など、自分のリズムで</li>
+                        <li>忙しい週は週3日でもOK。ゼロにしないことが大切</li>
+                    </ul>
+
+                    <div class="subsection-title">2. 1日10〜15分をキープ</div>
+                    <ul>
+                        <li>長時間より継続が大切。無理のない範囲で</li>
+                        <li>調子がいい日は20分、忙しい日は5分でもOK</li>
+                        <li>「完璧な15分」より「続けられる10分」を優先</li>
+                    </ul>
+
+                    <div class="subsection-title">3. 好きな練習法を中心に</div>
+                    <ul>
+                        <li>30日間で最も効果を感じた練習法を2〜3個選ぶ</li>
+                        <li>それらをローテーションで回す</li>
+                        <li>飽きてきたら新しい練習法を追加</li>
+                    </ul>
+
+                    <div class="subsection-title">4. 月1回の新しい挑戦</div>
+                    <ul>
+                        <li>新しい場面設定やテーマにチャレンジ</li>
+                        <li>より長いスピーチ(3分→5分)に挑戦</li>
+                        <li>新しいデジタルツールを試す</li>
+                    </ul>
+
+                    <div class="subsection-title">5. 実践の機会を月1回以上</div>
+                    <ul>
+                        <li>オンライン会話レッスン(5分からでOK)</li>
+                        <li>韓国語カフェやミートアップ</li>
+                        <li>言語交換パートナーを見つける</li>
+                        <li>韓国旅行で実際に使ってみる</li>
+                    </ul>
+                </div>
+
+                <div class="week-box">
+                    <div class="week-title">レベル別:次のステップガイド</div>
+                    
+                    <div class="subsection-title">【初級を脱却したい方】</div>
+                    <p><strong>現在:</strong> 基本的な挨拶や自己紹介はできるが、長い会話は難しい</p>
+                    <p><strong>次のステップ:</strong></p>
+                    <ul>
+                        <li>過去形・未来形の強化:「어제 ○○했어요」「내일 ○○할 거예요」</li>
+                        <li>接続詞を増やす:그래서、그런데、하지만で文を繋げる</li>
+                        <li>理由を説明:왜냐하면、때문에を使った表現</li>
+                        <li>感情表現を追加:기쁘다、슬프다、화나다など</li>
+                    </ul>
+
+                    <div class="subsection-title">【中級の壁を越えたい方】</div>
+                    <p><strong>現在:</strong> 基本的な会話はできるが、複雑な内容が難しい</p>
+                    <p><strong>次のステップ:</strong></p>
+                    <ul>
+                        <li>ニュアンスの使い分け:안 vs 못、~고 싶다 vs ~면 좋겠다</li>
+                        <li>意見を述べる:「제 생각에는」「~라고 생각해요」</li>
+                        <li>理由づけを強化:意見+理由を必ずセットで</li>
+                        <li>慣用表現を増やす:よく使われる慣用句を会話に取り入れる</li>
+                    </ul>
+
+                    <div class="subsection-title">【さらに流暢になりたい方】</div>
+                    <p><strong>現在:</strong> 日常会話は問題ないが、より自然な表現を目指したい</p>
+                    <p><strong>次のステップ:</strong></p>
+                    <ul>
+                        <li>俗語・口語表現:ネイティブがよく使う略語や流行語</li>
+                        <li>フィラー表現:음、저、그러니까など自然な「つなぎ言葉」</li>
+                        <li>長いスピーチ:5分以上のプレゼンテーション</li>
+                        <li>ディスカッション:複数人での議論や討論</li>
+                    </ul>
+                </div>
+
+                <div class="week-box">
+                    <div class="week-title">月間スケジュール例</div>
+                    
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>週</th>
+                                <th>練習内容</th>
+                                <th>頻度</th>
+                                <th>特別活動</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>第1週</td>
+                                <td>好きな練習法A+B<br>(10分/日)</td>
+                                <td>週5日</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>第2週</td>
+                                <td>好きな練習法B+C<br>(10分/日)</td>
+                                <td>週5日</td>
+                                <td>オンライン会話<br>レッスン(15分)</td>
+                            </tr>
+                            <tr>
+                                <td>第3週</td>
+                                <td>新しい挑戦を追加<br>(15分/日)</td>
+                                <td>週4日</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>第4週</td>
+                                <td>総復習+自由練習<br>(10分/日)</td>
+                                <td>週5日</td>
+                                <td>韓国語カフェ<br>参加</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="highlight-box">
+                    <strong>🎯 目標設定</strong>
+                    
+                    <p><strong>3ヶ月後(Day 90):</strong></p>
+                    <ul>
+                        <li>週4〜5日のアウトプット練習が完全に習慣化</li>
+                        <li>3分以上のスピーチがスムーズにできる</li>
+                        <li>オンライン会話レッスンを月2〜3回</li>
+                    </ul>
+
+                    <p><strong>6ヶ月後(Day 180):</strong></p>
+                    <ul>
+                        <li>韓国語で考えることが自然になる</li>
+                        <li>5分以上のスピーチができる</li>
+                        <li>韓国人との簡単な会話が成立</li>
+                    </ul>
+
+                    <p><strong>1年後(Day 365):</strong></p>
+                    <ul>
+                        <li>日常会話に困らないレベル</li>
+                        <li>韓国人の友達と韓国語でやり取り</li>
+                        <li>韓国旅行で現地の人と自然に会話</li>
+                    </ul>
+                </div>
+
+                <div class="section-title">6. 補足資料:便利な韓国語フレーズ集</div>
+                
+                <p>練習中によく使うフレーズをまとめました。困った時の参考にしてください。</p>
+
+                <div class="week-box">
+                    <div class="week-title">セルフトークでよく使うフレーズ</div>
+                    
+                    <table style="font-size: 0.9em;">
+                        <thead>
+                            <tr>
+                                <th>韓国語</th>
+                                <th>日本語</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>지금 ○○해요</td><td>今○○しています</td></tr>
+                            <tr><td>이것은 ○○입니다</td><td>これは○○です</td></tr>
+                            <tr><td>○○이/가 있어요</td><td>○○があります</td></tr>
+                            <tr><td>○○을/를 마셔요</td><td>○○を飲みます</td></tr>
+                            <tr><td>○○을/를 먹어요</td><td>○○を食べます</td></tr>
+                            <tr><td>날씨가 좋아요</td><td>天気がいいです</td></tr>
+                            <tr><td>피곤해요</td><td>疲れています</td></tr>
+                            <tr><td>행복해요</td><td>幸せです</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="week-box">
+                    <div class="week-title">質問→即答でよく使うフレーズ</div>
+                    
+                    <table style="font-size: 0.9em;">
+                        <thead>
+                            <tr>
+                                <th>質問</th>
+                                <th>答え方の例</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>오늘 뭐 했어요?</td><td>○○했어요 / ○○을/를 했어요</td></tr>
+                            <tr><td>뭐 먹었어요?</td><td>○○을/를 먹었어요</td></tr>
+                            <tr><td>취미가 뭐예요?</td><td>제 취미는 ○○예요</td></tr>
+                            <tr><td>어디에 가요?</td><td>○○에 가요</td></tr>
+                            <tr><td>왜요?</td><td>왜냐하면 ○○이기 때문이에요</td></tr>
+                            <tr><td>언제 해요?</td><td>○○에 해요 (時間/曜日)</td></tr>
+                            <tr><td>어떻게 가요?</td><td>○○로 가요 (交通手段)</td></tr>
+                            <tr><td>누구랑 가요?</td><td>○○랑 가요</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="week-box">
+                    <div class="week-title">ロールプレイでよく使うフレーズ</div>
+                    
+                    <div class="subsection-title">カフェ・レストラン</div>
+                    <ul>
+                        <li>어서 오세요 (いらっしゃいませ)</li>
+                        <li>주문하시겠어요? (ご注文されますか?)</li>
+                        <li>○○ 주세요 (○○をください)</li>
+                        <li>따뜻한 거요, 차가운 거요? (温かいもの、冷たいもの?)</li>
+                        <li>여기서 드시고 가세요? (ここで召し上がりますか?)</li>
+                        <li>포장해 주세요 (持ち帰りでお願いします)</li>
+                    </ul>
+
+                    <div class="subsection-title">買い物</div>
+                    <ul>
+                        <li>이거 얼마예요? (これいくらですか?)</li>
+                        <li>○○원이에요 (○○ウォンです)</li>
+                        <li>좀 깎아 주세요 (少し安くしてください)</li>
+                        <li>입어 봐도 돼요? (試着してもいいですか?)</li>
+                        <li>다른 색 있어요? (他の色ありますか?)</li>
+                        <li>카드로 할게요 (カードで支払います)</li>
+                    </ul>
+
+                    <div class="subsection-title">道案内</div>
+                    <ul>
+                        <li>실례지만, ○○이/가 어디에 있어요? (すみません、○○はどこにありますか?)</li>
+                        <li>저기 가면 있어요 (あそこに行くとあります)</li>
+                        <li>왼쪽 / 오른쪽 (左 / 右)</li>
+                        <li>직진하세요 (まっすぐ行ってください)</li>
+                        <li>여기서 멀어요? (ここから遠いですか?)</li>
+                        <li>걸어서 5분 정도요 (歩いて5分くらいです)</li>
+                    </ul>
+                </div>
+
+                <div class="week-box">
+                    <div class="week-title">即興スピーチで使える接続詞</div>
+                    
+                    <table style="font-size: 0.9em;">
+                        <thead>
+                            <tr>
+                                <th>韓国語</th>
+                                <th>日本語</th>
+                                <th>使い方</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>그리고</td><td>そして</td><td>情報を追加する時</td></tr>
+                            <tr><td>그래서</td><td>だから</td><td>結果を述べる時</td></tr>
+                            <tr><td>그런데</td><td>ところで</td><td>話題を変える時</td></tr>
+                            <tr><td>하지만</td><td>しかし</td><td>対立する内容を述べる時</td></tr>
+                            <tr><td>왜냐하면</td><td>なぜなら</td><td>理由を説明する時</td></tr>
+                            <tr><td>예를 들면</td><td>例えば</td><td>具体例を挙げる時</td></tr>
+                            <tr><td>또</td><td>また</td><td>追加情報を述べる時</td></tr>
+                            <tr><td>그러니까</td><td>つまり</td><td>言い換える時</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="week-box">
+                    <div class="week-title">詰まった時に使えるフィラー</div>
+                    
+                    <p>スムーズに話せない時、これらの言葉で時間を稼ぎながら考えることができます。</p>
+                    
+                    <ul>
+                        <li><strong>음...</strong> (えーと...)</li>
+                        <li><strong>저...</strong> (あの...)</li>
+                        <li><strong>뭐랄까...</strong> (なんというか...)</li>
+                        <li><strong>그게...</strong> (それが...)</li>
+                        <li><strong>어떻게 말하지?</strong> (どう言えばいいかな?)</li>
+                        <li><strong>잠깐만요</strong> (ちょっと待ってください)</li>
+                    </ul>
+
+                    <p style="margin-top: 20px;"><strong>重要:</strong> 完璧に言えなくても大丈夫です。これらのフィラーを使いながら、ゆっくり考えて話しましょう。ネイティブも同じように使っています。</p>
+                </div>
+
+                <div class="section-title">7. 学習記録ページ</div>
+                
+                <p>自由に使える学習記録スペースです。気づいたこと、新しく学んだ表現、目標などを自由に書き込んでください。</p>
+
+                <div style="border: 2px solid #667eea; padding: 30px; margin: 30px 0; min-height: 400px; background: white; border-radius: 8px;">
+                    <p style="text-align: center; font-size: 1.2em; margin-bottom: 30px; color: #667eea;"><strong>私の学習記録</strong></p>
+                    
+                    <p style="border-bottom: 1px solid #e0e0e0; padding: 15px 0; min-height: 40px;"></p>
+                    <p style="border-bottom: 1px solid #e0e0e0; padding: 15px 0; min-height: 40px;"></p>
+                    <p style="border-bottom: 1px solid #e0e0e0; padding: 15px 0; min-height: 40px;"></p>
+                    <p style="border-bottom: 1px solid #e0e0e0; padding: 15px 0; min-height: 40px;"></p>
+                    <p style="border-bottom: 1px solid #e0e0e0; padding: 15px 0; min-height: 40px;"></p>
+                    <p style="border-bottom: 1px solid #e0e0e0; padding: 15px 0; min-height: 40px;"></p>
+                    <p style="border-bottom: 1px solid #e0e0e0; padding: 15px 0; min-height: 40px;"></p>
+                    <p style="border-bottom: 1px solid #e0e0e0; padding: 15px 0; min-height: 40px;"></p>
+                    <p style="border-bottom: 1px solid #e0e0e0; padding: 15px 0; min-height: 40px;"></p>
+                    <p style="border-bottom: 1px solid #e0e0e0; padding: 15px 0; min-height: 40px;"></p>
+                </div>
+
+                <div style="border: 2px solid #764ba2; padding: 30px; margin: 30px 0; min-height: 400px; background: white; border-radius: 8px;">
+                    <p style="text-align: center; font-size: 1.2em; margin-bottom: 30px; color: #764ba2;"><strong>覚えておきたい表現・フレーズ</strong></p>
+                    
+                    <p style="border-bottom: 1px solid #e0e0e0; padding: 15px 0; min-height: 40px;"></p>
+                    <p style="border-bottom: 1px solid #e0e0e0; padding: 15px 0; min-height: 40px;"></p>
+                    <p style="border-bottom: 1px solid #e0e0e0; padding: 15px 0; min-height: 40px;"></p>
+                    <p style="border-bottom: 1px solid #e0e0e0; padding: 15px 0; min-height: 40px;"></p>
+                    <p style="border-bottom: 1px solid #e0e0e0; padding: 15px 0; min-height: 40px;"></p>
+                    <p style="border-bottom: 1px solid #e0e0e0; padding: 15px 0; min-height: 40px;"></p>
+                    <p style="border-bottom: 1px solid #e0e0e0; padding: 15px 0; min-height: 40px;"></p>
+                    <p style="border-bottom: 1px solid #e0e0e0; padding: 15px 0; min-height: 40px;"></p>
+                    <p style="border-bottom: 1px solid #e0e0e0; padding: 15px 0; min-height: 40px;"></p>
+                    <p style="border-bottom: 1px solid #e0e0e0; padding: 15px 0; min-height: 40px;"></p>
+                </div>
+
+            </div>
+
+            <!-- 最後に:あなたへのメッセージ -->
+            <div class="chapter">
+                <div class="section-title">最後に:あなたへのメッセージ</div>
+                
+                <div class="highlight-box" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 40px;">
+                    <h3 style="color: white; margin-bottom: 20px; text-align: center; font-size: 1.5em;">
+                        このプログラムを手に取ったあなたへ
+                    </h3>
+                    
+                    <p style="color: white; margin-bottom: 20px;">
+                        韓国語を1年以上勉強しているのに話せない。その悩みは、あなただけではありません。多くの学習者が同じ壁にぶつかっています。でも、その壁を越えるために必要なのは、特別な才能でも、膨大な時間でもありません。
+                    </p>
+
+                    <p style="color: white; margin-bottom: 20px;">
+                        <strong>必要なのは、たった30日間、毎日少しずつ「声に出す」勇気だけです。</strong>
+                    </p>
+
+                    <p style="color: white; margin-bottom: 20px;">
+                        このプログラムは、完璧を目指すものではありません。60%の達成度でも、途中で休んでしまう日があっても、それはあなたの失敗ではありません。大切なのは、「続けようとする姿勢」です。
+                    </p>
+
+                    <p style="color: white; margin-bottom: 20px;">
+                        Day 1のあなたと、Day 30のあなたは、別人です。最初は恥ずかしかった独り言が、自然になります。詰まっていた言葉が、スムーズに出るようになります。「話せない」と思っていた自分が、「話せる」自分に変わります。
+                    </p>
+
+                    <p style="color: white; margin-bottom: 20px;">
+                        私はあなたを信じています。このプログラムを完走する力が、あなたには必ずあります。
+                    </p>
+
+                    <p style="color: white; margin-bottom: 30px;">
+                        <strong>さあ、今日から始めましょう。<br>
+                        30日後、あなたは必ず変わっています。<br>
+                        화이팅! (ファイティング!頑張って!)</strong>
+                    </p>
+
+                    <p style="color: white; text-align: right; font-style: italic;">
+                        - Nicoより
+                    </p>
+                </div>
+
+                <div style="margin-top: 60px; padding: 30px; background: #f8f9fa; border-radius: 10px;">
+                    <div class="subsection-title">📝 30日間チャレンジ宣言書</div>
+                    <p style="margin-bottom: 20px;">このプログラムを始める前に、自分自身への約束として記入しましょう。</p>
+                    
+                    <div style="border: 2px solid #667eea; padding: 30px; background: white; border-radius: 8px;">
+                        <p style="text-align: center; font-size: 1.2em; margin-bottom: 30px;"><strong>私の30日間チャレンジ宣言</strong></p>
+                        
+                        <p>私、_______________________は、</p>
+                        <p>____年____月____日から30日間、</p>
+                        <p>韓国語アウトプット練習に挑戦することを宣言します。</p>
+                        <br>
+                        <p><strong>私がこのチャレンジをする理由:</strong></p>
+                        <p style="border-bottom: 1px dotted #ccc; padding: 10px 0; min-height: 60px;">
+                            _________________________________________________________________
+                        </p>
+                        <p style="border-bottom: 1px dotted #ccc; padding: 10px 0; min-height: 60px;">
+                            _________________________________________________________________
+                        </p>
+                        <br>
+                        <p><strong>30日後、私がなっていたい姿:</strong></p>
+                        <p style="border-bottom: 1px dotted #ccc; padding: 10px 0; min-height: 60px;">
+                            _________________________________________________________________
+                        </p>
+                        <p style="border-bottom: 1px dotted #ccc; padding: 10px 0; min-height: 60px;">
+                            _________________________________________________________________
+                        </p>
+                        <br>
+                        <p><strong>自分への約束:</strong></p>
+                        <ul style="list-style: none; padding-left: 0;">
+                            <li>☐ 完璧にできなくても、自分を責めません</li>
+                            <li>☐ 1日抜けても、必ず再開します</li>
+                            <li>☐ 他人と比較せず、昨日の自分と比較します</li>
+                            <li>☐ 小さな成長も喜び、自分を褒めます</li>
+                            <li>☐ 30日後の自分を信じて、今日から始めます</li>
+                        </ul>
+                        <br>
+                        <p style="text-align: right; margin-top: 30px;">
+                            ____年____月____日<br>
+                            署名:_______________________
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 奥付 -->
+            <div style="text-align: center; margin: 60px 0 20px; padding: 40px; background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf3 100%); border-radius: 10px;">
+                <h3 style="font-family: 'Noto Serif JP', serif; color: #667eea; margin-bottom: 20px;">
+                    挫折ゼロ!30日間アウトプット強化プログラム
+                </h3>
+                <p style="margin-top: 30px; color: #999; font-size: 0.9em;">
+                    このプログラムがあなたの韓国語学習の転機となりますように。
+                </p>
+                <p style="margin-top: 20px; color: #999; font-size: 0.85em;">
+                    © 2025 Nico. All Rights Reserved.<br>
+                    すべての学習者に、話せる喜びを。
+                </p>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
+```

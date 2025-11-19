@@ -1,0 +1,2610 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+
+    <title>実践韓国語フレーズ50選</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Hiragino Sans', 'Yu Gothic', sans-serif;
+            line-height: 1.8;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 20px;
+        }
+        
+        .book-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .cover {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 60px;
+            text-align: center;
+        }
+        
+        .cover h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+        
+        .cover .subtitle {
+            font-size: 1.3em;
+            opacity: 0.95;
+            margin-bottom: 30px;
+        }
+        
+        .cover .decoration {
+            width: 80px;
+            height: 3px;
+            background: white;
+            margin: 30px auto;
+        }
+        
+        .content {
+            padding: 60px;
+        }
+        
+        .toc {
+            background: #f8f9fa;
+            padding: 40px;
+            border-radius: 8px;
+            margin-bottom: 50px;
+        }
+        
+        .toc h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .toc-list {
+            list-style: none;
+        }
+        
+        .toc-list li {
+            padding: 12px 0;
+            font-size: 1.1em;
+            border-bottom: 1px solid #e0e0e0;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .toc-list li:hover {
+            color: #667eea;
+            padding-left: 10px;
+        }
+        
+        .section {
+            margin-bottom: 60px;
+            padding: 30px 0;
+        }
+        
+        .section-title {
+            font-size: 2em;
+            color: #667eea;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .intro {
+            background: #fff8f0;
+            padding: 30px;
+            border-left: 5px solid #ff9800;
+            margin-bottom: 40px;
+            border-radius: 5px;
+        }
+        
+        .intro h3 {
+            color: #ff9800;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+        
+        .phrase-card {
+            background: white;
+            border: 2px solid #e8e8e8;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            transition: all 0.3s;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .phrase-card:hover {
+            box-shadow: 0 5px 20px rgba(102,126,234,0.2);
+            border-color: #667eea;
+        }
+        
+        .phrase-number {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .korean {
+            font-size: 1.8em;
+            color: #2c3e50;
+            font-weight: 600;
+            margin: 15px 0;
+            letter-spacing: 1px;
+        }
+        
+        .japanese {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 5px;
+        }
+        
+        .context {
+            background: #e3f2fd;
+            padding: 15px 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+            border-left: 4px solid #2196f3;
+        }
+        
+        .context-title {
+            font-weight: 600;
+            color: #1976d2;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .context-title::before {
+            content: "💬";
+            margin-right: 8px;
+        }
+        
+        .variations {
+            background: #f3e5f5;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        
+        .variations-title {
+            font-weight: 600;
+            color: #7b1fa2;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .variations-title::before {
+            content: "🔄";
+            margin-right: 8px;
+        }
+        
+        .variation-item {
+            margin: 10px 0;
+            padding: 12px;
+            background: white;
+            border-radius: 5px;
+            border-left: 3px solid #9c27b0;
+        }
+        
+        .variation-korean {
+            font-size: 1.3em;
+            color: #2c3e50;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+        
+        .variation-japanese {
+            color: #666;
+            font-size: 1em;
+        }
+        
+        .practice-tip {
+            background: #fff3e0;
+            padding: 15px 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+            border-left: 4px solid #ff9800;
+        }
+        
+        .practice-tip-title {
+            font-weight: 600;
+            color: #f57c00;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .practice-tip-title::before {
+            content: "✏️";
+            margin-right: 8px;
+        }
+        
+        .caution {
+            background: #ffebee;
+            padding: 15px 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+            border-left: 4px solid #f44336;
+        }
+        
+        .caution-title {
+            font-weight: 600;
+            color: #c62828;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .caution-title::before {
+            content: "⚠️";
+            margin-right: 8px;
+        }
+        
+        .chapter-intro {
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+            line-height: 1.9;
+        }
+        
+        .appendix {
+            background: #f5f5f5;
+            padding: 40px;
+            border-radius: 8px;
+            margin-top: 50px;
+        }
+        
+        .appendix h3 {
+            color: #667eea;
+            font-size: 1.6em;
+            margin-bottom: 20px;
+        }
+        
+        .checklist {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 10px;
+            margin: 20px 0;
+        }
+        
+        .checklist-item {
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+            border: 2px solid #e0e0e0;
+            font-weight: 500;
+        }
+        
+        @media print {
+            body {
+                background: white;
+            }
+            .book-container {
+                box-shadow: none;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                padding: 30px 20px;
+            }
+            .cover {
+                padding: 50px 30px;
+            }
+            .cover h1 {
+                font-size: 1.8em;
+            }
+            .korean {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="book-container">
+        <!-- 表紙 -->
+        <div class="cover">
+            <h1>今すぐ使える!<br>実践韓国語フレーズ50選</h1>
+            <div class="decoration"></div>
+            <div class="subtitle">〜シチュエーション別・そのまま使える表現集〜</div>
+            <p style="margin-top: 40px; opacity: 0.9;">知っているフレーズを「使えるフレーズ」に変える実践ガイド</p>
+        </div>
+
+        <!-- 本文 -->
+        <div class="content">
+            <!-- 目次 -->
+            <div class="toc">
+                <h2>📖 目次</h2>
+                <ul class="toc-list">
+                    <li onclick="document.getElementById('preface').scrollIntoView({behavior:'smooth'})">前書き - なぜ「知っているのに使えない」のか</li>
+                    <li onclick="document.getElementById('ch1').scrollIntoView({behavior:'smooth'})">第1章 - 日常生活の基本フレーズ(10選)</li>
+                    <li onclick="document.getElementById('ch2').scrollIntoView({behavior:'smooth'})">第2章 - 買い物・飲食店で使うフレーズ(10選)</li>
+                    <li onclick="document.getElementById('ch3').scrollIntoView({behavior:'smooth'})">第3章 - 自分のことを話すフレーズ(10選)</li>
+                    <li onclick="document.getElementById('ch4').scrollIntoView({behavior:'smooth'})">第4章 - 相手に質問するフレーズ(10選)</li>
+                    <li onclick="document.getElementById('ch5').scrollIntoView({behavior:'smooth'})">第5章 - 困った時に使えるフレーズ(10選)</li>
+                    <li onclick="document.getElementById('appendix').scrollIntoView({behavior:'smooth'})">付録 - 30日間チャレンジ & クイックリファレンス</li>
+                </ul>
+            </div>
+
+            <!-- 前書き -->
+            <section class="section" id="preface">
+                <h2 class="section-title">前書き</h2>
+                
+                <div class="intro">
+                    <h3>なぜ「知っているのに使えない」のか</h3>
+                    <p>1年以上韓国語を勉強しているのに、いざ話そうとすると言葉が出てこない。単語も文法も知っているはずなのに、会話になると頭が真っ白になってしまう。</p>
+                    <p style="margin-top: 15px;">このような悩みを抱える学習者は非常に多くいます。その理由は明確です。<strong>「知っている」と「使える」は全く別のスキル</strong>だからです。</p>
+                    <p style="margin-top: 15px;">多くの学習者は、フレーズを「暗記すること」に時間を費やしていますが、実際に必要なのは<strong>「引き出しから取り出す練習」</strong>です。脳内に整理整頓された引き出しがあり、必要な時に瞬時に取り出せる状態を作ることが、会話力向上の鍵となります。</p>
+                </div>
+
+                <div class="intro">
+                    <h3>フレーズ暗記ではなく「引き出し」を作る考え方</h3>
+                    <p>この教材では、ただフレーズを羅列するのではなく、各フレーズに対して以下の情報を提供しています:</p>
+                    <ul style="margin-top: 15px; margin-left: 20px;">
+                        <li><strong>使用場面・シチュエーション</strong> - いつ、どんな状況で使うのか</li>
+                        <li><strong>応用バリエーション</strong> - 同じ状況で使える別の表現</li>
+                        <li><strong>実践練習のヒント</strong> - 実際に口から出せるようになる練習法</li>
+                        <li><strong>よくある間違い・注意点</strong> - 失敗を防ぐポイント</li>
+                    </ul>
+                    <p style="margin-top: 15px;">これらの情報を通じて、単なる「暗記」ではなく、<strong>状況と表現を結びつけた「引き出し」</strong>を作ることができます。</p>
+                </div>
+
+                <div class="intro">
+                    <h3>この教材の効果的な使い方</h3>
+                    <p><strong>ステップ1:</strong> まず、フレーズを見て「知っているかどうか」を確認します。知っているフレーズでも、使えるかどうかは別です。</p>
+                    <p style="margin-top: 10px;"><strong>ステップ2:</strong> 使用場面を読み、頭の中でその状況をイメージします。映画のワンシーンのように、具体的に想像することが重要です。</p>
+                    <p style="margin-top: 10px;"><strong>ステップ3:</strong> 応用バリエーションを確認し、同じ状況で使える表現の幅を広げます。</p>
+                    <p style="margin-top: 10px;"><strong>ステップ4:</strong> 実践練習のヒントに従って、実際に声に出して練習します。黙読だけでは絶対に使えるようになりません。</p>
+                    <p style="margin-top: 10px;"><strong>ステップ5:</strong> よくある間違いを確認し、自分が同じミスをしないよう注意します。</p>
+                </div>
+
+                <div class="intro">
+                    <h3>音声ファイルの活用法(聞くだけではダメ)</h3>
+                    <p>Google翻訳やPapago、AIなどの音声機能を使って発音を確認することができます。</p>
+                    <p style="margin-top: 15px;"><strong>重要:</strong> 音声を「聞くだけ」では会話力は向上しません。以下の方法で活用してください:</p>
+                    <ul style="margin-top: 15px; margin-left: 20px;">
+                        <li><strong>シャドーイング:</strong> 音声に続いて、そのまま真似して発音する</li>
+                        <li><strong>リピーティング:</strong> 音声を聞いた後、止めて自分で再現する</li>
+                        <li><strong>録音して比較:</strong> 自分の発音を録音し、お手本と比較する</li>
+                        <li><strong>速度調整:</strong> 最初はゆっくりから始め、徐々に速度を上げる</li>
+                    </ul>
+                    <p style="margin-top: 15px;">「聞く→理解する→真似る→自分で言う」この4ステップを必ず実践してください。</p>
+                </div>
+            </section>
+
+            <!-- 第1章 -->
+            <section class="section" id="ch1">
+                <h2 class="section-title">第1章:日常生活の基本フレーズ</h2>
+                
+                <div class="chapter-intro">
+                    日常生活で最も頻繁に使う基本フレーズです。これらは会話の「入口」となる表現で、コミュニケーションをスムーズに始めるために必須です。朝起きてから夜寝るまで、どんな場面でも使える汎用性の高いフレーズを厳選しました。
+                </div>
+
+                <!-- フレーズ1 -->
+                <div class="phrase-card">
+                    <div class="phrase-number">1</div>
+                    <div class="korean">안녕하세요!</div>
+                    <div class="japanese">こんにちは!</div>
+                    
+                    <div class="context">
+                        <div class="context-title">使用場面・シチュエーション</div>
+                        <p>朝から夕方まで使える万能挨拶。初対面の人、知り合い、店員さんなど、あらゆる場面で使用可能。韓国では挨拶がコミュニケーションの基本であり、必ず交わすべき表現です。</p>
+                    </div>
+                    
+                    <div class="variations">
+                        <div class="variations-title">応用バリエーション</div>
+                        <div class="variation-item">
+                            <div class="variation-korean">안녕히 주무셨어요?</div>
+                            <div class="variation-japanese">よくお休みになれましたか?(朝の挨拶)</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">오랜만이에요!</div>
+                            <div class="variation-japanese">お久しぶりです!</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">또 만나서 반가워요</div>
+                            <div class="variation-japanese">また会えて嬉しいです</div>
+                        </div>
+                    </div>
+                    
+                    <div class="practice-tip">
+                        <div class="practice-tip-title">実践練習のヒント</div>
+                        <p>朝起きた時、鏡に向かって「안녕하세요!」と笑顔で言う練習を毎日続けてください。表情と声のトーンも含めて練習することで、自然な挨拶が身につきます。また、韓国ドラマを見る際、登場人物が挨拶するシーンで一緒に発音してみましょう。</p>
+                    </div>
+                    
+                    <div class="caution">
+                        <div class="caution-title">よくある間違い・注意点</div>
+                        <p><strong>× 안녕</strong> - 友達同士では使えますが、初対面や目上の人には失礼です。必ず「안녕하세요」を使いましょう。</p>
+                    </div>
+                </div>
+
+                <!-- フレーズ2 -->
+                <div class="phrase-card">
+                    <div class="phrase-number">2</div>
+                    <div class="korean">감사합니다</div>
+                    <div class="japanese">ありがとうございます</div>
+                    
+                    <div class="context">
+                        <div class="context-title">使用場面・シチュエーション</div>
+                        <p>何かをしてもらった時、助けてもらった時、プレゼントをもらった時など、感謝を伝える場面で使用。韓国では感謝の気持ちを言葉で表現することが非常に重要視されています。</p>
+                    </div>
+                    
+                    <div class="variations">
+                        <div class="variations-title">応用バリエーション</div>
+                        <div class="variation-item">
+                            <div class="variation-korean">정말 감사합니다</div>
+                            <div class="variation-japanese">本当にありがとうございます</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">도와주셔서 감사해요</div>
+                            <div class="variation-japanese">助けてくださってありがとうございます</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">고마워요</div>
+                            <div class="variation-japanese">ありがとうございます(カジュアル)</div>
+                        </div>
+                    </div>
+                    
+                    <div class="practice-tip">
+                        <div class="practice-tip-title">実践練習のヒント</div>
+                        <p>日常生活で「ありがとう」と言う場面を意識し、その度に韓国語で「감사합니다」と心の中で言ってみましょう。コンビニでレシートを受け取る時、エレベーターのドアを開けてもらった時など、小さな場面でも練習できます。</p>
+                    </div>
+                    
+                    <div class="caution">
+                        <div class="caution-title">よくある間違い・注意点</div>
+                        <p>「감사합니다」と「고마워요」の違いを理解しましょう。「감사합니다」はフォーマルで丁寧、「고마워요」はカジュアルです。初対面やビジネスシーンでは必ず「감사합니다」を使用してください。</p>
+                    </div>
+                </div>
+
+                <!-- フレーズ3 -->
+                <div class="phrase-card">
+                    <div class="phrase-number">3</div>
+                    <div class="korean">죄송합니다</div>
+                    <div class="japanese">申し訳ございません</div>
+                    
+                    <div class="context">
+                        <div class="context-title">使用場面・シチュエーション</div>
+                        <p>謝罪する時、人にぶつかった時、遅刻した時、迷惑をかけた時など。韓国では謝罪も重要なコミュニケーションの一部です。適切なタイミングで謝ることで、良好な人間関係を築けます。</p>
+                    </div>
+                    
+                    <div class="variations">
+                        <div class="variations-title">応用バリエーション</div>
+                        <div class="variation-item">
+                            <div class="variation-korean">미안합니다</div>
+                            <div class="variation-japanese">すみません(少しカジュアル)</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">늦어서 죄송해요</div>
+                            <div class="variation-japanese">遅れて申し訳ありません</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">실례합니다</div>
+                            <div class="variation-japanese">失礼します(通り過ぎる時など)</div>
+                        </div>
+                    </div>
+                    
+                    <div class="practice-tip">
+                        <div class="practice-tip-title">実践練習のヒント</div>
+                        <p>謝罪は表情とトーンが重要です。鏡の前で申し訳なさそうな表情を作り、心を込めて「죄송합니다」と言う練習をしてください。軽く頭を下げる動作も一緒に練習すると、より自然になります。</p>
+                    </div>
+                    
+                    <div class="caution">
+                        <div class="caution-title">よくある間違い・注意点</div>
+                        <p>「죄송합니다」は深い謝罪、「미안합니다」は軽い謝罪です。重大なミスの場合は必ず「죄송합니다」を使用してください。また、「실례합니다」は謝罪というより「お邪魔します」というニュアンスで使います。</p>
+                    </div>
+                </div>
+
+                <!-- フレーズ4 -->
+                <div class="phrase-card">
+                    <div class="phrase-number">4</div>
+                    <div class="korean">오늘 날씨가 좋네요</div>
+                    <div class="japanese">今日は天気がいいですね</div>
+                    
+                    <div class="context">
+                        <div class="context-title">使用場面・シチュエーション</div>
+                        <p>会話の糸口として使える便利な表現。初対面の人との会話、エレベーターでの雑談、知り合いとの軽い会話など。天気の話題は万国共通の会話の始め方です。</p>
+                    </div>
+                    
+                    <div class="variations">
+                        <div class="variations-title">応用バリエーション</div>
+                        <div class="variation-item">
+                            <div class="variation-korean">오늘 날씨가 안 좋네요</div>
+                            <div class="variation-japanese">今日は天気が悪いですね</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">오늘 많이 덥네요</div>
+                            <div class="variation-japanese">今日はとても暑いですね</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">오늘 춥네요</div>
+                            <div class="variation-japanese">今日は寒いですね</div>
+                        </div>
+                    </div>
+                    
+                    <div class="practice-tip">
+                        <div class="practice-tip-title">実践練習のヒント</div>
+                        <p>毎朝、窓の外を見て天気を韓国語で言う習慣をつけましょう。「오늘 날씨가 좋네요」「오늘 비가 오네요」など、実際の天気に合わせて練習すると記憶に定着しやすくなります。</p>
+                    </div>
+                    
+                    <div class="caution">
+                        <div class="caution-title">よくある間違い・注意点</div>
+                        <p>「좋네요」の「네요」は感嘆や発見のニュアンスを含みます。単に「좋아요」と言うより、「(見たら)いいですね」という自然な表現になります。日本語の「〜ですね」に近い感覚です。</p>
+                    </div>
+                </div>
+
+                <!-- フレーズ5 -->
+                <div class="phrase-card">
+                    <div class="phrase-number">5</div>
+                    <div class="korean">괜찮아요</div>
+                    <div class="japanese">大丈夫です</div>
+                    
+                    <div class="context">
+                        <div class="context-title">使用場面・シチュエーション</div>
+                        <p>体調を聞かれた時、心配された時、謝られた時など多様な場面で使用。「大丈夫」という意味だけでなく、「気にしないで」「問題ないです」というニュアンスも含まれます。</p>
+                    </div>
+                    
+                    <div class="variations">
+                        <div class="variations-title">応用バリエーション</div>
+                        <div class="variation-item">
+                            <div class="variation-korean">괜찮습니다</div>
+                            <div class="variation-japanese">大丈夫です(より丁寧)</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">아니에요, 괜찮아요</div>
+                            <div class="variation-japanese">いいえ、大丈夫ですよ(謝罪に対して)</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">저는 괜찮아요</div>
+                            <div class="variation-japanese">私は大丈夫です</div>
+                        </div>
+                    </div>
+                    
+                    <div class="practice-tip">
+                        <div class="practice-tip-title">実践練習のヒント</div>
+                        <p>笑顔で「괜찮아요」と言う練習をしてください。表情がないと冷たく聞こえることがあります。手を軽く振るジェスチャーと一緒に練習すると、「気にしないで」という気持ちがより伝わります。</p>
+                    </div>
+                    
+                    <div class="caution">
+                        <div class="caution-title">よくある間違い・注意点</div>
+                        <p>「괜찮아요」は状況によって意味が変わります。「大丈夫?」と聞かれた時は「はい、大丈夫です」、謝られた時は「気にしないで」、誘われて断る時は「結構です(いりません)」という意味になることもあります。</p>
+                    </div>
+                </div>
+
+                <!-- フレーズ6 -->
+                <div class="phrase-card">
+                    <div class="phrase-number">6</div>
+                    <div class="korean">내일 시간 있어요?</div>
+                    <div class="japanese">明日時間ありますか?</div>
+                    
+                    <div class="context">
+                        <div class="context-title">使用場面・シチュエーション</div>
+                        <p>相手の予定を確認する時、約束を取り付ける前段階として使用。友達を誘う時、ビジネスでミーティングを設定する時など、計画を立てる際に必須のフレーズです。</p>
+                    </div>
+                    
+                    <div class="variations">
+                        <div class="variations-title">応用バリエーション</div>
+                        <div class="variation-item">
+                            <div class="variation-korean">이번 주말에 시간 있으세요?</div>
+                            <div class="variation-japanese">今週末お時間ありますか?</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">오늘 저녁에 약속 있어요?</div>
+                            <div class="variation-japanese">今日の夜、約束ありますか?</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">언제 시간 되세요?</div>
+                            <div class="variation-japanese">いつお時間よろしいですか?</div>
+                        </div>
+                    </div>
+                    
+                    <div class="practice-tip">
+                        <div class="practice-tip-title">実践練習のヒント</div>
+                        <p>カレンダーを見ながら、様々な日付で練習してみましょう。「내일」(明日)、「모레」(明後日)、「다음 주」(来週)など、時間表現を変えて繰り返し練習してください。</p>
+                    </div>
+                    
+                    <div class="caution">
+                        <div class="caution-title">よくある間違い・注意点</div>
+                        <p>「시간 있어요?」と「시간 되세요?」は微妙に違います。「있어요」は「ありますか」という直接的な表現、「되세요」は「ご都合いかがですか」という丁寧な表現です。目上の人には「되세요」を使いましょう。</p>
+                    </div>
+                </div>
+
+                <!-- フレーズ7 -->
+                <div class="phrase-card">
+                    <div class="phrase-number">7</div>
+                    <div class="korean">같이 갈래요?</div>
+                    <div class="japanese">一緒に行きませんか?</div>
+                    
+                    <div class="context">
+                        <div class="context-title">使用場面・シチュエーション</div>
+                        <p>友達や同僚を誘う時に使用。食事、買い物、イベントなど、何かを一緒にする提案をする際の便利な表現です。カジュアルな場面で自然に使えます。</p>
+                    </div>
+                    
+                    <div class="variations">
+                        <div class="variations-title">応用バリエーション</div>
+                        <div class="variation-item">
+                            <div class="variation-korean">같이 가실래요?</div>
+                            <div class="variation-japanese">一緒に行かれますか?(より丁寧)</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">같이 먹을래요?</div>
+                            <div class="variation-japanese">一緒に食べませんか?</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">같이 해요</div>
+                            <div class="variation-japanese">一緒にやりましょう</div>
+                        </div>
+                    </div>
+                    
+                    <div class="practice-tip">
+                        <div class="practice-tip-title">実践練習のヒント</div>
+                        <p>「같이」(一緒に)という言葉と、様々な動詞を組み合わせて練習しましょう。「같이 가다」(一緒に行く)、「같이 먹다」(一緒に食べる)、「같이 보다」(一緒に見る)など、日常でよく使う動作で練習してください。</p>
+                    </div>
+                    
+                    <div class="caution">
+                        <div class="caution-title">よくある間違い・注意点</div>
+                        <p>「갈래요?」は「〜しませんか?」という提案・勧誘の表現です。命令や依頼ではなく、相手の意思を尋ねる柔らかい表現なので、友達同士の会話に最適です。ビジネスではもう少し丁寧な表現が必要です。</p>
+                    </div>
+                </div>
+
+                <!-- フレーズ8 -->
+                <div class="phrase-card">
+                    <div class="phrase-number">8</div>
+                    <div class="korean">다음에 또 봐요</div>
+                    <div class="japanese">また今度会いましょう</div>
+                    
+                    <div class="context">
+                        <div class="context-title">使用場面・シチュエーション</div>
+                        <p>別れ際の挨拶として使用。友達、同僚、知り合いなど親しい間柄で使える表現です。「また会いたい」という気持ちを伝えることができます。</p>
+                    </div>
+                    
+                    <div class="variations">
+                        <div class="variations-title">応用バリエーション</div>
+                        <div class="variation-item">
+                            <div class="variation-korean">또 만나요</div>
+                            <div class="variation-japanese">また会いましょう</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">나중에 봐요</div>
+                            <div class="variation-japanese">後で会いましょう</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">조심히 가세요</div>
+                            <div class="variation-japanese">気をつけて帰ってください</div>
+                        </div>
+                    </div>
+                    
+                    <div class="practice-tip">
+                        <div class="practice-tip-title">実践練習のヒント</div>
+                        <p>Zoomや電話を切る前、家族や友達と別れる時など、日常の別れの場面で意識的に使ってみましょう。手を振りながら言うと、より自然で温かい印象を与えます。</p>
+                    </div>
+                    
+                    <div class="caution">
+                        <div class="caution-title">よくある間違い・注意点</div>
+                        <p>「다음에」は「次に、今度」という意味です。具体的な日時が決まっていない時に使います。すでに次の約束が決まっている場合は「내일 봐요」(明日会いましょう)など具体的に言いましょう。</p>
+                    </div>
+                </div>
+
+                <!-- フレーズ9 -->
+                <div class="phrase-card">
+                    <div class="phrase-number">9</div>
+                    <div class="korean">오늘 기분이 어때요?</div>
+                    <div class="japanese">今日気分はどうですか?</div>
+                    
+                    <div class="context">
+                        <div class="context-title">使用場面・シチュエーション</div>
+                        <p>相手の様子を尋ねる時、気遣いを示す時に使用。友達や親しい同僚との会話で、相手の状態を気にかける表現です。会話を深めるきっかけにもなります。</p>
+                    </div>
+                    
+                    <div class="variations">
+                        <div class="variations-title">応用バリエーション</div>
+                        <div class="variation-item">
+                            <div class="variation-korean">기분이 좋아요</div>
+                            <div class="variation-japanese">気分がいいです</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">컨디션이 좋아요</div>
+                            <div class="variation-japanese">体調がいいです</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">좀 피곤해요</div>
+                            <div class="variation-japanese">ちょっと疲れています</div>
+                        </div>
+                    </div>
+                    
+                    <div class="practice-tip">
+                        <div class="practice-tip-title">実践練習のヒント</div>
+                        <p>自分の気分を毎日韓国語で表現する習慣をつけましょう。「기분이 좋아요」「피곤해요」「행복해요」など、感情や体調を表す語彙を増やしながら練習してください。</p>
+                    </div>
+                    
+                    <div class="caution">
+                        <div class="caution-title">よくある間違い・注意点</div>
+                        <p>「기분」は主に精神的な気分、「컨디션」は体調を指します。使い分けを意識しましょう。また、初対面の人には少し踏み込んだ質問になるので、ある程度親しくなってから使うのが適切です。</p>
+                    </div>
+                </div>
+
+                <!-- フレーズ10 -->
+                <div class="phrase-card">
+                    <div class="phrase-number">10</div>
+                    <div class="korean">잘 지내요?</div>
+                    <div class="japanese">元気ですか?</div>
+                    
+                    <div class="context">
+                        <div class="context-title">使用場面・シチュエーション</div>
+                        <p>久しぶりに会った人への挨拶、友達との会話の始まり、SNSでのメッセージなど。相手の近況を尋ねる際の定番表現です。「最近どう?」というカジュアルなニュアンスです。</p>
+                    </div>
+                    
+                    <div class="variations">
+                        <div class="variations-title">応用バリエーション</div>
+                        <div class="variation-item">
+                            <div class="variation-korean">잘 지내셨어요?</div>
+                            <div class="variation-japanese">お元気でしたか?(より丁寧)</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">요즘 어떻게 지내요?</div>
+                            <div class="variation-japanese">最近どう過ごしていますか?</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">잘 지내고 있어요</div>
+                            <div class="variation-japanese">元気に過ごしています(返答)</div>
+                        </div>
+                    </div>
+                    
+                    <div class="practice-tip">
+                        <div class="practice-tip-title">実践練習のヒント</div>
+                        <p>質問と答えの両方を練習しましょう。「잘 지내요?」と聞かれた時の返答パターンも準備しておくと、実際の会話がスムーズになります。「네, 잘 지내요」「그냥 그래요」など様々な返答を練習してください。</p>
+                    </div>
+                    
+                    <div class="caution">
+                        <div class="caution-title">よくある間違い・注意点</div>
+                        <p>「잘 지내요?」は親しい間柄で使う表現です。ビジネスや改まった場面では「잘 지내셨어요?」または「안녕하세요」の方が適切です。また、毎日会う人には使わず、しばらく会っていない人に使います。</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 第2章 -->
+            <section class="section" id="ch2">
+                <h2 class="section-title">第2章:買い物・飲食店で使うフレーズ</h2>
+                
+                <div class="chapter-intro">
+                    韓国旅行や韓国レストランで即座に使える実践的なフレーズです。注文、支払い、質問など、サービスを受ける際に必要な表現を厳選しました。これらのフレーズを使えるだけで、旅行の楽しさが格段に向上します。
+                </div>
+
+                <!-- フレーズ11 -->
+                <div class="phrase-card">
+                    <div class="phrase-number">11</div>
+                    <div class="korean">이거 주세요</div>
+                    <div class="japanese">これください</div>
+                    
+                    <div class="context">
+                        <div class="context-title">使用場面・シチュエーション</div>
+                        <p>レストランでメニューを指差しながら注文する時、お店で商品を購入する時など。最もシンプルで使いやすい注文フレーズです。指を指しながら使えば、発音が完璧でなくても通じます。</p>
+                    </div>
+                    
+                    <div class="variations">
+                        <div class="variations-title">応用バリエーション</div>
+                        <div class="variation-item">
+                            <div class="variation-korean">이거 하나 주세요</div>
+                            <div class="variation-japanese">これ一つください</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">이거 두 개 주세요</div>
+                            <div class="variation-japanese">これ二つください</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">같은 거로 주세요</div>
+                            <div class="variation-japanese">同じものをください</div>
+                        </div>
+                    </div>
+                    
+                    <div class="practice-tip">
+                        <div class="practice-tip-title">実践練習のヒント</div>
+                        <p>家にあるものを指差しながら「이거 주세요」と言う練習をしてください。数字と組み合わせて「이거 하나 주세요」「이거 두 개 주세요」も練習しましょう。韓国の数字(하나, 둘, 셋)も一緒に覚えると便利です。</p>
+                    </div>
+                    
+                    <div class="caution">
+                        <div class="caution-title">よくある間違い・注意点</div>
+                        <p>「이거」は近くにあるものを指す時に使います。遠くにあるものは「저거」、相手の近くにあるものは「그거」を使います。また、数を言う時は韓国固有数詞(하나, 둘, 셋...)を使うことに注意してください。</p>
+                    </div>
+                </div>
+
+                <!-- フレーズ12 -->
+                <div class="phrase-card">
+                    <div class="phrase-number">12</div>
+                    <div class="korean">얼마예요?</div>
+                    <div class="japanese">いくらですか?</div>
+                    
+                    <div class="context">
+                        <div class="context-title">使用場面・シチュエーション</div>
+                        <p>値段を尋ねる時に使用。市場、お店、タクシーなど、あらゆる場面で使える必須フレーズです。韓国では値段表示がない場合も多いので、このフレーズは非常に重要です。</p>
+                    </div>
+                    
+                    <div class="variations">
+                        <div class="variations-title">応用バリエーション</div>
+                        <div class="variation-item">
+                            <div class="variation-korean">이거 얼마예요?</div>
+                            <div class="variation-japanese">これいくらですか?</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">전부 얼마예요?</div>
+                            <div class="variation-japanese">全部でいくらですか?</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">좀 깎아 주세요</div>
+                            <div class="variation-japanese">少し安くしてください(値引き交渉)</div>
+                        </div>
+                    </div>
+                    
+                    <div class="practice-tip">
+                        <div class="practice-tip-title">実践練習のヒント</div>
+                        <p>韓国の数字を1,000から100,000まで練習しておきましょう。「천 원」(千ウォン)、「만 원」(万ウォン)など、お金の単位と一緒に覚えると実用的です。オンラインショップで値段を見ながら読む練習も効果的です。</p>
+                    </div>
+                    
+                    <div class="caution">
+                        <div class="caution-title">よくある間違い・注意点</div>
+                        <p>値段を聞く時は漢数詞(일, 이, 삼...)を使います。固有数詞(하나, 둘, 셋...)とは違うので注意してください。「천 원」「만 원」などの単位も一緒に覚えましょう。</p>
+                    </div>
+                </div>
+
+                <!-- フレーズ13 -->
+                <div class="phrase-card">
+                    <div class="phrase-number">13</div>
+                    <div class="korean">추천 메뉴가 뭐예요?</div>
+                    <div class="japanese">おすすめメニューは何ですか?</div>
+                    
+                    <div class="context">
+                        <div class="context-title">使用場面・シチュエーション</div>
+                        <p>レストランで何を注文するか迷った時、店員さんにアドバイスを求める時に使用。現地の人のおすすめを聞くことで、その店の看板メニューや人気商品を知ることができます。</p>
+                    </div>
+                    
+                    <div class="variations">
+                        <div class="variations-title">応用バリエーション</div>
+                        <div class="variation-item">
+                            <div class="variation-korean">제일 인기 있는 메뉴가 뭐예요?</div>
+                            <div class="variation-japanese">一番人気のメニューは何ですか?</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">뭐가 맛있어요?</div>
+                            <div class="variation-japanese">何がおいしいですか?</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">이 집 대표 메뉴가 뭐예요?</div>
+                            <div class="variation-japanese">この店の代表メニューは何ですか?</div>
+                        </div>
+                    </div>
+                    
+                    <div class="practice-tip">
+                        <div class="practice-tip-title">実践練習のヒント</div>
+                        <p>韓国料理の名前と一緒に練習しましょう。「불고기」「비빔밥」「김치찌개」など、基本的な料理名を覚えておくと、返答を理解しやすくなります。YouTubeの韓国グルメ動画を見ながら、おすすめを聞くシーンで一緒に発音してみましょう。</p>
+                    </div>
+                    
+                    <div class="caution">
+                        <div class="caution-title">よくある間違い・注意点</div>
+                        <p>「추천」は漢字語の「推薦」です。少しフォーマルな印象があります。もっとカジュアルに聞きたい場合は「뭐가 맛있어요?」(何がおいしいですか?)の方が自然です。</p>
+                    </div>
+                </div>
+
+                <!-- フレーズ14 -->
+                <div class="phrase-card">
+                    <div class="phrase-number">14</div>
+                    <div class="korean">맵지 않게 해 주세요</div>
+                    <div class="japanese">辛くないようにしてください</div>
+                    
+                    <div class="context">
+                        <div class="context-title">使用場面・シチュエーション</div>
+                        <p>韓国料理を注文する際、辛さの調整をお願いする時に使用。韓国料理は辛いものが多いため、辛いものが苦手な人にとって必須のフレーズです。店員さんも慣れている要望なので、遠慮なく伝えましょう。</p>
+                    </div>
+                    
+                    <div class="variations">
+                        <div class="variations-title">応用バリエーション</div>
+                        <div class="variation-item">
+                            <div class="variation-korean">조금만 맵게 해 주세요</div>
+                            <div class="variation-japanese">少しだけ辛くしてください</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">아주 맵게 해 주세요</div>
+                            <div class="variation-japanese">とても辛くしてください</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">덜 맵게 해 주세요</div>
+                            <div class="variation-japanese">辛さ控えめにしてください</div>
+                        </div>
+                    </div>
+                    
+                    <div class="practice-tip">
+                        <div class="practice-tip-title">実践練習のヒント</div>
+                        <p>「맵다」(辛い)という形容詞と、程度を表す副詞(아주, 조금, 전혀)を組み合わせて練習しましょう。自分の辛さの好みに合わせて、適切な表現を選べるようにしておくと便利です。</p>
+                    </div>
+                    
+                    <div class="caution">
+                        <div class="caution-title">よくある間違い・注意点</div>
+                        <p>「맵지 않게」は「辛くないように」という意味です。完全に辛さをゼロにするのは難しい料理もあるので、「덜 맵게」(辛さ控えめ)の方が実現可能な場合が多いです。店によって調整できる程度が異なることも理解しておきましょう。</p>
+                    </div>
+                </div>
+
+                <!-- フレーズ15 -->
+                <div class="phrase-card">
+                    <div class="phrase-number">15</div>
+                    <div class="korean">포장해 주세요</div>
+                    <div class="japanese">持ち帰りでお願いします</div>
+                    
+                    <div class="context">
+                        <div class="context-title">使用場面・シチュエーション</div>
+                        <p>テイクアウトを注文する時、飲食店で食べ残しを持ち帰る時に使用。韓国ではテイクアウト文化が発達しているため、多くの店で対応してくれます。「포장」がテイクアウトを意味する単語です。</p>
+                    </div>
+                    
+                    <div class="variations">
+                        <div class="variations-title">応用バリエーション</div>
+                        <div class="variation-item">
+                            <div class="variation-korean">남은 거 포장해 주세요</div>
+                            <div class="variation-japanese">残りを包んでください</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">여기서 먹을 거예요</div>
+                            <div class="variation-japanese">ここで食べます(店内飲食)</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">배달되나요?</div>
+                            <div class="variation-japanese">配達できますか?</div>
+                        </div>
+                    </div>
+                    
+                    <div class="practice-tip">
+                        <div class="practice-tip-title">実践練習のヒント</div>
+                        <p>注文の最後に「포장해 주세요」を付け加える練習をしましょう。「이거 주세요. 포장해 주세요」(これください。持ち帰りでお願いします)という流れで練習すると、実際の注文がスムーズになります。</p>
+                    </div>
+                    
+                    <div class="caution">
+                        <div class="caution-title">よくある間違い・注意点</div>
+                        <p>「포장」はテイクアウト、「배달」は配達(デリバリー)です。混同しないように注意してください。店内で食べる場合は特に言わなくても大丈夫ですが、テイクアウトの場合は必ず伝えましょう。</p>
+                    </div>
+                </div>
+
+                <!-- フレーズ16 -->
+                <div class="phrase-card">
+                    <div class="phrase-number">16</div>
+                    <div class="korean">계산해 주세요</div>
+                    <div class="japanese">お会計お願いします</div>
+                    
+                    <div class="context">
+                        <div class="context-title">使用場面・シチュエーション</div>
+                        <p>レストランで食事が終わった時、お店で買い物をした後など、支払いをする際に使用。韓国では食事の後にテーブルで「계산해 주세요」と言うと、店員さんが来てくれるか、レジに行くよう案内してくれます。</p>
+                    </div>
+                    
+                    <div class="variations">
+                        <div class="variations-title">応用バリエーション</div>
+                        <div class="variation-item">
+                            <div class="variation-korean">카드로 계산할게요</div>
+                            <div class="variation-japanese">カードで支払います</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">현금으로 할게요</div>
+                            <div class="variation-japanese">現金で支払います</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">따로따로 계산해 주세요</div>
+                            <div class="variation-japanese">別々に会計してください</div>
+                        </div>
+                    </div>
+                    
+                    <div class="practice-tip">
+                        <div class="practice-tip-title">実践練習のヒント</div>
+                        <p>手を挙げるジェスチャーと一緒に「계산해 주세요」と言う練習をしてください。レストランでは店員さんの注意を引く必要があるため、声のトーンとジェスチャーも重要です。鏡の前で練習してみましょう。</p>
+                    </div>
+                    
+                    <div class="caution">
+                        <div class="caution-title">よくある間違い・注意点</div>
+                        <p>韓国ではレジではなくテーブルで会計を済ませるところもよくあります。「계산해 주세요」と言った後、店員さんが「카드 되세요?」(カード大丈夫ですか?)と聞いてくることがあります。支払い方法の表現も一緒に覚えておきましょう。</p>
+                    </div>
+                </div>
+
+                <!-- フレーズ17 -->
+                <div class="phrase-card">
+                    <div class="phrase-number">17</div>
+                    <div class="korean">물 좀 주세요</div>
+                    <div class="japanese">お水をください</div>
+                    
+                    <div class="context">
+                        <div class="context-title">使用場面・シチュエーション</div>
+                        <p>レストランで水を頼む時、追加で飲み物が欲しい時に使用。韓国のレストランでは水は無料で提供されることが多いので、遠慮なく頼んで大丈夫です。「좀」を付けることで丁寧さが増します。</p>
+                    </div>
+                    
+                    <div class="variations">
+                        <div class="variations-title">応用バリエーション</div>
+                        <div class="variation-item">
+                            <div class="variation-korean">물 한 잔 더 주세요</div>
+                            <div class="variation-japanese">水をもう一杯ください</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">수저 좀 주세요</div>
+                            <div class="variation-japanese">スプーンとお箸をください</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">냅킨 좀 주세요</div>
+                            <div class="variation-japanese">ナプキンをください</div>
+                        </div>
+                    </div>
+                    
+                    <div class="practice-tip">
+                        <div class="practice-tip-title">実践練習のヒント</div>
+                        <p>「〜좀 주세요」(〜をください)のパターンを様々なものに応用して練習しましょう。レストランで必要になりそうなアイテム(물、수저、냅킨、접시など)と組み合わせて練習すると実用的です。</p>
+                    </div>
+                    
+                    <div class="caution">
+                        <div class="caution-title">よくある間違い・注意点</div>
+                        <p>「좀」は「少し」という意味ですが、依頼表現で使うと丁寧さを表します。「물 주세요」より「물 좀 주세요」の方が柔らかい印象を与えます。日常会話では「좀」を付けることを習慣にしましょう。</p>
+                    </div>
+                </div>
+
+                <!-- フレーズ18 -->
+                <div class="phrase-card">
+                    <div class="phrase-number">18</div>
+                    <div class="korean">이거 매운가요?</div>
+                    <div class="japanese">これは辛いですか?</div>
+                    
+                    <div class="context">
+                        <div class="context-title">使用場面・シチュエーション</div>
+                        <p>メニューを見て辛さを確認したい時に使用。韓国料理は辛いものが多いため、注文前に確認することで失敗を防げます。店員さんに味について質問するのは一般的なので、遠慮する必要はありません。</p>
+                    </div>
+                    
+                    <div class="variations">
+                        <div class="variations-title">応用バリエーション</div>
+                        <div class="variation-item">
+                            <div class="variation-korean">이거 많이 매워요?</div>
+                            <div class="variation-japanese">これはとても辛いですか?</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">이거 맵지 않아요?</div>
+                            <div class="variation-japanese">これは辛くないですか?</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">이거 어떤 맛이에요?</div>
+                            <div class="variation-japanese">これはどんな味ですか?</div>
+                        </div>
+                    </div>
+                    
+                    <div class="practice-tip">
+                        <div class="practice-tip-title">実践練習のヒント</div>
+                        <p>味を表す形容詞を一緒に覚えましょう。「맵다」(辛い)、「달다」(甘い)、「짜다」(塩辛い)、「시다」(酸っぱい)など。これらを「이거 〜가요?」の形で練習すると、様々な味について質問できるようになります。</p>
+                    </div>
+                    
+                    <div class="caution">
+                        <div class="caution-title">よくある間違い・注意点</div>
+                        <p>「매운가요?」の「가요」は疑問形です。形容詞の語幹に「ㄴ가요/은가요」を付けることで丁寧な疑問文になります。「맵다」は「ㅂ」不規則活用なので「매워요」となることにも注意してください。</p>
+                    </div>
+                </div>
+
+                <!-- フレーズ19 -->
+                <div class="phrase-card">
+                    <div class="phrase-number">19</div>
+                    <div class="korean">메뉴판 좀 보여주세요</div>
+                    <div class="japanese">メニューを見せてください</div>
+                    
+                    <div class="context">
+                        <div class="context-title">使用場面・シチュエーション</div>
+                        <p>レストランに入った時、メニューが見当たらない時、追加注文のためにメニューを再度確認したい時に使用。一部の韓国レストランではメニューがテーブルにない場合もあるので、このフレーズが役立ちます。</p>
+                    </div>
+                    
+                    <div class="variations">
+                        <div class="variations-title">応用バリエーション</div>
+                        <div class="variation-item">
+                            <div class="variation-korean">영어 메뉴 있어요?</div>
+                            <div class="variation-japanese">英語のメニューありますか?</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">사진 있는 메뉴 있어요?</div>
+                            <div class="variation-japanese">写真付きのメニューありますか?</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">메뉴 더 있어요?</div>
+                            <div class="variation-japanese">メニューもっとありますか?</div>
+                        </div>
+                    </div>
+                    
+                    <div class="practice-tip">
+                        <div class="practice-tip-title">実践練習のヒント</div>
+                        <p>「보여주세요」(見せてください)は様々な場面で使える便利な表現です。「사진 보여주세요」(写真を見せてください)、「이거 보여주세요」(これを見せてください)など、色々なものに応用して練習しましょう。</p>
+                    </div>
+                    
+                    <div class="caution">
+                        <div class="caution-title">よくある間違い・注意点</div>
+                        <p>「보여주세요」は「見せてください」、「주세요」だけだと「ください」です。混同しないように注意してください。また、QRコードでメニューを見る店も増えているので、スマートフォンを準備しておくと便利です。</p>
+                    </div>
+                </div>
+
+                <!-- フレー즈20 -->
+                <div class="phrase-card">
+                    <div class="phrase-number">20</div>
+                    <div class="korean">이거 시식해 볼 수 있어요?</div>
+                    <div class="japanese">これ試食できますか?</div>
+                    
+                    <div class="context">
+                        <div class="context-title">使用場面・シチュエーション</div>
+                        <p>スーパーマーケットや市場、専門店などで商品を購入する前に味を確かめたい時に使用。特に果物や食品を買う際、試食ができるかどうか尋ねることは一般的です。韓国の市場では試食文化が根付いています。</p>
+                    </div>
+                    
+                    <div class="variations">
+                        <div class="variations-title">応用バリエーション</div>
+                        <div class="variation-item">
+                            <div class="variation-korean">입어 봐도 돼요?</div>
+                            <div class="variation-japanese">試着してもいいですか?</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">써 봐도 돼요?</div>
+                            <div class="variation-japanese">使ってみてもいいですか?</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">맛 좀 볼 수 있어요?</div>
+                            <div class="variation-japanese">味見できますか?</div>
+                        </div>
+                    </div>
+                    
+                    <div class="practice-tip">
+                        <div class="practice-tip-title">実践練習のヒント</div>
+                        <p>「〜해 볼 수 있어요?」(〜してみることができますか?)のパターンを練習しましょう。「먹어 볼 수 있어요?」(食べてみることができますか?)、「들어 볼 수 있어요?」(聞いてみることができますか?)など、様々な動詞と組み合わせて練習してください。</p>
+                    </div>
+                    
+                    <div class="caution">
+                        <div class="caution-title">よくある間違い・注意点</div>
+                        <p>「시식」は「試食」という漢字語です。食べ物に対して使います。服は「입어 보다」(試着する)、化粧品は「발라 보다」(塗ってみる)など、対象によって動詞が変わることに注意してください。</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 第3章 -->
+            <section class="section" id="ch3">
+                <h2 class="section-title">第3章:自分のことを話すフレーズ</h2>
+                
+                <div class="chapter-intro">
+                    自己紹介や日常会話で自分のことを伝えるためのフレーズです。会話を深めるためには、自分について話せることが不可欠です。これらのフレーズを使って、相手に自分のことを知ってもらい、親密度を高めましょう。
+                </div>
+
+                <!-- フレーズ21 -->
+                <div class="phrase-card">
+                    <div class="phrase-number">21</div>
+                    <div class="korean">저는 회사원이에요</div>
+                    <div class="japanese">私は会社員です</div>
+                    
+                    <div class="context">
+                        <div class="context-title">使用場面・シチュエーション</div>
+                        <p>初対面の人に職業を伝える時、自己紹介の際に使用。職業は自己紹介の基本情報の一つです。韓国では初対面で職業を聞かれることが多いので、自分の職業を言えるようにしておきましょう。</p>
+                    </div>
+                    
+                    <div class="variations">
+                        <div class="variations-title">応用バリエーション</div>
+                        <div class="variation-item">
+                            <div class="variation-korean">저는 학생이에요</div>
+                            <div class="variation-japanese">私は学生です</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">저는 주부예요</div>
+                            <div class="variation-japanese">私は主婦です</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">저는 프리랜서예요</div>
+                            <div class="variation-japanese">私はフリーランスです</div>
+                        </div>
+                    </div>
+                    
+                    <div class="practice-tip">
+                        <div class="practice-tip-title">実践練習のヒント</div>
+                        <p>自分の実際の職業を韓国語で言えるようにしておきましょう。辞書で調べて、毎日鏡の前で「저는 〜이에요」と自己紹介する練習を続けてください。職業の単語は必ず覚えておくべき重要語彙です。</p>
+                    </div>
+                    
+                    <div class="caution">
+                        <div class="caution-title">よくある間違い・注意点</div>
+                        <p>「이에요/예요」の使い分けに注意してください。パッチム(終声)で終わる単語には「이에요」、母音で終わる単語には「예요」を使います。例:「회사원이에요」「학생이에요」「주부예요」</p>
+                    </div>
+                </div>
+
+                <!-- フレーズ22 -->
+                <div class="phrase-card">
+                    <div class="phrase-number">22</div>
+                    <div class="korean">취미는 영화 보는 거예요</div>
+                    <div class="japanese">趣味は映画を見ることです</div>
+                    
+                    <div class="context">
+                        <div class="context-title">使用場面・シチュエーション</div>
+                        <p>趣味について話す時、共通の話題を見つけたい時に使用。趣味の話題は会話を弾ませる最適なトピックです。自分の趣味を韓国語で説明できると、会話がより楽しくなります。</p>
+                    </div>
+                    
+                    <div class="variations">
+                        <div class="variations-title">応用バリエーション</div>
+                        <div class="variation-item">
+                            <div class="variation-korean">저는 음악 듣는 걸 좋아해요</div>
+                            <div class="variation-japanese">私は音楽を聴くのが好きです</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">요리하는 게 취미예요</div>
+                            <div class="variation-japanese">料理が趣味です</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">운동을 즐겨요</div>
+                            <div class="variation-japanese">運動を楽しんでいます</div>
+                        </div>
+                    </div>
+                    
+                    <div class="practice-tip">
+                        <div class="practice-tip-title">実践練習のヒント</div>
+                        <p>自分の実際の趣味を3つ以上、韓国語で言えるように練習しましょう。「〜는 거/는 것」(〜すること)、「〜는 걸/는 것을」(〜することを)の形を使って、様々な趣味を表現する練習をしてください。</p>
+                    </div>
+                    
+                    <div class="caution">
+                        <div class="caution-title">よくある間違い・注意点</div>
+                        <p>「〜는 거예요」は「〜することです」という意味で、動詞を名詞化する表現です。「보다」(見る)→「보는 거」(見ること)、「듣다」(聞く)→「듣는 것」(聞くこと)のように活用します。口語では「거」、書き言葉では「것」を使うことが多いです。</p>
+                    </div>
+                </div>
+
+                <!-- フレーズ23 -->
+                <div class="phrase-card">
+                    <div class="phrase-number">23</div>
+                    <div class="korean">가족은 네 명이에요</div>
+                    <div class="japanese">家族は4人です</div>
+                    
+                    <div class="context">
+                        <div class="context-title">使用場面・シチュエーション</div>
+                        <p>家族構成について話す時、自己紹介の際に使用。韓国では家族の話題が頻繁に出るため、家族構成を説明できることは重要です。家族関係を大切にする文化があります。</p>
+                    </div>
+                    
+                    <div class="variations">
+                        <div class="variations-title">応用バリエーション</div>
+                        <div class="variation-item">
+                            <div class="variation-korean">부모님하고 남동생이 있어요</div>
+                            <div class="variation-japanese">両親と弟がいます</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">저는 외동딸이에요</div>
+                            <div class="variation-japanese">私は一人っ子(娘)です</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">언니가 한 명 있어요</div>
+                            <div class="variation-japanese">姉が一人います</div>
+                        </div>
+                    </div>
+                    
+                    <div class="practice-tip">
+                        <div class="practice-tip-title">実践練習のヒント</div>
+                        <p>韓国語の家族呼称は日本語より複雑です。兄弟姉妹は話し手の性別と相手の年齢によって呼び方が変わります。自分の家族構成に合わせて、正確な呼称を覚えて練習しましょう。</p>
+                    </div>
+                    
+                    <div class="caution">
+                        <div class="caution-title">よくある間違い・注意点</div>
+                        <p>数字の使い分けに注意:人数は韓国固有数詞(하나, 둘, 셋, 넷...)を使います。「네 명」は「4人」、「다섯 명」は「5人」です。また、「명」の前では「넷」→「네」、「스물」→「스무」のように変化することがあります。</p>
+                    </div>
+                </div>
+
+                <!-- フレーズ24 -->
+                <div class="phrase-card">
+                    <div class="phrase-number">24</div>
+                    <div class="korean">주말에는 보통 집에서 쉬어요</div>
+                    <div class="japanese">週末はだいたい家で休みます</div>
+                    
+                    <div class="context">
+                        <div class="context-title">使用場面・シチュエーション</div>
+                        <p>週末の過ごし方について話す時、日常生活を説明する時に使用。週末の話題は会話でよく出るトピックです。相手との共通点を見つけたり、新しい活動を提案するきっかけになります。</p>
+                    </div>
+                    
+                    <div class="variations">
+                        <div class="variations-title">応用バリエーション</div>
+                        <div class="variation-item">
+                            <div class="variation-korean">주말에는 친구들을 만나요</div>
+                            <div class="variation-japanese">週末は友達に会います</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">주말마다 운동을 해요</div>
+                            <div class="variation-japanese">週末ごとに運動をします</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">주말에 뭐 해요?</div>
+                            <div class="variation-japanese">週末何しますか?</div>
+                        </div>
+                    </div>
+                    
+                    <div class="practice-tip">
+                        <div class="practice-tip-title">実践練習のヒント</div>
+                        <p>「주말에는 보통 〜」(週末はだいたい〜)のパターンで、自分の実際の週末の過ごし方を5つ以上言えるように練習しましょう。「보통」(だいたい)、「가끔」(たまに)、「자주」(よく)など頻度を表す副詞も一緒に覚えると表現の幅が広がります。</p>
+                    </div>
+                    
+                    <div class="caution">
+                        <div class="caution-title">よくある間違い・注意点</div>
+                        <p>「주말에는」の「는」は対比や強調を表す助詞です。「週末に(は)」という意味で、平日とは違う行動をすることを暗示します。単に「주말에」だけでも通じますが、「는」を付けることでより自然な表現になります。</p>
+                    </div>
+                </div>
+
+                <!-- フレーズ25 -->
+                <div class="phrase-card">
+                    <div class="phrase-number">25</div>
+                    <div class="korean">요즘 한국 드라마에 빠져 있어요</div>
+                    <div class="japanese">最近韓国ドラマにハマっています</div>
+                    
+                    <div class="context">
+                        <div class="context-title">使用場面・シチュエーション</div>
+                        <p>最近の関心事や趣味について話す時に使用。「빠지다」は「はまる、夢中になる」という意味で、何かに熱中していることを表現できます。共通の趣味を持つ人と盛り上がれる話題です。</p>
+                    </div>
+                    
+                    <div class="variations">
+                        <div class="variations-title">応用バリエーション</div>
+                        <div class="variation-item">
+                            <div class="variation-korean">요즘 운동에 푹 빠졌어요</div>
+                            <div class="variation-japanese">最近運動にすっかりハマりました</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">K-POP에 관심이 많아요</div>
+                            <div class="variation-japanese">K-POPに興味が多いです</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">한국어 공부에 열심이에요</div>
+                            <div class="variation-japanese">韓国語勉強に熱心です</div>
+                        </div>
+                    </div>
+                    
+                    <div class="practice-tip">
+                        <div class="practice-tip-title">実践練習のヒント</div>
+                        <p>「요즘」(最近)で始まる文を作る練習をしましょう。最近の自分の状況や変化を韓国語で説明できるようになると、会話がより生き生きとします。毎週、新しい「요즘」文を作る習慣をつけてください。</p>
+                    </div>
+                    
+                    <div class="caution">
+                        <div class="caution-title">よくある間違い・注意点</div>
+                        <p>「빠지다」は元々「落ちる」という意味ですが、「何かにハマる」という意味でもよく使われます。「〜에 빠지다」で「〜にハマる」となります。過去形「빠졌어요」も覚えておくと便利です。</p>
+                    </div>
+                </div>
+
+                <!-- フレーズ26 -->
+                <div class="phrase-card">
+                    <div class="phrase-number">26</div>
+                    <div class="korean">한국어를 3년 정도 공부했어요</div>
+                    <div class="japanese">韓国語を3年くらい勉強しました</div>
+                    
+                    <div class="context">
+                        <div class="context-title">使用場面・シチュエーション</div>
+                        <p>学習歴や経験について話す時に使用。韓国人と話すと「韓国語をどのくらい勉強しましたか?」と聞かれることが多いので、このフレーズは非常に実用的です。自分の学習歴を伝えられるようにしておきましょう。</p>
+                    </div>
+                    
+                    <div class="variations">
+                        <div class="variations-title">応用バリエーション</div>
+                        <div class="variation-item">
+                            <div class="variation-korean">한국어를 배운 지 1년 됐어요</div>
+                            <div class="variation-japanese">韓国語を学んで1年になります</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">독학으로 공부하고 있어요</div>
+                            <div class="variation-japanese">独学で勉強しています</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">아직 초급이에요</div>
+                            <div class="variation-japanese">まだ初級です</div>
+                        </div>
+                    </div>
+                    
+                    <div class="practice-tip">
+                        <div class="practice-tip-title">実践練習のヒント</div>
+                        <p>期間を表す表現を練習しましょう。「〜년」(年)、「〜개월」(ヶ月)、「〜주」(週)と、「정도」(くらい)、「쯤」(ほど)などを組み合わせて、様々な期間を表現できるようにしてください。</p>
+                    </div>
+                    
+                    <div class="caution">
+                        <div class="caution-title">よくある間違い・注意点</div>
+                        <p>「공부했어요」は過去形で「勉強しました」、「공부하고 있어요」は現在進行形で「勉強しています」です。継続的な学習を表現する場合は進行形を使うことが多いです。状況に応じて使い分けましょう。</p>
+                    </div>
+                </div>
+
+                <!-- フレーズ27 -->
+                <div class="phrase-card">
+                    <div class="phrase-number">27</div>
+                    <div class="korean">한국에 가 본 적이 있어요</div>
+                    <div class="japanese">韓国に行ったことがあります</div>
+                    
+                    <div class="context">
+                        <div class="context-title">使用場面・シチュエーション</div>
+                        <p>経験を話す時、旅行の話をする時に使用。「〜ㄴ/은 적이 있다」は「〜したことがある」という経験を表す重要な文法です。旅行経験だけでなく、様々な経験を語る際に使えます。</p>
+                    </div>
+                    
+                    <div class="variations">
+                        <div class="variations-title">応用バリエーション</div>
+                        <div class="variation-item">
+                            <div class="variation-korean">한국 음식을 먹어 본 적이 있어요</div>
+                            <div class="variation-japanese">韓国料理を食べたことがあります</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">한 번도 가 본 적이 없어요</div>
+                            <div class="variation-japanese">一度も行ったことがありません</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">여러 번 가 봤어요</div>
+                            <div class="variation-japanese">何度も行ったことがあります</div>
+                        </div>
+                    </div>
+                    
+                    <div class="practice-tip">
+                        <div class="practice-tip-title">実践練習のヒント</div>
+                        <p>自分の人生経験を韓国語で10個以上リストアップしてみましょう。「〜해 본 적이 있어요」の形で、様々な動詞を使って練習してください。経験談は会話を豊かにする重要な要素です。</p>
+                    </div>
+                    
+                    <div class="caution">
+                        <div class="caution-title">よくある間違い・注意点</div>
+                        <p>「가 본 적이 있다」の「보다」は「試してみる」という意味の補助動詞です。単に「갔어요」(行きました)ではなく、「가 봤어요」(行ってみました/行ったことがあります)という経験のニュアンスが加わります。</p>
+                    </div>
+                </div>
+
+                <!-- フレーズ28 -->
+                <div class="phrase-card">
+                    <div class="phrase-number">28</div>
+                    <div class="korean">저는 커피를 정말 좋아해요</div>
+                    <div class="japanese">私はコーヒーが本当に好きです</div>
+                    
+                    <div class="context">
+                        <div class="context-title">使用場面・シチュエーション</div>
+                        <p>好みや好きなものについて話す時に使用。好き嫌いを表現することは、自分を知ってもらう基本です。「정말」(本当に)を付けることで、強調や熱意を伝えられます。</p>
+                    </div>
+                    
+                    <div class="variations">
+                        <div class="variations-title">応用バリエーション</div>
+                        <div class="variation-item">
+                            <div class="variation-korean">저는 매운 음식을 못 먹어요</div>
+                            <div class="variation-japanese">私は辛い食べ物が食べられません</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">고양이를 무척 좋아해요</div>
+                            <div class="variation-japanese">猫がとても好きです</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">여행하는 걸 제일 좋아해요</div>
+                            <div class="variation-japanese">旅行するのが一番好きです</div>
+                        </div>
+                    </div>
+                    
+                    <div class="practice-tip">
+                        <div class="practice-tip-title">実践練習のヒント</div>
+                        <p>好き嫌いのリストを作って練習しましょう。食べ物、飲み物、活動、音楽、映画など、様々なカテゴリーで自分の好みを韓国語で表現できるようにしてください。程度を表す副詞(정말、아주、무척など)も一緒に覚えましょう。</p>
+                    </div>
+                    
+                    <div class="caution">
+                        <div class="caution-title">よくある間違い・注意点</div>
+                        <p>「좋아하다」(好きだ)と「좋다」(良い)は違います。「좋아하다」は好みを表し、「좋다」は状態や性質を表します。また、「〜를/을 좋아하다」の形で使うことに注意してください。</p>
+                    </div>
+                </div>
+
+                <!-- フレーズ29 -->
+                <div class="phrase-card">
+                    <div class="phrase-number">29</div>
+                    <div class="korean">평일에는 회사에서 일해요</div>
+                    <div class="japanese">平日は会社で働きます</div>
+                    
+                    <div class="context">
+                        <div class="context-title">使用場面・シチュエーション</div>
+                        <p>日常のルーティンを説明する時、仕事について話す時に使用。平日の過ごし方を説明することで、自分のライフスタイルを相手に伝えられます。週末との対比で話すことが多いです。</p>
+                    </div>
+                    
+                    <div class="variations">
+                        <div class="variations-title">応用バリエーション</div>
+                        <div class="variation-item">
+                            <div class="variation-korean">평일에는 바빠요</div>
+                            <div class="variation-japanese">平日は忙しいです</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">아침 9시부터 저녁 6시까지 일해요</div>
+                            <div class="variation-japanese">朝9時から夜6時まで働きます</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">재택근무를 해요</div>
+                            <div class="variation-japanese">在宅勤務をします</div>
+                        </div>
+                    </div>
+                    
+                    <div class="practice-tip">
+                        <div class="practice-tip-title">実践練習のヒント</div>
+                        <p>自分の一日のスケジュールを韓国語で説明する練習をしましょう。時間表現(〜부터 〜까지)と場所(〜에서)を使って、詳しく説明できるようにしてください。毎日の行動を韓国語で考える習慣をつけると効果的です。</p>
+                    </div>
+                    
+                    <div class="caution">
+                        <div class="caution-title">よくある間違い・注意点</div>
+                        <p>「에서」は動作の場所を表す助詞です。「회사에서」は「会社で」という意味。一方、「에」は存在の場所を表します。「회사에 있어요」(会社にいます)と「회사에서 일해요」(会社で働きます)の違いに注意しましょう。</p>
+                    </div>
+                </div>
+
+                <!-- フレーズ30 -->
+                <div class="phrase-card">
+                    <div class="phrase-number">30</div>
+                    <div class="korean">어제 친구를 만났어요</div>
+                    <div class="japanese">昨日友達に会いました</div>
+                    
+                    <div class="context">
+                        <div class="context-title">使用場面・シチュエーション</div>
+                        <p>最近あったことを話す時、日常の出来事を共有する時に使用。過去の出来事を語ることは会話の基本です。「어제」以外にも様々な時間表現を使って、いつ何があったかを説明できるようにしましょう。</p>
+                    </div>
+                    
+                    <div class="variations">
+                        <div class="variations-title">応用バリエーション</div>
+                        <div class="variation-item">
+                            <div class="variation-korean">지난주에 영화를 봤어요</div>
+                            <div class="variation-japanese">先週映画を見ました</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">오늘 아침에 운동했어요</div>
+                            <div class="variation-japanese">今日の朝運動しました</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">작년에 한국에 갔어요</div>
+                            <div class="variation-japanese">去年韓国に行きました</div>
+                        </div>
+                    </div>
+                    
+                    <div class="practice-tip">
+                        <div class="practice-tip-title">実践練習のヒント</div>
+                        <p>毎日寝る前に、その日あったことを3つ韓国語で言う練習をしてください。「오늘 〜했어요」の形で、日記のように記録すると、過去形の活用と時間表現が自然に身につきます。</p>
+                    </div>
+                    
+                    <div class="caution">
+                        <div class="caution-title">よくある間違い・注意点</div>
+                        <p>過去形の作り方に注意してください。「만나다」(会う)→「만났어요」(会いました)のように、語幹に「았/었어요」を付けます。不規則活用する動詞も多いので、よく使う動詞の過去形は個別に覚えましょう。</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 第4章 -->
+            <section class="section" id="ch4">
+                <h2 class="section-title">第4章:相手に質問するフレーズ</h2>
+                
+                <div class="chapter-intro">
+                    会話を広げ、相手のことを知るための質問フレーズです。一方的に話すのではなく、相手に質問することで双方向のコミュニケーションが生まれます。これらのフレーズを使って、会話を深め、関係性を築きましょう。
+                </div>
+
+                <!-- フレーズ31 -->
+                <div class="phrase-card">
+                    <div class="phrase-number">31</div>
+                    <div class="korean">어떻게 생각하세요?</div>
+                    <div class="japanese">どう思いますか?</div>
+                    
+                    <div class="context">
+                        <div class="context-title">使用場面・シチュエーション</div>
+                        <p>相手の意見を尋ねる時、議論をする時、決断を求める時に使用。相手の考えを聞くことは、尊重の気持ちを表し、会話を深める効果があります。ビジネスシーンでも頻繁に使われる表現です。</p>
+                    </div>
+                    
+                    <div class="variations">
+                        <div class="variations-title">応用バリエーション</div>
+                        <div class="variation-item">
+                            <div class="variation-korean">이거에 대해 어떻게 생각해요?</div>
+                            <div class="variation-japanese">これについてどう思いますか?</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">의견이 어떠세요?</div>
+                            <div class="variation-japanese">ご意見はいかがですか?</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">어떤 것 같아요?</div>
+                            <div class="variation-japanese">どんな感じですか?</div>
+                        </div>
+                    </div>
+                    
+                    <div class="practice-tip">
+                        <div class="practice-tip-title">実践練習のヒント</div>
+                        <p>ニュースや映画を見た後、「이 영화 어떻게 생각해요?」(この映画どう思いますか?)のように、自分に質問してみる練習をしてください。質問と答えの両方を練習することで、実際の会話に備えられます。</p>
+                    </div>
+                    
+                    <div class="caution">
+                        <div class="caution-title">よくある間違い・注意点</div>
+                        <p>「생각하다」は「思う、考える」という動詞です。「어떻게」(どのように)と組み合わせて意見を聞く表現になります。より丁寧な場面では「어떻게 생각하십니까?」を使うこともできます。</p>
+                    </div>
+                </div>
+
+                <!-- フレーズ32 -->
+                <div class="phrase-card">
+                    <div class="phrase-number">32</div>
+                    <div class="korean">왜 그렇게 생각해요?</div>
+                    <div class="japanese">なぜそう思いますか?</div>
+                    
+                    <div class="context">
+                        <div class="context-title">使用場面・シチュエーション</div>
+                        <p>相手の意見の理由を詳しく聞きたい時、会話を深めたい時に使用。理由を尋ねることで、相手の考えをより深く理解できます。ただし、トーンに注意しないと詰問しているように聞こえることもあります。</p>
+                    </div>
+                    
+                    <div class="variations">
+                        <div class="variations-title">応用バリエーション</div>
+                        <div class="variation-item">
+                            <div class="variation-korean">이유가 뭐예요?</div>
+                            <div class="variation-japanese">理由は何ですか?</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">어떤 이유로요?</div>
+                            <div class="variation-japanese">どんな理由で?</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">좀 더 자세히 말해 줄래요?</div>
+                            <div class="variation-japanese">もう少し詳しく話してもらえますか?</div>
+                        </div>
+                    </div>
+                    
+                    <div class="practice-tip">
+                        <div class="practice-tip-title">実践練習のヒント</div>
+                        <p>この質問は関心を示す良い方法ですが、柔らかいトーンで言うことが重要です。鏡の前で優しい表情と声のトーンで練習してください。「왜」(なぜ)の代わりに「어떤 이유로」を使うと、より柔らかい印象になります。</p>
+                    </div>
+                    
+                    <div class="caution">
+                        <div class="caution-title">よくある間違い・注意点</div>
+                        <p>「왜」を使う質問は、場合によっては攻撃的に聞こえることがあります。親しい間柄やカジュアルな場面では問題ありませんが、改まった場面では「이유가 궁금한데요」(理由が気になるのですが)のような表現がより適切です。</p>
+                    </div>
+                </div>
+
+                <!-- フレーズ33 -->
+                <div class="phrase-card">
+                    <div class="phrase-number">33</div>
+                    <div class="korean">무슨 뜻이에요?</div>
+                    <div class="japanese">どういう意味ですか?</div>
+                    
+                    <div class="context">
+                        <div class="context-title">使用場面・シチュエーション</div>
+                        <p>言葉の意味が分からない時、相手の言ったことを確認したい時に使用。語学学習者にとって必須のフレーズです。分からないことを素直に聞くことは、学習の第一歩です。恥ずかしがらずに使いましょう。</p>
+                    </div>
+                    
+                    <div class="variations">
+                        <div class="variations-title">応用バリエーション</div>
+                        <div class="variation-item">
+                            <div class="variation-korean">이게 무슨 말이에요?</div>
+                            <div class="variation-japanese">これはどういう意味ですか?</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">다시 설명해 주세요</div>
+                            <div class="variation-japanese">もう一度説明してください</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">이해가 안 돼요</div>
+                            <div class="variation-japanese">理解できません</div>
+                        </div>
+                    </div>
+                    
+                    <div class="practice-tip">
+                        <div class="practice-tip-title">実践練習のヒント</div>
+                        <p>韓国ドラマや動画を見ている時、聞き取れなかった表現をメモして、「무슨 뜻이에요?」と声に出して質問する練習をしてください。後で辞書で調べる前に、まず質問する習慣をつけることが大切です。</p>
+                    </div>
+                    
+                    <div class="caution">
+                        <div class="caution-title">よくある間違い・注意点</div>
+                        <p>「무슨」は「何の、どんな」という意味の連体詞です。「뜻」は「意味」、「말」は「言葉、話」です。「무슨 뜻이에요」と「무슨 말이에요」はほぼ同じ意味で使えますが、「뜻」の方が少し書き言葉的です。</p>
+                    </div>
+                </div>
+
+                <!-- フレーズ34 -->
+                <div class="phrase-card">
+                    <div class="phrase-number">34</div>
+                    <div class="korean">정말요?</div>
+                    <div class="japanese">本当ですか?</div>
+                    
+                    <div class="context">
+                        <div class="context-title">使用場面・シチュエーション</div>
+                        <p>驚きや確認を示す時、相手の話に反応する時に使用。短くシンプルな表現ですが、会話の相づちとして非常に重要です。適切なタイミングで使うことで、会話が自然に流れます。</p>
+                    </div>
+                    
+                    <div class="variations">
+                        <div class="variations-title">応用バリエーション</div>
+                        <div class="variation-item">
+                            <div class="variation-korean">진짜요?</div>
+                            <div class="variation-japanese">マジですか?(カジュアル)</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">확실해요?</div>
+                            <div class="variation-japanese">確かですか?</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">그래요?</div>
+                            <div class="variation-japanese">そうなんですか?</div>
+                        </div>
+                    </div>
+                    
+                    <div class="practice-tip">
+                        <div class="practice-tip-title">実践練習のヒント</div>
+                        <p>韓国ドラマを見ながら、登場人物が驚いたり確認したりするシーンで一緒に「정말요?」と言ってみましょう。イントネーションが重要なので、俳優の話し方を真似して練習してください。</p>
+                    </div>
+                    
+                    <div class="caution">
+                        <div class="caution-title">よくある間違い・注意点</div>
+                        <p>「정말요?」は上昇調で言うと質問、下降調で言うと感嘆になります。イントネーションによって意味が変わるので注意してください。「진짜요?」はもっとカジュアルで、友達同士でよく使われます。</p>
+                    </div>
+                </div>
+
+                <!-- フレーズ35 -->
+                <div class="phrase-card">
+                    <div class="phrase-number">35</div>
+                    <div class="korean">맞아요?</div>
+                    <div class="japanese">そうですよね?/合ってますよね?</div>
+                    
+                    <div class="context">
+                        <div class="context-title">使用場面・シチュエーション</div>
+                        <p>自分の理解が正しいか確認する時、相手の同意を求める時に使用。会話の中で確認を取ることは、誤解を防ぐために重要です。「맞다」(合う、正しい)を使った確認表現です。</p>
+                    </div>
+                    
+                    <div class="variations">
+                        <div class="variations-title">応用バリエーション</div>
+                        <div class="variation-item">
+                            <div class="variation-korean">제가 맞게 이해한 거예요?</div>
+                            <div class="variation-japanese">私が正しく理解したのですか?</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">그렇죠?</div>
+                            <div class="variation-japanese">そうですよね?</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">이게 맞아요?</div>
+                            <div class="variation-japanese">これが合っていますか?</div>
+                        </div>
+                    </div>
+                    
+                    <div class="practice-tip">
+                        <div class="practice-tip-title">実践練習のヒント</div>
+                        <p>韓国語で文を作った後、「맞아요?」と自分に確認する習慣をつけましょう。また、相手の話を聞いた後、理解した内容を要約して「〜라는 거죠? 맞아요?」(〜ということですよね?合ってますか?)と確認する練習も効果的です。</p>
+                    </div>
+                    
+                    <div class="caution">
+                        <div class="caution-title">よくある間違い・注意点</div>
+                        <p>「맞아요?」は軽い確認ですが、「맞습니까?」はより改まった表現です。友達や同僚には「맞아요?」、目上の人やビジネスシーンでは「맞습니까?」または「그렇습니까?」を使いましょう。</p>
+                    </div>
+                </div>
+
+                <!-- フレーズ36 -->
+                <div class="phrase-card">
+                    <div class="phrase-number">36</div>
+                    <div class="korean">저도 그렇게 생각해요</div>
+                    <div class="japanese">私もそう思います</div>
+                    
+                    <div class="context">
+                        <div class="context-title">使用場面・シチュエーション</div>
+                        <p>相手の意見に共感する時、同意を示す時に使用。共感を表現することは、良好なコミュニケーションの基本です。相手の話を聞いて、同じ意見であることを伝えることで、親密度が高まります。</p>
+                    </div>
+                    
+                    <div class="variations">
+                        <div class="variations-title">応用バリエーション</div>
+                        <div class="variation-item">
+                            <div class="variation-korean">동감이에요</div>
+                            <div class="variation-japanese">同感です</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">저도 같은 생각이에요</div>
+                            <div class="variation-japanese">私も同じ考えです</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">맞아요, 저도요</div>
+                            <div class="variation-japanese">そうですね、私もです</div>
+                        </div>
+                    </div>
+                    
+                    <div class="practice-tip">
+                        <div class="practice-tip-title">実践練習のヒント</div>
+                        <p>ニュース記事やブログのコメントを読んで、同意できる内容に対して「저도 그렇게 생각해요」と声に出してみましょう。自分の意見を韓国語で表現する練習になります。</p>
+                    </div>
+                    
+                    <div class="caution">
+                        <div class="caution-title">よくある間違い・注意点</div>
+                        <p>「저도」の「도」は「〜も」という意味の助詞です。自分も相手と同じ意見であることを示します。「저는」(私は)と「저도」(私も)の違いを理解し、適切に使い分けましょう。</p>
+                    </div>
+                </div>
+
+                <!-- フレーズ37 -->
+                <div class="phrase-card">
+                    <div class="phrase-number">37</div>
+                    <div class="korean">어디 가세요?</div>
+                    <div class="japanese">どこに行かれますか?</div>
+                    
+                    <div class="context">
+                        <div class="context-title">使用場面・シチュエーション</div>
+                        <p>相手の行き先を尋ねる時、偶然会った人に声をかける時に使用。韓国では偶然知り合いに会った時の挨拶としてもよく使われます。軽い挨拶から会話を始める良いきっかけになります。</p>
+                    </div>
+                    
+                    <div class="variations">
+                        <div class="variations-title">応用バリエーション</div>
+                        <div class="variation-item">
+                            <div class="variation-korean">어디 갔다 와요?</div>
+                            <div class="variation-japanese">どこ行ってきたんですか?</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">어디 가는 길이에요?</div>
+                            <div class="variation-japanese">どこに行く途中ですか?</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">어디 다녀오세요</div>
+                            <div class="variation-japanese">行ってらっしゃい</div>
+                        </div>
+                    </div>
+                    
+                    <div class="practice-tip">
+                        <div class="practice-tip-title">実践練習のヒント</div>
+                        <p>場所を表す単語と一緒に練習しましょう。「회사에 가요」(会社に行きます)、「집에 가요」(家に帰ります)、「카페에 가요」(カフェに行きます)など、様々な場所で応答を練習してください。</p>
+                    </div>
+                    
+                    <div class="caution">
+                        <div class="caution-title">よくある間違い・注意点</div>
+                        <p>「가세요」は尊敬語です。友達同士では「어디 가?」と言います。また、この質問は親しい間柄での軽い挨拶として使われることが多く、必ずしも詳しい答えを期待しているわけではありません。</p>
+                    </div>
+                </div>
+
+                <!-- フレーズ38 -->
+                <div class="phrase-card">
+                    <div class="phrase-number">38</div>
+                    <div class="korean">뭐 하고 있어요?</div>
+                    <div class="japanese">何をしていますか?</div>
+                    
+                    <div class="context">
+                        <div class="context-title">使用場面・シチュエーション</div>
+                        <p>相手の現在の行動を尋ねる時、電話やメッセージで使用。相手の状況を知りたい時、会話を始める時に便利な表現です。SNSのメッセージでもよく使われます。</p>
+                    </div>
+                    
+                    <div class="variations">
+                        <div class="variations-title">応用バリエーション</div>
+                        <div class="variation-item">
+                            <div class="variation-korean">지금 뭐 해요?</div>
+                            <div class="variation-japanese">今何してますか?</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">뭐 하는 중이에요?</div>
+                            <div class="variation-japanese">何をしている最中ですか?</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">바빠요?</div>
+                            <div class="variation-japanese">忙しいですか?</div>
+                        </div>
+                    </div>
+                    
+                    <div class="practice-tip">
+                        <div class="practice-tip-title">実践練習のヒント</div>
+                        <p>自分が今していることを韓国語で言う練習を日常的にしてください。「공부하고 있어요」(勉強しています)、「요리하고 있어요」(料理しています)など、現在進行形の表現を身につけましょう。</p>
+                    </div>
+                    
+                    <div class="caution">
+                        <div class="caution-title">よくある間違い・注意点</div>
+                        <p>「하고 있어요」は現在進行形です。「〜している」という継続中の動作を表します。単純現在形「해요」(します)とは意味が異なるので、状況に応じて使い分けましょう。</p>
+                    </div>
+                </div>
+
+                <!-- フレーズ39 -->
+                <div class="phrase-card">
+                    <div class="phrase-number">39</div>
+                    <div class="korean">언제 시간 되세요?</div>
+                    <div class="japanese">いつお時間よろしいですか?</div>
+                    
+                    <div class="context">
+                        <div class="context-title">使用場面・シチュエーション</div>
+                        <p>約束を取り付ける時、相手の都合を聞く時に使用。丁寧に相手の予定を尋ねる表現です。ビジネスでも友人間でも使える便利なフレーズです。</p>
+                    </div>
+                    
+                    <div class="variations">
+                        <div class="variations-title">応用バリエーション</div>
+                        <div class="variation-item">
+                            <div class="variation-korean">언제가 편하세요?</div>
+                            <div class="variation-japanese">いつがご都合よろしいですか?</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">언제 만날까요?</div>
+                            <div class="variation-japanese">いつ会いましょうか?</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">다음 주 어때요?</div>
+                            <div class="variation-japanese">来週はどうですか?</div>
+                        </div>
+                    </div>
+                    
+                    <div class="practice-tip">
+                        <div class="practice-tip-title">実践練習のヒント</div>
+                        <p>時間や曜日を表す単語と一緒に練習しましょう。「월요일」(月曜日)、「화요일」(火曜日)などの曜日、「오전」(午前)、「오후」(午後)などの時間帯も一緒に覚えておくと実用的です。</p>
+                    </div>
+                    
+                    <div class="caution">
+                        <div class="caution-title">よくある間違い・注意点</div>
+                        <p>「시간 되다」は直訳すると「時間になる」ですが、「都合がつく」という意味です。「시간 있다」(時間がある)とは微妙にニュアンスが違います。「되세요」は尊敬語なので、丁寧な表現です。</p>
+                    </div>
+                </div>
+
+                <!-- フレーズ40 -->
+                <div class="phrase-card">
+                    <div class="phrase-number">40</div>
+                    <div class="korean">더 궁금한 거 있어요?</div>
+                    <div class="japanese">もっと気になることありますか?</div>
+                    
+                    <div class="context">
+                        <div class="context-title">使用場面・シチュエーション</div>
+                        <p>説明の後に追加の質問がないか確認する時、会話を広げる時に使用。相手が理解したか確認し、さらに話を深めることができる便利な表現です。親切な印象を与えます。</p>
+                    </div>
+                    
+                    <div class="variations">
+                        <div class="variations-title">応用バリエーション</div>
+                        <div class="variation-item">
+                            <div class="variation-korean">궁금한 게 있으면 물어보세요</div>
+                            <div class="variation-japanese">気になることがあったら聞いてください</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">질문 있으세요?</div>
+                            <div class="variation-japanese">質問ありますか?</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">뭐 더 알고 싶은 거 있어요?</div>
+                            <div class="variation-japanese">もっと知りたいことありますか?</div>
+                        </div>
+                    </div>
+                    
+                    <div class="practice-tip">
+                        <div class="practice-tip-title">実践練習のヒント</div>
+                        <p>何かを説明した後、必ずこのフレーズで締めくくる練習をしてください。相手に質問の機会を与えることで、コミュニケーションがより円滑になります。親切で配慮のある印象を与えられます。</p>
+                    </div>
+                    
+                    <div class="caution">
+                        <div class="caution-title">よくある間違い・注意点</div>
+                        <p>「궁금하다」は「気になる、知りたい」という形容詞です。「궁금한 것」(気になること)、「궁금한 거」(気になるの)のように名詞化して使います。口語では「거」、書き言葉では「것」を使います。</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 第5章 -->
+            <section class="section" id="ch5">
+                <h2 class="section-title">第5章:困った時に使えるフレーズ</h2>
+                
+                <div class="chapter-intro">
+                    会話中に困った状況に陥った時に使える「救命フレーズ」です。完璧に韓国語を話せなくても、これらのフレーズを知っていれば、相手とのコミュニケーションを継続できます。語学学習者にとって最も重要なフレーズ集です。
+                </div>
+
+                <!-- フレーズ41 -->
+                <div class="phrase-card">
+                    <div class="phrase-number">41</div>
+                    <div class="korean">다시 한번 말씀해 주세요</div>
+                    <div class="japanese">もう一度おっしゃってください</div>
+                    
+                    <div class="context">
+                        <div class="context-title">使用場面・シチュエーション</div>
+                        <p>相手の言ったことが聞き取れなかった時、確認したい時に使用。聞き返すことは恥ずかしいことではなく、正確なコミュニケーションのために必要なことです。このフレーズを躊躇なく使えることが重要です。</p>
+                    </div>
+                    
+                    <div class="variations">
+                        <div class="variations-title">応用バリエーション</div>
+                        <div class="variation-item">
+                            <div class="variation-korean">뭐라고요?</div>
+                            <div class="variation-japanese">何ですって?</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">잘 못 들었어요</div>
+                            <div class="variation-japanese">よく聞こえませんでした</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">한 번 더 말해 주실래요?</div>
+                            <div class="variation-japanese">もう一度言ってもらえますか?</div>
+                        </div>
+                    </div>
+                    
+                    <div class="practice-tip">
+                        <div class="practice-tip-title">実践練習のヒント</div>
+                        <p>このフレーズは頻繁に使うことになるので、反射的に出てくるまで練習してください。恥ずかしがらずに聞き返すことが、韓国語上達の鍵です。丁寧な表情とトーンで言えるように練習しましょう。</p>
+                    </div>
+                    
+                    <div class="caution">
+                        <div class="caution-title">よくある間違い・注意点</div>
+                        <p>「말씀하다」は「말하다」(言う)の尊敬語です。目上の人や丁寧に話す相手には「말씀해 주세요」、友達には「말해 줘」を使います。「뭐라고요?」はカジュアルすぎるので、改まった場面では避けましょう。</p>
+                    </div>
+                </div>
+
+                <!-- フレーズ42 -->
+                <div class="phrase-card">
+                    <div class="phrase-number">42</div>
+                    <div class="korean">천천히 말씀해 주세요</div>
+                    <div class="japanese">ゆっくり話してください</div>
+                    
+                    <div class="context">
+                        <div class="context-title">使用場面・シチュエーション</div>
+                        <p>相手が早口で話していて理解できない時に使用。韓国語ネイティブは早口で話すことが多いので、このフレーズは学習者にとって必須です。ゆっくり話してもらうことで、理解度が大幅に向上します。</p>
+                    </div>
+                    
+                    <div class="variations">
+                        <div class="variations-title">応用バリエーション</div>
+                        <div class="variation-item">
+                            <div class="variation-korean">좀 더 천천히 말해 주세요</div>
+                            <div class="variation-japanese">もう少しゆっくり話してください</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">너무 빨라요</div>
+                            <div class="variation-japanese">速すぎます</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">조금만 느리게 말해 주세요</div>
+                            <div class="variation-japanese">少しだけゆっくり話してください</div>
+                        </div>
+                    </div>
+                    
+                    <div class="practice-tip">
+                        <div class="practice-tip-title">実践練習のヒント</div>
+                        <p>韓国ドラマやYouTube動画を見る時、速度を調整しながら練習しましょう。最初はゆっくり、徐々に速度を上げることで、自然なスピードに慣れていきます。このフレーズは遠慮なく使ってください。</p>
+                    </div>
+                    
+                    <div class="caution">
+                        <div class="caution-title">よくある間違い・注意点</div>
+                        <p>「천천히」は「ゆっくり」という副詞です。相手に依頼する時は丁寧に、笑顔で言うことが大切です。「죄송하지만 천천히 말씀해 주세요」(申し訳ありませんがゆっくり話してください)と前置きを付けるとより丁寧です。</p>
+                    </div>
+                </div>
+
+                <!-- フレーズ43 -->
+                <div class="phrase-card">
+                    <div class="phrase-number">43</div>
+                    <div class="korean">한국어를 잘 못해요</div>
+                    <div class="japanese">韓国語があまりできません</div>
+                    
+                    <div class="context">
+                        <div class="context-title">使用場面・シチュエーション</div>
+                        <p>会話の初めに自分の韓国語レベルを伝える時に使用。最初に自分が学習者であることを伝えることで、相手が配慮してくれる可能性が高まります。謙虚さを示す表現でもあります。</p>
+                    </div>
+                    
+                    <div class="variations">
+                        <div class="variations-title">応用バリエーション</div>
+                        <div class="variation-item">
+                            <div class="variation-korean">아직 배우고 있어요</div>
+                            <div class="variation-japanese">まだ学んでいます</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">초보자예요</div>
+                            <div class="variation-japanese">初心者です</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">실수가 많을 거예요</div>
+                            <div class="variation-japanese">間違いが多いと思います</div>
+                        </div>
+                    </div>
+                    
+                    <div class="practice-tip">
+                        <div class="practice-tip-title">実践練習のヒント</div>
+                        <p>このフレーズの後に「그래도 열심히 배우고 있어요」(でも一生懸命学んでいます)や「천천히 말씀해 주시면 감사하겠어요」(ゆっくり話していただけたら感謝します)を付け加える練習をしましょう。</p>
+                    </div>
+                    
+                    <div class="caution">
+                        <div class="caution-title">よくある間違い・注意点</div>
+                        <p>「잘 못해요」は「上手にできない」という意味です。「못해요」だけだと「できません」という強い否定になります。「잘」を付けることで、「あまり上手ではない」という謙遜のニュアンスになります。</p>
+                    </div>
+                </div>
+
+                <!-- フレーズ44 -->
+                <div class="phrase-card">
+                    <div class="phrase-number">44</div>
+                    <div class="korean">이거 한국어로 뭐라고 해요?</div>
+                    <div class="japanese">これ韓国語で何と言いますか?</div>
+                    
+                    <div class="context">
+                        <div class="context-title">使用場面・シチュエーション</div>
+                        <p>言いたい単語が韓国語で出てこない時、新しい表現を学びたい時に使用。積極的に質問することで語彙が増えます。物を指差しながら聞くこともでき、非常に実用的なフレーズです。</p>
+                    </div>
+                    
+                    <div class="variations">
+                        <div class="variations-title">応用バリエーション</div>
+                        <div class="variation-item">
+                            <div class="variation-korean">이걸 뭐라고 불러요?</div>
+                            <div class="variation-japanese">これを何と呼びますか?</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">한국어로 어떻게 말해요?</div>
+                            <div class="variation-japanese">韓国語でどう言いますか?</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">이 단어를 몰라요</div>
+                            <div class="variation-japanese">この単語を知りません</div>
+                        </div>
+                    </div>
+                    
+                    <div class="practice-tip">
+                        <div class="practice-tip-title">実践練習のヒント</div>
+                        <p>日常生活で目にするものを指差しながら、このフレーズを使う想像練習をしてください。後で辞書で調べて答えを確認する習慣をつけると、語彙が効率的に増えていきます。</p>
+                    </div>
+                    
+                    <div class="caution">
+                        <div class="caution-title">よくある間違い・注意点</div>
+                        <p>「뭐라고 하다」は「何と言う」という意味です。「이거」は話し手の近くにあるもの、「그거」は聞き手の近くにあるもの、「저거」は両者から遠いところにあるものを指します。状況に応じて使い分けましょう。</p>
+                    </div>
+                </div>
+
+                <!-- フレーズ45 -->
+                <div class="phrase-card">
+                    <div class="phrase-number">45</div>
+                    <div class="korean">잠깐만요</div>
+                    <div class="japanese">ちょっと待ってください</div>
+                    
+                    <div class="context">
+                        <div class="context-title">使用場面・シチュエーション</div>
+                        <p>考える時間が欲しい時、何かを確認したい時、準備に時間が必要な時に使用。会話の中で一時停止が必要な時に便利な表現です。短くてシンプルなので、とっさに使いやすいフレーズです。</p>
+                    </div>
+                    
+                    <div class="variations">
+                        <div class="variations-title">応用バリエーション</div>
+                        <div class="variation-item">
+                            <div class="variation-korean">잠시만 기다려 주세요</div>
+                            <div class="variation-japanese">少々お待ちください</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">생각 좀 해 볼게요</div>
+                            <div class="variation-japanese">ちょっと考えてみます</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">시간 좀 주세요</div>
+                            <div class="variation-japanese">時間をください</div>
+                        </div>
+                    </div>
+                    
+                    <div class="practice-tip">
+                        <div class="practice-tip-title">実践練習のヒント</div>
+                        <p>会話で言葉に詰まった時、沈黙する代わりに「잠깐만요」と言う習慣をつけましょう。この一言で時間を稼ぎ、次に言うことを考えられます。会話のペースをコントロールする重要なフレーズです。</p>
+                    </div>
+                    
+                    <div class="caution">
+                        <div class="caution-title">よくある間違い・注意点</div>
+                        <p>「잠깐」は「ちょっと、少しの間」という意味です。「만」は「だけ」という助詞で、「잠깐만」で「ちょっとだけ」となります。友達には「잠깐만」、丁寧な場面では「잠깐만요」または「잠시만요」を使いましょう。</p>
+                    </div>
+                </div>
+
+                <!-- フレーズ46 -->
+                <div class="phrase-card">
+                    <div class="phrase-number">46</div>
+                    <div class="korean">글쎄요</div>
+                    <div class="japanese">さあ、どうでしょう</div>
+                    
+                    <div class="context">
+                        <div class="context-title">使用場面・シチュエーション</div>
+                        <p>確信が持てない時、即答できない時、婉曲に断りたい時に使用。日本語の「さあ」や「うーん」に近い表現です。直接的に答えを避けたい時の便利な言葉で、会話の潤滑油として機能します。</p>
+                    </div>
+                    
+                    <div class="variations">
+                        <div class="variations-title">応用バリエーション</div>
+                        <div class="variation-item">
+                            <div class="variation-korean">잘 모르겠어요</div>
+                            <div class="variation-japanese">よくわかりません</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">확실하지 않아요</div>
+                            <div class="variation-japanese">確かではありません</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">어떻게 말해야 할지 모르겠어요</div>
+                            <div class="variation-japanese">どう言えばいいかわかりません</div>
+                        </div>
+                    </div>
+                    
+                    <div class="practice-tip">
+                        <div class="practice-tip-title">実践練習のヒント</div>
+                        <p>イントネーションによって意味が変わります。上昇調で言うと「わからない」、下降調で言うと「微妙だな」というニュアンスになります。鏡の前で異なるイントネーションで練習してみましょう。</p>
+                    </div>
+                    
+                    <div class="caution">
+                        <div class="caution-title">よくある間違い・注意点</div>
+                        <p>「글쎄요」は曖昧な返答なので、多用すると会話が進まなくなります。適度に使い、できるだけ具体的な返答を心がけましょう。また、相手を傷つけないよう、表情やトーンに注意が必要です。</p>
+                    </div>
+                </div>
+
+                <!-- フレーズ47 -->
+                <div class="phrase-card">
+                    <div class="phrase-number">47</div>
+                    <div class="korean">도와주실 수 있어요?</div>
+                    <div class="japanese">助けていただけますか?</div>
+                    
+                    <div class="context">
+                        <div class="context-title">使用場面・シチュエーション</div>
+                        <p>助けが必要な時、困っている時に使用。道に迷った時、言葉がわからない時、何かをお願いしたい時など、様々な場面で使える重要なフレーズです。助けを求めることは恥ずかしいことではありません。</p>
+                    </div>
+                    
+                    <div class="variations">
+                        <div class="variations-title">応用バリエーション</div>
+                        <div class="variation-item">
+                            <div class="variation-korean">도와주세요</div>
+                            <div class="variation-japanese">助けてください</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">좀 도와주시겠어요?</div>
+                            <div class="variation-japanese">ちょっと助けていただけますか?</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">부탁 하나만 들어주세요</div>
+                            <div class="variation-japanese">お願い一つ聞いてください</div>
+                        </div>
+                    </div>
+                    
+                    <div class="practice-tip">
+                        <div class="practice-tip-title">実践練習のヒント</div>
+                        <p>具体的な状況を想定して練習しましょう。「길을 잃었는데 도와주실 수 있어요?」(道に迷ったのですが助けていただけますか?)のように、状況説明と組み合わせて練習すると実用的です。</p>
+                    </div>
+                    
+                    <div class="caution">
+                        <div class="caution-title">よくある間違い・注意点</div>
+                        <p>「〜ㄹ/을 수 있다」は「〜できる」という可能の表現です。「도와주실 수 있어요?」は直訳すると「助けてくださることができますか?」となり、非常に丁寧な依頼表現です。緊急時は「도와주세요!」と短く言いましょう。</p>
+                    </div>
+                </div>
+
+                <!-- フレーズ48 -->
+                <div class="phrase-card">
+                    <div class="phrase-number">48</div>
+                    <div class="korean">죄송하지만 안 될 것 같아요</div>
+                    <div class="japanese">申し訳ありませんができなさそうです</div>
+                    
+                    <div class="context">
+                        <div class="context-title">使用場面・シチュエーション</div>
+                        <p>丁寧に断る時、依頼を受けられない時に使用。直接的な拒否ではなく、柔らかく断る表現です。韓国文化では直接的な拒否を避ける傾向があるため、このような婉曲な表現が重要です。</p>
+                    </div>
+                    
+                    <div class="variations">
+                        <div class="variations-title">応用バリエーション</div>
+                        <div class="variation-item">
+                            <div class="variation-korean">미안하지만 어려울 것 같아요</div>
+                            <div class="variation-japanese">すみませんが難しそうです</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">다음에 하면 안 될까요?</div>
+                            <div class="variation-japanese">次にしたらダメでしょうか?</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">그날은 좀 곤란해요</div>
+                            <div class="variation-japanese">その日はちょっと困ります</div>
+                        </div>
+                    </div>
+                    
+                    <div class="practice-tip">
+                        <div class="practice-tip-title">実践練習のヒント</div>
+                        <p>断る理由も一緒に練習しておくと自然です。「죄송하지만 그날은 약속이 있어서 안 될 것 같아요」(申し訳ありませんがその日は約束があってできなさそうです)のように、理由を添えて練習しましょう。</p>
+                    </div>
+                    
+                    <div class="caution">
+                        <div class="caution-title">よくある間違い・注意点</div>
+                        <p>「〜ㄹ/을 것 같다」は推測を表す表現で、断定を避ける効果があります。直接的に「안 돼요」(ダメです)と言うより、「안 될 것 같아요」(できなさそうです)の方が柔らかく丁寧です。申し訳ない気持ちを表情で示すことも重要です。</p>
+                    </div>
+                </div>
+
+                <!-- フレーズ49 -->
+                <div class="phrase-card">
+                    <div class="phrase-number">49</div>
+                    <div class="korean">영어 할 수 있어요?</div>
+                    <div class="japanese">英語できますか?</div>
+                    
+                    <div class="context">
+                        <div class="context-title">使用場面・シチュエーション</div>
+                        <p>韓国語でのコミュニケーションが難しい時、最後の手段として使用。特に重要な情報を確実に伝えたい時、英語でコミュニケーションできるか確認します。旅行中のトラブル時に役立つフレーズです。</p>
+                    </div>
+                    
+                    <div class="variations">
+                        <div class="variations-title">応用バリエーション</div>
+                        <div class="variation-item">
+                            <div class="variation-korean">영어로 말해도 돼요?</div>
+                            <div class="variation-japanese">英語で話してもいいですか?</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">일본어 할 줄 아는 사람 있어요?</div>
+                            <div class="variation-japanese">日本語できる人いますか?</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">통역 좀 부탁해요</div>
+                            <div class="variation-japanese">通訳をお願いします</div>
+                        </div>
+                    </div>
+                    
+                    <div class="practice-tip">
+                        <div class="practice-tip-title">実践練習のヒント</div>
+                        <p>このフレーズは最終手段として使いますが、できるだけ韓国語で頑張る姿勢を見せることが大切です。どうしても伝わらない時に、「죄송한데 영어 할 수 있어요?」(すみませんが英語できますか?)と丁寧に聞きましょう。</p>
+                    </div>
+                    
+                    <div class="caution">
+                        <div class="caution-title">よくある間違い・注意点</div>
+                        <p>すべての韓国人が英語を話せるわけではありません。特に年配の方は英語が苦手な場合が多いです。また、可能な限り韓国語で頑張る姿勢を見せることで、相手も協力的になってくれます。</p>
+                    </div>
+                </div>
+
+                <!-- フレーズ50 -->
+                <div class="phrase-card">
+                    <div class="phrase-number">50</div>
+                    <div class="korean">한국어 공부 중이에요</div>
+                    <div class="japanese">韓国語勉強中です</div>
+                    
+                    <div class="context">
+                        <div class="context-title">使用場面・シチュエーション</div>
+                        <p>会話の初めに自分の状況を説明する時、相手の配慮を求める時に使用。学習中であることを伝えることで、相手がゆっくり話してくれたり、間違いを訂正してくれたりする可能性が高まります。謙虚さと学習意欲を示す表現です。</p>
+                    </div>
+                    
+                    <div class="variations">
+                        <div class="variations-title">応用バリエーション</div>
+                        <div class="variation-item">
+                            <div class="variation-korean">한국어를 배우고 있어요</div>
+                            <div class="variation-japanese">韓国語を学んでいます</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">아직 서툴러요</div>
+                            <div class="variation-japanese">まだ下手です</div>
+                        </div>
+                        <div class="variation-item">
+                            <div class="variation-korean">실수하면 고쳐 주세요</div>
+                            <div class="variation-japanese">間違えたら直してください</div>
+                        </div>
+                    </div>
+                    
+                    <div class="practice-tip">
+                        <div class="practice-tip-title">実践練習のヒント</div>
+                        <p>このフレーズの後に「그래서 좀 천천히 말씀해 주시면 감사하겠어요」(なのでちょっとゆっくり話していただけたら感謝します)や「열심히 배우고 있어요」(一生懸命学んでいます)を付け加えると、より効果的です。</p>
+                    </div>
+                    
+                    <div class="caution">
+                        <div class="caution-title">よくある間違い・注意点</div>
+                        <p>「공부 중」は「勉強中」という漢字語です。「〜中」は現在進行中の状態を表します。このフレーズを会話の最初に使うことで、相手の協力を得やすくなり、プレッシャーも軽減されます。学習者であることは恥ずかしいことではなく、むしろ尊敬されることです。</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 付録 -->
+            <section class="section appendix" id="appendix">
+                <h2 class="section-title">付録</h2>
+                
+                <div style="background: white; padding: 30px; border-radius: 8px; margin-bottom: 30px;">
+                    <h3 style="color: #667eea; margin-bottom: 20px;">📅 フレーズ練習30日間チャレンジシート</h3>
+                    <p style="margin-bottom: 20px; line-height: 1.8;">このチャレンジシートを使って、50個のフレーズを30日間で完全にマスターしましょう。毎日少しずつ練習することで、確実に使える表現になります。</p>
+                    
+                    <h4 style="color: #667eea; margin: 25px 0 15px 0; font-size: 1.2em;">使い方:</h4>
+                    <ol style="margin-left: 25px; line-height: 2;">
+                        <li><strong>Week 1 (Day 1-7):</strong> 第1章の10フレーズを集中練習。毎日2フレーズずつ新しく学び、前日までのフレーズを復習。</li>
+                        <li><strong>Week 2 (Day 8-14):</strong> 第2章の10フレーズを学習。同時に第1章のフレーズを毎日復習。</li>
+                        <li><strong>Week 3 (Day 15-21):</strong> 第3章と第4章の20フレーズを学習。これまでの復習も継続。</li>
+                        <li><strong>Week 4 (Day 22-30):</strong> 第5章の10フレーズを学習し、全50フレーズの総復習。</li>
+                    </ol>
+                    
+                    <h4 style="color: #667eea; margin: 25px 0 15px 0; font-size: 1.2em;">毎日の練習ステップ:</h4>
+                    <div style="background: #f8f9fa; padding: 20px; border-radius: 5px; margin: 15px 0;">
+                        <p><strong>✓ ステップ1:</strong> フレーズを声に出して3回読む(発音確認)</p>
+                        <p style="margin-top: 10px;"><strong>✓ ステップ2:</strong> 使用場面を想像しながら、実際に使う場面を頭の中でシミュレーション</p>
+                        <p style="margin-top: 10px;"><strong>✓ ステップ3:</strong> 応用バリエーションも声に出して練習</p>
+                        <p style="margin-top: 10px;"><strong>✓ ステップ4:</strong> 実践練習のヒントに従って、実際に使ってみる</p>
+                        <p style="margin-top: 10px;"><strong>✓ ステップ5:</strong> チェックボックスにチェックを入れる</p>
+                    </div>
+                    
+                    <div class="checklist">
+                        <div class="checklist-item">Day 1<br>□ 1-2</div>
+                        <div class="checklist-item">Day 2<br>□ 3-4</div>
+                        <div class="checklist-item">Day 3<br>□ 5-6</div>
+                        <div class="checklist-item">Day 4<br>□ 7-8</div>
+                        <div class="checklist-item">Day 5<br>□ 9-10</div>
+                        <div class="checklist-item">Day 6<br>□ 復習</div>
+                        <div class="checklist-item">Day 7<br>□ 総復習</div>
+                        <div class="checklist-item">Day 8<br>□ 11-12</div>
+                        <div class="checklist-item">Day 9<br>□ 13-14</div>
+                        <div class="checklist-item">Day 10<br>□ 15-16</div>
+                        <div class="checklist-item">Day 11<br>□ 17-18</div>
+                        <div class="checklist-item">Day 12<br>□ 19-20</div>
+                        <div class="checklist-item">Day 13<br>□ 復習</div>
+                        <div class="checklist-item">Day 14<br>□ 総復習</div>
+                        <div class="checklist-item">Day 15<br>□ 21-22</div>
+                        <div class="checklist-item">Day 16<br>□ 23-24</div>
+                        <div class="checklist-item">Day 17<br>□ 25-26</div>
+                        <div class="checklist-item">Day 18<br>□ 27-28</div>
+                        <div class="checklist-item">Day 19<br>□ 29-30</div>
+                        <div class="checklist-item">Day 20<br>□ 復習</div>
+                        <div class="checklist-item">Day 21<br>□ 31-35</div>
+                        <div class="checklist-item">Day 22<br>□ 36-40</div>
+                        <div class="checklist-item">Day 23<br>□ 41-42</div>
+                        <div class="checklist-item">Day 24<br>□ 43-44</div>
+                        <div class="checklist-item">Day 25<br>□ 45-46</div>
+                        <div class="checklist-item">Day 26<br>□ 47-48</div>
+                        <div class="checklist-item">Day 27<br>□ 49-50</div>
+                        <div class="checklist-item">Day 28<br>□ 復習</div>
+                        <div class="checklist-item">Day 29<br>□ 総復習</div>
+                        <div class="checklist-item">Day 30<br>□ 完成!</div>
+                    </div>
+                </div>
+
+                <div style="background: white; padding: 30px; border-radius: 8px; margin-bottom: 30px;">
+                    <h3 style="color: #667eea; margin-bottom: 20px;">🔍 シチュエーション別クイックリファレンス</h3>
+                    <p style="margin-bottom: 20px;">特定の場面で必要なフレーズをすぐに見つけられるよう、シチュエーション別に整理しました。</p>
+                    
+                    <div style="background: #e3f2fd; padding: 20px; border-radius: 5px; margin: 15px 0; border-left: 4px solid #2196f3;">
+                        <h4 style="color: #1976d2; margin-bottom: 10px;">👋 挨拶・出会いの場面</h4>
+                        <p>フレーズ1(안녕하세요), フレーズ10(잘 지내요?), フレーズ8(다음에 또 봐요)</p>
+                    </div>
+                    
+                    <div style="background: #f3e5f5; padding: 20px; border-radius: 5px; margin: 15px 0; border-left: 4px solid #9c27b0;">
+                        <h4 style="color: #7b1fa2; margin-bottom: 10px;">🍽️ レストラン・カフェ</h4>
+                        <p>フレーズ11(이거 주세요), フレーズ13(추천 메뉴가 뭐예요?), フレーズ14(맵지 않게 해 주세요), フレーズ16(계산해 주세요), フレーズ17(물 좀 주세요)</p>
+                    </div>
+                    
+                    <div style="background: #fff3e0; padding: 20px; border-radius: 5px; margin: 15px 0; border-left: 4px solid #ff9800;">
+                        <h4 style="color: #f57c00; margin-bottom: 10px;">🛍️ ショッピング</h4>
+                        <p>フレーズ11(이거 주세요), フレーズ12(얼마예요?), フレーズ15(포장해 주세요), フレーズ20(이거 시식해 볼 수 있어요?)</p>
+                    </div>
+                    
+                    <div style="background: #e8f5e9; padding: 20px; border-radius: 5px; margin: 15px 0; border-left: 4px solid #4caf50;">
+                        <h4 style="color: #388e3c; margin-bottom: 10px;">💬 会話を深める</h4>
+                        <p>フレーズ31(어떻게 생각하세요?), フレーズ32(왜 그렇게 생각해요?), フレーズ36(저도 그렇게 생각해요), フレーズ38(뭐 하고 있어요?)</p>
+                    </div>
+                    
+                    <div style="background: #ffebee; padding: 20px; border-radius: 5px; margin: 15px 0; border-left: 4px solid #f44336;">
+                        <h4 style="color: #c62828; margin-bottom: 10px;">🆘 困った時・緊急時</h4>
+                        <p>フレーズ41(다시 한번 말씀해 주세요), フレーズ42(천천히 말씀해 주세요), フレーズ43(한국어를 잘 못해요), フレーズ47(도와주실 수 있어요?)</p>
+                    </div>
+                    
+                    <div style="background: #fce4ec; padding: 20px; border-radius: 5px; margin: 15px 0; border-left: 4px solid #e91e63;">
+                        <h4 style="color: #c2185b; margin-bottom: 10px;">🤝 約束・予定</h4>
+                        <p>フレーズ6(내일 시간 있어요?), フレーズ7(같이 갈래요?), フレーズ39(언제 시간 되세요?), フレーズ48(죄송하지만 안 될 것 같아요)</p>
+                    </div>
+                </div>
+
+                <div style="background: white; padding: 30px; border-radius: 8px;">
+                    <h3 style="color: #667eea; margin-bottom: 20px;">🎧 音声ファイルの効果的な使い方ガイド</h3>
+                    
+                    <h4 style="color: #667eea; margin: 20px 0 15px 0;">基本ステップ:</h4>
+                    <ol style="margin-left: 25px; line-height: 2;">
+                        <li><strong>Google翻訳やPapagoを活用:</strong> 各フレーズをGoogle翻訳やPapago、各種AIツールに入力し、音声機能で正確な発音を確認しましょう。</li>
+                        <li><strong>シャドーイング:</strong> 音声を聞きながら、0.5秒遅れで同じように発音します。口の形、イントネーション、リズムを真似てください。</li>
+                        <li><strong>リピーティング:</strong> 音声を聞いた後、一時停止して自分で再現します。完璧に言えるまで繰り返しましょう。</li>
+                        <li><strong>録音して比較:</strong> 自分の発音をスマートフォンで録音し、お手本と比較します。違いを意識して修正してください。</li>
+                        <li><strong>速度調整:</strong> 最初は0.75倍速でゆっくり練習し、慣れたら通常速度、最終的には1.25倍速で練習します。</li>
+                    </ol>
+                    
+                    <h4 style="color: #667eea; margin: 25px 0 15px 0;">上級テクニック:</h4>
+                    <div style="background: #f8f9fa; padding: 20px; border-radius: 5px; margin: 15px 0;">
+                        <p><strong>📱 アプリを活用:</strong> Google翻訳のカメラ機能を使えば、実物を見ながら韓国語名を学べます。</p>
+                        <p style="margin-top: 15px;"><strong>🎬 ドラマで実践:</strong> 韓国ドラマで同じフレーズが出てきたら、字幕を隠して俳優と一緒に言ってみましょう。</p>
+                        <p style="margin-top: 15px;"><strong>👥 言語交換:</strong> HelloTalkやTandemなどのアプリで韓国人と実際に会話練習をしましょう。</p>
+                        <p style="margin-top: 15px;"><strong>📝 日記で定着:</strong> 毎日、習ったフレーズを使って韓国語で一行日記を書きましょう。</p>
+                    </div>
+                    
+                    <div style="background: #fff8f0; padding: 25px; border-radius: 8px; margin-top: 30px; border: 2px solid #ff9800;">
+                        <h4 style="color: #ff9800; margin-bottom: 15px; text-align: center;">🎉 30日間チャレンジを完了したら...</h4>
+                        <p style="text-align: center; line-height: 1.9;">おめでとうございます!あなたは50個の実践フレーズをマスターしました。これらのフレーズを使って、実際の韓国人との会話に挑戦してください。最初は緊張するかもしれませんが、実践こそが最高の学習法です。</p>
+                        <p style="text-align: center; margin-top: 15px; font-weight: 600; color: #667eea;">継続は力なり。毎日少しずつ、確実に成長していきましょう!</p>
+                    </div>
+                </div>
+            </section>
+
+            <div style="text-align: center; padding: 50px 20px; background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%); border-radius: 8px; margin-top: 50px;">
+                <h3 style="color: #667eea; font-size: 1.8em; margin-bottom: 20px;">学習を続けるためのメッセージ</h3>
+                <p style="font-size: 1.1em; line-height: 1.9; max-width: 700px; margin: 0 auto;">
+                    この教材で学んだ50個のフレーズは、韓国語会話の「核」となる表現です。これらを完璧にマスターすれば、日常会話の大部分をカバーできます。<br><br>
+                    <strong>重要なのは「知っている」ことではなく「使える」こと。</strong><br><br>
+                    毎日少しずつでも、実際に声に出して練習を続けてください。30日後、あなたの韓国語会話力は確実に向上しているはずです。<br><br>
+                    あなたの韓国語学習を心から応援しています!<br>
+                    <span style="color: #667eea; font-weight: 600; font-size: 1.2em;">화이팅! (ファイティング!頑張って!)</span>
+                </p>
+            </div>
+
+            <!-- 追加の学習リソース -->
+            <div style="background: white; padding: 40px; border-radius: 8px; margin-top: 30px;">
+                <h3 style="color: #667eea; margin-bottom: 25px; text-align: center;">📚 さらに学習を深めるために</h3>
+                
+                <div style="display: grid; gap: 20px; margin-top: 30px;">
+                    <div style="background: #f8f9fa; padding: 25px; border-radius: 8px; border-left: 5px solid #667eea;">
+                        <h4 style="color: #667eea; margin-bottom: 15px;">💡 効果的な復習方法</h4>
+                        <p style="line-height: 1.8;">
+                            <strong>エビングハウスの忘却曲線</strong>を意識した復習が効果的です。学習した翌日、3日後、1週間後、1ヶ月後に復習することで、長期記憶に定着します。特に使用頻度が高いフレーズ(1-10, 41-50)は、毎日の習慣に組み込みましょう。
+                        </p>
+                    </div>
+                    
+                    <div style="background: #f8f9fa; padding: 25px; border-radius: 8px; border-left: 5px solid #9c27b0;">
+                        <h4 style="color: #9c27b0; margin-bottom: 15px;">🎯 実践の場を作る</h4>
+                        <p style="line-height: 1.8;">
+                            <strong>オンライン言語交換:</strong> HelloTalk、Tandem、MEEFF などのアプリで韓国人の言語交換パートナーを見つけましょう。週に1-2回、15分でも実際の会話練習をすることで、フレーズが本当に「使える」ようになります。
+                        </p>
+                    </div>
+                    
+                    <div style="background: #f8f9fa; padding: 25px; border-radius: 8px; border-left: 5px solid #ff9800;">
+                        <h4 style="color: #ff9800; margin-bottom: 15px;">📖 コンテキストで学ぶ</h4>
+                        <p style="line-height: 1.8;">
+                            <strong>韓国ドラマ・バラエティ視聴:</strong> Netflixの韓国ドラマやYouTubeの韓国バラエティ番組を見る際、このフレーズ集を手元に置いておきましょう。学んだフレーズが実際に使われる場面に出会ったら、その場面をメモしておくと記憶に強く残ります。
+                        </p>
+                    </div>
+                    
+                    <div style="background: #f8f9fa; padding: 25px; border-radius: 8px; border-left: 5px solid #4caf50;">
+                        <h4 style="color: #4caf50; margin-bottom: 15px;">✍️ アウトプットの習慣化</h4>
+                        <p style="line-height: 1.8;">
+                            <strong>韓国語日記:</strong> 毎日、今日学んだフレーズを使って3行日記を書きましょう。SNSに韓国語で投稿するのも効果的です。書くことで記憶が定着し、文章構成力も向上します。間違いを恐れず、積極的にアウトプットしてください。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- よくある質問 -->
+            <div style="background: #f5f5f5; padding: 40px; border-radius: 8px; margin-top: 30px;">
+                <h3 style="color: #667eea; margin-bottom: 25px; text-align: center;">❓ よくある質問(FAQ)</h3>
+                
+                <div style="background: white; padding: 20px; border-radius: 8px; margin: 15px 0;">
+                    <h4 style="color: #667eea; margin-bottom: 10px;">Q1: 50個のフレーズを完璧に覚えるのにどのくらいかかりますか?</h4>
+                    <p style="line-height: 1.8; color: #555;">
+                        <strong>A:</strong> 個人差はありますが、30日間チャレンジに従って毎日練習すれば、1ヶ月で基本的な使用ができるようになります。ただし「完璧」には3-6ヶ月の継続的な実践が必要です。焦らず、確実に一つずつマスターしていきましょう。
+                    </p>
+                </div>
+                
+                <div style="background: white; padding: 20px; border-radius: 8px; margin: 15px 0;">
+                    <h4 style="color: #667eea; margin-bottom: 10px;">Q2: どのフレーズから始めるべきですか?</h4>
+                    <p style="line-height: 1.8; color: #555;">
+                        <strong>A:</strong> 第1章(日常生活の基本フレーズ)と第5章(困った時のフレーズ)から始めることをおすすめします。これらは使用頻度が最も高く、すぐに実践できる表現です。特にフレーズ1, 2, 3, 41, 42, 43は最優先でマスターしてください。
+                    </p>
+                </div>
+                
+                <div style="background: white; padding: 20px; border-radius: 8px; margin: 15px 0;">
+                    <h4 style="color: #667eea; margin-bottom: 10px;">Q3: 発音に自信がありません。どうすればいいですか?</h4>
+                    <p style="line-height: 1.8; color: #555;">
+                        <strong>A:</strong> 完璧な発音を目指すより、まずは「伝わる発音」を目指しましょう。Google翻訳やPapagoの音声機能で確認し、録音して自分の発音と比較してください。韓国人とのリアルな会話の中で、徐々に修正されていきます。発音の完璧さより、積極的に話すことの方が重要です。
+                    </p>
+                </div>
+                
+                <div style="background: white; padding: 20px; border-radius: 8px; margin: 15px 0;">
+                    <h4 style="color: #667eea; margin-bottom: 10px;">Q4: フレーズを覚えても、実際の会話で出てきません。</h4>
+                    <p style="line-height: 1.8; color: #555;">
+                        <strong>A:</strong> これは非常によくある問題です。解決策は「状況と表現の結びつけ」です。フレーズを暗記するのではなく、具体的な状況(レストランで注文する、友達に挨拶するなど)を頭の中で映像として想像しながら練習してください。また、実際にその状況になる前に、事前に「今日使うフレーズ」を決めておくことも効果的です。
+                    </p>
+                </div>
+                
+                <div style="background: white; padding: 20px; border-radius: 8px; margin: 15px 0;">
+                    <h4 style="color: #667eea; margin-bottom: 10px;">Q5: この50フレーズは本当に日常会話で使える表現ですか?</h4>
+                    <p style="line-height: 1.8; color: #555;">
+                        <strong>A:</strong> はい、これらのフレーズをマスターすれば、日常会話の基本部分をカバーできます。これらは韓国人が毎日使う、まさに「会話の核」となる表現です。ただし、これはあくまで「会話の土台」です。この50フレーズを完璧に使えるようになったら、各フレーズの応用バリエーションを増やしていきましょう。最初の50フレーズが確実に使えることが、次のステップへの最短ルートです。
+                    </p>
+                </div>
+                
+                <div style="background: white; padding: 20px; border-radius: 8px; margin: 15px 0;">
+                    <h4 style="color: #667eea; margin-bottom: 10px;">Q6: 忙しくて毎日練習する時間がありません。</h4>
+                    <p style="line-height: 1.8; color: #555;">
+                        <strong>A:</strong> 1日5分でも構いません。通勤時間、お風呂の中、寝る前など、隙間時間を活用してください。「完璧に長時間」よりも「短時間でも毎日継続」の方が効果的です。朝起きた時に1フレーズ、夜寝る前に1フレーズだけでも、確実に前進します。
+                    </p>
+                </div>
+            </div>
+
+            <!-- 最後のエールメッセージ -->
+            <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 50px 30px; border-radius: 8px; margin-top: 30px; text-align: center;">
+                <h2 style="font-size: 2em; margin-bottom: 25px;">あなたの韓国語学習の旅を応援しています</h2>
+                <p style="font-size: 1.2em; line-height: 2; max-width: 800px; margin: 0 auto 30px auto;">
+                    1年以上韓国語を勉強してきたあなたには、すでに基礎知識があります。<br>
+                    足りないのは「知識」ではなく「使う練習」です。<br><br>
+                    この50フレーズを、毎日少しずつ、確実に自分のものにしてください。<br>
+                    30日後、あなたは必ず変化を実感できるはずです。<br><br>
+                    完璧を目指さず、まずは「伝わること」を目指しましょう。<br>
+                    間違いは成長のチャンス。恐れずに、どんどん使ってください。
+                </p>
+                <div style="border-top: 2px solid rgba(255,255,255,0.3); padding-top: 30px; margin-top: 30px;">
+                    <p style="font-size: 1.4em; font-weight: 600; margin-bottom: 15px;">함께 힘내요!</p>
+                    <p style="font-size: 1.1em; opacity: 0.9;">(一緒に頑張りましょう!)</p>
+                </div>
+            </div>
+
+            <!-- フッター -->
+            <div style="text-align: center; padding: 30px; color: #999; font-size: 0.9em;">
+                <p>Copyright © 2025 Nico. All Rights Reserved.
+</p>
+                <p style="margin-top: 10px;">あなたの韓国語会話力向上を心から願っています</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // スムーズスクロール機能
+        document.addEventListener('DOMContentLoaded', function() {
+            // 全ての目次リンクにスムーズスクロールを適用
+            const tocLinks = document.querySelectorAll('.toc-list li');
+            tocLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    const targetId = this.getAttribute('onclick').match(/'([^']+)'/)[1];
+                    const targetElement = document.getElementById(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+```

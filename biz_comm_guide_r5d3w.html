@@ -1,0 +1,2862 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="robots" content="noindex, nofollow">
+
+    <title>韓国取引先との円滑なコミュニケーション実践ガイド</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Yu Mincho', 'YuMincho', 'Hiragino Mincho ProN', 'Hiragino Mincho Pro', 'HG明朝E', 'MS P明朝', 'MS 明朝', serif;
+            line-height: 1.9;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e8edf2 100%);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            border-radius: 2px;
+        }
+
+        .cover {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 80px 50px;
+            text-align: center;
+            border-bottom: 4px solid #d4af37;
+        }
+
+        .cover h1 {
+            font-size: 2.2em;
+            margin-bottom: 20px;
+            font-weight: normal;
+            letter-spacing: 3px;
+            line-height: 1.5;
+        }
+
+        .cover .subtitle {
+            font-size: 1.1em;
+            opacity: 0.9;
+            margin-top: 20px;
+            font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif;
+            text-align: center;
+        }
+
+        .content {
+            padding: 50px;
+        }
+
+        .toc {
+            background: #f8f9fa;
+            padding: 40px;
+            margin: 40px 0;
+            border-left: 4px solid #1e3c72;
+        }
+
+        .toc h2 {
+            font-size: 1.5em;
+            margin-bottom: 25px;
+            color: #1e3c72;
+        }
+
+        .toc ul {
+            list-style: none;
+        }
+
+        .toc li {
+            padding: 12px 0;
+            border-bottom: 1px solid #e0e0e0;
+            font-family: 'Hiragino Sans', sans-serif;
+        }
+
+        .toc li:last-child {
+            border-bottom: none;
+        }
+
+        .toc a {
+            color: #2c3e50;
+            text-decoration: none;
+            transition: color 0.3s;
+            display: block;
+        }
+
+        .toc a:hover {
+            color: #1e3c72;
+            padding-left: 10px;
+        }
+
+        .chapter {
+            margin: 60px 0;
+            page-break-before: always;
+        }
+
+        .chapter-title {
+            font-size: 2em;
+            color: #1e3c72;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #d4af37;
+        }
+
+        .section {
+            margin: 40px 0;
+        }
+
+        .section-title {
+            font-size: 1.4em;
+            color: #2a5298;
+            margin: 30px 0 20px 0;
+            padding-left: 15px;
+            border-left: 4px solid #d4af37;
+        }
+
+        .subsection-title {
+            font-size: 1.2em;
+            color: #34495e;
+            margin: 25px 0 15px 0;
+            font-weight: bold;
+        }
+
+        p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+
+        .phrase-card {
+            background: #f8f9fa;
+            border-left: 4px solid #2a5298;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 4px 4px 0;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .phrase-card:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .korean {
+            font-size: 1.4em;
+            color: #1e3c72;
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-family: 'Malgun Gothic', 'Noto Sans KR', sans-serif;
+        }
+
+        .japanese {
+            font-size: 1em;
+            color: #555;
+            margin-top: 5px;
+        }
+
+        .note {
+            font-size: 0.95em;
+            color: #666;
+            font-style: italic;
+            margin-top: 8px;
+            padding-left: 10px;
+            border-left: 2px solid #d4af37;
+        }
+
+        .column {
+            background: linear-gradient(135deg, #fff8e1 0%, #ffe0b2 100%);
+            padding: 30px;
+            margin: 30px 0;
+            border-radius: 4px;
+            border: 2px solid #d4af37;
+        }
+
+        .column-title {
+            font-size: 1.2em;
+            color: #bf360c;
+            margin-bottom: 15px;
+            font-weight: bold;
+            font-family: 'Hiragino Sans', sans-serif;
+        }
+
+        .column-title::before {
+            content: "💡 ";
+        }
+
+        .example {
+            background: #e3f2fd;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+            border-left: 4px solid #2196f3;
+        }
+
+        .example-title {
+            font-weight: bold;
+            color: #1565c0;
+            margin-bottom: 10px;
+            font-family: 'Hiragino Sans', sans-serif;
+        }
+
+        .dialogue {
+            margin: 10px 0;
+            padding-left: 15px;
+        }
+
+        .dialogue-line {
+            margin: 8px 0;
+        }
+
+        .speaker {
+            font-weight: bold;
+            color: #1e3c72;
+        }
+
+        ul, ol {
+            margin: 15px 0 15px 30px;
+        }
+
+        li {
+            margin: 8px 0;
+        }
+
+        .tips-box {
+            background: #f1f8e9;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+            border-left: 4px solid #558b2f;
+        }
+
+        .tips-title {
+            font-weight: bold;
+            color: #558b2f;
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+        }
+
+        th {
+            background: #1e3c72;
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-family: 'Hiragino Sans', sans-serif;
+        }
+
+        td {
+            padding: 15px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        tr:hover {
+            background: #f5f5f5;
+        }
+
+        .intro-text {
+            font-size: 1.05em;
+            line-height: 2;
+            margin: 25px 0;
+            text-align: justify;
+        }
+
+        .emphasis {
+            color: #1e3c72;
+            font-weight: bold;
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+            .container {
+                box-shadow: none;
+            }
+            .chapter {
+                page-break-before: always;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .content, .cover {
+                padding: 30px 20px;
+            }
+            .cover h1 {
+                font-size: 1.6em;
+            }
+            .chapter-title {
+                font-size: 1.6em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 表紙 -->
+        <div class="cover">
+            <h1>韓国取引先との<br>円滑なコミュニケーション<br>実践ガイド</h1>
+            <p class="subtitle">初級〜初中級レベルでビジネスを前に進める</p>
+            <p class="subtitle">業種別対応フレーズ集付き</p>
+        </div>
+
+        <!-- 目次 -->
+        <div class="content">
+            <div class="toc">
+                <h2>目次</h2>
+                <ul>
+                    <li><a href="#intro">序章:この教材の使い方</a></li>
+                    <li><a href="#chapter1">第1章:メール・メッセージの基本構造とテンプレート</a></li>
+                    <li><a href="#chapter2">第2章:電話・オンライン会議での基本対応</a></li>
+                    <li><a href="#chapter3">第3章:来日時の接待・おもてなし表現</a></li>
+                    <li><a href="#chapter4">第4章:商談・打ち合わせでの実践表現</a></li>
+                    <li><a href="#chapter5">第5章:トラブル・クレーム時の初期対応</a></li>
+                    <li><a href="#chapter6">第6章:関係構築のための雑談力</a></li>
+                    <li><a href="#chapter7">第7章:業種別実践フレーズ集</a></li>
+                    <li><a href="#appendix">付録</a></li>
+                </ul>
+            </div>
+
+            <!-- 序章 -->
+            <div class="chapter" id="intro">
+                <h2 class="chapter-title">序章:この教材の使い方</h2>
+                
+                <p class="intro-text">この教材は、韓国企業を取引先に持つ日本のビジネスパーソンが、初級〜初中級レベルの韓国語で円滑なコミュニケーションを取れるようになることを目指して作られました。</p>
+
+                <div class="section">
+                    <h3 class="section-title">完璧な韓国語より大切なこと</h3>
+                    <p>ビジネスにおいて最も重要なのは、<span class="emphasis">相手との信頼関係を築き、業務を前に進めること</span>です。完璧な韓国語を話せなくても、以下のポイントを押さえれば、取引先と良好な関係を築くことができます。</p>
+                    
+                    <ul>
+                        <li><strong>誠意を示す</strong>:韓国語で話そうとする姿勢そのものが相手への敬意となります</li>
+                        <li><strong>明確に伝える</strong>:複雑な表現より、シンプルで確実に伝わる表現を選びます</li>
+                        <li><strong>確認を怠らない</strong>:理解できないことは必ず確認し、誤解を防ぎます</li>
+                        <li><strong>文化を尊重する</strong>:韓国のビジネス文化への理解を示します</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">この教材の特徴</h3>
+                    <p>本教材は実践重視の構成になっています。</p>
+                    
+                    <div class="tips-box">
+                        <div class="tips-title">学習のポイント</div>
+                        <ul>
+                            <li>すべての表現は実際のビジネスシーンで即使える実用的なものです</li>
+                            <li>カタカナ表記は使用せず、ハングルと日本語訳のみで構成しています</li>
+                            <li>各表現には使用場面と注意点を明記しています</li>
+                            <li>コピー&ペーストで使えるメールテンプレートも収録しています</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">韓国ビジネス文化の基礎知識</h3>
+                    <p>韓国のビジネス文化を理解することで、より円滑なコミュニケーションが可能になります。</p>
+
+                    <div class="column">
+                        <div class="column-title">文化理解のポイント</div>
+                        <p><strong>上下関係と敬語</strong><br>
+                        韓国では日本以上に上下関係が明確です。年齢や役職に応じた敬語の使い分けが重要で、初対面では丁寧な表現を使うことが基本です。</p>
+                        
+                        <p><strong>スピード感</strong><br>
+                        韓国のビジネスは日本よりスピーディーです。返信は早めに、決断も比較的早く求められる傾向があります。</p>
+                        
+                        <p><strong>関係性重視</strong><br>
+                        ビジネスの前に人間関係を築くことを重視します。食事や会食を通じた関係構築は日本以上に重要です。</p>
+                        
+                        <p><strong>直接的なコミュニケーション</strong><br>
+                        日本の「察する文化」と異なり、より直接的に意思を伝える傾向があります。曖昧な表現は避け、明確に伝えることが好まれます。</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">効果的な学習方法</h3>
+                    <ol>
+                        <li><strong>状況別に学ぶ</strong>:自分の業務で最も使う場面から優先的に学習しましょう</li>
+                        <li><strong>音読する</strong>:声に出して練習することで、実際の場面で自然に出てくるようになります</li>
+                        <li><strong>実践で使う</strong>:完璧を目指さず、まずは使ってみることが上達への近道です</li>
+                        <li><strong>フィードバックを得る</strong>:可能であれば、取引先からの反応を観察し、改善していきます</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- 第1章 -->
+            <div class="chapter" id="chapter1">
+                <h2 class="chapter-title">第1章:メール・メッセージの基本構造とテンプレート</h2>
+                
+                <p class="intro-text">ビジネスにおいて最も頻繁に使用するのがメールやメッセージでのコミュニケーションです。文章であれば時間をかけて確認でき、記録も残るため、韓国語初級者にとって最も取り組みやすいコミュニケーション手段と言えます。</p>
+
+                <div class="section">
+                    <h3 class="section-title">1-1. ビジネスメールの基本構造</h3>
+                    
+                    <h4 class="subsection-title">件名の書き方</h4>
+                    <p>件名は内容が一目で分かるよう、簡潔明瞭に書きます。</p>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">[문의] 제품 견적 요청</div>
+                        <div class="japanese">[問い合わせ] 製品見積もり依頼</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">[확인] 납품 일정 변경 건</div>
+                        <div class="japanese">[確認] 納品スケジュール変更の件</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">[보고] 10월 매출 현황</div>
+                        <div class="japanese">[報告] 10月売上状況</div>
+                    </div>
+
+                    <h4 class="subsection-title">書き出しの挨拶</h4>
+                    <p>メールの冒頭は必ず挨拶から始めます。時間帯や状況に応じて使い分けます。</p>
+
+                    <div class="phrase-card">
+                        <div class="korean">안녕하세요. ○○회사 ○○입니다.</div>
+                        <div class="japanese">こんにちは。○○会社の○○です。</div>
+                        <div class="note">最も一般的な書き出し。時間帯を問わず使えます。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">안녕하세요. 항상 신세를 지고 있습니다.</div>
+                        <div class="japanese">こんにちは。いつもお世話になっております。</div>
+                        <div class="note">継続的な取引関係がある場合に使います。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">안녕하세요. 처음 연락드립니다.</div>
+                        <div class="japanese">こんにちは。初めてご連絡いたします。</div>
+                        <div class="note">初回の連絡時に使用します。</div>
+                    </div>
+
+                    <h4 class="subsection-title">本文の基本構成</h4>
+                    <p>本文は目的を明確に、簡潔に書くことが重要です。</p>
+
+                    <div class="phrase-card">
+                        <div class="korean">○○ 건으로 연락드립니다.</div>
+                        <div class="japanese">○○の件でご連絡いたします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">아래 내용을 확인해 주시기 바랍니다.</div>
+                        <div class="japanese">以下の内容をご確認いただけますようお願いいたします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">첨부 파일을 참고해 주세요.</div>
+                        <div class="japanese">添付ファイルをご参照ください。</div>
+                    </div>
+
+                    <h4 class="subsection-title">結びの表現</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">답변 부탁드립니다.</div>
+                        <div class="japanese">ご返信をお願いいたします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">검토 후 회신 부탁드립니다.</div>
+                        <div class="japanese">ご検討の上、ご返信をお願いいたします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">좋은 하루 되세요.</div>
+                        <div class="japanese">良い一日をお過ごしください。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">감사합니다.</div>
+                        <div class="japanese">ありがとうございます。</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">1-2. 目的別メールテンプレート</h3>
+
+                    <h4 class="subsection-title">初回連絡・自己紹介</h4>
+                    <div class="example">
+                        <div class="example-title">テンプレート例</div>
+                        <p>안녕하세요. 일본 ○○회사의 ○○입니다.<br>
+                        처음 연락드립니다.<br><br>
+                        
+                        저희는 ○○을 제조/판매하는 회사입니다.<br>
+                        귀사의 ○○에 관심이 있어 연락드렸습니다.<br><br>
+                        
+                        자세한 내용을 논의하고 싶습니다.<br>
+                        시간 되실 때 회신 부탁드립니다.<br><br>
+                        
+                        감사합니다.</p>
+                        
+                        <p style="margin-top:15px; padding-top:15px; border-top:1px solid #ccc;">
+                        <strong>日本語訳:</strong><br>
+                        こんにちは。日本の○○会社の○○です。<br>
+                        初めてご連絡いたします。<br><br>
+                        
+                        私どもは○○を製造/販売している会社です。<br>
+                        御社の○○に関心があり、ご連絡いたしました。<br><br>
+                        
+                        詳細について話し合いたいと思います。<br>
+                        お時間のある時にご返信をお願いいたします。<br><br>
+                        
+                        ありがとうございます。</p>
+                    </div>
+
+                    <h4 class="subsection-title">謝罪・お詫び</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">죄송합니다.</div>
+                        <div class="japanese">申し訳ございません。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">늦어서 죄송합니다.</div>
+                        <div class="japanese">遅くなり申し訳ございません。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">확인이 늦어져서 죄송합니다.</div>
+                        <div class="japanese">確認が遅れて申し訳ございません。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">불편을 드려 죄송합니다.</div>
+                        <div class="japanese">ご迷惑をおかけして申し訳ございません。</div>
+                    </div>
+
+                    <h4 class="subsection-title">スケジュール調整</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">○월 ○일은 어떠세요?</div>
+                        <div class="japanese">○月○日はいかがでしょうか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">시간을 조율하고 싶습니다.</div>
+                        <div class="japanese">時間を調整したいと思います。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">일정을 변경해도 될까요?</div>
+                        <div class="japanese">スケジュールを変更してもよろしいでしょうか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">가능한 날짜를 알려주세요.</div>
+                        <div class="japanese">可能な日程を教えてください。</div>
+                    </div>
+
+                    <!-- ここに修正移動したコンテンツ -->
+                    <h4 class="subsection-title">問い合わせ・質問</h4>
+                    <div class="example">
+                        <div class="example-title">テンプレート例</div>
+                        <p>안녕하세요. 항상 감사합니다.<br>
+                        ○○ 건으로 문의드립니다.<br><br>
+                        
+                        아래 내용을 확인하고 싶습니다.<br>
+                        1. ○○○<br>
+                        2. ○○○<br><br>
+                        
+                        ○월 ○일까지 회신 주시면 감사하겠습니다.<br><br>
+                        
+                        잘 부탁드립니다.</p>
+                        
+                        <p style="margin-top:15px; padding-top:15px; border-top:1px solid #ccc;">
+                        <strong>日本語訳:</strong><br>
+                        こんにちは。いつもありがとうございます。<br>
+                        ○○の件でお問い合わせいたします。<br><br>
+                        
+                        以下の内容を確認したいと思います。<br>
+                        1. ○○○<br>
+                        2. ○○○<br><br>
+                        
+                        ○月○日までにご返信いただければ幸いです。<br><br>
+                        
+                        よろしくお願いいたします。</p>
+                    </div>
+
+                    <h4 class="subsection-title">見積もり依頼・発注</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">견적서를 요청드립니다.</div>
+                        <div class="japanese">見積書をお願いいたします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">아래 제품의 가격을 알려주세요.</div>
+                        <div class="japanese">以下の製品の価格を教えてください。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">○○개 주문하고 싶습니다.</div>
+                        <div class="japanese">○○個注文したいと思います。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">납기는 언제쯤 가능할까요?</div>
+                        <div class="japanese">納期はいつ頃可能でしょうか。</div>
+                    </div>
+
+                    <h4 class="subsection-title">確認・報告</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">○○을 확인했습니다.</div>
+                        <div class="japanese">○○を確認いたしました。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">내용을 검토했습니다.</div>
+                        <div class="japanese">内容を検討いたしました。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">진행 상황을 보고드립니다.</div>
+                        <div class="japanese">進捗状況をご報告いたします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">현재 ○○ 단계입니다.</div>
+                        <div class="japanese">現在○○の段階です。</div>
+                    </div>
+
+                    <h4 class="subsection-title">お礼・感謝</h4>
+                    <div class="example">
+                        <div class="example-title">テンプレート例</div>
+                        <p>안녕하세요.<br>
+                        어제는 바쁘신 중에도 시간을 내주셔서 감사합니다.<br><br>
+                        
+                        귀중한 의견을 많이 들을 수 있었습니다.<br>
+                        앞으로도 잘 부탁드립니다.<br><br>
+                        
+                        감사합니다.</p>
+                        
+                        <p style="margin-top:15px; padding-top:15px; border-top:1px solid #ccc;">
+                        <strong>日本語訳:</strong><br>
+                        こんにちは。<br>
+                        昨日はお忙しい中、お時間をいただきありがとうございました。<br><br>
+                        
+                        貴重なご意見を多く伺うことができました。<br>
+                        今後ともよろしくお願いいたします。<br><br>
+                        
+                        ありがとうございます。</p>
+                    </div>
+                    <!-- 移動コンテンツここまで -->
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">1-3. チャット(KakaoTalk等)での短文対応</h3>
+                    <p>韓国ではビジネスでもKakaoTalkなどのメッセージアプリを使うことが多くあります。メールより簡潔で、素早い返信が求められます。</p>
+
+                    <h4 class="subsection-title">即レスに使える短い返信</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">네, 알겠습니다.</div>
+                        <div class="japanese">はい、承知いたしました。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">확인했습니다.</div>
+                        <div class="japanese">確認しました。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">감사합니다.</div>
+                        <div class="japanese">ありがとうございます。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">잠시만 기다려 주세요.</div>
+                        <div class="japanese">少々お待ちください。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">확인 후 연락드리겠습니다.</div>
+                        <div class="japanese">確認後ご連絡いたします。</div>
+                    </div>
+
+                    <h4 class="subsection-title">丁寧さを保つ短文テクニック</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">네, 가능합니다.</div>
+                        <div class="japanese">はい、可能です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">죄송하지만 어렵습니다.</div>
+                        <div class="japanese">申し訳ございませんが、難しいです。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">내일까지 가능할까요?</div>
+                        <div class="japanese">明日まで可能でしょうか。</div>
+                    </div>
+
+                    <div class="column">
+                        <div class="column-title">メール文化の日韓差</div>
+                        <p><strong>返信スピード</strong><br>
+                        韓国では日本よりも早い返信が期待されます。特にチャットでは数時間以内の返信が望ましいとされています。すぐに回答できない場合も、「確認します」といった一報を入れると良いでしょう。</p>
+                        
+                        <p><strong>絵文字の使用</strong><br>
+                        ビジネスでも適度に絵文字を使用することがあります。親しい取引先であれば、簡単な絵文字(😊など)を使うことで、親近感を表現できます。ただし、初めての相手や正式な文書では控えめにします。</p>
+                        
+                        <p><strong>件名の重要性</strong><br>
+                        日本以上に件名で内容が分かることが重視されます。[確認][依頼][報告]などのタグを付けると、相手が優先順位をつけやすくなります。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 第2章 -->
+            <div class="chapter" id="chapter2">
+                <h2 class="chapter-title">第2章:電話・オンライン会議での基本対応</h2>
+                
+                <p class="intro-text">電話やオンライン会議は、メールと異なり即座の対応が求められます。完璧な韓国語を話せなくても、基本的なフレーズを押さえておけば、必要最低限のコミュニケーションは可能です。</p>
+
+                <div class="section">
+                    <h3 class="section-title">2-1. 電話の受け答え基本フレーズ</h3>
+
+                    <h4 class="subsection-title">電話を受ける</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">여보세요. ○○회사입니다.</div>
+                        <div class="japanese">もしもし。○○会社です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">무엇을 도와드릴까요?</div>
+                        <div class="japanese">どのようなご用件でしょうか。</div>
+                    </div>
+
+                    <h4 class="subsection-title">名乗る・確認する</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">저는 ○○회사의 ○○입니다.</div>
+                        <div class="japanese">私は○○会社の○○です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">실례지만 성함이 어떻게 되세요?</div>
+                        <div class="japanese">失礼ですが、お名前は何とおっしゃいますか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">어느 회사에서 걸어주셨나요?</div>
+                        <div class="japanese">どちらの会社からおかけいただいていますか。</div>
+                    </div>
+
+                    <h4 class="subsection-title">担当者に取り次ぐ</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">잠시만 기다려 주세요.</div>
+                        <div class="japanese">少々お待ちください。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">담당자에게 연결해 드리겠습니다.</div>
+                        <div class="japanese">担当者におつなぎいたします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">○○에게 바꿔 드리겠습니다.</div>
+                        <div class="japanese">○○に代わります。</div>
+                    </div>
+
+                    <h4 class="subsection-title">不在を伝える・折り返しを約束</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">죄송합니다. 지금 자리에 없습니다.</div>
+                        <div class="japanese">申し訳ございません。今席を外しております。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">회의 중입니다.</div>
+                        <div class="japanese">会議中です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">외근 중입니다.</div>
+                        <div class="japanese">外出中です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">전화 드리라고 전하겠습니다.</div>
+                        <div class="japanese">お電話するようお伝えいたします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">연락처를 남겨 주시겠어요?</div>
+                        <div class="japanese">ご連絡先をお伺いしてもよろしいでしょうか。</div>
+                    </div>
+
+                    <h4 class="subsection-title">聞き取れなかった時の対処</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">죄송합니다. 다시 한번 말씀해 주세요.</div>
+                        <div class="japanese">申し訳ございません。もう一度おっしゃっていただけますか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">천천히 말씀해 주시겠어요?</div>
+                        <div class="japanese">ゆっくりおっしゃっていただけますか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">잘 안 들립니다.</div>
+                        <div class="japanese">よく聞こえません。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">메일로 보내주실 수 있나요?</div>
+                        <div class="japanese">メールで送っていただけますか。</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">2-2. オンライン会議での必須表現</h3>
+
+                    <h4 class="subsection-title">会議開始時の挨拶</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">안녕하세요. 오늘 회의에 참석해 주셔서 감사합니다.</div>
+                        <div class="japanese">こんにちは。本日の会議にご参加いただきありがとうございます。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">시작하겠습니다.</div>
+                        <div class="japanese">始めさせていただきます。</div>
+                    </div>
+
+                    <h4 class="subsection-title">自己紹介</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">저는 일본 ○○회사의 ○○입니다.</div>
+                        <div class="japanese">私は日本の○○会社の○○です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">○○ 업무를 담당하고 있습니다.</div>
+                        <div class="japanese">○○業務を担当しております。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">만나서 반갑습니다.</div>
+                        <div class="japanese">お会いできて嬉しいです。</div>
+                    </div>
+
+                    <h4 class="subsection-title">音声・画面の確認</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">제 목소리가 들리시나요?</div>
+                        <div class="japanese">私の声が聞こえますか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">화면이 보이시나요?</div>
+                        <div class="japanese">画面が見えますか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">화면을 공유하겠습니다.</div>
+                        <div class="japanese">画面を共有いたします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">잘 안 들립니다.</div>
+                        <div class="japanese">よく聞こえません。</div>
+                    </div>
+
+                    <h4 class="subsection-title">質問する・意見を述べる</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">질문이 있습니다.</div>
+                        <div class="japanese">質問があります。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">하나 여쭤봐도 될까요?</div>
+                        <div class="japanese">一つお伺いしてもよろしいでしょうか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">제 의견을 말씀드려도 될까요?</div>
+                        <div class="japanese">私の意見を申し上げてもよろしいでしょうか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">저는 ○○라고 생각합니다.</div>
+                        <div class="japanese">私は○○と思います。</div>
+                    </div>
+
+                    <h4 class="subsection-title">確認・聞き返す</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">다시 한번 설명해 주시겠어요?</div>
+                        <div class="japanese">もう一度説明していただけますか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">○○이라는 의미인가요?</div>
+                        <div class="japanese">○○という意味でしょうか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">제가 이해한 게 맞나요?</div>
+                        <div class="japanese">私の理解で合っていますか。</div>
+                    </div>
+
+                    <h4 class="subsection-title">会議終了時の挨拶</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">오늘은 감사했습니다.</div>
+                        <div class="japanese">本日はありがとうございました。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">유익한 시간이었습니다.</div>
+                        <div class="japanese">有益な時間でした。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">다음에 또 연락드리겠습니다.</div>
+                        <div class="japanese">また改めてご連絡いたします。</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">2-3. 困った時の対処フレーズ</h3>
+                    <p>完璧に理解できなくても、正直に伝えることが信頼関係につながります。</p>
+
+                    <div class="phrase-card">
+                        <div class="korean">죄송합니다. 한국어가 서툴러서...</div>
+                        <div class="japanese">申し訳ございません。韓国語が不慣れで...</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">잘 이해하지 못했습니다.</div>
+                        <div class="japanese">よく理解できませんでした。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">시간을 좀 주시겠어요?</div>
+                        <div class="japanese">少しお時間をいただけますか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">확인 후 다시 연락드리겠습니다.</div>
+                        <div class="japanese">確認後、改めてご連絡いたします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">메일로 보내주실 수 있나요?</div>
+                        <div class="japanese">メールで送っていただけますか。</div>
+                    </div>
+
+                    <div class="column">
+                        <div class="column-title">オンライン会議のマナー</div>
+                        <p><strong>カメラON/OFF</strong><br>
+                        韓国ではカメラをONにすることが基本とされています。顔を見せることで信頼感が高まると考えられているためです。</p>
+                        
+                        <p><strong>発言のタイミング</strong><br>
+                        日本よりも積極的に発言することが好まれます。質問や意見がある時は、遠慮せずに発言の意思を示しましょう。</p>
+                        
+                        <p><strong>時間厳守</strong><br>
+                        開始時間は厳守が基本です。遅れる場合は事前に連絡を入れることが重要です。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 第3章 -->
+            <div class="chapter" id="chapter3">
+                <h2 class="chapter-title">第3章:来日時の接待・おもてなし表現</h2>
+                
+                <p class="intro-text">韓国の取引先が日本を訪れる際、温かくお迎えすることでビジネス関係がより強固になります。この章では、空港出迎えから食事、お見送りまでの基本表現を学びます。</p>
+
+                <div class="section">
+                    <h3 class="section-title">3-1. 空港・駅での出迎え</h3>
+
+                    <h4 class="subsection-title">到着ロビーでの挨拶</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">어서 오세요! 일본에 오신 것을 환영합니다.</div>
+                        <div class="japanese">ようこそ!日本へのご来日を歓迎します。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">여행은 어떠셨어요?</div>
+                        <div class="japanese">旅はいかがでしたか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">피곤하시죠?</div>
+                        <div class="japanese">お疲れでしょう。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">짐은 이것뿐인가요?</div>
+                        <div class="japanese">お荷物はこれだけですか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">제가 들어드리겠습니다.</div>
+                        <div class="japanese">私がお持ちいたします。</div>
+                    </div>
+
+                    <h4 class="subsection-title">移動中の会話</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">호텔까지 약 30분 정도 걸립니다.</div>
+                        <div class="japanese">ホテルまで約30分ほどかかります。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">일본은 처음이세요?</div>
+                        <div class="japanese">日本は初めてですか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">이번 방문은 며칠 동안인가요?</div>
+                        <div class="japanese">今回のご訪問は何日間ですか。</div>
+                    </div>
+
+                    <h4 class="subsection-title">ホテルまでの案内</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">호텔에 도착했습니다.</div>
+                        <div class="japanese">ホテルに到着しました。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">체크인 도와드리겠습니다.</div>
+                        <div class="japanese">チェックインをお手伝いいたします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">내일 ○시에 로비에서 만나겠습니다.</div>
+                        <div class="japanese">明日○時にロビーでお会いしましょう。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">필요한 게 있으면 언제든지 연락주세요.</div>
+                        <div class="japanese">必要なものがあればいつでもご連絡ください。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">푹 쉬세요.</div>
+                        <div class="japanese">ごゆっくりお休みください。</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">3-2. 食事の席でのコミュニケーション</h3>
+
+                    <h4 class="subsection-title">レストランでの案内</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">오늘은 일본 요리를 준비했습니다.</div>
+                        <div class="japanese">本日は日本料理をご用意いたしました。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">이 식당은 ○○로 유명합니다.</div>
+                        <div class="japanese">このお店は○○で有名です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">못 드시는 음식이 있나요?</div>
+                        <div class="japanese">召し上がれない食べ物はありますか。</div>
+                    </div>
+
+                    <h4 class="subsection-title">注文の手伝い</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">이것을 추천합니다.</div>
+                        <div class="japanese">これをおすすめします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">이 요리는 일본 전통 요리입니다.</div>
+                        <div class="japanese">この料理は日本の伝統料理です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">여러 가지 주문해서 나눠 먹을까요?</div>
+                        <div class="japanese">いろいろ注文して分け合いましょうか。</div>
+                    </div>
+
+                    <h4 class="subsection-title">乾杯・食事中の会話</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">건배!</div>
+                        <div class="japanese">乾杯!</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">맛있게 드세요.</div>
+                        <div class="japanese">どうぞ召し上がってください。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">입에 맞으세요?</div>
+                        <div class="japanese">お口に合いますか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">더 드시겠어요?</div>
+                        <div class="japanese">もっと召し上がりますか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">한국 음식이 그리우시겠어요.</div>
+                        <div class="japanese">韓国料理が恋しいでしょう。</div>
+                    </div>
+
+                    <h4 class="subsection-title">支払いの際の表現</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">오늘은 제가 대접하겠습니다.</div>
+                        <div class="japanese">本日は私がご馳走いたします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">이미 계산했습니다.</div>
+                        <div class="japanese">会計は（既に）済ませました。</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">3-3. 観光案内・お見送り</h3>
+
+                    <h4 class="subsection-title">観光スポットの簡単な紹介</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">여기가 유명한 ○○입니다.</div>
+                        <div class="japanese">ここが有名な○○です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">사진 찍어드릴까요?</div>
+                        <div class="japanese">お写真をお撮りしましょうか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">이곳은 ○○로 유명합니다.</div>
+                        <div class="japanese">ここは○○で有名です。</div>
+                    </div>
+
+                    <h4 class="subsection-title">お土産選びの手伝い</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">선물 사러 가실래요?</div>
+                        <div class="japanese">お土産を買いに行きますか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">이것이 인기 있는 상품입니다.</div>
+                        <div class="japanese">これが人気の商品です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">면세점은 이쪽입니다.</div>
+                        <div class="japanese">免税店はこちらです。</div>
+                    </div>
+
+                    <h4 class="subsection-title">帰国時のお見送り</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">벌써 떠나시는군요. 아쉽습니다.</div>
+                        <div class="japanese">もうお帰りなんですね。残念です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">조심히 가세요.</div>
+                        <div class="japanese">お気をつけてお帰りください。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">좋은 여행 되세요.</div>
+                        <div class="japanese">良いご旅行を。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">한국에서 다시 만나요.</div>
+                        <div class="japanese">韓国でまたお会いしましょう。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">다음에 또 일본에 오세요.</div>
+                        <div class="japanese">また日本にいらしてください。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">가족들에게 안부 전해주세요.</div>
+                        <div class="japanese">ご家族によろしくお伝えください。</div>
+                    </div>
+
+                    <div class="column">
+                        <div class="column-title">接待文化の違い</div>
+                        <p><strong>支払いについて</strong><br>
+                        韓国では招待した側が全額支払うことが一般的です。割り勘の文化はビジネスの場ではほとんどありません。日本側が招待する場合は、しっかりと支払う意思を示しましょう。</p>
+                        
+                        <p><strong>お酒について</strong><br>
+                        韓国ではビジネスの席でもお酒を飲む機会が多くあります。無理に飲む必要はありませんが、乾杯の際は参加することが望ましいです。飲めない場合は正直に伝えましょう。</p>
+                        
+                        <p><strong>二次会</strong><br>
+                        韓国では二次会、三次会が一般的です。時間が許す限り、付き合うことで関係性が深まります。ただし、翌日の予定がある場合は先に伝えておきましょう。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 第4章 -->
+            <div class="chapter" id="chapter4">
+                <h2 class="chapter-title">第4章:商談・打ち合わせでの実践表現</h2>
+                
+                <p class="intro-text">商談や打ち合わせは、ビジネスの成否を決める重要な場面です。完璧な韓国語でなくても、礼儀正しく、要点を明確に伝えることで、良好な関係を築くことができます。</p>
+
+                <div class="section">
+                    <h3 class="section-title">4-1. 訪問・来訪時の基本マナー表現</h3>
+
+                    <h4 class="subsection-title">初対面の挨拶</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">처음 뵙겠습니다. ○○회사의 ○○입니다.</div>
+                        <div class="japanese">初めまして。○○会社の○○です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">만나서 반갑습니다.</div>
+                        <div class="japanese">お会いできて嬉しいです。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">오늘 시간 내주셔서 감사합니다.</div>
+                        <div class="japanese">本日はお時間をいただきありがとうございます。</div>
+                    </div>
+
+                    <h4 class="subsection-title">名刺交換</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">명함 드리겠습니다.</div>
+                        <div class="japanese">名刺をお渡しいたします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">명함 주시겠어요?</div>
+                        <div class="japanese">名刺をいただけますか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">잘 부탁드립니다.</div>
+                        <div class="japanese">よろしくお願いいたします。</div>
+                    </div>
+
+                    <h4 class="subsection-title">会議室への案内・案内される</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">이쪽으로 오세요.</div>
+                        <div class="japanese">こちらへどうぞ。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">앉으세요.</div>
+                        <div class="japanese">お座りください。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">실례하겠습니다.</div>
+                        <div class="japanese">失礼いたします。</div>
+                    </div>
+
+                    <h4 class="subsection-title">お茶を出す・いただく</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">차 드시겠어요?</div>
+                        <div class="japanese">お茶を召し上がりますか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">커피와 차 중 어느 것을 드시겠어요?</div>
+                        <div class="japanese">コーヒーとお茶、どちらになさいますか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">감사합니다. 잘 마시겠습니다.</div>
+                        <div class="japanese">ありがとうございます。いただきます。</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">4-2. 商談での基本フレーズ</h3>
+
+                    <h4 class="subsection-title">会社・製品紹介の基本</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">저희 회사를 간단히 소개하겠습니다.</div>
+                        <div class="japanese">弊社を簡単にご紹介いたします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">저희는 ○○을 전문으로 하는 회사입니다.</div>
+                        <div class="japanese">私どもは○○を専門とする会社です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">이 제품은 ○○의 특징이 있습니다.</div>
+                        <div class="japanese">この製品は○○の特徴があります。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">자료를 준비했습니다.</div>
+                        <div class="japanese">資料をご用意いたしました。</div>
+                    </div>
+
+                    <h4 class="subsection-title">価格・条件の確認</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">가격은 어떻게 되나요?</div>
+                        <div class="japanese">価格はどのようになりますか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">수량에 따라 할인이 가능한가요?</div>
+                        <div class="japanese">数量によって割引は可能ですか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">납기는 얼마나 걸리나요?</div>
+                        <div class="japanese">納期はどのくらいかかりますか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">최소 주문 수량이 있나요?</div>
+                        <div class="japanese">最小注文数量はありますか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">지불 조건은 어떻게 되나요?</div>
+                        <div class="japanese">支払い条件はどのようになりますか。</div>
+                    </div>
+
+                    <h4 class="subsection-title">検討・相談の表現</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">사내에서 검토해 보겠습니다.</div>
+                        <div class="japanese">社内で検討してみます。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">상사와 상의한 후 연락드리겠습니다.</div>
+                        <div class="japanese">上司と相談の上、ご連絡いたします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">긍정적으로 검토하겠습니다.</div>
+                        <div class="japanese">前向きに検討いたします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">조금 더 시간이 필요합니다.</div>
+                        <div class="japanese">もう少し時間が必要です。</div>
+                    </div>
+
+                    <h4 class="subsection-title">次回の約束</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">다음 미팅은 언제가 좋으실까요?</div>
+                        <div class="japanese">次回のミーティングはいつがよろしいでしょうか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">일주일 후에 다시 연락드리겠습니다.</div>
+                        <div class="japanese">一週間後に改めてご連絡いたします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">계속 연락하면서 진행하겠습니다.</div>
+                        <div class="japanese">引き続き連絡を取りながら進めてまいります。</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">4-3. 工場見学・視察対応</h3>
+
+                    <h4 class="subsection-title">施設案内の基本表現</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">공장을 안내해 드리겠습니다.</div>
+                        <div class="japanese">工場をご案内いたします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">이곳이 생산 라인입니다.</div>
+                        <div class="japanese">こちらが生産ラインです。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">여기서 ○○을 제조합니다.</div>
+                        <div class="japanese">ここで○○を製造します。</div>
+                    </div>
+
+                    <h4 class="subsection-title">製造工程の簡単な説明</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">이 공정은 ○○을 하는 단계입니다.</div>
+                        <div class="japanese">この工程は○○をする段階です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">하루에 약 ○○개를 생산합니다.</div>
+                        <div class="japanese">一日に約○○個を生産します。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">품질 관리는 엄격하게 합니다.</div>
+                        <div class="japanese">品質管理は厳格に行っています。</div>
+                    </div>
+
+                    <h4 class="subsection-title">質問への対応</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">질문 있으세요?</div>
+                        <div class="japanese">ご質問はございますか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">확인해 보고 답변드리겠습니다.</div>
+                        <div class="japanese">確認の上、お答えいたします。</div>
+                    </div>
+
+                    <h4 class="subsection-title">安全に関する注意</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">안전모를 착용해 주세요.</div>
+                        <div class="japanese">ヘルメットを着用してください。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">이 구역은 출입이 제한됩니다.</div>
+                        <div class="japanese">このエリアは立ち入りが制限されています。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">사진 촬영은 금지되어 있습니다.</div>
+                        <div class="japanese">写真撮影は禁止されています。</div>
+                    </div>
+
+                    <div class="column">
+                        <div class="column-title">商談のスタイル</div>
+                        <p><strong>意思決定のスピード</strong><br>
+                        韓国企業は日本企業に比べて意思決定が早い傾向があります。その場で回答を求められることもありますが、日本側の事情を説明して時間をもらうことも可能です。</p>
+                        
+                        <p><strong>階層構造</strong><br>
+                        韓国企業では上下関係が明確で、トップダウンの意思決定が一般的です。決定権のある人物との関係構築が重要です。</p>
+                        
+                        <p><strong>直接的なコミュニケーション</strong><br>
+                        日本のように曖昧な表現ではなく、明確に意思を伝えることが好まれます。できることとできないことをはっきり伝えましょう。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 第5章 -->
+            <div class="chapter" id="chapter5">
+                <h2 class="chapter-title">第5章:トラブル・クレーム時の初期対応</h2>
+                
+                <p class="intro-text">ビジネスにおいてトラブルやクレームは避けられないものです。重要なのは、初期対応を迅速かつ誠実に行うことです。完璧な韓国語でなくても、誠意を持って対応する姿勢が信頼回復につながります。</p>
+
+                <div class="section">
+                    <h3 class="section-title">5-1. 謝罪の基本表現</h3>
+
+                    <h4 class="subsection-title">謝罪の度合い別フレーズ</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">죄송합니다.</div>
+                        <div class="japanese">申し訳ございません。</div>
+                        <div class="note">最も一般的な謝罪表現</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">정말 죄송합니다.</div>
+                        <div class="japanese">本当に申し訳ございません。</div>
+                        <div class="note">より強い謝罪</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">대단히 죄송합니다.</div>
+                        <div class="japanese">誠に申し訳ございません。</div>
+                        <div class="note">非常に丁重な謝罪</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">심려를 끼쳐드려 죄송합니다.</div>
+                        <div class="japanese">ご心配をおかけして申し訳ございません。</div>
+                    </div>
+
+                    <h4 class="subsection-title">状況を説明する</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">상황을 설명드리겠습니다.</div>
+                        <div class="japanese">状況をご説明いたします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">○○로 인해 문제가 발생했습니다.</div>
+                        <div class="japanese">○○により問題が発生いたしました。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">현재 원인을 조사 중입니다.</div>
+                        <div class="japanese">現在原因を調査中です。</div>
+                    </div>
+
+                    <h4 class="subsection-title">原因を伝える</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">저희 측의 실수입니다.</div>
+                        <div class="japanese">私どもの手違いです。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">확인이 부족했습니다.</div>
+                        <div class="japanese">確認が不足しておりました。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">소통에 문제가 있었습니다.</div>
+                        <div class="japanese">コミュニケーションに問題がございました。</div>
+                    </div>
+
+                    <h4 class="subsection-title">解決策を提示する</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">즉시 해결하겠습니다.</div>
+                        <div class="japanese">即座に解決いたします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">대체품을 보내드리겠습니다.</div>
+                        <div class="japanese">代替品をお送りいたします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">비용은 저희가 부담하겠습니다.</div>
+                        <div class="japanese">費用は私どもが負担いたします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">재발 방지에 최선을 다하겠습니다.</div>
+                        <div class="japanese">再発防止に最善を尽くします。</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">5-2. よくあるトラブル別対応</h3>
+
+                    <h4 class="subsection-title">納期遅延</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">납품이 지연되어 죄송합니다.</div>
+                        <div class="japanese">納品が遅れて申し訳ございません。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">예상보다 시간이 더 걸리고 있습니다.</div>
+                        <div class="japanese">予想より時間がかかっております。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">○월 ○일까지는 반드시 납품하겠습니다.</div>
+                        <div class="japanese">○月○日までには必ず納品いたします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">진행 상황을 계속 알려드리겠습니다.</div>
+                        <div class="japanese">進捗状況を随時お知らせいたします。</div>
+                    </div>
+
+                    <h4 class="subsection-title">品質不良・不良品</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">불량품이 발생해서 죄송합니다.</div>
+                        <div class="japanese">不良品が発生して申し訳ございません。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">즉시 교환해 드리겠습니다.</div>
+                        <div class="japanese">すぐに交換いたします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">전수 검사를 실시하겠습니다.</div>
+                        <div class="japanese">全数検査を実施いたします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">품질 관리를 강화하겠습니다.</div>
+                        <div class="japanese">品質管理を強化いたします。</div>
+                    </div>
+
+                    <h4 class="subsection-title">誤発送・数量違い</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">발송 오류가 있었습니다.</div>
+                        <div class="japanese">発送ミスがございました。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">수량이 맞지 않아 죄송합니다.</div>
+                        <div class="japanese">数量が合わず申し訳ございません。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">부족분을 급히 보내드리겠습니다.</div>
+                        <div class="japanese">不足分を急いでお送りいたします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">잘못 보낸 제품은 회수하겠습니다.</div>
+                        <div class="japanese">誤って送った製品は回収いたします。</div>
+                    </div>
+
+                    <h4 class="subsection-title">価格・請求の間違い</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">청구서에 오류가 있었습니다.</div>
+                        <div class="japanese">請求書に誤りがございました。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">정정한 청구서를 보내드리겠습니다.</div>
+                        <div class="japanese">訂正した請求書をお送りいたします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">차액은 다음 거래에서 조정하겠습니다.</div>
+                        <div class="japanese">差額は次回取引で調整いたします。</div>
+                    </div>
+
+                    <h4 class="subsection-title">連絡ミス・行き違い</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">의사소통에 문제가 있었습니다.</div>
+                        <div class="japanese">意思疎通に問題がございました。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">제대로 전달되지 않았습니다.</div>
+                        <div class="japanese">きちんと伝わっておりませんでした。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">앞으로는 더욱 명확히 확인하겠습니다.</div>
+                        <div class="japanese">今後はより明確に確認いたします。</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">5-3. クレーム対応の流れ</h3>
+
+                    <h4 class="subsection-title">傾聴の姿勢を示す</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">말씀해 주세요.</div>
+                        <div class="japanese">おっしゃってください。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">자세히 듣고 싶습니다.</div>
+                        <div class="japanese">詳しくお聞きしたいです。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">불편을 드려 죄송합니다.</div>
+                        <div class="japanese">ご不便をおかけして申し訳ございません。</div>
+                    </div>
+
+                    <h4 class="subsection-title">事実確認をする</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">상황을 확인하겠습니다.</div>
+                        <div class="japanese">状況を確認いたします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">언제 발생한 문제인가요?</div>
+                        <div class="japanese">いつ発生した問題でしょうか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">사진을 보내주실 수 있나요?</div>
+                        <div class="japanese">写真を送っていただけますか。</div>
+                    </div>
+
+                    <h4 class="subsection-title">社内に持ち帰る</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">사내에서 논의하겠습니다.</div>
+                        <div class="japanese">社内で協議いたします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">상사와 상의 후 연락드리겠습니다.</div>
+                        <div class="japanese">上司と相談の上、ご連絡いたします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">○일 이내에 답변드리겠습니다.</div>
+                        <div class="japanese">○日以内にお返事いたします。</div>
+                    </div>
+
+                    <h4 class="subsection-title">解決報告をする</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">문제를 해결했습니다.</div>
+                        <div class="japanese">問題を解決いたしました。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">이렇게 대응하겠습니다.</div>
+                        <div class="japanese">このように対応いたします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">만족하셨으면 좋겠습니다.</div>
+                        <div class="japanese">ご満足いただければ幸いです。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">앞으로도 잘 부탁드립니다.</div>
+                        <div class="japanese">今後ともよろしくお願いいたします。</div>
+                    </div>
+
+                    <div class="column">
+                        <div class="column-title">クレーム対応の文化差</div>
+                        <p><strong>謝罪の重み</strong><br>
+                        韓国では謝罪が責任の全面的な認定と受け取られることがあります。事実確認前の過度な謝罪は避け、まずは誠意を示すことに重点を置きましょう。</p>
+                        
+                        <p><strong>補償の考え方</strong><br>
+                        韓国では具体的な補償を早期に提示することが好まれます。「検討します」だけでなく、可能な範囲で具体的な解決策を示すことが重要です。</p>
+                        
+                        <p><strong>スピード重視</strong><br>
+                        日本よりも迅速な対応が求められます。すぐに解決できなくても、進捗状況をこまめに報告することで信頼を維持できます。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 第6章 -->
+            <div class="chapter" id="chapter6">
+                <h2 class="chapter-title">第6章:関係構築のための雑談力</h2>
+                
+                <p class="intro-text">ビジネスにおいて、業務の話だけでなく、日常的な会話も重要です。雑談を通じて相手との距離を縮めることで、より良い関係を築くことができます。</p>
+
+                <div class="section">
+                    <h3 class="section-title">6-1. 天気・季節の話題</h3>
+
+                    <h4 class="subsection-title">四季の表現</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">오늘 날씨가 좋네요.</div>
+                        <div class="japanese">今日は天気がいいですね。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">비가 오네요.</div>
+                        <div class="japanese">雨が降っていますね。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">춥지 않으세요?</div>
+                        <div class="japanese">寒くないですか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">더운데 괜찮으세요?</div>
+                        <div class="japanese">暑いですが大丈夫ですか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">벚꽃이 예쁘네요.</div>
+                        <div class="japanese">桜がきれいですね。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">단풍 구경 가셨어요?</div>
+                        <div class="japanese">紅葉を見に行かれましたか。</div>
+                    </div>
+
+                    <h4 class="subsection-title">天気の話から広げる会話</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">한국도 지금 추울까요?</div>
+                        <div class="japanese">韓国も今寒いでしょうか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">일본은 습해서 더 덥게 느껴질 거예요.</div>
+                        <div class="japanese">日本は湿度が高いのでより暑く感じるでしょう。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">계절이 참 좋은 때네요.</div>
+                        <div class="japanese">いい季節ですね。</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">6-2. 韓国の文化・祝日の話題</h3>
+
+                    <h4 class="subsection-title">主要な祝日と挨拶</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">설날 잘 보내셨어요?</div>
+                        <div class="japanese">旧正月はよく過ごされましたか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">추석에는 고향에 가세요?</div>
+                        <div class="japanese">秋夕には故郷に帰られますか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">한국의 명절에 대해 알고 싶어요.</div>
+                        <div class="japanese">韓国の祝日について知りたいです。</div>
+                    </div>
+
+                    <h4 class="subsection-title">伝統文化への関心を示す</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">한복이 아름답네요.</div>
+                        <div class="japanese">韓服が美しいですね。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">한국 드라마를 자주 봅니다.</div>
+                        <div class="japanese">韓国ドラマをよく見ます。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">K-POP을 좋아합니다.</div>
+                        <div class="japanese">K-POPが好きです。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">한국 역사에 관심이 있어요.</div>
+                        <div class="japanese">韓国の歴史に興味があります。</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">6-3. 食事・趣味の話題</h3>
+
+                    <h4 class="subsection-title">韓国料理について話す</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">한국 음식을 좋아합니다.</div>
+                        <div class="japanese">韓国料理が好きです。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">김치찌개를 자주 먹어요.</div>
+                        <div class="japanese">キムチチゲをよく食べます。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">불고기가 맛있어요.</div>
+                        <div class="japanese">プルコギがおいしいです。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">매운 음식을 잘 못 먹어요.</div>
+                        <div class="japanese">辛い食べ物はあまり得意ではありません。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">소주를 마셔본 적 있어요.</div>
+                        <div class="japanese">焼酎を飲んだことがあります。</div>
+                    </div>
+
+                    <h4 class="subsection-title">日本の食文化を紹介する</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">일본 음식 중에 뭘 좋아하세요?</div>
+                        <div class="japanese">日本料理の中で何がお好きですか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">이 음식은 일본 전통 요리입니다.</div>
+                        <div class="japanese">この料理は日本の伝統料理です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">일본 술을 좋아하세요?</div>
+                        <div class="japanese">日本酒はお好きですか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">라멘 집을 추천해 드릴게요.</div>
+                        <div class="japanese">ラーメン店をおすすめします。</div>
+                    </div>
+
+                    <h4 class="subsection-title">趣味の話で距離を縮める</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">취미가 뭐예요?</div>
+                        <div class="japanese">趣味は何ですか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">주말에는 뭐 하세요?</div>
+                        <div class="japanese">週末は何をされますか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">저도 그거 좋아해요.</div>
+                        <div class="japanese">私もそれが好きです。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">골프 치세요?</div>
+                        <div class="japanese">ゴルフをされますか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">여행을 자주 가세요?</div>
+                        <div class="japanese">旅行によく行かれますか。</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">6-4. 相手を褒める・関心を示す表現</h3>
+
+                    <h4 class="subsection-title">仕事への評価</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">대단하시네요.</div>
+                        <div class="japanese">素晴らしいですね。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">정말 전문가시네요.</div>
+                        <div class="japanese">本当にプロフェッショナルですね。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">일을 정말 잘하시네요.</div>
+                        <div class="japanese">お仕事が本当にお上手ですね。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">많이 배웠습니다.</div>
+                        <div class="japanese">たくさん学びました。</div>
+                    </div>
+
+                    <h4 class="subsection-title">韓国語を褒められた時の返し</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">아직 부족합니다.</div>
+                        <div class="japanese">まだまだです。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">더 열심히 공부하겠습니다.</div>
+                        <div class="japanese">もっと一生懸命勉強します。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">감사합니다. 칭찬해 주셔서요.</div>
+                        <div class="japanese">ありがとうございます。褒めていただいて。</div>
+                    </div>
+
+                    <h4 class="subsection-title">相手の国・文化への敬意</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">한국 문화에 관심이 많아요.</div>
+                        <div class="japanese">韓国文化に関心が多いです。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">한국에서 많이 배우고 싶어요.</div>
+                        <div class="japanese">韓国からたくさん学びたいです。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">한국 기업은 정말 대단해요.</div>
+                        <div class="japanese">韓国企業は本当に素晴らしいです。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">한국의 발전 속도가 놀랍습니다.</div>
+                        <div class="japanese">韓国の発展速度が驚くべきです。</div>
+                    </div>
+
+                    <div class="column">
+                        <div class="column-title">スモールトークの重要性</div>
+                        <p><strong>ビジネス前の関係構築</strong><br>
+                        韓国では本題に入る前の雑談が重視されます。いきなり業務の話を始めるのではなく、相手の様子を伺い、関係を温めることが大切です。</p>
+                        
+                        <p><strong>食事の席の活用</strong><br>
+                        韓国ではビジネスの重要な話が食事の席で行われることも多くあります。リラックスした雰囲気での会話を通じて、信頼関係が深まります。</p>
+                        
+                        <p><strong>個人的な関心</strong><br>
+                        ビジネスパートナーとしてだけでなく、一人の人間として相手に関心を示すことが、長期的な関係構築につながります。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 第7章 -->
+            <div class="chapter" id="chapter7">
+                <h2 class="chapter-title">第7章:業種別実践フレーズ集</h2>
+                
+                <p class="intro-text">ここでは各業種特有の表現をまとめています。自分の業種に関連する部分を重点的に学習してください。</p>
+
+                <div class="section">
+                    <h3 class="section-title">7-1. 製造業</h3>
+
+                    <h4 class="subsection-title">発注・受注の表現</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">주문서를 보내드렸습니다.</div>
+                        <div class="japanese">注文書をお送りいたしました。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">주문을 확인했습니다.</div>
+                        <div class="japanese">ご注文を確認いたしました。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">수량을 늘릴 수 있나요?</div>
+                        <div class="japanese">数量を増やすことはできますか。</div>
+                    </div>
+
+                    <h4 class="subsection-title">仕様・図面の確認</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">사양서를 확인해 주세요.</div>
+                        <div class="japanese">仕様書をご確認ください。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">도면을 수정했습니다.</div>
+                        <div class="japanese">図面を修正いたしました。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">치수가 맞나요?</div>
+                        <div class="japanese">寸法は合っていますか。</div>
+                    </div>
+
+                    <h4 class="subsection-title">品質管理用語</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">품질 검사를 실시합니다.</div>
+                        <div class="japanese">品質検査を実施します。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">불량률이 낮습니다.</div>
+                        <div class="japanese">不良率が低いです。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">샘플을 보내드리겠습니다.</div>
+                        <div class="japanese">サンプルをお送りいたします。</div>
+                    </div>
+
+                    <h4 class="subsection-title">納期調整</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">납기를 앞당길 수 있나요?</div>
+                        <div class="japanese">納期を早めることはできますか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">생산 일정을 조정하겠습니다.</div>
+                        <div class="japanese">生産スケジュールを調整いたします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">○월 ○일 출하 예정입니다.</div>
+                        <div class="japanese">○月○日出荷予定です。</div>
+                    </div>
+
+                    <h4 class="subsection-title">検査・検収</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">검수를 부탁드립니다.</div>
+                        <div class="japanese">検収をお願いいたします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">검사 성적서를 첨부합니다.</div>
+                        <div class="japanese">検査成績書を添付します。</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">7-2. 貿易・物流業</h3>
+
+                    <h4 class="subsection-title">輸出入手続き</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">수출 서류를 준비했습니다.</div>
+                        <div class="japanese">輸出書類を準備いたしました。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">인보이스를 보내드립니다.</div>
+                        <div class="japanese">インボイスをお送りします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">원산지 증명서가 필요합니다.</div>
+                        <div class="japanese">原産地証明書が必要です。</div>
+                    </div>
+
+                    <h4 class="subsection-title">通関・関税</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">통관 절차를 진행 중입니다.</div>
+                        <div class="japanese">通関手続きを進めております。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">관세는 얼마인가요?</div>
+                        <div class="japanese">関税はいくらですか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">통관이 완료되었습니다.</div>
+                        <div class="japanese">通関が完了いたしました。</div>
+                    </div>
+
+                    <h4 class="subsection-title">配送・追跡</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">배송 예정일은 ○월 ○일입니다.</div>
+                        <div class="japanese">配送予定日は○月○日です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">추적 번호를 알려드립니다.</div>
+                        <div class="japanese">追跡番号をお知らせします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">화물이 항구에 도착했습니다.</div>
+                        <div class="japanese">貨物が港に到着しました。</div>
+                    </div>
+
+                    <h4 class="subsection-title">在庫確認</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">재고를 확인하겠습니다.</div>
+                        <div class="japanese">在庫を確認いたします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">현재 재고가 부족합니다.</div>
+                        <div class="japanese">現在在庫が不足しております。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">입고 예정입니다.</div>
+                        <div class="japanese">入荷予定です。</div>
+                    </div>
+
+                    <h4 class="subsection-title">保険・補償</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">보험에 가입했습니다.</div>
+                        <div class="japanese">保険に加入いたしました。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">파손된 경우 보상 가능합니다.</div>
+                        <div class="japanese">破損した場合は補償可能です。</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">7-3. IT・Web業</h3>
+
+                    <h4 class="subsection-title">プロジェクト管理</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">프로젝트를 시작하겠습니다.</div>
+                        <div class="japanese">プロジェクトを開始いたします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">마일스톤을 설정했습니다.</div>
+                        <div class="japanese">マイルストーンを設定いたしました。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">일정이 지연되고 있습니다.</div>
+                        <div class="japanese">スケジュールが遅れております。</div>
+                    </div>
+
+                    <h4 class="subsection-title">仕様確認・変更</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">요구사항을 확인했습니다.</div>
+                        <div class="japanese">要求事項を確認いたしました。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">사양 변경이 필요합니다.</div>
+                        <div class="japanese">仕様変更が必要です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">추가 개발 비용이 발생합니다.</div>
+                        <div class="japanese">追加開発費用が発生します。</div>
+                    </div>
+
+                    <h4 class="subsection-title">バグ報告</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">버그를 발견했습니다.</div>
+                        <div class="japanese">バグを発見しました。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">수정 중입니다.</div>
+                        <div class="japanese">修正中です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">패치를 배포했습니다.</div>
+                        <div class="japanese">パッチを配布しました。</div>
+                    </div>
+
+                    <h4 class="subsection-title">進捗報告</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">현재 ○% 완료되었습니다.</div>
+                        <div class="japanese">現在○%完了しました。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">예정대로 진행 중입니다.</div>
+                        <div class="japanese">予定通り進行中です。</div>
+                    </div>
+
+                    <h4 class="subsection-title">テスト・リリース</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">테스트를 시작합니다.</div>
+                        <div class="japanese">テストを開始します。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">베타 버전을 공개했습니다.</div>
+                        <div class="japanese">ベータ版を公開しました。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">정식 출시 예정입니다.</div>
+                        <div class="japanese">正式リリース予定です。</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">7-4. 卸売・小売業</h3>
+
+                    <h4 class="subsection-title">商品カタログの説明</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">신제품을 소개합니다.</div>
+                        <div class="japanese">新製品をご紹介します。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">카탈로그를 보내드립니다.</div>
+                        <div class="japanese">カタログをお送りします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">이 상품이 인기 있습니다.</div>
+                        <div class="japanese">この商品が人気です。</div>
+                    </div>
+
+                    <h4 class="subsection-title">価格交渉</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">가격 협상이 가능한가요?</div>
+                        <div class="japanese">価格交渉は可能ですか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">대량 구매 시 할인됩니다.</div>
+                        <div class="japanese">大量購入時は割引されます。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">특별 가격을 제안합니다.</div>
+                        <div class="japanese">特別価格をご提案します。</div>
+                    </div>
+
+                    <h4 class="subsection-title">最小発注数</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">최소 주문 수량은 ○개입니다.</div>
+                        <div class="japanese">最小注文数量は○個です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">소량 주문도 가능합니다.</div>
+                        <div class="japanese">少量注文も可能です。</div>
+                    </div>
+
+                    <h4 class="subsection-title">季節商品の提案</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">시즌 상품을 추천합니다.</div>
+                        <div class="japanese">シーズン商品をおすすめします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">여름 신상품이 나왔습니다.</div>
+                        <div class="japanese">夏の新商品が出ました。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">한정판입니다.</div>
+                        <div class="japanese">限定版です。</div>
+                    </div>
+
+                    <h4 class="subsection-title">在庫・返品</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">재고가 충분합니다.</div>
+                        <div class="japanese">在庫が十分にあります。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">품절되었습니다.</div>
+                        <div class="japanese">品切れになりました。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">반품 정책을 확인해 주세요.</div>
+                        <div class="japanese">返品ポリシーをご確認ください。</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">7-5. 不動産・建築業</h3>
+
+                    <h4 class="subsection-title">物件情報</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">매물 정보를 보내드립니다.</div>
+                        <div class="japanese">物件情報をお送りします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">위치가 좋습니다.</div>
+                        <div class="japanese">立地が良いです。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">면적은 ○평방미터입니다.</div>
+                        <div class="japanese">面積は○平方メートルです。</div>
+                    </div>
+
+                    <h4 class="subsection-title">契約条件</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">계약 조건을 협의하겠습니다.</div>
+                        <div class="japanese">契約条件を協議いたします。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">계약서를 준비했습니다.</div>
+                        <div class="japanese">契約書を準備いたしました。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">보증금은 ○원입니다.</div>
+                        <div class="japanese">保証金は○ウォンです。</div>
+                    </div>
+
+                    <h4 class="subsection-title">工事スケジュール</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">공사를 시작합니다.</div>
+                        <div class="japanese">工事を開始します。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">완공 예정일은 ○월입니다.</div>
+                        <div class="japanese">完工予定日は○月です。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">공사가 지연되고 있습니다.</div>
+                        <div class="japanese">工事が遅れております。</div>
+                    </div>
+
+                    <h4 class="subsection-title">設計変更</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">설계를 변경하고 싶습니다.</div>
+                        <div class="japanese">設計を変更したいです。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">추가 비용이 발생합니다.</div>
+                        <div class="japanese">追加費用が発生します。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">도면을 수정하겠습니다.</div>
+                        <div class="japanese">図面を修正いたします。</div>
+                    </div>
+
+                    <h4 class="subsection-title">引き渡し</h4>
+                    
+                    <div class="phrase-card">
+                        <div class="korean">인도 준비가 되었습니다.</div>
+                        <div class="japanese">引き渡し準備ができました。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">검사를 받아야 합니다.</div>
+                        <div class="japanese">検査を受ける必要があります。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">하자 보수 기간은 ○년입니다.</div>
+                        <div class="japanese">瑕疵補修期間は○年です。</div>
+                    </div>
+
+                    <div class="tips-box">
+                        <div class="tips-title">業種別フレーズの活用法</div>
+                        <ul>
+                            <li>自分の業種に関連する部分を優先的に学習しましょう</li>
+                            <li>専門用語は日本語・英語・韓国語の対照表を作成すると便利です</li>
+                            <li>実際に使う前に、同僚や上司に確認してもらうと安心です</li>
+                            <li>業界特有の表現は、取引先から学ぶことも多いです</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 付録 -->
+            <div class="chapter" id="appendix">
+                <h2 class="chapter-title">付録</h2>
+
+                <div class="section">
+                    <h3 class="section-title">よく使う数字・単位の表現</h3>
+
+                    <h4 class="subsection-title">基本の数字</h4>
+                    <table>
+                        <tr>
+                            <th>日本語</th>
+                            <th>韓国語</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>일 / 하나</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>십 / 열</td>
+                        </tr>
+                        <tr>
+                            <td>100</td>
+                            <td>백</td>
+                        </tr>
+                        <tr>
+                            <td>1,000</td>
+                            <td>천</td>
+                        </tr>
+                        <tr>
+                            <td>10,000</td>
+                            <td>만</td>
+                        </tr>
+                        <tr>
+                            <td>100,000</td>
+                            <td>십만</td>
+                        </tr>
+                        <tr>
+                            <td>1,000,000</td>
+                            <td>백만</td>
+                        </tr>
+                    </table>
+
+                    <h4 class="subsection-title">単位</h4>
+                    <div class="phrase-card">
+                        <div class="korean">개 / 대 / 장 / 병</div>
+                        <div class="japanese">個 / 台 / 枚 / 本</div>
+                        <div class="note">数える対象によって使い分けます</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">킬로그램 / 그램</div>
+                        <div class="japanese">キログラム / グラム</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">미터 / 센티미터</div>
+                        <div class="japanese">メートル / センチメートル</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">曜日・月・日付の表現</h3>
+
+                    <h4 class="subsection-title">曜日</h4>
+                    <table>
+                        <tr>
+                            <th>日本語</th>
+                            <th>韓国語</th>
+                        </tr>
+                        <tr>
+                            <td>月曜日</td>
+                            <td>월요일</td>
+                        </tr>
+                        <tr>
+                            <td>火曜日</td>
+                            <td>화요일</td>
+                        </tr>
+                        <tr>
+                            <td>水曜日</td>
+                            <td>수요일</td>
+                        </tr>
+                        <tr>
+                            <td>木曜日</td>
+                            <td>목요일</td>
+                        </tr>
+                        <tr>
+                            <td>金曜日</td>
+                            <td>금요일</td>
+                        </tr>
+                        <tr>
+                            <td>土曜日</td>
+                            <td>토요일</td>
+                        </tr>
+                        <tr>
+                            <td>日曜日</td>
+                            <td>일요일</td>
+                        </tr>
+                    </table>
+
+                    <h4 class="subsection-title">月</h4>
+                    <div class="phrase-card">
+                        <div class="korean">1월, 2월, 3월... 12월</div>
+                        <div class="japanese">1月、2月、3月... 12月</div>
+                        <div class="note">数字+월で表現します</div>
+                    </div>
+
+                    <h4 class="subsection-title">日付の言い方</h4>
+                    <div class="phrase-card">
+                        <div class="korean">2025년 1월 1일</div>
+                        <div class="japanese">2025年1月1日</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">오늘 / 어제 / 내일</div>
+                        <div class="japanese">今日 / 昨日 / 明日</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">이번 주 / 다음 주 / 지난주</div>
+                        <div class="japanese">今週 / 来週 / 先週</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">ビジネスでよく使う動詞50</h3>
+
+                    <table>
+                        <tr>
+                            <th>日本語</th>
+                            <th>韓国語</th>
+                        </tr>
+                        <tr>
+                            <td>する</td>
+                            <td>하다</td>
+                        </tr>
+                        <tr>
+                            <td>言う</td>
+                            <td>말하다</td>
+                        </tr>
+                        <tr>
+                            <td>行く</td>
+                            <td>가다</td>
+                        </tr>
+                        <tr>
+                            <td>来る</td>
+                            <td>오다</td>
+                        </tr>
+                        <tr>
+                            <td>見る</td>
+                            <td>보다</td>
+                        </tr>
+                        <tr>
+                            <td>聞く</td>
+                            <td>듣다</td>
+                        </tr>
+                        <tr>
+                            <td>送る</td>
+                            <td>보내다</td>
+                        </tr>
+                        <tr>
+                            <td>受ける・もらう</td>
+                            <td>받다</td>
+                        </tr>
+                        <tr>
+                            <td>確認する</td>
+                            <td>확인하다</td>
+                        </tr>
+                        <tr>
+                            <td>連絡する</td>
+                            <td>연락하다</td>
+                        </tr>
+                        <tr>
+                            <td>検討する</td>
+                            <td>검토하다</td>
+                        </tr>
+                        <tr>
+                            <td>準備する</td>
+                            <td>준비하다</td>
+                        </tr>
+                        <tr>
+                            <td>進行する</td>
+                            <td>진행하다</td>
+                        </tr>
+                        <tr>
+                            <td>完了する</td>
+                            <td>완료하다</td>
+                        </tr>
+                        <tr>
+                            <td>開始する</td>
+                            <td>시작하다</td>
+                        </tr>
+                        <tr>
+                            <td>終了する</td>
+                            <td>종료하다</td>
+                        </tr>
+                        <tr>
+                            <td>変更する</td>
+                            <td>변경하다</td>
+                        </tr>
+                        <tr>
+                            <td>調整する</td>
+                            <td>조정하다</td>
+                        </tr>
+                        <tr>
+                            <td>決定する</td>
+                            <td>결정하다</td>
+                        </tr>
+                        <tr>
+                            <td>理解する</td>
+                            <td>이해하다</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">敬語の使い分け早見表</h3>
+
+                    <table>
+                        <tr>
+                            <th>状況</th>
+                            <th>語尾</th>
+                            <th>例</th>
+                        </tr>
+                        <tr>
+                            <td>最も丁寧(書類・初対面)</td>
+                            <td>-습니다 / -ㅂ니다</td>
+                            <td>확인했습니다</td>
+                        </tr>
+                        <tr>
+                            <td>丁寧(一般的なビジネス)</td>
+                            <td>-아요 / -어요</td>
+                            <td>확인했어요</td>
+                        </tr>
+                        <tr>
+                            <td>質問(丁寧)</td>
+                            <td>-ㅂ니까? / -습니까?</td>
+                            <td>확인하셨습니까?</td>
+                        </tr>
+                        <tr>
+                            <td>質問(やや丁寧)</td>
+                            <td>-나요? / -ㄴ가요?</td>
+                            <td>확인했나요?</td>
+                        </tr>
+                    </table>
+
+                    <div class="tips-box">
+                        <div class="tips-title">敬語使用のポイント</div>
+                        <ul>
+                            <li>初対面・公式な場では「-습니다/ㅂ니다」を使用</li>
+                            <li>親しくなってきたら「-아요/어요」でもOK</li>
+                            <li>メールでは「-습니다/ㅂ니다」が基本</li>
+                            <li>相手の年齢・役職が上の場合はより丁寧に</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">韓国の主要祝日カレンダー</h3>
+
+                    <table>
+                        <tr>
+                            <th>祝日名</th>
+                            <th>韓国語</th>
+                            <th>時期</th>
+                        </tr>
+                        <tr>
+                            <td>旧正月(ソルラル)</td>
+                            <td>설날</td>
+                            <td>旧暦1月1日(1月下旬〜2月中旬)</td>
+                        </tr>
+                        <tr>
+                            <td>三一節</td>
+                            <td>삼일절</td>
+                            <td>3月1日</td>
+                        </tr>
+                        <tr>
+                            <td>こどもの日</td>
+                            <td>어린이날</td>
+                            <td>5月5日</td>
+                        </tr>
+                        <tr>
+                            <td>釈迦誕生日</td>
+                            <td>부처님 오신 날</td>
+                            <td>旧暦4月8日(4月下旬〜5月)</td>
+                        </tr>
+                        <tr>
+                            <td>顕忠日</td>
+                            <td>현충일</td>
+                            <td>6月6日</td>
+                        </tr>
+                        <tr>
+                            <td>光復節</td>
+                            <td>광복절</td>
+                            <td>8月15日</td>
+                        </tr>
+                        <tr>
+                            <td>秋夕(チュソク)</td>
+                            <td>추석</td>
+                            <td>旧暦8月15日(9月中旬〜10月初旬)</td>
+                        </tr>
+                        <tr>
+                            <td>開天節</td>
+                            <td>개천절</td>
+                            <td>10月3日</td>
+                        </tr>
+                        <tr>
+                            <td>ハングルの日</td>
+                            <td>한글날</td>
+                            <td>10月9日</td>
+                        </tr>
+                        <tr>
+                            <td>クリスマス</td>
+                            <td>크리스마스</td>
+                            <td>12月25日</td>
+                        </tr>
+                    </table>
+
+                    <div class="column">
+                        <div class="column-title">祝日の注意点</div>
+                        <p>旧正月(ソルラル)と秋夕(チュソク)は、韓国で最も重要な祝日で、前後を含めて3日間の連休となります。この時期は多くの企業が休業し、帰省ラッシュとなるため、ビジネスの予定を立てる際は注意が必要です。</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">困った時の魔法のフレーズ集</h3>
+                    <p>どうしても困った時は、これらのフレーズで乗り切りましょう。</p>
+
+                    <div class="phrase-card">
+                        <div class="korean">죄송합니다. 한국어가 서툴러서...</div>
+                        <div class="japanese">申し訳ございません。韓国語が不慣れで...</div>
+                        <div class="note">正直に伝えることで、相手も配慮してくれます</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">천천히 말씀해 주시겠어요?</div>
+                        <div class="japanese">ゆっくり話していただけますか。</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">메일로 보내주실 수 있나요?</div>
+                        <div class="japanese">メールで送っていただけますか。</div>
+                        <div class="note">文字で確認できれば理解しやすくなります</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">확인 후 다시 연락드리겠습니다.</div>
+                        <div class="japanese">確認後、改めてご連絡いたします。</div>
+                        <div class="note">時間を稼いで、正確な情報を伝えましょう</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">영어로 말씀해 주실 수 있나요?</div>
+                        <div class="japanese">英語で話していただけますか。</div>
+                        <div class="note">英語が通じる相手の場合</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">담당자에게 연결해 드리겠습니다.</div>
+                        <div class="japanese">担当者におつなぎいたします。</div>
+                        <div class="note">韓国語ができる同僚に助けを求めましょう</div>
+                    </div>
+
+                    <div class="phrase-card">
+                        <div class="korean">이해했습니다. 감사합니다.</div>
+                        <div class="japanese">理解しました。ありがとうございます。</div>
+                        <div class="note">理解した(できた)ことを伝えて会話を終える</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">最後に</h3>
+                    <p class="intro-text">この教材で学んだ表現を実際のビジネスシーンで活用してください。最初は不安かもしれませんが、使えば使うほど自然に出てくるようになります。</p>
+
+                    <div class="column">
+                        <div class="column-title">継続的な学習のために</div>
+                        <p><strong>実践あるのみ</strong><br>
+                        完璧を目指さず、まずは使ってみることが最も重要です。間違いを恐れずにコミュニケーションを取りましょう。</p>
+                        
+                        <p><strong>フィードバックを活かす</strong><br>
+                        取引先の反応や、韓国語ができる同僚からのアドバイスを積極的に受け入れ、改善していきましょう。</p>
+                        
+                        <p><strong>文化への理解を深める</strong><br>
+                        言葉だけでなく、韓国のビジネス文化への理解を深めることで、より円滑なコミュニケーションが可能になります。</p>
+                        
+                        <p><strong>関係構築を大切に</strong><br>
+                        ビジネスは人と人との関係です。韓国語を通じて、取引先との良好な関係を築いてください。</p>
+                    </div>
+
+<p class="intro-text" style="text-align: center; margin-top: 40px; font-size: 1.2em; color: #1e3c72;">
+                        여러분의 성공을 기원합니다!<br>
+                        <span style="font-size: 0.9em;">皆様のご成功をお祈りいたします!</span>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        
+        <!-- ▼▼▼ 修正箇所：ここにスタイル（style="..."）を直接書き込みました ▼▼▼ -->
+        <div class="footer" style="text-align: center; padding: 50px 20px 80px; background-color: #fff; border-top: 1px solid #eee;">
+            <p style="text-align: center; margin: 0; color: #666;">© 2025 Nico. All Rights Reserved.</p>
+        </div>
+        <!-- ▲▲▲ 修正箇所ここまで ▲▲▲ -->
+
+    </div>
+</body>
+</html>
